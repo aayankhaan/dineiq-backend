@@ -5,6 +5,8 @@ requires-python = ">=3.14"
 dependencies = [
     "fastapi[standard]>=0.141.1",
     "psycopg[binary]>=3.3.6",
+    "pwdlib[argon2]>=0.3.1",
+    "pyjwt>=2.15.0",
     "python-dotenv>=1.2.3",
     "sqlmodel>=0.0.47",
     "uvicorn>=0.53.0",

@@ -1,21 +1,21 @@
-restaurant_id,name,city,region,opened_date
-1,Shawview Branch,Whiteside,North,2025-02-01
-2,South Leslie Branch,Vargastown,North,2022-12-14
-3,Bradymouth Branch,West Staceybury,East,2024-04-19
-4,East Ashleymouth Branch,Brandonstad,South,2024-11-07
-5,Jasonview Branch,Lucasshire,South,2025-03-07
-6,Teresaport Branch,Youngshire,South,2022-06-14
-7,East Laura Branch,Bowmanborough,North,2025-09-21
-8,Randolphland Branch,New Richard,Central,2023-10-17
-9,East Kimberlyville Branch,East Kelli,North,2023-08-28
-10,New Amber Branch,Gonzalesville,Central,2022-04-29
-11,North Michaelburgh Branch,North Ashleyside,West,2022-07-27
-12,New Chelseastad Branch,Lake Travis,North,2025-01-30
-13,Bergbury Branch,Kristenmouth,North,2023-08-11
-14,Sherylburgh Branch,New Brandi,North,2022-07-11
-15,North Randallmouth Branch,Perezchester,South,2021-12-25
-16,Wilsonport Branch,Port Thomas,South,2022-06-16
-17,Perrybury Branch,Lake Elizabethbury,Central,2025-01-11
-18,Davidview Branch,North Heatherbury,Central,2023-02-21
-19,West James Branch,Territon,North,2021-12-12
-20,New Ryan Branch,West Frank,Central,2025-01-12
+restaurants_id,name,city,area,opening_date,status
+1,Hot Kitchen - Saddar,Rawalpindi,Saddar,2024-03-31,Active
+2,Clifton Dhaba - Clifton,Karachi,Clifton,2021-03-02,Active
+3,The Lahore Lounge - Johar Town,Lahore,Johar Town,2021-06-19,Active
+4,Royal Karahi & BBQ - Wapda Town,Lahore,Wapda Town,2014-07-17,Active
+5,The Karachi Karahi & BBQ - North Nazimabad,Karachi,North Nazimabad,2019-04-12,Active
+6,Bahria Town Kitchen - Bahria Town,Lahore,Bahria Town,2015-09-12,Active
+7,Saddar Shinwari - Saddar,Karachi,Saddar,2026-04-10,Active
+8,Desi Shinwari - Westridge,Rawalpindi,Westridge,2014-07-29,Active
+9,The Lahore Kitchen - Model Town,Lahore,Model Town,2025-01-26,Active
+10,Savor Dhaba - Saddar,Peshawar,Saddar,2017-05-04,Active
+11,DHA Lounge - DHA,Lahore,DHA,2015-05-25,Active
+12,Hot Dhaba - F-10,Islamabad,F-10,2020-10-03,Active
+13,The Karachi Kitchen - North Nazimabad,Karachi,North Nazimabad,2019-09-26,Active
+14,The Lahore Dhaba - DHA,Lahore,DHA,2018-11-07,Active
+15,Shahi Kitchen - Wapda Town,Lahore,Wapda Town,2023-10-03,Active
+16,Saddar Kitchen - Saddar,Karachi,Saddar,2020-01-08,Active
+17,The Lahore Karahi & BBQ - Model Town,Lahore,Model Town,2018-06-07,Active
+18,The Peshawar Shinwari - Board Bazaar,Peshawar,Board Bazaar,2020-02-15,Active
+19,Gulbahar Lounge - Gulbahar,Peshawar,Gulbahar,2013-01-14,Active
+20,Shahi Karahi & BBQ - Satellite Town,Rawalpindi,Satellite Town,2020-10-19,Active

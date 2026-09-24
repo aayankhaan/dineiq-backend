@@ -1,151 +1,151 @@
-item_id,item_name,category_id,base_price,base_cost,is_active,introduced_date
-1,Man Combo,7,7.37,4.13,True,2025-11-27
-2,Discuss Special,3,7.85,4.21,True,2025-11-13
-3,Bit Delight,4,18.36,8.01,True,2023-12-08
-4,Also Special,7,24.06,10.46,True,2025-04-21
-5,Pay Combo,5,5.13,3.28,True,2025-08-25
-6,Think Combo,2,20.76,12.29,True,2024-10-22
-7,Democratic Combo,5,24.41,11.02,True,2025-07-19
-8,Someone Bowl,10,21.25,11.63,True,2024-09-10
-9,Receive ,4,7.23,2.37,True,2024-04-07
-10,Young Delight,2,20.01,13.89,True,2024-05-05
-11,School Bowl,3,11.36,5.47,True,2024-09-01
-12,Body Bowl,2,11.14,4.28,True,2026-07-31
-13,Allow ,4,16.4,6.04,True,2025-05-27
-14,Care ,9,6.59,2.98,True,2025-08-05
-15,Floor Special,4,7.83,3.36,True,2024-10-09
-16,Issue Platter,5,21.08,13.11,True,2023-12-19
-17,Fine Combo,6,4.46,2.97,True,2025-08-08
-18,Data ,8,7.68,3.84,True,2025-06-13
-19,Of ,9,6.14,2.18,True,2024-07-10
-20,After Platter,10,14.86,8.9,True,2024-06-20
-21,Spring Delight,9,11.79,4.57,True,2025-03-14
-22,Friend Special,3,13.86,8.35,True,2025-09-15
-23,Alone Platter,10,16.8,10.36,True,2025-06-16
-24,Drug Platter,9,4.4,1.99,True,2024-10-02
-25,Painting Special,2,8.53,4.45,True,2025-05-03
-26,Position Bowl,6,18.0,9.27,True,2025-12-31
-27,Understand Platter,1,5.45,2.58,True,2026-01-31
-28,Wife Bowl,9,23.98,15.6,True,2025-09-02
-29,Put Special,5,19.76,9.94,True,2024-11-08
-30,Section Delight,3,21.52,10.83,True,2024-10-24
-31,Something Combo,1,11.23,4.09,True,2026-02-15
-32,Reveal Special,6,16.18,8.02,True,2026-06-06
-33,Away Bowl,4,22.33,14.13,True,2025-05-31
-34,Letter Special,2,4.27,2.78,True,2024-11-30
-35,Especially Combo,3,19.1,11.96,True,2024-10-01
-36,Hit Combo,3,5.82,2.85,True,2023-11-13
-37,Commercial Platter,4,8.83,5.73,True,2025-07-29
-38,Mr ,4,23.44,14.11,True,2025-11-08
-39,Key ,6,18.68,8.59,True,2024-08-23
-40,Teacher Special,4,12.64,6.41,True,2024-05-14
-41,Single Combo,9,7.94,3.46,True,2024-08-20
-42,State Special,1,8.06,3.13,True,2024-02-25
-43,Reduce Bowl,2,8.04,5.32,True,2023-10-05
-44,Shake Platter,4,14.31,5.89,True,2023-12-17
-45,Finish Combo,10,14.86,8.76,True,2023-10-17
-46,History Platter,4,13.4,8.23,True,2026-01-29
-47,Follow Bowl,7,5.08,2.86,True,2024-06-23
-48,Much Special,2,12.04,7.77,True,2024-12-08
-49,Early Special,4,4.33,2.56,True,2024-02-18
-50,Month Delight,7,7.21,3.71,True,2024-03-05
-51,Program Special,8,7.04,3.41,True,2026-04-01
-52,Such Special,1,20.78,13.35,True,2024-10-09
-53,Require Special,2,17.35,8.96,True,2023-10-02
-54,When Delight,7,23.38,14.95,True,2024-02-22
-55,Bed Platter,1,13.68,5.27,True,2025-02-18
-56,Sport Platter,5,6.62,1.99,True,2025-04-07
-57,Thought Bowl,7,23.38,14.36,True,2025-05-29
-58,Test Combo,8,18.33,10.86,True,2025-05-28
-59,Continue Special,10,6.41,2.68,True,2026-04-27
-60,Finally Bowl,1,19.19,6.22,True,2025-12-06
-61,Cut Combo,3,4.1,2.01,True,2026-07-05
-62,Bit Delight,2,4.25,2.14,True,2025-07-07
-63,Dream Delight,7,16.09,9.17,True,2026-09-07
-64,Too Delight,10,5.64,3.7,True,2024-05-18
-65,Rate Platter,10,16.08,8.81,True,2026-02-08
-66,Or Bowl,4,15.43,6.58,True,2024-02-03
-67,Financial Bowl,7,17.73,7.55,True,2024-12-28
-68,Eat Platter,6,5.88,3.28,True,2025-07-14
-69,Peace Special,8,23.44,15.81,True,2024-06-14
-70,Technology Special,2,16.67,8.76,True,2026-08-26
-71,Available Delight,6,14.83,7.45,True,2024-01-25
-72,Today Bowl,5,22.38,14.59,True,2024-09-13
-73,Wide ,5,6.47,4.1,True,2024-06-01
-74,Unit ,9,16.46,11.44,True,2026-01-15
-75,Sing Bowl,2,3.17,1.99,True,2024-03-16
-76,Executive Special,2,23.66,8.37,True,2025-10-29
-77,Development Bowl,10,19.33,7.0,True,2023-11-24
-78,Style ,5,7.63,3.34,True,2026-09-06
-79,Field Special,2,14.12,5.65,True,2025-12-20
-80,Nice Special,1,16.95,10.71,True,2025-01-22
-81,Goal Bowl,3,10.34,3.64,True,2025-09-12
-82,Member Platter,9,19.31,10.05,True,2023-09-24
-83,Important ,3,3.21,1.06,True,2026-06-24
-84,Matter Combo,9,15.0,9.51,True,2024-04-17
-85,Off Bowl,6,6.26,2.2,True,2025-05-03
-86,Send Special,6,22.78,14.09,True,2025-08-09
-87,Wife Special,6,7.62,3.05,True,2023-11-05
-88,Manage Platter,10,20.16,13.18,True,2025-03-27
-89,Participant Delight,3,19.49,13.06,True,2025-09-28
-90,Way Platter,1,24.48,15.28,True,2023-10-09
-91,Seem Platter,4,6.95,4.66,True,2025-12-09
-92,Father Special,7,8.87,5.45,True,2024-11-13
-93,Safe Delight,4,22.19,14.28,True,2025-05-23
-94,Dog Bowl,4,20.96,10.15,True,2024-11-23
-95,Still Platter,6,7.9,4.46,True,2024-03-28
-96,Begin Bowl,6,9.13,2.99,True,2024-08-08
-97,Expert Combo,6,17.11,7.87,True,2026-04-11
-98,Appear Bowl,3,23.66,8.19,True,2026-05-04
-99,Poor Special,2,15.77,10.94,True,2026-03-30
-100,Garden Bowl,7,16.12,7.06,True,2025-05-25
-101,Without Platter,10,16.34,8.24,True,2023-12-25
-102,View Platter,1,7.18,2.28,True,2025-10-22
-103,Especially ,4,14.44,8.99,True,2024-01-14
-104,Leave ,6,11.01,3.61,True,2025-04-04
-105,Table Special,5,16.71,9.45,True,2024-02-17
-106,Back Bowl,7,14.16,8.03,True,2026-01-10
-107,Check Delight,7,18.34,9.57,True,2025-04-17
-108,Learn ,3,17.63,7.96,True,2025-10-05
-109,No Combo,1,16.54,6.95,True,2024-04-09
-110,Commercial Combo,10,9.69,3.72,True,2024-12-21
-111,To Platter,4,17.4,8.46,True,2025-03-02
-112,Chair ,3,14.25,8.8,True,2026-03-17
-113,Hotel ,10,17.49,7.23,True,2026-02-19
-114,Her Delight,5,10.37,6.51,True,2023-11-11
-115,Account Special,1,7.94,3.01,True,2025-02-09
-116,Recently Special,8,8.39,4.11,True,2026-05-20
-117,Because Delight,7,12.12,6.69,True,2025-07-14
-118,Court ,1,13.88,5.52,True,2025-07-10
-119,Almost Special,7,22.64,14.58,True,2025-07-07
-120,Look ,9,7.81,4.86,True,2025-09-06
-121,Suffer Special,8,13.22,6.91,True,2024-05-27
-122,Statement Combo,9,5.93,2.88,True,2024-12-25
-123,True Platter,10,16.1,10.95,True,2024-09-06
-124,Far Platter,9,20.93,13.75,True,2026-01-30
-125,Artist Platter,8,12.81,4.66,True,2025-03-13
-126,Attack ,5,8.7,3.47,True,2024-11-28
-127,Production ,4,19.85,10.09,True,2026-07-01
-128,Away Bowl,4,9.04,2.99,True,2025-09-16
-129,Attention Combo,2,8.98,3.84,True,2024-08-10
-130,Its ,3,6.04,2.37,True,2025-05-27
-131,Wish Platter,6,18.54,6.04,True,2024-07-21
-132,Investment Delight,7,14.94,6.97,True,2024-08-07
-133,Onto ,1,11.57,7.03,True,2026-02-17
-134,Hold Platter,8,21.85,13.25,True,2023-10-10
-135,Season Platter,7,3.13,1.38,True,2025-08-31
-136,Top Combo,4,14.84,8.81,True,2024-12-23
-137,Garden Platter,1,13.74,5.62,True,2024-11-11
-138,Good Platter,3,11.55,6.56,True,2025-11-21
-139,Say Combo,9,21.49,14.35,True,2025-12-18
-140,Require Combo,1,3.59,1.64,True,2025-04-13
-141,Support Platter,3,4.85,2.29,True,2023-09-27
-142,Third Delight,8,4.11,1.86,True,2025-10-15
-143,Any Platter,5,10.19,6.16,True,2025-01-26
-144,Policy Bowl,2,19.54,12.36,True,2025-10-30
-145,Rock Special,6,13.35,8.0,True,2026-02-15
-146,According ,1,7.93,2.6,True,2024-04-22
-147,Various Delight,1,19.59,13.32,True,2023-12-03
-148,Skill Platter,2,16.67,6.59,True,2025-03-14
-149,Response ,5,15.41,5.97,True,2025-11-14
-150,Big Combo,2,19.87,7.29,True,2024-04-13
+menu_items_id,cat_id,name,base_price,base_cost,prep_time_minutes,introduced_date,discontinued_date
+1,1,Masala Chicken Rolls,630,180.0,8,2024-06-20,
+2,2,Tikka Beef Boti,520,190.0,15,2023-04-23,
+3,3,Double Zinger Sandwich,670,200.0,10,2022-12-14,
+4,4,Dhaba Style Paneer Handi,1400,520.0,20,2025-08-06,
+5,5,Dum Beef Tehari,430,130.0,28,2023-10-01,
+6,6,Spicy Arrabbiata Beef Chowmein,720,230.0,18,2026-06-02,
+7,7,Chicken Tikka Special Pizza,1770,560.0,13,2023-03-07,
+8,8,Rabri Kheer,470,130.0,6,2024-05-27,
+9,9,Karak Qehwa,260,70.0,4,2023-08-06,
+10,10,Strawberry Shake,380,110.0,3,2026-05-06,
+11,11,Seekh Kebab Paratha,450,160.0,9,2023-12-31,
+12,12,Chana Daal Mash,300,110.0,13,2022-11-25,
+13,1,Masala Fries,270,90.0,7,2025-07-20,
+14,2,Behari Beef Boti,1290,430.0,21,2023-04-05,
+15,3,Smoky Club Sandwich,620,180.0,11,2022-12-09,
+16,4,Achari Mutton Karahi,1300,460.0,34,2023-11-15,
+17,5,Sindhi Chicken Tehari,1300,390.0,28,2023-06-18,
+18,6,Chilli Garlic Beef Noodles,600,200.0,14,2023-01-07,
+19,7,Achari Chicken Supreme Pizza,980,290.0,18,2026-07-10,
+20,8,Shahi Ice Cream,280,100.0,5,2022-10-06,
+21,9,Cappuccino Chai,140,50.0,5,2024-04-09,
+22,10,Fresh Lime Margarita,270,90.0,4,2025-06-08,
+23,11,Chicken Paratha,440,150.0,14,2023-03-06,
+24,12,Aloo Daal Chana,430,130.0,16,2023-03-09,
+25,1,Tandoori Samosa Bites,430,140.0,11,2026-04-16,
+26,2,Reshmi Sajji,1480,500.0,27,2023-10-15,
+27,3,Crispy Beef Wrap,460,160.0,13,2026-05-23,
+28,4,Makhni Mutton Handi,1430,520.0,31,2022-12-17,
+29,5,Sindhi Chicken Pulao,1100,320.0,28,2022-11-12,
+30,6,Chilli Garlic Chicken Pasta,690,250.0,14,2025-11-05,
+31,7,Malai Boti Pizza,2020,740.0,21,2024-04-28,
+32,8,Chocolate Brownie,430,140.0,5,2023-11-14,
+33,9,Adrak Chai,230,70.0,4,2024-01-13,
+34,10,Classic Lassi,270,90.0,3,2024-02-07,
+35,11,Aloo Roll,260,90.0,9,2024-10-21,
+36,12,Daal Chana Masala,300,100.0,17,2023-06-17,
+37,1,Loaded Samosa Bites,490,150.0,8,2022-09-11,
+38,2,Peshawari Sajji,1470,450.0,26,2022-10-09,
+39,3,Loaded Chicken Wrap,580,160.0,14,2025-07-27,
+40,4,Dhaba Style Chicken Karahi,660,230.0,29,2025-02-06,
+41,5,Dum Mutton Pulao,820,250.0,19,2023-10-01,
+42,6,Cheesy Baked Vegetable Chowmein,1020,360.0,18,2025-11-19,
+43,7,Hawaiian Supreme Pizza,1450,450.0,12,2022-12-09,
+44,8,Warm Kulfi,680,210.0,10,2025-08-11,
+45,9,Karak Chai,260,90.0,6,2023-03-17,
+46,10,Strawberry Sharbat,170,60.0,4,2026-01-05,
+47,11,Aloo Paratha,560,170.0,7,2023-10-26,
+48,12,Mix Veg Salad,430,130.0,14,2023-09-29,
+49,1,Honey Mustard Fries,450,150.0,5,2024-03-12,
+50,2,Malai Sajji,1770,540.0,23,2023-03-13,
+51,3,Zafrani Steak Wrap,850,290.0,10,2024-04-06,
+52,4,Lahori Mutton Handi,1310,430.0,28,2023-01-29,
+53,5,Nawabi Chicken Rice,1340,490.0,16,2025-03-15,
+54,6,Schezwan Chicken Spaghetti,1040,300.0,17,2023-12-22,
+55,7,Pepperoni Special Pizza,1060,340.0,17,2026-02-16,
+56,8,Chocolate Ice Cream,340,130.0,5,2024-05-26,
+57,9,Elaichi Chai,260,80.0,6,2024-01-30,
+58,10,Mango Sharbat,250,90.0,4,2023-09-20,
+59,11,Chicken Roll,330,110.0,14,2025-12-30,
+60,12,Palak Chutney,310,100.0,12,2024-08-22,
+61,1,Loaded Chicken Rolls,350,120.0,12,2022-09-04,
+62,2,Tikka Sajji,1130,340.0,29,2025-04-28,
+63,3,Classic Beef Wrap,420,140.0,12,2023-04-25,
+64,4,Green Chilli Mutton Handi,1110,330.0,22,2023-08-05,
+65,5,Nawabi Mutton Pulao,1050,390.0,27,2025-11-02,
+66,6,White Sauce Vegetable Spaghetti,1050,330.0,19,2024-11-03,
+67,7,Chicken Tikka Supreme Pizza,1280,390.0,12,2025-07-05,
+68,8,Caramel Kulfi,260,80.0,8,2024-09-01,
+69,9,Karak Coffee,140,50.0,7,2025-04-02,
+70,10,Classic Lemonade,460,160.0,3,2026-02-10,
+71,11,Spicy Chicken Wrap,510,170.0,6,2024-11-14,
+72,12,Aloo Chana Masala,440,150.0,17,2026-02-28,
+73,1,Loaded Fries,330,100.0,9,2023-08-31,
+74,2,Angara Chicken Chargha,1380,440.0,24,2026-01-31,
+75,3,Loaded Beef Cheese Burger,800,260.0,10,2023-06-12,
+76,4,Lahori Mutton Karahi,1580,580.0,32,2025-04-29,
+77,5,Bombay Beef Pulao,620,230.0,22,2023-08-13,
+78,6,Peri Peri Chicken Chowmein,970,270.0,19,2023-05-22,
+79,7,BBQ Chicken Pizza,1980,590.0,20,2025-11-13,
+80,8,Kesar Pista Ice Cream,420,130.0,8,2025-10-17,
+81,9,Green Qehwa,240,70.0,8,2026-03-28,
+82,10,Mango Lassi,290,90.0,4,2023-09-14,
+83,11,Achari Paratha,260,90.0,8,2025-09-10,
+84,12,Raita Raita,430,130.0,18,2024-04-14,
+85,1,Masala Cheese Sticks,510,160.0,9,2024-07-17,
+86,2,Chargha Style Kebab,1690,630.0,24,2024-07-14,
+87,3,Spicy Beef Wrap,360,120.0,12,2026-03-28,
+88,4,Green Chilli Chicken Balti,1300,470.0,25,2022-10-09,
+89,5,Special VIP Prawn Tehari,680,250.0,19,2025-03-17,
+90,6,Cheesy Baked Prawn Noodles,760,250.0,19,2025-01-04,
+91,7,Mughlai Pizza,1220,370.0,13,2025-01-30,
+92,8,Chocolate Ras Malai,360,130.0,10,2026-02-25,
+93,9,Peshawari Qehwa Chai,230,70.0,4,2024-03-29,
+94,10,Chocolate Lemonade,170,50.0,6,2023-07-14,
+95,11,Beef Roll,270,90.0,10,2026-05-09,
+96,12,Palak Raita,210,70.0,15,2023-12-08,
+97,1,Peri Peri Fries,460,170.0,5,2023-04-16,
+98,2,Achari Kebab,540,170.0,19,2024-03-04,
+99,3,Grilled Beef Wrap,770,240.0,15,2025-08-12,
+100,4,Dhaba Style Mutton Karahi,820,260.0,27,2025-12-16,
+101,5,Sindhi Prawn Tehari,1120,360.0,28,2022-12-13,
+102,6,Chinese Style Beef Chowmein,700,200.0,15,2024-10-10,
+103,7,Pepperoni Supreme Pizza,1360,390.0,22,2022-12-03,
+104,8,Lotus Biscoff Ras Malai,610,230.0,4,2023-03-09,
+105,9,Espresso Tea,160,60.0,7,2023-06-26,
+106,10,Mint Lassi,360,120.0,4,2026-02-10,
+107,11,Achari Frankie,460,160.0,9,2025-09-04,
+108,12,Aloo Chutney,200,70.0,14,2024-01-06,
+109,1,Loaded Spring Rolls,580,170.0,12,2024-10-17,
+110,2,Tikka Tikka Leg Piece,570,200.0,15,2024-12-07,
+111,3,Spicy Bihari Boti Sandwich,760,220.0,10,2026-04-19,
+112,4,Peshawari Paneer Handi,580,190.0,25,2023-01-20,
+113,5,Bombay Beef Biryani,680,250.0,24,2025-07-20,
+114,6,Chinese Style Chicken Spaghetti,960,360.0,15,2023-05-02,
+115,7,Karahi Supreme Pizza,1700,590.0,12,2023-03-07,
+116,8,Rabri Ice Cream,380,120.0,4,2024-04-03,
+117,9,Kashmiri Tea,230,80.0,3,2024-04-04,
+118,10,Classic Margarita,310,110.0,3,2026-08-02,
+119,11,Beef Paratha,280,80.0,13,2025-11-24,
+120,12,Mix Veg Chutney,200,70.0,12,2026-08-08,
+121,1,Garlic Nuggets,310,100.0,7,2024-02-26,
+122,2,Behari Chops,630,220.0,28,2023-03-29,
+123,3,Loaded Zinger Wrap,540,190.0,15,2023-10-16,
+124,4,Green Chilli Mutton Balti,1090,330.0,28,2025-01-16,
+125,5,Special VIP Mutton Pulao,1330,410.0,18,2025-02-12,
+126,6,Chilli Garlic Beef Chowmein,530,200.0,15,2025-04-19,
+127,7,Spicy Sausage Pizza,1260,350.0,16,2023-09-23,
+128,8,Kesar Pista Gulab Jamun,300,100.0,7,2026-04-30,
+129,9,Adrak Coffee,120,40.0,4,2022-09-03,
+130,10,Mint Soda,460,130.0,4,2026-05-22,
+131,11,Beef Frankie,490,170.0,15,2025-11-11,
+132,12,Mix Veg Raita,330,110.0,16,2024-10-24,
+133,1,Crispy Pakora,450,140.0,8,2024-09-04,
+134,2,Chargha Style Chicken Chargha,1460,440.0,29,2023-03-11,
+135,3,Double Bihari Boti Wrap,670,250.0,12,2023-07-15,
+136,4,Makhni Chicken Handi,1260,360.0,35,2022-09-21,
+137,5,Kachay Gosht Ki Mutton Rice,1360,510.0,28,2025-11-23,
+138,6,Cheesy Baked Beef Spaghetti,1070,340.0,18,2023-02-06,
+139,7,Tandoori Special Pizza,1870,640.0,12,2024-05-20,
+140,8,Caramel Ice Cream,250,70.0,9,2023-01-21,
+141,9,Cappuccino Tea,250,80.0,8,2026-05-21,
+142,10,Rose Shake,350,120.0,3,2025-01-11,
+143,11,Achari Wrap,260,90.0,14,2024-11-21,
+144,12,Palak Daal Mash,420,130.0,11,2022-10-12,
+145,1,Loaded Cheese Sticks,580,200.0,12,2023-12-24,
+146,2,Chargha Style Sajji,850,300.0,27,2025-12-10,
+147,3,Zafrani Bihari Boti Cheese Burger,420,150.0,14,2025-11-15,
+148,4,Achari Mutton Handi,940,300.0,18,2026-03-12,
+149,5,Hyderabadi Chicken Biryani,430,140.0,28,2022-12-16,
+150,6,Chilli Garlic Chicken Spaghetti,970,350.0,11,2023-02-08,

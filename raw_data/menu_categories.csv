@@ -1,11 +1,13 @@
-category_id,category_name
+category_id,name
 1,Appetizers
-2,Soups
-3,Salads
-4,Main Course
-5,Pizza
-6,Pasta
-7,Burgers
+2,BBQ & Grills
+3,Burgers & Sandwiches
+4,Karahi & Handi
+5,Rice & Biryani
+6,Pasta & Noodles
+7,Pizza
 8,Desserts
-9,Beverages
-10,Sides
+9,Hot Beverages
+10,Cold Beverages
+11,Rolls & Parathas
+12,Salan & Sides

@@ -1,0 +1,56 @@
+ingredient_id,ingredient,unit,unit_cost
+1,Chicken,kg,650
+2,Beef,kg,900
+3,Mutton,kg,1500
+4,Prawns,kg,1200
+5,Sausage,kg,850
+6,Potatoes,kg,120
+7,Onions,kg,140
+8,Tomatoes,kg,180
+9,Bell Peppers,kg,450
+10,Green Chillies,kg,300
+11,Lettuce,kg,220
+12,Spinach,kg,160
+13,Okra,kg,240
+14,Mixed Vegetables,kg,260
+15,Chickpeas,kg,300
+16,Rice,kg,320
+17,Flour,kg,180
+18,Pasta,kg,450
+19,Noodles,kg,400
+20,Lentils,kg,350
+21,Burger Buns,pieces,55
+22,Tortillas,pieces,45
+23,Parathas,pieces,60
+24,Pizza Dough,pieces,180
+25,Spring Roll Wrappers,pieces,25
+26,Eggs,pieces,35
+27,Cheese,kg,1600
+28,Paneer,kg,1100
+29,Milk,liters,300
+30,Cream,liters,750
+31,Yogurt,kg,280
+32,Butter,kg,1400
+33,Cooking Oil,liters,550
+34,Tomato Sauce,liters,500
+35,Burger Sauce,liters,650
+36,Soy Sauce,liters,700
+37,Hot Sauce,liters,650
+38,BBQ Sauce,liters,750
+39,Mayonnaise,liters,700
+40,Salt,kg,80
+41,Sugar,kg,170
+42,Black Pepper,kg,1400
+43,Red Chilli Powder,kg,900
+44,Garam Masala,kg,1200
+45,Biryani Masala,kg,1300
+46,Tikka Masala,kg,1250
+47,Chaat Masala,kg,1000
+48,Ginger Garlic Paste,kg,500
+49,Tea Leaves,kg,1800
+50,Coffee,kg,3500
+51,Chocolate,kg,1800
+52,Ice Cream,liters,700
+53,Fruit Pulp,liters,650
+54,Lemon/Lime,kg,350
+55,Soda Water,liters,120

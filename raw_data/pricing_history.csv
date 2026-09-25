@@ -1,1841 +1,1910 @@
 price_history_id,restaurant_id,item_id,old_price,new_price,effective_date,reason
-1,1,4,1340.0,1440.0,2025-12-29,Seasonal Adjustment
-2,1,8,500.0,480.0,2025-10-28,Market Adjustment
-3,1,9,270.0,260.0,2025-06-25,Menu Revision
-4,1,9,260.0,280.0,2025-08-05,Menu Revision
-5,1,10,340.0,370.0,2026-06-15,Market Adjustment
-6,1,13,290.0,300.0,2026-01-29,Cost Increase
-7,1,13,300.0,290.0,2026-02-01,Seasonal Adjustment
-8,1,16,1230.0,1290.0,2026-08-16,Market Adjustment
-9,1,17,1120.0,1200.0,2026-07-20,Seasonal Adjustment
-10,1,18,610.0,640.0,2026-08-20,Seasonal Adjustment
-11,1,20,230.0,250.0,2025-04-19,Cost Increase
-12,1,20,250.0,260.0,2025-04-21,Market Adjustment
-13,1,22,250.0,270.0,2025-11-04,Market Adjustment
-14,1,23,510.0,480.0,2025-05-10,Market Adjustment
-15,1,27,470.0,510.0,2026-07-19,Supplier Cost Change
-16,1,28,1460.0,1560.0,2025-06-09,Seasonal Adjustment
-17,1,29,1180.0,1090.0,2026-01-20,Seasonal Adjustment
-18,1,29,1090.0,1170.0,2026-04-07,Menu Revision
-19,1,30,600.0,640.0,2025-12-15,Market Adjustment
-20,1,30,640.0,690.0,2026-06-20,Supplier Cost Change
-21,1,31,1910.0,2010.0,2026-08-14,Cost Increase
-22,1,33,220.0,240.0,2025-09-18,Seasonal Adjustment
-23,1,34,280.0,260.0,2026-07-19,Market Adjustment
-24,1,35,280.0,260.0,2026-03-07,Menu Revision
-25,1,35,260.0,270.0,2026-04-20,Menu Revision
-26,1,37,420.0,460.0,2025-07-26,Seasonal Adjustment
-27,1,37,460.0,490.0,2026-05-23,Seasonal Adjustment
-28,1,41,840.0,900.0,2025-12-29,Cost Increase
-29,1,41,900.0,860.0,2026-05-11,Supplier Cost Change
-30,1,42,1000.0,1040.0,2026-01-20,Seasonal Adjustment
-31,1,47,560.0,580.0,2025-06-18,Menu Revision
-32,1,49,450.0,470.0,2026-03-15,Cost Increase
-33,1,50,1400.0,1490.0,2025-06-26,Supplier Cost Change
-34,1,50,1490.0,1540.0,2025-12-07,Market Adjustment
-35,1,50,1540.0,1670.0,2026-08-16,Supplier Cost Change
-36,1,52,1410.0,1530.0,2025-08-09,Menu Revision
-37,1,52,1530.0,1410.0,2025-08-25,Market Adjustment
-38,1,54,810.0,850.0,2025-09-27,Cost Increase
-39,1,54,850.0,880.0,2025-11-17,Seasonal Adjustment
-40,1,54,880.0,960.0,2026-08-15,Menu Revision
-41,1,56,340.0,350.0,2025-09-12,Seasonal Adjustment
-42,1,56,350.0,380.0,2026-01-14,Cost Increase
-43,1,56,380.0,350.0,2026-03-01,Market Adjustment
-44,1,61,280.0,290.0,2025-08-06,Seasonal Adjustment
-45,1,61,290.0,320.0,2026-05-09,Menu Revision
-46,1,62,1060.0,1110.0,2025-12-27,Menu Revision
-47,1,63,430.0,450.0,2026-04-16,Market Adjustment
-48,1,66,990.0,1030.0,2025-05-01,Cost Increase
-49,1,70,420.0,440.0,2026-08-23,Menu Revision
-50,1,71,470.0,510.0,2026-05-10,Cost Increase
-51,1,72,370.0,400.0,2026-05-03,Seasonal Adjustment
-52,1,76,1510.0,1640.0,2026-02-16,Supplier Cost Change
-53,1,77,610.0,670.0,2025-05-02,Cost Increase
-54,1,79,1650.0,1800.0,2026-07-12,Supplier Cost Change
-55,1,81,260.0,250.0,2026-08-28,Menu Revision
-56,1,86,1400.0,1530.0,2025-05-02,Menu Revision
-57,1,87,370.0,390.0,2026-06-08,Seasonal Adjustment
-58,1,88,1150.0,1220.0,2026-08-14,Market Adjustment
-59,1,89,680.0,730.0,2026-04-14,Supplier Cost Change
-60,1,92,350.0,380.0,2026-07-09,Menu Revision
-61,1,93,210.0,230.0,2025-09-12,Supplier Cost Change
-62,1,93,230.0,250.0,2025-10-16,Supplier Cost Change
-63,1,96,200.0,210.0,2026-04-21,Menu Revision
-64,1,100,860.0,920.0,2026-02-14,Market Adjustment
-65,1,100,920.0,890.0,2026-07-30,Cost Increase
-66,1,105,140.0,150.0,2026-03-02,Seasonal Adjustment
-67,1,106,320.0,340.0,2026-03-31,Market Adjustment
-68,1,106,340.0,370.0,2026-06-15,Supplier Cost Change
-69,1,111,740.0,800.0,2026-06-24,Supplier Cost Change
-70,1,114,980.0,1010.0,2025-10-30,Supplier Cost Change
-71,1,117,220.0,230.0,2025-09-13,Market Adjustment
-72,1,119,260.0,290.0,2026-01-31,Cost Increase
-73,1,121,270.0,290.0,2026-07-21,Cost Increase
-74,1,126,510.0,530.0,2025-12-09,Market Adjustment
-75,1,132,370.0,380.0,2025-04-08,Menu Revision
-76,1,132,380.0,350.0,2025-06-22,Menu Revision
-77,1,132,350.0,360.0,2025-07-06,Menu Revision
-78,1,135,560.0,610.0,2025-08-29,Market Adjustment
-79,1,135,610.0,640.0,2025-12-19,Menu Revision
-80,1,135,640.0,670.0,2026-08-04,Supplier Cost Change
-81,1,139,1890.0,2030.0,2026-08-04,Menu Revision
-82,1,141,230.0,240.0,2026-08-05,Menu Revision
-83,1,141,240.0,250.0,2026-08-19,Market Adjustment
-84,1,143,290.0,280.0,2025-04-11,Cost Increase
-85,1,148,1010.0,950.0,2026-04-25,Menu Revision
-86,2,2,490.0,520.0,2026-05-30,Menu Revision
-87,2,3,660.0,720.0,2025-07-30,Menu Revision
-88,2,6,760.0,710.0,2026-08-26,Supplier Cost Change
-89,2,9,240.0,260.0,2025-10-20,Cost Increase
-90,2,10,340.0,320.0,2026-06-21,Market Adjustment
-91,2,10,320.0,350.0,2026-08-21,Market Adjustment
-92,2,16,1160.0,1220.0,2025-04-02,Market Adjustment
-93,2,16,1220.0,1170.0,2026-01-31,Supplier Cost Change
-94,2,20,250.0,270.0,2025-12-05,Seasonal Adjustment
-95,2,21,130.0,140.0,2025-07-11,Cost Increase
-96,2,26,1310.0,1430.0,2025-09-16,Seasonal Adjustment
-97,2,26,1430.0,1520.0,2026-03-07,Supplier Cost Change
-98,2,27,380.0,400.0,2026-07-14,Seasonal Adjustment
-99,2,27,400.0,440.0,2026-08-09,Seasonal Adjustment
-100,2,28,1370.0,1490.0,2026-05-13,Market Adjustment
-101,2,29,980.0,1050.0,2026-01-13,Supplier Cost Change
-102,2,30,690.0,750.0,2026-08-18,Menu Revision
-103,2,33,200.0,210.0,2025-11-25,Market Adjustment
-104,2,33,210.0,230.0,2026-08-07,Supplier Cost Change
-105,2,34,260.0,280.0,2025-11-07,Market Adjustment
-106,2,36,280.0,300.0,2026-01-18,Supplier Cost Change
-107,2,37,430.0,460.0,2025-06-13,Market Adjustment
-108,2,38,1650.0,1520.0,2026-01-10,Cost Increase
-109,2,40,650.0,700.0,2025-06-21,Supplier Cost Change
-110,2,40,700.0,650.0,2025-08-13,Market Adjustment
-111,2,41,750.0,810.0,2025-09-26,Market Adjustment
-112,2,41,810.0,870.0,2025-12-04,Cost Increase
-113,2,42,910.0,960.0,2026-01-23,Menu Revision
-114,2,42,960.0,1030.0,2026-02-04,Seasonal Adjustment
-115,2,44,750.0,710.0,2026-04-01,Supplier Cost Change
-116,2,45,250.0,270.0,2025-08-03,Menu Revision
-117,2,45,270.0,280.0,2026-03-12,Market Adjustment
-118,2,45,280.0,260.0,2026-08-30,Menu Revision
-119,2,46,160.0,170.0,2026-02-13,Supplier Cost Change
-120,2,47,550.0,520.0,2025-09-22,Market Adjustment
-121,2,48,430.0,440.0,2025-11-20,Seasonal Adjustment
-122,2,51,850.0,880.0,2026-03-15,Menu Revision
-123,2,52,1210.0,1260.0,2025-09-13,Market Adjustment
-124,2,53,1250.0,1330.0,2026-08-01,Seasonal Adjustment
-125,2,54,960.0,1030.0,2026-01-05,Menu Revision
-126,2,57,220.0,230.0,2026-08-19,Cost Increase
-127,2,57,230.0,240.0,2026-08-23,Supplier Cost Change
-128,2,58,220.0,230.0,2026-02-15,Market Adjustment
-129,2,62,1080.0,1120.0,2025-09-10,Cost Increase
-130,2,62,1120.0,1070.0,2025-10-16,Menu Revision
-131,2,64,960.0,1040.0,2025-07-01,Menu Revision
-132,2,67,1120.0,1180.0,2025-09-02,Cost Increase
-133,2,67,1180.0,1280.0,2026-08-18,Menu Revision
-134,2,69,120.0,130.0,2026-04-09,Menu Revision
-135,2,69,130.0,140.0,2026-08-22,Seasonal Adjustment
-136,2,70,440.0,470.0,2026-07-07,Supplier Cost Change
-137,2,71,490.0,540.0,2026-04-01,Market Adjustment
-138,2,72,370.0,390.0,2026-05-24,Supplier Cost Change
-139,2,72,390.0,420.0,2026-07-22,Market Adjustment
-140,2,72,420.0,400.0,2026-08-15,Market Adjustment
-141,2,74,1130.0,1220.0,2026-05-28,Cost Increase
-142,2,74,1220.0,1310.0,2026-07-18,Menu Revision
-143,2,75,760.0,790.0,2025-04-04,Supplier Cost Change
-144,2,75,790.0,850.0,2025-05-03,Menu Revision
-145,2,76,1350.0,1450.0,2026-08-18,Menu Revision
-146,2,77,570.0,600.0,2025-07-02,Market Adjustment
-147,2,78,910.0,970.0,2025-05-27,Cost Increase
-148,2,81,250.0,260.0,2026-05-05,Cost Increase
-149,2,83,210.0,230.0,2026-02-15,Cost Increase
-150,2,83,230.0,240.0,2026-06-01,Menu Revision
-151,2,84,420.0,460.0,2025-07-03,Supplier Cost Change
-152,2,84,460.0,430.0,2025-09-29,Seasonal Adjustment
-153,2,86,1550.0,1660.0,2025-09-06,Supplier Cost Change
-154,2,87,310.0,330.0,2026-08-09,Seasonal Adjustment
-155,2,87,330.0,350.0,2026-08-11,Seasonal Adjustment
-156,2,90,630.0,680.0,2025-05-31,Cost Increase
-157,2,90,680.0,710.0,2025-12-02,Seasonal Adjustment
-158,2,90,710.0,740.0,2026-08-28,Menu Revision
-159,2,91,1310.0,1210.0,2026-06-23,Supplier Cost Change
-160,2,93,200.0,210.0,2026-02-18,Menu Revision
-161,2,94,150.0,160.0,2025-08-19,Cost Increase
-162,2,95,250.0,260.0,2026-08-26,Supplier Cost Change
-163,2,97,430.0,450.0,2025-06-02,Menu Revision
-164,2,97,450.0,480.0,2026-04-03,Cost Increase
-165,2,98,510.0,530.0,2025-07-05,Menu Revision
-166,2,98,530.0,570.0,2025-08-18,Seasonal Adjustment
-167,2,101,890.0,950.0,2025-08-20,Cost Increase
-168,2,101,950.0,1020.0,2026-04-08,Market Adjustment
-169,2,104,600.0,660.0,2026-03-28,Menu Revision
-170,2,105,150.0,160.0,2025-08-11,Seasonal Adjustment
-171,2,106,310.0,320.0,2026-04-17,Seasonal Adjustment
-172,2,109,590.0,560.0,2025-09-07,Cost Increase
-173,2,110,510.0,560.0,2026-08-17,Market Adjustment
-174,2,111,760.0,830.0,2026-07-07,Supplier Cost Change
-175,2,114,970.0,930.0,2026-02-15,Seasonal Adjustment
-176,2,115,1500.0,1650.0,2026-06-11,Cost Increase
-177,2,116,340.0,360.0,2025-04-21,Market Adjustment
-178,2,117,230.0,240.0,2025-08-08,Supplier Cost Change
-179,2,117,240.0,250.0,2025-08-24,Supplier Cost Change
-180,2,121,280.0,300.0,2025-05-18,Cost Increase
-181,2,123,530.0,510.0,2026-03-28,Supplier Cost Change
-182,2,124,1050.0,1120.0,2025-07-24,Market Adjustment
-183,2,127,1290.0,1350.0,2026-07-18,Menu Revision
-184,2,129,110.0,120.0,2026-05-17,Market Adjustment
-185,2,131,510.0,530.0,2026-05-12,Cost Increase
-186,2,133,430.0,440.0,2025-10-31,Cost Increase
-187,2,133,440.0,480.0,2026-04-20,Seasonal Adjustment
-188,2,138,960.0,1040.0,2025-09-18,Supplier Cost Change
-189,2,138,1040.0,1130.0,2025-12-03,Menu Revision
-190,2,140,210.0,230.0,2025-10-05,Seasonal Adjustment
-191,2,140,230.0,250.0,2026-02-08,Supplier Cost Change
-192,2,141,220.0,240.0,2026-06-20,Menu Revision
-193,2,144,420.0,460.0,2025-06-21,Seasonal Adjustment
-194,2,144,460.0,440.0,2025-08-08,Market Adjustment
-195,2,145,580.0,620.0,2026-04-28,Menu Revision
-196,2,147,390.0,400.0,2026-04-14,Menu Revision
-197,2,148,940.0,970.0,2026-08-26,Seasonal Adjustment
-198,2,149,390.0,430.0,2026-01-03,Cost Increase
-199,3,2,490.0,510.0,2026-07-05,Supplier Cost Change
-200,3,2,510.0,550.0,2026-08-31,Market Adjustment
-201,3,3,610.0,660.0,2025-12-07,Cost Increase
-202,3,5,340.0,360.0,2025-09-13,Cost Increase
-203,3,5,360.0,390.0,2026-02-07,Market Adjustment
-204,3,5,390.0,420.0,2026-08-18,Supplier Cost Change
-205,3,7,1520.0,1580.0,2026-03-29,Menu Revision
-206,3,7,1580.0,1680.0,2026-05-09,Cost Increase
-207,3,9,250.0,260.0,2025-09-09,Supplier Cost Change
-208,3,9,260.0,270.0,2026-04-29,Market Adjustment
-209,3,11,400.0,430.0,2025-04-29,Menu Revision
-210,3,16,1210.0,1320.0,2026-08-25,Supplier Cost Change
-211,3,17,1110.0,1190.0,2025-06-28,Menu Revision
-212,3,17,1190.0,1290.0,2026-08-16,Market Adjustment
-213,3,18,540.0,590.0,2026-01-26,Menu Revision
-214,3,22,270.0,280.0,2026-08-29,Cost Increase
-215,3,23,420.0,440.0,2025-11-03,Supplier Cost Change
-216,3,24,480.0,450.0,2025-08-22,Cost Increase
-217,3,25,410.0,450.0,2026-06-03,Cost Increase
-218,3,27,340.0,360.0,2026-07-10,Cost Increase
-219,3,27,360.0,380.0,2026-07-20,Seasonal Adjustment
-220,3,27,380.0,420.0,2026-08-26,Seasonal Adjustment
-221,3,28,1390.0,1490.0,2026-01-15,Menu Revision
-222,3,30,750.0,710.0,2026-03-22,Supplier Cost Change
-223,3,30,710.0,750.0,2026-06-04,Seasonal Adjustment
-224,3,31,2010.0,2190.0,2026-06-22,Market Adjustment
-225,3,32,500.0,470.0,2025-07-20,Supplier Cost Change
-226,3,34,260.0,280.0,2025-09-22,Seasonal Adjustment
-227,3,34,280.0,290.0,2025-10-18,Cost Increase
-228,3,35,230.0,240.0,2025-12-11,Menu Revision
-229,3,35,240.0,250.0,2025-12-13,Market Adjustment
-230,3,35,250.0,240.0,2026-04-14,Seasonal Adjustment
-231,3,38,1360.0,1490.0,2025-10-09,Supplier Cost Change
-232,3,39,560.0,610.0,2025-11-08,Seasonal Adjustment
-233,3,40,610.0,630.0,2026-08-05,Market Adjustment
-234,3,46,170.0,160.0,2026-07-30,Menu Revision
-235,3,47,590.0,610.0,2026-04-26,Seasonal Adjustment
-236,3,48,460.0,440.0,2025-05-13,Supplier Cost Change
-237,3,53,1240.0,1310.0,2026-04-09,Cost Increase
-238,3,53,1310.0,1350.0,2026-06-17,Supplier Cost Change
-239,3,56,320.0,340.0,2026-08-15,Seasonal Adjustment
-240,3,58,230.0,250.0,2025-12-29,Seasonal Adjustment
-241,3,59,320.0,350.0,2026-08-21,Supplier Cost Change
-242,3,61,370.0,360.0,2025-09-23,Market Adjustment
-243,3,62,1170.0,1210.0,2025-08-14,Cost Increase
-244,3,64,1110.0,1200.0,2025-12-26,Supplier Cost Change
-245,3,68,210.0,230.0,2025-09-08,Cost Increase
-246,3,68,230.0,250.0,2026-01-15,Supplier Cost Change
-247,3,69,140.0,150.0,2025-11-08,Supplier Cost Change
-248,3,70,500.0,540.0,2026-04-26,Cost Increase
-249,3,70,540.0,510.0,2026-08-22,Seasonal Adjustment
-250,3,71,510.0,550.0,2025-09-19,Market Adjustment
-251,3,71,550.0,530.0,2026-05-17,Seasonal Adjustment
-252,3,76,1680.0,1560.0,2025-06-20,Seasonal Adjustment
-253,3,78,910.0,940.0,2025-08-25,Supplier Cost Change
-254,3,82,320.0,310.0,2026-08-19,Market Adjustment
-255,3,83,210.0,230.0,2026-03-17,Cost Increase
-256,3,83,230.0,240.0,2026-06-15,Menu Revision
-257,3,85,480.0,510.0,2025-04-18,Supplier Cost Change
-258,3,85,510.0,540.0,2026-06-17,Cost Increase
-259,3,88,1210.0,1300.0,2026-04-27,Supplier Cost Change
-260,3,92,320.0,330.0,2026-04-16,Cost Increase
-261,3,96,200.0,210.0,2025-04-26,Market Adjustment
-262,3,97,420.0,460.0,2026-05-25,Supplier Cost Change
-263,3,99,700.0,650.0,2025-10-15,Seasonal Adjustment
-264,3,99,650.0,700.0,2026-04-21,Menu Revision
-265,3,102,600.0,650.0,2025-11-01,Market Adjustment
-266,3,103,1080.0,1160.0,2026-01-25,Seasonal Adjustment
-267,3,103,1160.0,1270.0,2026-08-02,Market Adjustment
-268,3,105,150.0,160.0,2025-10-20,Cost Increase
-269,3,105,160.0,170.0,2026-03-05,Market Adjustment
-270,3,107,430.0,450.0,2026-03-19,Supplier Cost Change
-271,3,107,450.0,480.0,2026-05-01,Market Adjustment
-272,3,108,200.0,210.0,2025-06-13,Menu Revision
-273,3,109,490.0,530.0,2025-08-07,Cost Increase
-274,3,116,390.0,410.0,2026-03-03,Supplier Cost Change
-275,3,122,630.0,660.0,2025-06-05,Seasonal Adjustment
-276,3,126,490.0,510.0,2025-08-24,Market Adjustment
-277,3,131,470.0,490.0,2026-05-14,Cost Increase
-278,3,131,490.0,520.0,2026-06-24,Cost Increase
-279,3,134,1280.0,1380.0,2025-07-09,Market Adjustment
-280,3,134,1380.0,1300.0,2026-07-26,Menu Revision
-281,3,134,1300.0,1380.0,2026-08-19,Seasonal Adjustment
-282,3,136,1100.0,1190.0,2025-08-13,Menu Revision
-283,3,136,1190.0,1270.0,2026-07-19,Menu Revision
-284,3,136,1270.0,1350.0,2026-08-10,Supplier Cost Change
-285,3,137,1350.0,1480.0,2026-06-04,Menu Revision
-286,3,141,250.0,240.0,2026-07-15,Seasonal Adjustment
-287,3,144,430.0,410.0,2025-07-06,Market Adjustment
-288,3,145,660.0,610.0,2025-05-26,Market Adjustment
-289,3,147,370.0,400.0,2026-06-11,Market Adjustment
-290,3,149,390.0,400.0,2025-09-02,Menu Revision
-291,3,149,400.0,370.0,2025-10-27,Market Adjustment
-292,3,149,370.0,390.0,2026-02-12,Seasonal Adjustment
-293,4,4,1210.0,1250.0,2025-11-19,Supplier Cost Change
-294,4,4,1250.0,1290.0,2026-03-19,Market Adjustment
-295,4,5,450.0,480.0,2025-04-20,Cost Increase
-296,4,5,480.0,450.0,2026-05-08,Market Adjustment
-297,4,5,450.0,430.0,2026-05-17,Cost Increase
-298,4,10,320.0,340.0,2026-08-08,Seasonal Adjustment
-299,4,10,340.0,350.0,2026-08-25,Menu Revision
-300,4,12,250.0,270.0,2025-11-20,Menu Revision
-301,4,14,1160.0,1230.0,2025-08-14,Cost Increase
-302,4,17,1230.0,1340.0,2026-01-22,Supplier Cost Change
-303,4,18,610.0,650.0,2025-08-03,Market Adjustment
-304,4,21,120.0,130.0,2025-04-30,Supplier Cost Change
-305,4,22,230.0,240.0,2025-12-12,Cost Increase
-306,4,22,240.0,250.0,2026-04-06,Supplier Cost Change
-307,4,22,250.0,270.0,2026-06-09,Menu Revision
-308,4,23,430.0,450.0,2026-04-21,Supplier Cost Change
-309,4,25,430.0,410.0,2026-07-03,Menu Revision
-310,4,28,1320.0,1420.0,2026-04-19,Menu Revision
-311,4,29,1000.0,1060.0,2025-09-06,Supplier Cost Change
-312,4,34,290.0,310.0,2025-08-03,Cost Increase
-313,4,34,310.0,300.0,2026-04-10,Cost Increase
-314,4,35,220.0,240.0,2026-08-23,Cost Increase
-315,4,37,510.0,540.0,2026-04-27,Cost Increase
-316,4,39,600.0,620.0,2026-08-16,Market Adjustment
-317,4,40,610.0,650.0,2025-05-22,Menu Revision
-318,4,43,1270.0,1350.0,2026-05-06,Menu Revision
-319,4,44,610.0,630.0,2025-09-28,Supplier Cost Change
-320,4,44,630.0,680.0,2026-04-10,Menu Revision
-321,4,44,680.0,710.0,2026-04-27,Menu Revision
-322,4,45,240.0,260.0,2026-02-27,Menu Revision
-323,4,46,160.0,170.0,2026-04-18,Supplier Cost Change
-324,4,49,390.0,420.0,2026-07-09,Supplier Cost Change
-325,4,53,1120.0,1180.0,2025-05-22,Seasonal Adjustment
-326,4,53,1180.0,1220.0,2025-09-20,Seasonal Adjustment
-327,4,62,1110.0,1150.0,2026-01-27,Cost Increase
-328,4,63,380.0,390.0,2025-07-12,Supplier Cost Change
-329,4,65,920.0,980.0,2026-03-18,Menu Revision
-330,4,65,980.0,1010.0,2026-05-17,Seasonal Adjustment
-331,4,67,1140.0,1220.0,2026-03-14,Market Adjustment
-332,4,68,230.0,250.0,2026-02-23,Supplier Cost Change
-333,4,70,390.0,410.0,2026-05-01,Cost Increase
-334,4,70,410.0,420.0,2026-05-10,Menu Revision
-335,4,71,520.0,560.0,2025-11-28,Market Adjustment
-336,4,72,400.0,420.0,2026-06-16,Seasonal Adjustment
-337,4,73,330.0,360.0,2025-11-09,Seasonal Adjustment
-338,4,84,350.0,390.0,2026-05-20,Market Adjustment
-339,4,84,390.0,410.0,2026-08-11,Menu Revision
-340,4,85,500.0,520.0,2025-07-16,Seasonal Adjustment
-341,4,85,520.0,560.0,2026-01-08,Market Adjustment
-342,4,86,1420.0,1330.0,2025-09-02,Market Adjustment
-343,4,86,1330.0,1440.0,2026-02-26,Menu Revision
-344,4,86,1440.0,1560.0,2026-08-08,Supplier Cost Change
-345,4,91,1210.0,1280.0,2025-09-08,Supplier Cost Change
-346,4,92,300.0,330.0,2026-06-12,Market Adjustment
-347,4,94,160.0,170.0,2026-04-30,Menu Revision
-348,4,95,240.0,250.0,2026-08-19,Menu Revision
-349,4,97,410.0,440.0,2025-11-12,Seasonal Adjustment
-350,4,102,700.0,740.0,2025-09-27,Market Adjustment
-351,4,102,740.0,690.0,2026-01-05,Supplier Cost Change
-352,4,103,1400.0,1450.0,2026-08-04,Cost Increase
-353,4,104,530.0,570.0,2025-06-04,Seasonal Adjustment
-354,4,104,570.0,610.0,2026-02-22,Cost Increase
-355,4,104,610.0,650.0,2026-03-10,Menu Revision
-356,4,105,150.0,160.0,2025-10-16,Supplier Cost Change
-357,4,105,160.0,170.0,2026-04-10,Menu Revision
-358,4,109,580.0,620.0,2026-05-21,Market Adjustment
-359,4,110,490.0,520.0,2026-05-21,Supplier Cost Change
-360,4,111,640.0,700.0,2026-08-03,Seasonal Adjustment
-361,4,111,700.0,720.0,2026-08-24,Menu Revision
-362,4,113,740.0,700.0,2025-10-11,Menu Revision
-363,4,113,700.0,670.0,2025-10-12,Seasonal Adjustment
-364,4,115,1560.0,1710.0,2025-12-21,Market Adjustment
-365,4,115,1710.0,1840.0,2026-03-16,Market Adjustment
-366,4,119,240.0,260.0,2026-06-16,Supplier Cost Change
-367,4,122,710.0,660.0,2025-06-29,Market Adjustment
-368,4,124,1110.0,1070.0,2025-07-14,Seasonal Adjustment
-369,4,126,460.0,490.0,2026-03-03,Supplier Cost Change
-370,4,127,1120.0,1180.0,2025-09-28,Cost Increase
-371,4,128,280.0,290.0,2026-05-30,Menu Revision
-372,4,129,100.0,110.0,2026-01-22,Cost Increase
-373,4,130,410.0,440.0,2026-06-23,Supplier Cost Change
-374,4,130,440.0,460.0,2026-08-13,Cost Increase
-375,4,131,490.0,530.0,2026-05-17,Cost Increase
-376,4,133,500.0,460.0,2026-06-14,Cost Increase
-377,4,133,460.0,480.0,2026-08-19,Menu Revision
-378,4,136,1060.0,1140.0,2026-05-20,Supplier Cost Change
-379,4,137,1250.0,1370.0,2026-01-13,Menu Revision
-380,4,137,1370.0,1490.0,2026-05-10,Seasonal Adjustment
-381,4,141,240.0,250.0,2026-08-06,Supplier Cost Change
-382,4,141,250.0,260.0,2026-08-08,Seasonal Adjustment
-383,4,142,330.0,360.0,2026-08-26,Supplier Cost Change
-384,4,143,220.0,240.0,2025-04-10,Market Adjustment
-385,4,147,380.0,410.0,2026-06-02,Cost Increase
-386,4,148,770.0,800.0,2026-06-02,Cost Increase
-387,4,148,800.0,870.0,2026-06-15,Menu Revision
-388,5,2,440.0,470.0,2025-08-24,Market Adjustment
-389,5,5,380.0,420.0,2026-05-27,Menu Revision
-390,5,6,750.0,780.0,2026-08-26,Supplier Cost Change
-391,5,7,1650.0,1730.0,2025-06-09,Supplier Cost Change
-392,5,7,1730.0,1820.0,2026-01-21,Supplier Cost Change
-393,5,14,1120.0,1230.0,2025-07-06,Cost Increase
-394,5,15,510.0,530.0,2025-05-26,Market Adjustment
-395,5,15,530.0,570.0,2025-07-23,Cost Increase
-396,5,18,550.0,600.0,2026-05-31,Cost Increase
-397,5,20,310.0,320.0,2025-08-13,Seasonal Adjustment
-398,5,20,320.0,310.0,2025-11-16,Menu Revision
-399,5,21,120.0,130.0,2025-12-09,Supplier Cost Change
-400,5,21,130.0,140.0,2026-04-19,Menu Revision
-401,5,23,420.0,390.0,2026-03-07,Market Adjustment
-402,5,23,390.0,430.0,2026-05-12,Seasonal Adjustment
-403,5,25,370.0,400.0,2026-06-30,Menu Revision
-404,5,26,1350.0,1480.0,2026-05-29,Market Adjustment
-405,5,27,440.0,480.0,2026-08-08,Market Adjustment
-406,5,28,1300.0,1410.0,2025-05-08,Seasonal Adjustment
-407,5,29,940.0,1030.0,2025-08-21,Cost Increase
-408,5,31,1960.0,2120.0,2025-12-30,Cost Increase
-409,5,33,240.0,250.0,2026-05-23,Menu Revision
-410,5,37,550.0,530.0,2026-03-05,Market Adjustment
-411,5,38,1200.0,1290.0,2026-03-15,Menu Revision
-412,5,38,1290.0,1380.0,2026-06-15,Cost Increase
-413,5,40,510.0,550.0,2025-10-26,Cost Increase
-414,5,40,550.0,600.0,2025-10-30,Supplier Cost Change
-415,5,44,600.0,640.0,2026-02-07,Cost Increase
-416,5,47,530.0,550.0,2026-03-06,Seasonal Adjustment
-417,5,47,550.0,590.0,2026-04-06,Market Adjustment
-418,5,49,390.0,420.0,2026-05-08,Supplier Cost Change
-419,5,49,420.0,460.0,2026-06-22,Supplier Cost Change
-420,5,50,1620.0,1680.0,2026-05-23,Menu Revision
-421,5,51,690.0,750.0,2025-09-26,Supplier Cost Change
-422,5,51,750.0,820.0,2025-10-31,Supplier Cost Change
-423,5,51,820.0,890.0,2026-01-09,Supplier Cost Change
-424,5,53,1390.0,1460.0,2025-12-18,Menu Revision
-425,5,56,350.0,370.0,2026-08-14,Cost Increase
-426,5,60,290.0,310.0,2026-02-07,Menu Revision
-427,5,62,1180.0,1230.0,2026-04-06,Market Adjustment
-428,5,62,1230.0,1140.0,2026-07-25,Cost Increase
-429,5,63,400.0,440.0,2026-08-09,Market Adjustment
-430,5,64,1000.0,1060.0,2025-11-13,Menu Revision
-431,5,64,1060.0,1130.0,2026-05-08,Menu Revision
-432,5,64,1130.0,1170.0,2026-06-27,Menu Revision
-433,5,65,1050.0,970.0,2026-01-24,Menu Revision
-434,5,67,1120.0,1190.0,2026-03-27,Seasonal Adjustment
-435,5,67,1190.0,1290.0,2026-04-26,Market Adjustment
-436,5,68,270.0,280.0,2026-08-14,Menu Revision
-437,5,72,400.0,430.0,2026-04-11,Seasonal Adjustment
-438,5,74,1350.0,1290.0,2026-06-30,Seasonal Adjustment
-439,5,76,1300.0,1430.0,2025-11-24,Market Adjustment
-440,5,78,890.0,970.0,2025-06-18,Cost Increase
-441,5,78,970.0,1030.0,2025-11-04,Menu Revision
-442,5,82,250.0,280.0,2025-10-20,Supplier Cost Change
-443,5,83,260.0,270.0,2026-02-05,Supplier Cost Change
-444,5,84,400.0,430.0,2025-12-28,Market Adjustment
-445,5,86,1540.0,1460.0,2025-05-11,Cost Increase
-446,5,86,1460.0,1580.0,2025-09-20,Cost Increase
-447,5,87,350.0,360.0,2026-05-20,Market Adjustment
-448,5,87,360.0,390.0,2026-06-07,Seasonal Adjustment
-449,5,88,1460.0,1400.0,2025-07-28,Market Adjustment
-450,5,89,550.0,590.0,2026-01-04,Cost Increase
-451,5,89,590.0,620.0,2026-01-31,Seasonal Adjustment
-452,5,89,620.0,640.0,2026-07-15,Menu Revision
-453,5,96,210.0,200.0,2025-06-26,Cost Increase
-454,5,96,200.0,220.0,2026-03-12,Seasonal Adjustment
-455,5,97,390.0,420.0,2026-05-02,Cost Increase
-456,5,97,420.0,450.0,2026-07-05,Market Adjustment
-457,5,100,800.0,850.0,2026-04-12,Market Adjustment
-458,5,101,1120.0,1190.0,2025-11-12,Menu Revision
-459,5,102,810.0,760.0,2025-11-10,Seasonal Adjustment
-460,5,104,510.0,550.0,2026-05-16,Supplier Cost Change
-461,5,106,310.0,340.0,2026-03-17,Cost Increase
-462,5,109,510.0,540.0,2025-09-30,Menu Revision
-463,5,111,870.0,820.0,2026-07-17,Supplier Cost Change
-464,5,113,630.0,680.0,2026-06-15,Market Adjustment
-465,5,114,860.0,900.0,2025-10-27,Supplier Cost Change
-466,5,116,350.0,380.0,2026-06-28,Supplier Cost Change
-467,5,121,340.0,330.0,2026-07-07,Supplier Cost Change
-468,5,123,500.0,480.0,2025-11-13,Menu Revision
-469,5,123,480.0,500.0,2026-03-11,Menu Revision
-470,5,124,960.0,1040.0,2025-07-08,Cost Increase
-471,5,124,1040.0,1010.0,2026-01-13,Supplier Cost Change
-472,5,124,1010.0,1050.0,2026-05-06,Seasonal Adjustment
-473,5,126,510.0,490.0,2026-04-24,Market Adjustment
-474,5,127,1250.0,1170.0,2025-08-28,Cost Increase
-475,5,128,320.0,330.0,2026-08-18,Cost Increase
-476,5,131,480.0,510.0,2026-03-22,Seasonal Adjustment
-477,5,131,510.0,490.0,2026-04-18,Market Adjustment
-478,5,132,360.0,330.0,2026-03-22,Market Adjustment
-479,5,135,690.0,640.0,2025-06-07,Seasonal Adjustment
-480,5,136,1310.0,1220.0,2025-05-22,Supplier Cost Change
-481,5,138,970.0,1030.0,2025-10-13,Seasonal Adjustment
-482,5,139,1760.0,1880.0,2026-08-29,Supplier Cost Change
-483,5,142,310.0,340.0,2025-11-06,Market Adjustment
-484,5,142,340.0,360.0,2026-05-12,Seasonal Adjustment
-485,5,143,230.0,250.0,2026-03-29,Cost Increase
-486,5,144,380.0,410.0,2026-05-22,Supplier Cost Change
-487,5,146,760.0,820.0,2026-02-10,Menu Revision
-488,5,147,490.0,460.0,2026-03-09,Menu Revision
-489,5,147,460.0,480.0,2026-04-06,Seasonal Adjustment
-490,5,147,480.0,460.0,2026-08-02,Market Adjustment
-491,6,2,470.0,510.0,2025-04-05,Cost Increase
-492,6,2,510.0,560.0,2026-07-10,Menu Revision
-493,6,5,410.0,440.0,2025-10-15,Cost Increase
-494,6,5,440.0,470.0,2026-07-18,Cost Increase
-495,6,6,700.0,760.0,2026-08-08,Supplier Cost Change
-496,6,8,540.0,500.0,2025-08-25,Menu Revision
-497,6,10,470.0,450.0,2026-06-29,Market Adjustment
-498,6,10,450.0,420.0,2026-08-15,Supplier Cost Change
-499,6,14,1100.0,1150.0,2025-11-19,Menu Revision
-500,6,14,1150.0,1230.0,2026-07-31,Menu Revision
-501,6,15,560.0,600.0,2025-10-01,Market Adjustment
-502,6,19,920.0,1010.0,2026-08-25,Cost Increase
-503,6,20,220.0,240.0,2025-11-12,Seasonal Adjustment
-504,6,20,240.0,260.0,2026-03-05,Cost Increase
-505,6,24,410.0,430.0,2025-11-13,Market Adjustment
-506,6,24,430.0,440.0,2026-07-26,Supplier Cost Change
-507,6,25,400.0,420.0,2026-08-06,Menu Revision
-508,6,27,460.0,440.0,2026-07-12,Cost Increase
-509,6,27,440.0,470.0,2026-08-08,Supplier Cost Change
-510,6,30,710.0,750.0,2026-08-21,Seasonal Adjustment
-511,6,32,420.0,450.0,2025-11-01,Seasonal Adjustment
-512,6,38,1430.0,1490.0,2025-08-12,Seasonal Adjustment
-513,6,40,650.0,670.0,2025-09-04,Market Adjustment
-514,6,48,420.0,440.0,2025-05-05,Cost Increase
-515,6,52,1360.0,1410.0,2025-12-14,Cost Increase
-516,6,53,1170.0,1280.0,2025-09-01,Market Adjustment
-517,6,56,260.0,280.0,2025-08-07,Menu Revision
-518,6,56,280.0,310.0,2026-01-16,Seasonal Adjustment
-519,6,57,210.0,230.0,2025-08-26,Cost Increase
-520,6,57,230.0,240.0,2026-03-07,Seasonal Adjustment
-521,6,63,410.0,440.0,2025-10-14,Supplier Cost Change
-522,6,65,960.0,1000.0,2026-04-11,Supplier Cost Change
-523,6,65,1000.0,1090.0,2026-05-16,Supplier Cost Change
-524,6,74,1240.0,1190.0,2026-04-07,Supplier Cost Change
-525,6,74,1190.0,1270.0,2026-07-14,Seasonal Adjustment
-526,6,75,760.0,790.0,2026-08-28,Cost Increase
-527,6,76,1610.0,1710.0,2025-07-01,Market Adjustment
-528,6,77,640.0,600.0,2026-02-16,Seasonal Adjustment
-529,6,77,600.0,640.0,2026-07-25,Menu Revision
-530,6,78,950.0,1000.0,2025-12-10,Seasonal Adjustment
-531,6,78,1000.0,1060.0,2026-08-09,Market Adjustment
-532,6,79,1730.0,1900.0,2026-05-09,Supplier Cost Change
-533,6,79,1900.0,2040.0,2026-06-25,Cost Increase
-534,6,81,210.0,220.0,2026-08-10,Market Adjustment
-535,6,84,380.0,400.0,2026-07-05,Supplier Cost Change
-536,6,87,400.0,380.0,2026-05-06,Menu Revision
-537,6,88,1150.0,1220.0,2025-04-03,Menu Revision
-538,6,88,1220.0,1270.0,2026-05-30,Seasonal Adjustment
-539,6,90,750.0,790.0,2026-06-11,Supplier Cost Change
-540,6,91,1220.0,1290.0,2026-02-05,Market Adjustment
-541,6,92,320.0,340.0,2026-05-17,Cost Increase
-542,6,92,340.0,370.0,2026-08-07,Supplier Cost Change
-543,6,96,210.0,220.0,2025-04-21,Seasonal Adjustment
-544,6,97,450.0,430.0,2025-11-08,Menu Revision
-545,6,97,430.0,460.0,2026-06-09,Supplier Cost Change
-546,6,98,480.0,520.0,2025-05-30,Cost Increase
-547,6,105,140.0,150.0,2026-02-08,Cost Increase
-548,6,105,150.0,160.0,2026-03-21,Cost Increase
-549,6,105,160.0,170.0,2026-07-13,Supplier Cost Change
-550,6,109,480.0,510.0,2025-10-11,Supplier Cost Change
-551,6,109,510.0,530.0,2025-10-15,Menu Revision
-552,6,109,530.0,580.0,2025-12-12,Market Adjustment
-553,6,112,520.0,570.0,2025-05-28,Cost Increase
-554,6,114,930.0,990.0,2026-03-04,Seasonal Adjustment
-555,6,114,990.0,1050.0,2026-05-14,Seasonal Adjustment
-556,6,115,1660.0,1740.0,2026-04-06,Menu Revision
-557,6,121,300.0,330.0,2026-05-01,Cost Increase
-558,6,127,1060.0,1100.0,2025-06-01,Seasonal Adjustment
-559,6,127,1100.0,1150.0,2025-10-14,Market Adjustment
-560,6,131,450.0,430.0,2026-01-27,Menu Revision
-561,6,131,430.0,470.0,2026-03-06,Seasonal Adjustment
-562,6,133,380.0,410.0,2025-04-06,Supplier Cost Change
-563,6,133,410.0,440.0,2026-04-26,Market Adjustment
-564,6,135,690.0,730.0,2026-03-14,Cost Increase
-565,6,137,1410.0,1540.0,2026-05-21,Market Adjustment
-566,6,137,1540.0,1480.0,2026-07-22,Seasonal Adjustment
-567,6,139,1620.0,1710.0,2025-09-14,Supplier Cost Change
-568,6,140,220.0,230.0,2025-07-22,Market Adjustment
-569,6,141,270.0,260.0,2026-07-23,Supplier Cost Change
-570,6,142,350.0,360.0,2025-04-24,Supplier Cost Change
-571,6,145,630.0,590.0,2025-11-16,Menu Revision
-572,6,146,830.0,890.0,2026-02-26,Market Adjustment
-573,6,150,970.0,1000.0,2026-01-24,Market Adjustment
-574,7,1,630.0,690.0,2026-07-18,Supplier Cost Change
-575,7,2,480.0,510.0,2026-07-26,Supplier Cost Change
-576,7,4,1290.0,1400.0,2026-05-27,Supplier Cost Change
-577,7,4,1400.0,1500.0,2026-06-21,Supplier Cost Change
-578,7,6,640.0,690.0,2026-07-25,Seasonal Adjustment
-579,7,8,480.0,460.0,2026-07-13,Supplier Cost Change
-580,7,10,360.0,390.0,2026-08-15,Seasonal Adjustment
-581,7,15,510.0,540.0,2026-06-14,Seasonal Adjustment
-582,7,15,540.0,580.0,2026-07-22,Supplier Cost Change
-583,7,19,1020.0,1050.0,2026-08-17,Menu Revision
-584,7,22,260.0,290.0,2026-06-24,Cost Increase
-585,7,22,290.0,280.0,2026-07-05,Cost Increase
-586,7,25,370.0,400.0,2026-06-11,Supplier Cost Change
-587,7,25,400.0,420.0,2026-08-08,Supplier Cost Change
-588,7,34,270.0,280.0,2026-07-07,Menu Revision
-589,7,35,270.0,250.0,2026-05-25,Seasonal Adjustment
-590,7,36,300.0,320.0,2026-06-09,Supplier Cost Change
-591,7,37,490.0,470.0,2026-06-05,Cost Increase
-592,7,37,470.0,500.0,2026-07-03,Cost Increase
-593,7,37,500.0,530.0,2026-08-17,Seasonal Adjustment
-594,7,42,940.0,1020.0,2026-08-28,Seasonal Adjustment
-595,7,44,600.0,660.0,2026-06-14,Seasonal Adjustment
-596,7,44,660.0,700.0,2026-08-23,Cost Increase
-597,7,52,1190.0,1250.0,2026-06-14,Supplier Cost Change
-598,7,52,1250.0,1210.0,2026-07-10,Seasonal Adjustment
-599,7,55,870.0,930.0,2026-07-15,Cost Increase
-600,7,55,930.0,980.0,2026-08-25,Seasonal Adjustment
-601,7,55,980.0,1050.0,2026-08-30,Market Adjustment
-602,7,57,230.0,240.0,2026-06-08,Seasonal Adjustment
-603,7,57,240.0,260.0,2026-07-05,Menu Revision
-604,7,57,260.0,270.0,2026-08-19,Market Adjustment
-605,7,59,330.0,340.0,2026-08-31,Market Adjustment
-606,7,62,1160.0,1230.0,2026-07-21,Cost Increase
-607,7,64,1270.0,1210.0,2026-08-18,Market Adjustment
-608,7,65,970.0,1010.0,2026-08-18,Market Adjustment
-609,7,65,1010.0,950.0,2026-08-30,Market Adjustment
-610,7,66,970.0,1060.0,2026-06-04,Cost Increase
-611,7,69,130.0,140.0,2026-05-21,Cost Increase
-612,7,70,470.0,490.0,2026-05-25,Seasonal Adjustment
-613,7,70,490.0,510.0,2026-06-30,Menu Revision
-614,7,70,510.0,490.0,2026-07-09,Supplier Cost Change
-615,7,72,380.0,420.0,2026-05-14,Menu Revision
-616,7,72,420.0,450.0,2026-08-16,Seasonal Adjustment
-617,7,73,300.0,310.0,2026-08-17,Seasonal Adjustment
-618,7,82,270.0,290.0,2026-07-29,Supplier Cost Change
-619,7,83,250.0,240.0,2026-08-08,Menu Revision
-620,7,83,240.0,260.0,2026-08-27,Menu Revision
-621,7,92,340.0,350.0,2026-08-06,Market Adjustment
-622,7,95,260.0,270.0,2026-07-19,Cost Increase
-623,7,97,430.0,450.0,2026-05-31,Market Adjustment
-624,7,99,680.0,740.0,2026-05-27,Supplier Cost Change
-625,7,100,790.0,840.0,2026-07-28,Market Adjustment
-626,7,100,840.0,790.0,2026-08-11,Menu Revision
-627,7,107,390.0,420.0,2026-06-30,Market Adjustment
-628,7,108,160.0,170.0,2026-06-02,Cost Increase
-629,7,108,170.0,190.0,2026-06-20,Supplier Cost Change
-630,7,110,530.0,570.0,2026-08-18,Supplier Cost Change
-631,7,112,510.0,530.0,2026-05-16,Menu Revision
-632,7,115,1670.0,1800.0,2026-07-07,Seasonal Adjustment
-633,7,116,350.0,370.0,2026-08-08,Cost Increase
-634,7,117,210.0,220.0,2026-07-01,Cost Increase
-635,7,117,220.0,240.0,2026-07-26,Supplier Cost Change
-636,7,122,560.0,590.0,2026-05-11,Supplier Cost Change
-637,7,122,590.0,570.0,2026-05-17,Market Adjustment
-638,7,123,420.0,450.0,2026-07-28,Seasonal Adjustment
-639,7,123,450.0,490.0,2026-08-08,Market Adjustment
-640,7,126,530.0,560.0,2026-05-25,Seasonal Adjustment
-641,7,126,560.0,540.0,2026-06-23,Cost Increase
-642,7,129,110.0,120.0,2026-07-22,Menu Revision
-643,7,130,480.0,500.0,2026-07-20,Market Adjustment
-644,7,131,430.0,460.0,2026-07-15,Supplier Cost Change
-645,7,133,410.0,440.0,2026-05-12,Supplier Cost Change
-646,7,134,1300.0,1380.0,2026-08-07,Supplier Cost Change
-647,7,135,710.0,740.0,2026-06-02,Seasonal Adjustment
-648,7,137,1470.0,1360.0,2026-06-12,Supplier Cost Change
-649,7,138,900.0,960.0,2026-06-20,Menu Revision
-650,7,138,960.0,990.0,2026-08-13,Market Adjustment
-651,7,139,1650.0,1760.0,2026-06-06,Supplier Cost Change
-652,7,141,230.0,240.0,2026-07-10,Supplier Cost Change
-653,7,146,770.0,810.0,2026-05-27,Market Adjustment
-654,7,147,450.0,460.0,2026-06-22,Market Adjustment
-655,7,147,460.0,440.0,2026-08-09,Seasonal Adjustment
-656,7,148,810.0,870.0,2026-05-16,Supplier Cost Change
-657,7,150,920.0,990.0,2026-07-10,Menu Revision
-658,8,4,1480.0,1570.0,2025-09-16,Menu Revision
-659,8,4,1570.0,1450.0,2026-01-08,Market Adjustment
-660,8,6,690.0,740.0,2026-08-31,Seasonal Adjustment
-661,8,9,270.0,250.0,2026-05-30,Menu Revision
-662,8,10,350.0,380.0,2026-08-11,Supplier Cost Change
-663,8,11,460.0,440.0,2026-08-05,Menu Revision
-664,8,13,240.0,250.0,2026-07-03,Market Adjustment
-665,8,16,1350.0,1400.0,2025-07-31,Menu Revision
-666,8,17,1080.0,1170.0,2026-08-24,Supplier Cost Change
-667,8,18,530.0,550.0,2025-09-17,Seasonal Adjustment
-668,8,21,130.0,120.0,2026-04-26,Menu Revision
-669,8,21,120.0,130.0,2026-06-10,Menu Revision
-670,8,22,250.0,260.0,2026-04-25,Supplier Cost Change
-671,8,25,390.0,420.0,2026-06-02,Market Adjustment
-672,8,26,1350.0,1430.0,2026-06-13,Seasonal Adjustment
-673,8,26,1430.0,1520.0,2026-08-07,Seasonal Adjustment
-674,8,29,930.0,1020.0,2025-04-24,Cost Increase
-675,8,29,1020.0,1060.0,2026-03-05,Menu Revision
-676,8,32,420.0,440.0,2025-05-22,Cost Increase
-677,8,33,230.0,240.0,2025-11-20,Market Adjustment
-678,8,35,260.0,250.0,2026-03-08,Seasonal Adjustment
-679,8,35,250.0,270.0,2026-07-27,Market Adjustment
-680,8,36,250.0,270.0,2026-06-27,Seasonal Adjustment
-681,8,37,580.0,530.0,2026-01-30,Menu Revision
-682,8,38,1360.0,1410.0,2025-05-22,Seasonal Adjustment
-683,8,38,1410.0,1480.0,2026-06-11,Seasonal Adjustment
-684,8,38,1480.0,1390.0,2026-08-04,Market Adjustment
-685,8,41,720.0,790.0,2025-11-28,Menu Revision
-686,8,41,790.0,860.0,2026-02-12,Supplier Cost Change
-687,8,42,910.0,970.0,2026-01-27,Seasonal Adjustment
-688,8,42,970.0,1050.0,2026-08-02,Menu Revision
-689,8,43,1720.0,1610.0,2025-06-12,Market Adjustment
-690,8,43,1610.0,1560.0,2026-03-19,Market Adjustment
-691,8,43,1560.0,1450.0,2026-05-23,Market Adjustment
-692,8,45,250.0,270.0,2025-05-22,Cost Increase
-693,8,46,170.0,180.0,2026-05-23,Market Adjustment
-694,8,46,180.0,190.0,2026-06-21,Seasonal Adjustment
-695,8,46,190.0,180.0,2026-08-28,Market Adjustment
-696,8,51,780.0,850.0,2026-07-06,Seasonal Adjustment
-697,8,54,880.0,950.0,2025-12-11,Cost Increase
-698,8,55,960.0,1010.0,2026-03-20,Seasonal Adjustment
-699,8,55,1010.0,1040.0,2026-05-03,Market Adjustment
-700,8,55,1040.0,1100.0,2026-05-29,Supplier Cost Change
-701,8,57,240.0,260.0,2025-11-02,Seasonal Adjustment
-702,8,58,260.0,270.0,2025-08-04,Market Adjustment
-703,8,61,270.0,290.0,2025-04-07,Menu Revision
-704,8,61,290.0,310.0,2026-05-01,Supplier Cost Change
-705,8,61,310.0,330.0,2026-08-25,Cost Increase
-706,8,63,390.0,430.0,2025-08-10,Cost Increase
-707,8,63,430.0,450.0,2025-09-12,Cost Increase
-708,8,68,270.0,250.0,2025-06-29,Market Adjustment
-709,8,68,250.0,270.0,2025-08-07,Menu Revision
-710,8,70,420.0,440.0,2026-07-02,Supplier Cost Change
-711,8,72,440.0,460.0,2026-06-13,Supplier Cost Change
-712,8,72,460.0,430.0,2026-07-21,Supplier Cost Change
-713,8,72,430.0,450.0,2026-08-20,Market Adjustment
-714,8,75,800.0,860.0,2025-10-26,Cost Increase
-715,8,79,1740.0,1900.0,2026-01-26,Market Adjustment
-716,8,79,1900.0,2030.0,2026-02-14,Supplier Cost Change
-717,8,81,250.0,260.0,2026-08-24,Cost Increase
-718,8,86,1670.0,1820.0,2025-09-09,Cost Increase
-719,8,87,380.0,360.0,2026-07-21,Market Adjustment
-720,8,87,360.0,370.0,2026-08-28,Supplier Cost Change
-721,8,92,410.0,390.0,2026-05-02,Cost Increase
-722,8,92,390.0,370.0,2026-06-30,Cost Increase
-723,8,93,240.0,250.0,2025-07-14,Market Adjustment
-724,8,97,450.0,460.0,2026-01-05,Cost Increase
-725,8,97,460.0,480.0,2026-04-06,Supplier Cost Change
-726,8,99,690.0,720.0,2026-03-08,Seasonal Adjustment
-727,8,100,850.0,810.0,2026-08-31,Supplier Cost Change
-728,8,104,650.0,710.0,2025-05-21,Supplier Cost Change
-729,8,104,710.0,660.0,2026-05-19,Supplier Cost Change
-730,8,105,140.0,150.0,2025-04-28,Supplier Cost Change
-731,8,106,300.0,310.0,2026-07-21,Cost Increase
-732,8,106,310.0,320.0,2026-07-26,Market Adjustment
-733,8,108,190.0,210.0,2025-11-26,Supplier Cost Change
-734,8,111,740.0,790.0,2026-06-22,Seasonal Adjustment
-735,8,112,660.0,610.0,2026-02-17,Market Adjustment
-736,8,115,1560.0,1630.0,2025-06-21,Cost Increase
-737,8,116,350.0,360.0,2025-10-07,Cost Increase
-738,8,121,280.0,290.0,2026-07-29,Supplier Cost Change
-739,8,127,1190.0,1240.0,2025-07-30,Cost Increase
-740,8,131,400.0,440.0,2026-06-06,Seasonal Adjustment
-741,8,131,440.0,470.0,2026-07-20,Market Adjustment
-742,8,133,460.0,430.0,2025-08-02,Menu Revision
-743,8,133,430.0,470.0,2026-07-27,Market Adjustment
-744,8,134,1280.0,1360.0,2025-05-02,Seasonal Adjustment
-745,8,138,960.0,1010.0,2026-05-14,Seasonal Adjustment
-746,8,144,410.0,450.0,2025-10-28,Menu Revision
-747,8,146,650.0,690.0,2026-02-15,Supplier Cost Change
-748,8,146,690.0,730.0,2026-07-16,Seasonal Adjustment
-749,8,146,730.0,780.0,2026-07-19,Menu Revision
-750,8,147,380.0,400.0,2026-07-07,Seasonal Adjustment
-751,9,2,470.0,490.0,2025-09-08,Seasonal Adjustment
-752,9,4,1440.0,1340.0,2025-10-17,Cost Increase
-753,9,4,1340.0,1460.0,2025-11-14,Cost Increase
-754,9,6,670.0,700.0,2026-08-03,Supplier Cost Change
-755,9,6,700.0,660.0,2026-08-04,Cost Increase
-756,9,6,660.0,720.0,2026-08-28,Seasonal Adjustment
-757,9,7,1410.0,1530.0,2025-04-12,Seasonal Adjustment
-758,9,7,1530.0,1620.0,2026-01-31,Cost Increase
-759,9,7,1620.0,1700.0,2026-08-12,Seasonal Adjustment
-760,9,8,480.0,510.0,2025-09-30,Cost Increase
-761,9,9,220.0,230.0,2026-06-12,Menu Revision
-762,9,10,400.0,410.0,2026-06-24,Menu Revision
-763,9,11,510.0,470.0,2026-01-09,Menu Revision
-764,9,12,270.0,290.0,2025-12-20,Seasonal Adjustment
-765,9,12,290.0,310.0,2026-03-03,Cost Increase
-766,9,16,1250.0,1190.0,2025-06-08,Menu Revision
-767,9,24,450.0,420.0,2026-02-09,Menu Revision
-768,9,27,400.0,420.0,2026-07-25,Supplier Cost Change
-769,9,28,1290.0,1380.0,2026-02-04,Seasonal Adjustment
-770,9,29,1080.0,1020.0,2026-07-16,Cost Increase
-771,9,30,690.0,650.0,2026-01-30,Supplier Cost Change
-772,9,30,650.0,620.0,2026-02-24,Seasonal Adjustment
-773,9,30,620.0,670.0,2026-03-30,Market Adjustment
-774,9,32,440.0,460.0,2026-02-02,Seasonal Adjustment
-775,9,34,260.0,270.0,2026-08-24,Cost Increase
-776,9,36,260.0,280.0,2025-12-11,Menu Revision
-777,9,38,1330.0,1410.0,2025-06-30,Cost Increase
-778,9,40,680.0,720.0,2025-06-13,Supplier Cost Change
-779,9,43,1290.0,1370.0,2026-01-03,Seasonal Adjustment
-780,9,43,1370.0,1490.0,2026-07-18,Cost Increase
-781,9,44,740.0,710.0,2026-07-23,Supplier Cost Change
-782,9,45,250.0,260.0,2025-08-31,Seasonal Adjustment
-783,9,45,260.0,280.0,2026-05-13,Seasonal Adjustment
-784,9,47,530.0,570.0,2026-05-11,Cost Increase
-785,9,47,570.0,610.0,2026-05-31,Cost Increase
-786,9,51,690.0,740.0,2025-10-19,Market Adjustment
-787,9,51,740.0,790.0,2026-02-08,Market Adjustment
-788,9,53,1380.0,1420.0,2026-01-08,Cost Increase
-789,9,56,330.0,310.0,2025-06-22,Market Adjustment
-790,9,57,220.0,230.0,2025-05-04,Seasonal Adjustment
-791,9,57,230.0,240.0,2026-06-13,Market Adjustment
-792,9,59,340.0,320.0,2026-05-01,Market Adjustment
-793,9,60,320.0,300.0,2025-07-02,Menu Revision
-794,9,67,1220.0,1130.0,2025-10-28,Supplier Cost Change
-795,9,67,1130.0,1240.0,2025-11-29,Menu Revision
-796,9,68,210.0,230.0,2025-08-10,Cost Increase
-797,9,68,230.0,250.0,2025-10-18,Menu Revision
-798,9,71,520.0,540.0,2025-08-16,Cost Increase
-799,9,73,280.0,300.0,2025-04-27,Menu Revision
-800,9,73,300.0,330.0,2026-04-07,Cost Increase
-801,9,74,1160.0,1240.0,2026-03-04,Seasonal Adjustment
-802,9,74,1240.0,1310.0,2026-04-01,Seasonal Adjustment
-803,9,75,790.0,820.0,2026-02-28,Market Adjustment
-804,9,76,1360.0,1490.0,2025-07-30,Supplier Cost Change
-805,9,79,1970.0,2070.0,2026-05-07,Cost Increase
-806,9,79,2070.0,2010.0,2026-06-14,Seasonal Adjustment
-807,9,80,390.0,410.0,2026-03-08,Cost Increase
-808,9,80,410.0,380.0,2026-03-19,Supplier Cost Change
-809,9,84,450.0,480.0,2025-09-21,Menu Revision
-810,9,84,480.0,460.0,2026-06-24,Cost Increase
-811,9,85,500.0,530.0,2026-08-30,Market Adjustment
-812,9,86,1520.0,1660.0,2025-07-04,Seasonal Adjustment
-813,9,86,1660.0,1740.0,2025-11-13,Seasonal Adjustment
-814,9,87,290.0,310.0,2026-07-17,Cost Increase
-815,9,87,310.0,340.0,2026-08-30,Supplier Cost Change
-816,9,91,1110.0,1220.0,2025-11-06,Supplier Cost Change
-817,9,91,1220.0,1270.0,2026-04-21,Market Adjustment
-818,9,91,1270.0,1320.0,2026-08-22,Seasonal Adjustment
-819,9,92,340.0,370.0,2026-07-22,Supplier Cost Change
-820,9,93,190.0,210.0,2026-01-24,Market Adjustment
-821,9,97,540.0,500.0,2026-06-05,Seasonal Adjustment
-822,9,99,720.0,680.0,2025-12-07,Cost Increase
-823,9,99,680.0,700.0,2025-12-17,Cost Increase
-824,9,100,720.0,780.0,2026-03-01,Market Adjustment
-825,9,100,780.0,850.0,2026-05-30,Cost Increase
-826,9,111,680.0,710.0,2026-07-30,Cost Increase
-827,9,114,990.0,1040.0,2025-09-28,Cost Increase
-828,9,115,1620.0,1770.0,2026-05-18,Menu Revision
-829,9,116,350.0,380.0,2026-06-03,Menu Revision
-830,9,121,300.0,320.0,2026-05-20,Supplier Cost Change
-831,9,124,960.0,1040.0,2025-08-02,Cost Increase
-832,9,125,1170.0,1270.0,2025-09-06,Supplier Cost Change
-833,9,125,1270.0,1320.0,2025-09-18,Seasonal Adjustment
-834,9,125,1320.0,1390.0,2026-07-16,Menu Revision
-835,9,126,500.0,520.0,2025-06-12,Supplier Cost Change
-836,9,127,1230.0,1330.0,2026-05-15,Supplier Cost Change
-837,9,128,280.0,310.0,2026-06-22,Supplier Cost Change
-838,9,129,100.0,110.0,2025-10-23,Seasonal Adjustment
-839,9,131,470.0,520.0,2026-08-16,Market Adjustment
-840,9,132,300.0,320.0,2026-08-11,Supplier Cost Change
-841,9,133,420.0,450.0,2025-08-07,Seasonal Adjustment
-842,9,136,1110.0,1150.0,2025-10-23,Seasonal Adjustment
-843,9,136,1150.0,1260.0,2026-05-01,Cost Increase
-844,9,138,950.0,990.0,2025-07-23,Supplier Cost Change
-845,9,138,990.0,1040.0,2026-03-19,Market Adjustment
-846,9,138,1040.0,990.0,2026-04-27,Market Adjustment
-847,9,140,230.0,240.0,2026-01-05,Menu Revision
-848,9,140,240.0,260.0,2026-06-05,Cost Increase
-849,9,141,210.0,220.0,2026-06-20,Market Adjustment
-850,9,141,220.0,230.0,2026-08-16,Market Adjustment
-851,9,143,280.0,270.0,2026-03-12,Menu Revision
-852,9,145,580.0,630.0,2025-12-08,Supplier Cost Change
-853,9,148,990.0,1030.0,2026-04-19,Cost Increase
-854,9,148,1030.0,1070.0,2026-05-19,Menu Revision
-855,9,148,1070.0,1000.0,2026-08-16,Supplier Cost Change
-856,9,150,990.0,1040.0,2025-11-22,Seasonal Adjustment
-857,10,7,1510.0,1630.0,2026-01-20,Supplier Cost Change
-858,10,9,200.0,210.0,2025-06-15,Cost Increase
-859,10,9,210.0,230.0,2025-12-05,Menu Revision
-860,10,9,230.0,240.0,2026-03-26,Menu Revision
-861,10,11,440.0,460.0,2025-12-31,Supplier Cost Change
-862,10,13,260.0,280.0,2026-08-20,Seasonal Adjustment
-863,10,14,1190.0,1230.0,2025-09-16,Menu Revision
-864,10,14,1230.0,1270.0,2026-04-01,Market Adjustment
-865,10,16,1140.0,1230.0,2026-01-04,Menu Revision
-866,10,17,1270.0,1380.0,2026-05-11,Menu Revision
-867,10,18,580.0,610.0,2025-07-08,Cost Increase
-868,10,22,270.0,280.0,2025-10-01,Supplier Cost Change
-869,10,24,450.0,420.0,2025-11-14,Supplier Cost Change
-870,10,27,400.0,430.0,2026-08-21,Menu Revision
-871,10,32,470.0,440.0,2026-03-23,Supplier Cost Change
-872,10,32,440.0,460.0,2026-07-10,Menu Revision
-873,10,33,230.0,240.0,2026-05-17,Market Adjustment
-874,10,35,250.0,260.0,2025-05-29,Cost Increase
-875,10,43,1390.0,1440.0,2026-04-14,Cost Increase
-876,10,44,680.0,730.0,2026-01-26,Market Adjustment
-877,10,45,260.0,280.0,2026-08-31,Cost Increase
-878,10,50,1590.0,1690.0,2026-04-12,Supplier Cost Change
-879,10,51,750.0,810.0,2026-04-17,Seasonal Adjustment
-880,10,51,810.0,860.0,2026-05-01,Seasonal Adjustment
-881,10,51,860.0,890.0,2026-07-28,Market Adjustment
-882,10,53,1250.0,1350.0,2026-06-22,Supplier Cost Change
-883,10,55,1060.0,1100.0,2026-08-03,Menu Revision
-884,10,56,300.0,330.0,2026-03-12,Seasonal Adjustment
-885,10,57,240.0,260.0,2026-04-11,Market Adjustment
-886,10,60,290.0,310.0,2025-08-20,Seasonal Adjustment
-887,10,60,310.0,330.0,2026-01-09,Seasonal Adjustment
-888,10,61,300.0,330.0,2025-11-18,Supplier Cost Change
-889,10,67,1000.0,1090.0,2025-10-07,Seasonal Adjustment
-890,10,67,1090.0,1150.0,2025-11-04,Cost Increase
-891,10,67,1150.0,1210.0,2026-01-16,Supplier Cost Change
-892,10,73,320.0,350.0,2025-12-16,Seasonal Adjustment
-893,10,74,1360.0,1430.0,2026-07-28,Menu Revision
-894,10,76,1370.0,1470.0,2025-07-06,Supplier Cost Change
-895,10,76,1470.0,1530.0,2025-07-24,Menu Revision
-896,10,76,1530.0,1670.0,2026-04-28,Supplier Cost Change
-897,10,77,620.0,600.0,2025-04-05,Cost Increase
-898,10,79,1850.0,1940.0,2026-06-25,Market Adjustment
-899,10,81,240.0,220.0,2026-06-26,Supplier Cost Change
-900,10,81,220.0,240.0,2026-07-27,Menu Revision
-901,10,82,270.0,280.0,2026-04-11,Menu Revision
-902,10,86,1760.0,1820.0,2026-08-17,Supplier Cost Change
-903,10,87,340.0,360.0,2026-05-26,Seasonal Adjustment
-904,10,90,740.0,810.0,2025-08-18,Supplier Cost Change
-905,10,97,440.0,470.0,2025-07-24,Supplier Cost Change
-906,10,100,840.0,800.0,2026-04-18,Menu Revision
-907,10,100,800.0,880.0,2026-07-11,Menu Revision
-908,10,102,660.0,720.0,2025-06-30,Seasonal Adjustment
-909,10,103,1400.0,1440.0,2025-09-05,Supplier Cost Change
-910,10,106,340.0,360.0,2026-06-13,Market Adjustment
-911,10,108,180.0,200.0,2026-08-07,Seasonal Adjustment
-912,10,109,600.0,630.0,2025-06-12,Cost Increase
-913,10,110,550.0,580.0,2026-03-28,Seasonal Adjustment
-914,10,110,580.0,620.0,2026-04-30,Menu Revision
-915,10,112,490.0,520.0,2025-10-09,Seasonal Adjustment
-916,10,112,520.0,550.0,2026-03-12,Market Adjustment
-917,10,113,600.0,620.0,2025-12-26,Menu Revision
-918,10,117,240.0,230.0,2025-06-17,Cost Increase
-919,10,117,230.0,240.0,2025-12-01,Seasonal Adjustment
-920,10,119,320.0,300.0,2026-06-12,Menu Revision
-921,10,121,260.0,280.0,2026-05-07,Cost Increase
-922,10,122,620.0,650.0,2025-06-15,Seasonal Adjustment
-923,10,124,1040.0,1140.0,2025-10-17,Market Adjustment
-924,10,124,1140.0,1100.0,2025-11-16,Market Adjustment
-925,10,126,580.0,560.0,2026-06-26,Seasonal Adjustment
-926,10,127,1250.0,1290.0,2025-12-06,Supplier Cost Change
-927,10,129,120.0,130.0,2025-05-02,Seasonal Adjustment
-928,10,129,130.0,120.0,2025-10-28,Seasonal Adjustment
-929,10,130,430.0,470.0,2026-08-30,Seasonal Adjustment
-930,10,133,390.0,410.0,2025-08-25,Supplier Cost Change
-931,10,133,410.0,450.0,2025-09-22,Seasonal Adjustment
-932,10,134,1280.0,1360.0,2026-02-11,Supplier Cost Change
-933,10,136,1340.0,1250.0,2025-11-04,Seasonal Adjustment
-934,10,136,1250.0,1370.0,2025-12-26,Seasonal Adjustment
-935,10,138,910.0,980.0,2025-04-03,Menu Revision
-936,10,138,980.0,1050.0,2025-06-01,Cost Increase
-937,11,1,570.0,630.0,2025-12-11,Menu Revision
-938,11,2,460.0,490.0,2025-09-18,Market Adjustment
-939,11,2,490.0,530.0,2026-03-22,Cost Increase
-940,11,4,1310.0,1350.0,2026-03-05,Seasonal Adjustment
-941,11,5,440.0,470.0,2025-07-11,Cost Increase
-942,11,6,670.0,720.0,2026-07-24,Market Adjustment
-943,11,8,490.0,530.0,2025-05-02,Cost Increase
-944,11,8,530.0,510.0,2025-08-21,Menu Revision
-945,11,15,580.0,620.0,2026-04-12,Market Adjustment
-946,11,22,240.0,250.0,2025-08-06,Cost Increase
-947,11,22,250.0,260.0,2025-10-13,Market Adjustment
-948,11,24,430.0,460.0,2026-02-20,Market Adjustment
-949,11,25,340.0,370.0,2026-05-16,Menu Revision
-950,11,25,370.0,400.0,2026-05-25,Menu Revision
-951,11,26,1330.0,1450.0,2025-05-20,Market Adjustment
-952,11,27,430.0,460.0,2026-08-25,Supplier Cost Change
-953,11,31,1780.0,1900.0,2025-05-07,Cost Increase
-954,11,32,410.0,440.0,2025-04-10,Menu Revision
-955,11,33,200.0,210.0,2026-03-25,Market Adjustment
-956,11,33,210.0,220.0,2026-07-14,Market Adjustment
-957,11,35,220.0,240.0,2025-10-12,Menu Revision
-958,11,37,490.0,520.0,2025-09-26,Menu Revision
-959,11,39,480.0,520.0,2026-06-26,Menu Revision
-960,11,40,690.0,650.0,2025-07-27,Seasonal Adjustment
-961,11,43,1380.0,1480.0,2025-12-12,Supplier Cost Change
-962,11,44,620.0,670.0,2026-01-24,Market Adjustment
-963,11,46,200.0,190.0,2026-04-23,Market Adjustment
-964,11,49,380.0,410.0,2025-07-30,Menu Revision
-965,11,50,1590.0,1670.0,2026-04-18,Cost Increase
-966,11,50,1670.0,1760.0,2026-06-09,Seasonal Adjustment
-967,11,55,1040.0,980.0,2026-04-29,Seasonal Adjustment
-968,11,55,980.0,1060.0,2026-05-15,Market Adjustment
-969,11,57,230.0,220.0,2025-05-16,Menu Revision
-970,11,57,220.0,240.0,2025-06-21,Cost Increase
-971,11,57,240.0,250.0,2026-07-01,Supplier Cost Change
-972,11,60,290.0,300.0,2025-09-28,Cost Increase
-973,11,60,300.0,310.0,2026-04-13,Seasonal Adjustment
-974,11,61,300.0,330.0,2025-04-07,Market Adjustment
-975,11,61,330.0,360.0,2025-10-28,Supplier Cost Change
-976,11,62,970.0,1030.0,2026-03-02,Seasonal Adjustment
-977,11,63,370.0,400.0,2026-02-04,Seasonal Adjustment
-978,11,64,1110.0,1180.0,2026-07-03,Seasonal Adjustment
-979,11,66,1090.0,1140.0,2025-07-22,Seasonal Adjustment
-980,11,70,430.0,450.0,2026-07-29,Supplier Cost Change
-981,11,71,490.0,520.0,2025-11-12,Cost Increase
-982,11,73,340.0,320.0,2025-09-28,Menu Revision
-983,11,75,880.0,810.0,2026-05-21,Menu Revision
-984,11,76,1520.0,1620.0,2026-02-02,Supplier Cost Change
-985,11,77,610.0,630.0,2025-11-10,Market Adjustment
-986,11,81,240.0,260.0,2026-05-24,Cost Increase
-987,11,82,270.0,280.0,2025-10-23,Supplier Cost Change
-988,11,84,410.0,420.0,2025-08-15,Supplier Cost Change
-989,11,89,580.0,630.0,2026-08-18,Market Adjustment
-990,11,90,730.0,800.0,2026-08-31,Menu Revision
-991,11,93,240.0,230.0,2026-05-04,Market Adjustment
-992,11,94,180.0,170.0,2025-05-21,Supplier Cost Change
-993,11,96,210.0,200.0,2025-05-13,Supplier Cost Change
-994,11,97,480.0,500.0,2025-07-08,Seasonal Adjustment
-995,11,98,510.0,560.0,2026-06-06,Market Adjustment
-996,11,99,770.0,800.0,2026-03-03,Cost Increase
-997,11,99,800.0,840.0,2026-08-10,Supplier Cost Change
-998,11,104,610.0,650.0,2025-06-24,Cost Increase
-999,11,104,650.0,630.0,2025-10-18,Seasonal Adjustment
-1000,11,105,120.0,130.0,2025-05-26,Cost Increase
-1001,11,105,130.0,140.0,2025-11-27,Menu Revision
-1002,11,105,140.0,150.0,2026-05-23,Market Adjustment
-1003,11,107,370.0,400.0,2026-02-06,Seasonal Adjustment
-1004,11,107,400.0,430.0,2026-05-13,Menu Revision
-1005,11,107,430.0,450.0,2026-07-26,Supplier Cost Change
-1006,11,108,160.0,170.0,2025-04-20,Supplier Cost Change
-1007,11,108,170.0,190.0,2025-08-09,Market Adjustment
-1008,11,114,920.0,990.0,2026-07-14,Cost Increase
-1009,11,116,380.0,410.0,2025-09-13,Cost Increase
-1010,11,119,250.0,260.0,2026-04-19,Seasonal Adjustment
-1011,11,123,480.0,500.0,2026-07-10,Market Adjustment
-1012,11,124,1070.0,1120.0,2026-03-13,Menu Revision
-1013,11,124,1120.0,1170.0,2026-06-20,Menu Revision
-1014,11,125,1210.0,1330.0,2026-06-23,Cost Increase
-1015,11,126,470.0,490.0,2025-10-26,Seasonal Adjustment
-1016,11,127,1260.0,1320.0,2026-04-10,Market Adjustment
-1017,11,132,260.0,280.0,2025-06-21,Supplier Cost Change
-1018,11,132,280.0,300.0,2026-05-05,Cost Increase
-1019,11,132,300.0,310.0,2026-08-28,Cost Increase
-1020,11,134,1490.0,1600.0,2026-05-01,Market Adjustment
-1021,11,137,1330.0,1420.0,2026-03-12,Market Adjustment
-1022,11,141,210.0,220.0,2026-07-01,Market Adjustment
-1023,11,141,220.0,240.0,2026-07-19,Menu Revision
-1024,11,141,240.0,250.0,2026-08-13,Market Adjustment
-1025,11,142,340.0,370.0,2025-10-17,Market Adjustment
-1026,11,145,600.0,630.0,2026-05-24,Supplier Cost Change
-1027,11,148,960.0,1000.0,2026-05-21,Seasonal Adjustment
-1028,12,1,630.0,670.0,2026-08-18,Supplier Cost Change
-1029,12,3,690.0,730.0,2026-01-15,Cost Increase
-1030,12,4,1170.0,1270.0,2026-03-03,Supplier Cost Change
-1031,12,11,430.0,440.0,2025-08-01,Cost Increase
-1032,12,16,1200.0,1250.0,2025-08-01,Seasonal Adjustment
-1033,12,17,1020.0,1070.0,2025-07-09,Seasonal Adjustment
-1034,12,17,1070.0,1150.0,2026-01-19,Cost Increase
-1035,12,17,1150.0,1220.0,2026-08-03,Menu Revision
-1036,12,19,980.0,1040.0,2026-08-28,Cost Increase
-1037,12,22,290.0,280.0,2026-07-17,Menu Revision
-1038,12,26,1440.0,1490.0,2025-11-02,Menu Revision
-1039,12,28,1340.0,1270.0,2025-06-12,Cost Increase
-1040,12,28,1270.0,1330.0,2025-12-31,Menu Revision
-1041,12,30,760.0,700.0,2026-04-19,Seasonal Adjustment
-1042,12,32,380.0,390.0,2026-07-27,Seasonal Adjustment
-1043,12,35,230.0,240.0,2026-08-20,Supplier Cost Change
-1044,12,36,290.0,310.0,2025-09-26,Seasonal Adjustment
-1045,12,36,310.0,330.0,2026-01-07,Menu Revision
-1046,12,37,420.0,450.0,2026-03-29,Market Adjustment
-1047,12,42,1010.0,1050.0,2026-07-21,Supplier Cost Change
-1048,12,44,690.0,740.0,2025-12-10,Menu Revision
-1049,12,46,150.0,160.0,2026-03-09,Cost Increase
-1050,12,46,160.0,170.0,2026-08-03,Cost Increase
-1051,12,51,850.0,810.0,2025-07-14,Market Adjustment
-1052,12,51,810.0,840.0,2025-11-22,Market Adjustment
-1053,12,59,290.0,310.0,2026-02-12,Market Adjustment
-1054,12,59,310.0,340.0,2026-02-24,Seasonal Adjustment
-1055,12,60,270.0,290.0,2025-08-20,Cost Increase
-1056,12,61,300.0,330.0,2025-05-27,Seasonal Adjustment
-1057,12,64,950.0,1020.0,2025-09-30,Menu Revision
-1058,12,65,990.0,1040.0,2026-08-08,Menu Revision
-1059,12,71,460.0,500.0,2025-05-10,Market Adjustment
-1060,12,74,1070.0,1150.0,2026-04-11,Menu Revision
-1061,12,74,1150.0,1220.0,2026-06-29,Cost Increase
-1062,12,74,1220.0,1310.0,2026-07-05,Seasonal Adjustment
-1063,12,77,620.0,680.0,2025-06-16,Seasonal Adjustment
-1064,12,79,1620.0,1710.0,2026-05-03,Supplier Cost Change
-1065,12,79,1710.0,1800.0,2026-07-23,Seasonal Adjustment
-1066,12,81,230.0,250.0,2026-07-31,Cost Increase
-1067,12,82,240.0,260.0,2025-10-22,Supplier Cost Change
-1068,12,82,260.0,270.0,2025-10-23,Supplier Cost Change
-1069,12,83,210.0,220.0,2025-11-16,Supplier Cost Change
-1070,12,83,220.0,240.0,2025-11-22,Cost Increase
-1071,12,83,240.0,250.0,2026-07-23,Menu Revision
-1072,12,85,390.0,410.0,2025-05-22,Supplier Cost Change
-1073,12,85,410.0,430.0,2025-06-04,Cost Increase
-1074,12,85,430.0,470.0,2025-12-12,Market Adjustment
-1075,12,86,1620.0,1500.0,2025-06-21,Cost Increase
-1076,12,86,1500.0,1600.0,2026-06-05,Menu Revision
-1077,12,86,1600.0,1700.0,2026-07-23,Seasonal Adjustment
-1078,12,87,360.0,390.0,2026-07-16,Market Adjustment
-1079,12,90,730.0,760.0,2025-07-11,Seasonal Adjustment
-1080,12,90,760.0,820.0,2026-05-02,Menu Revision
-1081,12,91,1130.0,1200.0,2025-07-01,Market Adjustment
-1082,12,91,1200.0,1300.0,2025-08-01,Market Adjustment
-1083,12,94,160.0,170.0,2026-05-24,Market Adjustment
-1084,12,98,570.0,610.0,2025-07-30,Market Adjustment
-1085,12,98,610.0,570.0,2025-08-13,Market Adjustment
-1086,12,98,570.0,590.0,2026-08-07,Menu Revision
-1087,12,99,580.0,630.0,2025-12-12,Supplier Cost Change
-1088,12,99,630.0,680.0,2026-03-09,Seasonal Adjustment
-1089,12,99,680.0,730.0,2026-06-06,Seasonal Adjustment
-1090,12,100,760.0,780.0,2026-01-16,Seasonal Adjustment
-1091,12,101,1040.0,1130.0,2025-05-30,Seasonal Adjustment
-1092,12,102,640.0,670.0,2025-07-01,Market Adjustment
-1093,12,102,670.0,720.0,2026-03-31,Supplier Cost Change
-1094,12,103,1250.0,1210.0,2026-01-08,Seasonal Adjustment
-1095,12,103,1210.0,1290.0,2026-05-22,Market Adjustment
-1096,12,105,170.0,160.0,2025-07-14,Seasonal Adjustment
-1097,12,106,350.0,370.0,2026-04-25,Menu Revision
-1098,12,107,480.0,500.0,2025-12-01,Seasonal Adjustment
-1099,12,109,590.0,630.0,2026-05-22,Market Adjustment
-1100,12,111,790.0,830.0,2026-08-28,Supplier Cost Change
-1101,12,113,590.0,630.0,2025-11-13,Menu Revision
-1102,12,113,630.0,670.0,2026-04-23,Cost Increase
-1103,12,114,940.0,890.0,2025-11-28,Menu Revision
-1104,12,115,1470.0,1570.0,2025-08-05,Seasonal Adjustment
-1105,12,115,1570.0,1690.0,2026-04-08,Seasonal Adjustment
-1106,12,121,300.0,310.0,2025-08-03,Supplier Cost Change
-1107,12,122,570.0,610.0,2026-08-17,Supplier Cost Change
-1108,12,124,1040.0,1100.0,2026-07-12,Cost Increase
-1109,12,125,1360.0,1450.0,2025-04-04,Seasonal Adjustment
-1110,12,128,300.0,310.0,2026-07-11,Market Adjustment
-1111,12,130,410.0,450.0,2026-07-23,Seasonal Adjustment
-1112,12,131,500.0,520.0,2026-04-01,Supplier Cost Change
-1113,12,132,270.0,300.0,2025-04-27,Market Adjustment
-1114,12,133,420.0,460.0,2025-06-03,Supplier Cost Change
-1115,12,133,460.0,480.0,2026-05-16,Market Adjustment
-1116,12,134,1340.0,1400.0,2025-07-20,Menu Revision
-1117,12,134,1400.0,1540.0,2025-09-30,Seasonal Adjustment
-1118,12,136,1060.0,1150.0,2025-07-15,Cost Increase
-1119,12,137,1180.0,1260.0,2026-06-12,Cost Increase
-1120,12,140,220.0,210.0,2025-05-02,Seasonal Adjustment
-1121,12,140,210.0,230.0,2025-07-17,Market Adjustment
-1122,12,140,230.0,250.0,2026-03-23,Supplier Cost Change
-1123,12,141,260.0,240.0,2026-08-07,Cost Increase
-1124,12,143,240.0,260.0,2025-06-16,Cost Increase
-1125,12,147,380.0,400.0,2026-03-06,Cost Increase
-1126,12,148,850.0,930.0,2026-04-30,Supplier Cost Change
-1127,12,148,930.0,980.0,2026-05-18,Seasonal Adjustment
-1128,12,149,410.0,390.0,2026-06-24,Menu Revision
-1129,13,3,700.0,740.0,2025-09-24,Menu Revision
-1130,13,4,1400.0,1470.0,2026-05-18,Seasonal Adjustment
-1131,13,5,360.0,390.0,2026-03-20,Market Adjustment
-1132,13,9,220.0,240.0,2026-07-14,Menu Revision
-1133,13,10,340.0,360.0,2026-06-10,Supplier Cost Change
-1134,13,10,360.0,380.0,2026-08-30,Seasonal Adjustment
-1135,13,12,290.0,310.0,2026-01-17,Market Adjustment
-1136,13,15,530.0,580.0,2025-08-29,Market Adjustment
-1137,13,17,1180.0,1220.0,2026-01-30,Supplier Cost Change
-1138,13,17,1220.0,1270.0,2026-05-15,Menu Revision
-1139,13,19,970.0,1060.0,2026-08-18,Seasonal Adjustment
-1140,13,21,140.0,150.0,2025-06-18,Cost Increase
-1141,13,24,380.0,400.0,2025-11-26,Supplier Cost Change
-1142,13,26,1500.0,1560.0,2025-08-07,Supplier Cost Change
-1143,13,27,420.0,440.0,2026-08-29,Cost Increase
-1144,13,28,1290.0,1350.0,2025-09-21,Seasonal Adjustment
-1145,13,29,1060.0,1150.0,2025-10-09,Seasonal Adjustment
-1146,13,30,700.0,750.0,2026-01-22,Market Adjustment
-1147,13,31,2020.0,1870.0,2025-05-26,Seasonal Adjustment
-1148,13,32,420.0,450.0,2025-11-22,Supplier Cost Change
-1149,13,34,230.0,250.0,2026-01-31,Menu Revision
-1150,13,34,250.0,270.0,2026-06-12,Menu Revision
-1151,13,34,270.0,290.0,2026-08-29,Menu Revision
-1152,13,35,240.0,260.0,2026-01-28,Menu Revision
-1153,13,36,260.0,270.0,2025-12-03,Menu Revision
-1154,13,38,1170.0,1220.0,2025-06-14,Market Adjustment
-1155,13,38,1220.0,1280.0,2025-12-17,Cost Increase
-1156,13,38,1280.0,1370.0,2026-06-26,Cost Increase
-1157,13,39,540.0,500.0,2025-11-20,Market Adjustment
-1158,13,39,500.0,520.0,2026-02-21,Supplier Cost Change
-1159,13,40,630.0,690.0,2026-04-06,Menu Revision
-1160,13,47,490.0,510.0,2025-04-25,Market Adjustment
-1161,13,47,510.0,550.0,2026-08-07,Seasonal Adjustment
-1162,13,48,440.0,470.0,2025-05-25,Seasonal Adjustment
-1163,13,48,470.0,430.0,2025-10-01,Market Adjustment
-1164,13,48,430.0,460.0,2026-07-27,Market Adjustment
-1165,13,51,820.0,890.0,2026-07-22,Menu Revision
-1166,13,53,1110.0,1170.0,2025-05-06,Seasonal Adjustment
-1167,13,53,1170.0,1250.0,2025-08-05,Supplier Cost Change
-1168,13,53,1250.0,1330.0,2025-12-15,Seasonal Adjustment
-1169,13,55,910.0,1000.0,2026-06-17,Supplier Cost Change
-1170,13,57,230.0,240.0,2025-05-28,Seasonal Adjustment
-1171,13,59,320.0,350.0,2026-05-31,Menu Revision
-1172,13,60,290.0,270.0,2025-11-12,Cost Increase
-1173,13,60,270.0,280.0,2026-01-13,Seasonal Adjustment
-1174,13,62,1050.0,1120.0,2025-10-19,Seasonal Adjustment
-1175,13,62,1120.0,1040.0,2025-11-14,Market Adjustment
-1176,13,63,410.0,380.0,2025-05-03,Seasonal Adjustment
-1177,13,66,1150.0,1100.0,2025-11-04,Menu Revision
-1178,13,66,1100.0,1150.0,2026-05-05,Cost Increase
-1179,13,66,1150.0,1110.0,2026-05-20,Menu Revision
-1180,13,68,250.0,260.0,2025-09-13,Cost Increase
-1181,13,69,110.0,120.0,2025-10-28,Seasonal Adjustment
-1182,13,69,120.0,130.0,2025-11-13,Cost Increase
-1183,13,70,460.0,490.0,2026-03-22,Menu Revision
-1184,13,71,470.0,510.0,2026-01-28,Menu Revision
-1185,13,71,510.0,530.0,2026-08-28,Supplier Cost Change
-1186,13,72,410.0,430.0,2026-05-27,Menu Revision
-1187,13,73,300.0,320.0,2025-11-07,Seasonal Adjustment
-1188,13,74,1420.0,1470.0,2026-03-26,Cost Increase
-1189,13,83,220.0,230.0,2026-01-03,Menu Revision
-1190,13,83,230.0,240.0,2026-08-10,Seasonal Adjustment
-1191,13,85,520.0,540.0,2026-04-24,Menu Revision
-1192,13,87,330.0,350.0,2026-07-02,Seasonal Adjustment
-1193,13,90,600.0,650.0,2026-03-30,Market Adjustment
-1194,13,90,650.0,710.0,2026-06-04,Cost Increase
-1195,13,92,280.0,300.0,2026-04-29,Market Adjustment
-1196,13,92,300.0,320.0,2026-07-11,Seasonal Adjustment
-1197,13,94,160.0,180.0,2025-09-04,Menu Revision
-1198,13,103,1170.0,1270.0,2025-05-26,Menu Revision
-1199,13,104,540.0,560.0,2025-06-09,Menu Revision
-1200,13,105,180.0,170.0,2025-12-24,Supplier Cost Change
-1201,13,106,340.0,360.0,2026-04-05,Menu Revision
-1202,13,108,190.0,200.0,2025-08-10,Supplier Cost Change
-1203,13,109,560.0,590.0,2026-03-16,Cost Increase
-1204,13,109,590.0,630.0,2026-06-18,Seasonal Adjustment
-1205,13,111,770.0,820.0,2026-06-06,Menu Revision
-1206,13,112,580.0,610.0,2026-04-30,Menu Revision
-1207,13,116,370.0,390.0,2025-12-19,Seasonal Adjustment
-1208,13,119,280.0,290.0,2026-08-14,Menu Revision
-1209,13,124,920.0,1000.0,2025-12-08,Cost Increase
-1210,13,124,1000.0,1050.0,2026-04-11,Supplier Cost Change
-1211,13,127,1240.0,1310.0,2026-03-04,Cost Increase
-1212,13,127,1310.0,1360.0,2026-06-11,Menu Revision
-1213,13,129,100.0,110.0,2026-01-18,Supplier Cost Change
-1214,13,131,480.0,510.0,2026-03-11,Market Adjustment
-1215,13,133,500.0,460.0,2025-08-17,Menu Revision
-1216,13,135,600.0,650.0,2025-08-20,Market Adjustment
-1217,13,137,1170.0,1240.0,2026-04-07,Cost Increase
-1218,13,138,960.0,1040.0,2025-05-02,Menu Revision
-1219,13,138,1040.0,1100.0,2025-10-08,Supplier Cost Change
-1220,13,139,1570.0,1690.0,2026-07-05,Market Adjustment
-1221,14,1,640.0,660.0,2025-07-02,Market Adjustment
-1222,14,2,480.0,510.0,2025-11-28,Market Adjustment
-1223,14,3,590.0,640.0,2026-04-09,Cost Increase
-1224,14,4,1220.0,1330.0,2025-09-05,Market Adjustment
-1225,14,4,1330.0,1450.0,2026-01-03,Market Adjustment
-1226,14,5,360.0,400.0,2025-09-30,Supplier Cost Change
-1227,14,6,720.0,790.0,2026-08-06,Seasonal Adjustment
-1228,14,13,230.0,250.0,2025-10-30,Supplier Cost Change
-1229,14,14,1240.0,1280.0,2026-01-13,Market Adjustment
-1230,14,14,1280.0,1400.0,2026-05-12,Market Adjustment
-1231,14,23,420.0,460.0,2026-03-28,Seasonal Adjustment
-1232,14,24,480.0,450.0,2026-02-04,Menu Revision
-1233,14,26,1400.0,1480.0,2026-06-13,Seasonal Adjustment
-1234,14,27,460.0,440.0,2026-07-31,Menu Revision
-1235,14,28,1440.0,1510.0,2025-12-14,Cost Increase
-1236,14,29,1080.0,1160.0,2025-05-19,Supplier Cost Change
-1237,14,35,230.0,240.0,2025-05-23,Menu Revision
-1238,14,35,240.0,250.0,2025-09-24,Seasonal Adjustment
-1239,14,36,270.0,290.0,2026-07-10,Market Adjustment
-1240,14,36,290.0,310.0,2026-08-01,Market Adjustment
-1241,14,37,460.0,500.0,2025-12-14,Market Adjustment
-1242,14,39,420.0,460.0,2025-08-30,Seasonal Adjustment
-1243,14,39,460.0,490.0,2026-02-19,Menu Revision
-1244,14,39,490.0,530.0,2026-08-15,Menu Revision
-1245,14,46,160.0,170.0,2026-06-11,Market Adjustment
-1246,14,47,580.0,540.0,2026-03-24,Market Adjustment
-1247,14,50,1360.0,1470.0,2025-04-27,Menu Revision
-1248,14,50,1470.0,1590.0,2025-10-12,Menu Revision
-1249,14,51,850.0,930.0,2025-06-01,Supplier Cost Change
-1250,14,54,860.0,930.0,2025-11-20,Menu Revision
-1251,14,54,930.0,1000.0,2026-07-06,Market Adjustment
-1252,14,56,320.0,340.0,2025-06-08,Market Adjustment
-1253,14,59,310.0,330.0,2026-04-28,Supplier Cost Change
-1254,14,59,330.0,310.0,2026-06-05,Supplier Cost Change
-1255,14,59,310.0,320.0,2026-07-15,Supplier Cost Change
-1256,14,60,310.0,340.0,2025-11-25,Supplier Cost Change
-1257,14,60,340.0,320.0,2025-12-12,Menu Revision
-1258,14,60,320.0,340.0,2026-02-26,Supplier Cost Change
-1259,14,63,350.0,360.0,2025-05-14,Supplier Cost Change
-1260,14,63,360.0,380.0,2026-02-10,Seasonal Adjustment
-1261,14,69,130.0,140.0,2026-02-23,Market Adjustment
-1262,14,72,390.0,410.0,2026-04-03,Supplier Cost Change
-1263,14,80,390.0,420.0,2026-02-09,Supplier Cost Change
-1264,14,81,220.0,240.0,2026-06-23,Market Adjustment
-1265,14,83,240.0,250.0,2026-02-02,Supplier Cost Change
-1266,14,85,550.0,600.0,2025-07-16,Market Adjustment
-1267,14,85,600.0,560.0,2026-05-07,Menu Revision
-1268,14,89,650.0,690.0,2025-06-13,Cost Increase
-1269,14,89,690.0,640.0,2026-04-30,Cost Increase
-1270,14,90,730.0,790.0,2025-08-28,Menu Revision
-1271,14,93,220.0,230.0,2025-10-15,Cost Increase
-1272,14,93,230.0,240.0,2025-10-23,Menu Revision
-1273,14,96,200.0,210.0,2026-04-10,Menu Revision
-1274,14,104,540.0,570.0,2026-05-15,Menu Revision
-1275,14,109,520.0,570.0,2025-11-09,Market Adjustment
-1276,14,110,560.0,600.0,2026-03-17,Supplier Cost Change
-1277,14,111,670.0,730.0,2026-06-24,Cost Increase
-1278,14,111,730.0,800.0,2026-06-26,Cost Increase
-1279,14,112,550.0,580.0,2025-06-10,Seasonal Adjustment
-1280,14,112,580.0,630.0,2025-10-05,Cost Increase
-1281,14,113,660.0,690.0,2026-05-24,Seasonal Adjustment
-1282,14,117,210.0,220.0,2025-12-25,Cost Increase
-1283,14,119,290.0,310.0,2026-01-06,Supplier Cost Change
-1284,14,119,310.0,290.0,2026-05-19,Menu Revision
-1285,14,121,300.0,330.0,2025-11-26,Cost Increase
-1286,14,124,1090.0,1160.0,2025-07-23,Seasonal Adjustment
-1287,14,128,310.0,330.0,2026-07-04,Menu Revision
-1288,14,129,110.0,120.0,2025-09-10,Market Adjustment
-1289,14,131,450.0,470.0,2026-03-22,Menu Revision
-1290,14,132,310.0,340.0,2026-02-02,Menu Revision
-1291,14,132,340.0,360.0,2026-07-30,Menu Revision
-1292,14,133,440.0,460.0,2026-03-21,Seasonal Adjustment
-1293,14,139,1810.0,1710.0,2025-04-10,Menu Revision
-1294,14,141,260.0,280.0,2026-07-11,Menu Revision
-1295,14,141,280.0,260.0,2026-08-11,Market Adjustment
-1296,14,141,260.0,270.0,2026-08-21,Cost Increase
-1297,14,143,240.0,250.0,2026-05-08,Market Adjustment
-1298,14,147,410.0,450.0,2026-06-09,Supplier Cost Change
-1299,14,147,450.0,460.0,2026-06-12,Market Adjustment
-1300,14,148,910.0,990.0,2026-06-30,Seasonal Adjustment
-1301,14,150,1060.0,1000.0,2026-02-08,Menu Revision
-1302,15,1,560.0,610.0,2026-05-20,Supplier Cost Change
-1303,15,3,620.0,660.0,2026-06-27,Supplier Cost Change
-1304,15,4,1300.0,1360.0,2026-04-19,Cost Increase
-1305,15,6,660.0,690.0,2026-07-29,Supplier Cost Change
-1306,15,8,460.0,500.0,2025-08-01,Market Adjustment
-1307,15,11,400.0,410.0,2025-06-24,Menu Revision
-1308,15,14,1190.0,1260.0,2025-10-22,Seasonal Adjustment
-1309,15,20,270.0,290.0,2025-06-03,Seasonal Adjustment
-1310,15,20,290.0,300.0,2025-09-20,Cost Increase
-1311,15,22,250.0,270.0,2025-08-28,Menu Revision
-1312,15,23,390.0,400.0,2026-01-12,Cost Increase
-1313,15,23,400.0,430.0,2026-05-25,Cost Increase
-1314,15,23,430.0,410.0,2026-06-07,Supplier Cost Change
-1315,15,28,1470.0,1540.0,2026-03-10,Market Adjustment
-1316,15,29,1240.0,1160.0,2026-07-09,Supplier Cost Change
-1317,15,32,430.0,460.0,2025-08-30,Menu Revision
-1318,15,33,200.0,220.0,2025-09-03,Supplier Cost Change
-1319,15,35,290.0,270.0,2025-12-23,Menu Revision
-1320,15,38,1440.0,1490.0,2025-10-14,Cost Increase
-1321,15,42,970.0,1040.0,2026-05-09,Menu Revision
-1322,15,45,250.0,260.0,2026-05-11,Seasonal Adjustment
-1323,15,46,150.0,160.0,2026-03-24,Supplier Cost Change
-1324,15,50,1850.0,1950.0,2025-08-03,Menu Revision
-1325,15,52,1150.0,1210.0,2025-06-21,Menu Revision
-1326,15,52,1210.0,1310.0,2026-08-18,Market Adjustment
-1327,15,53,1150.0,1200.0,2025-04-19,Menu Revision
-1328,15,53,1200.0,1310.0,2026-02-16,Supplier Cost Change
-1329,15,54,870.0,940.0,2025-05-08,Seasonal Adjustment
-1330,15,54,940.0,1010.0,2025-07-04,Seasonal Adjustment
-1331,15,55,1050.0,1110.0,2026-06-08,Market Adjustment
-1332,15,56,300.0,310.0,2026-03-27,Menu Revision
-1333,15,56,310.0,330.0,2026-04-01,Menu Revision
-1334,15,57,300.0,290.0,2025-04-17,Menu Revision
-1335,15,57,290.0,270.0,2025-05-01,Market Adjustment
-1336,15,59,310.0,320.0,2026-02-03,Menu Revision
-1337,15,63,430.0,450.0,2025-06-17,Seasonal Adjustment
-1338,15,64,1090.0,1180.0,2026-06-07,Market Adjustment
-1339,15,68,220.0,240.0,2025-05-12,Market Adjustment
-1340,15,70,450.0,430.0,2026-05-21,Market Adjustment
-1341,15,71,510.0,550.0,2025-09-09,Market Adjustment
-1342,15,72,420.0,440.0,2026-07-19,Market Adjustment
-1343,15,74,1210.0,1280.0,2026-06-04,Cost Increase
-1344,15,79,1920.0,1990.0,2026-06-06,Supplier Cost Change
-1345,15,80,420.0,440.0,2026-03-09,Supplier Cost Change
-1346,15,84,400.0,420.0,2025-10-06,Supplier Cost Change
-1347,15,84,420.0,450.0,2026-01-03,Cost Increase
-1348,15,88,1210.0,1280.0,2025-05-26,Supplier Cost Change
-1349,15,90,730.0,780.0,2025-10-11,Supplier Cost Change
-1350,15,93,210.0,230.0,2025-04-01,Menu Revision
-1351,15,95,260.0,290.0,2026-06-09,Menu Revision
-1352,15,98,530.0,570.0,2026-06-06,Market Adjustment
-1353,15,100,910.0,860.0,2026-04-13,Supplier Cost Change
-1354,15,103,1380.0,1420.0,2026-02-24,Market Adjustment
-1355,15,110,460.0,490.0,2026-05-24,Market Adjustment
-1356,15,110,490.0,520.0,2026-06-20,Cost Increase
-1357,15,112,620.0,640.0,2025-10-31,Menu Revision
-1358,15,113,680.0,720.0,2026-07-27,Menu Revision
-1359,15,113,720.0,750.0,2026-08-29,Market Adjustment
-1360,15,117,210.0,220.0,2025-08-10,Market Adjustment
-1361,15,117,220.0,230.0,2025-09-09,Seasonal Adjustment
-1362,15,119,280.0,290.0,2026-08-29,Seasonal Adjustment
-1363,15,121,300.0,310.0,2025-12-18,Supplier Cost Change
-1364,15,123,480.0,510.0,2025-10-26,Supplier Cost Change
-1365,15,123,510.0,550.0,2026-02-20,Supplier Cost Change
-1366,15,125,1180.0,1240.0,2025-07-17,Market Adjustment
-1367,15,127,1120.0,1180.0,2026-03-10,Menu Revision
-1368,15,129,100.0,110.0,2025-09-21,Menu Revision
-1369,15,130,370.0,390.0,2026-07-01,Supplier Cost Change
-1370,15,130,390.0,420.0,2026-07-27,Seasonal Adjustment
-1371,15,133,440.0,480.0,2025-07-15,Market Adjustment
-1372,15,137,1440.0,1330.0,2026-05-11,Seasonal Adjustment
-1373,15,140,220.0,240.0,2026-05-27,Seasonal Adjustment
-1374,15,144,350.0,380.0,2025-05-01,Seasonal Adjustment
-1375,15,144,380.0,420.0,2025-12-07,Menu Revision
-1376,15,144,420.0,460.0,2026-05-29,Menu Revision
-1377,15,145,590.0,620.0,2025-11-29,Supplier Cost Change
-1378,15,147,340.0,360.0,2026-04-29,Seasonal Adjustment
-1379,15,147,360.0,380.0,2026-08-01,Menu Revision
-1380,15,149,400.0,390.0,2026-06-28,Supplier Cost Change
-1381,15,150,850.0,790.0,2025-12-22,Menu Revision
-1382,15,150,790.0,870.0,2026-04-13,Supplier Cost Change
-1383,15,150,870.0,900.0,2026-05-19,Supplier Cost Change
-1384,16,1,590.0,630.0,2026-04-18,Menu Revision
-1385,16,1,630.0,590.0,2026-05-23,Supplier Cost Change
-1386,16,1,590.0,640.0,2026-05-29,Market Adjustment
-1387,16,2,510.0,530.0,2025-12-08,Cost Increase
-1388,16,3,580.0,620.0,2026-02-22,Supplier Cost Change
-1389,16,4,1170.0,1270.0,2025-09-17,Seasonal Adjustment
-1390,16,8,470.0,500.0,2025-06-09,Menu Revision
-1391,16,9,220.0,240.0,2026-01-26,Supplier Cost Change
-1392,16,12,270.0,290.0,2025-11-18,Menu Revision
-1393,16,13,260.0,270.0,2026-08-19,Menu Revision
-1394,16,18,610.0,640.0,2025-09-12,Menu Revision
-1395,16,19,990.0,960.0,2026-08-11,Cost Increase
-1396,16,25,330.0,360.0,2026-06-22,Supplier Cost Change
-1397,16,25,360.0,380.0,2026-06-24,Supplier Cost Change
-1398,16,25,380.0,420.0,2026-07-20,Cost Increase
-1399,16,27,430.0,460.0,2026-07-07,Cost Increase
-1400,16,28,1460.0,1530.0,2026-05-20,Menu Revision
-1401,16,30,590.0,640.0,2026-03-08,Menu Revision
-1402,16,32,470.0,430.0,2025-04-28,Market Adjustment
-1403,16,34,330.0,310.0,2025-10-25,Cost Increase
-1404,16,34,310.0,290.0,2026-07-28,Supplier Cost Change
-1405,16,39,560.0,590.0,2026-02-12,Seasonal Adjustment
-1406,16,40,580.0,610.0,2025-08-29,Seasonal Adjustment
-1407,16,42,900.0,960.0,2026-02-24,Market Adjustment
-1408,16,44,690.0,720.0,2025-11-16,Seasonal Adjustment
-1409,16,46,150.0,160.0,2026-04-12,Menu Revision
-1410,16,46,160.0,150.0,2026-06-04,Supplier Cost Change
-1411,16,47,530.0,580.0,2025-05-09,Cost Increase
-1412,16,47,580.0,610.0,2025-10-19,Supplier Cost Change
-1413,16,49,410.0,430.0,2026-03-23,Menu Revision
-1414,16,50,1480.0,1530.0,2025-07-18,Supplier Cost Change
-1415,16,50,1530.0,1660.0,2025-10-11,Cost Increase
-1416,16,59,280.0,300.0,2026-05-15,Menu Revision
-1417,16,62,1070.0,1120.0,2026-03-20,Supplier Cost Change
-1418,16,63,380.0,420.0,2025-06-03,Cost Increase
-1419,16,64,1050.0,1120.0,2025-08-24,Cost Increase
-1420,16,64,1120.0,1200.0,2025-09-22,Market Adjustment
-1421,16,67,1290.0,1370.0,2025-09-10,Supplier Cost Change
-1422,16,68,230.0,240.0,2025-04-13,Menu Revision
-1423,16,78,830.0,890.0,2026-04-19,Menu Revision
-1424,16,80,390.0,400.0,2026-02-15,Supplier Cost Change
-1425,16,82,310.0,290.0,2025-08-10,Market Adjustment
-1426,16,82,290.0,310.0,2025-11-29,Menu Revision
-1427,16,83,260.0,270.0,2026-05-02,Market Adjustment
-1428,16,84,450.0,420.0,2025-06-12,Seasonal Adjustment
-1429,16,84,420.0,440.0,2026-05-10,Menu Revision
-1430,16,87,330.0,340.0,2026-05-11,Supplier Cost Change
-1431,16,87,340.0,360.0,2026-06-06,Supplier Cost Change
-1432,16,88,1110.0,1150.0,2025-10-07,Seasonal Adjustment
-1433,16,88,1150.0,1200.0,2026-06-16,Menu Revision
-1434,16,91,1040.0,1110.0,2025-12-10,Cost Increase
-1435,16,91,1110.0,1210.0,2026-04-10,Market Adjustment
-1436,16,93,170.0,190.0,2025-03-31,Seasonal Adjustment
-1437,16,93,190.0,210.0,2025-08-06,Seasonal Adjustment
-1438,16,93,210.0,220.0,2026-03-25,Seasonal Adjustment
-1439,16,96,200.0,210.0,2025-07-13,Cost Increase
-1440,16,98,510.0,540.0,2025-12-28,Menu Revision
-1441,16,99,790.0,740.0,2025-10-19,Seasonal Adjustment
-1442,16,99,740.0,790.0,2026-08-11,Menu Revision
-1443,16,101,1070.0,1010.0,2025-07-20,Supplier Cost Change
-1444,16,101,1010.0,1040.0,2026-01-01,Supplier Cost Change
-1445,16,101,1040.0,1120.0,2026-01-23,Cost Increase
-1446,16,102,590.0,640.0,2025-12-01,Cost Increase
-1447,16,102,640.0,670.0,2026-03-15,Menu Revision
-1448,16,104,560.0,600.0,2025-09-27,Cost Increase
-1449,16,105,140.0,150.0,2026-03-06,Menu Revision
-1450,16,106,360.0,380.0,2026-03-22,Seasonal Adjustment
-1451,16,106,380.0,390.0,2026-03-31,Seasonal Adjustment
-1452,16,108,200.0,190.0,2025-11-10,Supplier Cost Change
-1453,16,110,500.0,540.0,2026-03-13,Supplier Cost Change
-1454,16,111,710.0,760.0,2026-05-27,Seasonal Adjustment
-1455,16,113,640.0,700.0,2026-01-27,Seasonal Adjustment
-1456,16,114,960.0,880.0,2026-07-04,Cost Increase
-1457,16,116,340.0,360.0,2025-05-04,Cost Increase
-1458,16,116,360.0,380.0,2025-12-20,Menu Revision
-1459,16,117,210.0,230.0,2026-06-22,Supplier Cost Change
-1460,16,121,300.0,320.0,2025-04-02,Market Adjustment
-1461,16,121,320.0,340.0,2026-08-27,Cost Increase
-1462,16,123,550.0,580.0,2025-07-19,Cost Increase
-1463,16,129,110.0,100.0,2025-09-07,Seasonal Adjustment
-1464,16,129,100.0,110.0,2025-10-03,Supplier Cost Change
-1465,16,129,110.0,120.0,2026-07-04,Seasonal Adjustment
-1466,16,130,430.0,470.0,2026-06-27,Menu Revision
-1467,16,130,470.0,500.0,2026-06-28,Menu Revision
-1468,16,132,350.0,360.0,2026-07-13,Cost Increase
-1469,16,133,390.0,420.0,2025-07-13,Market Adjustment
-1470,16,133,420.0,450.0,2025-09-23,Seasonal Adjustment
-1471,16,133,450.0,490.0,2026-02-13,Market Adjustment
-1472,16,137,1500.0,1430.0,2026-05-29,Menu Revision
-1473,16,137,1430.0,1480.0,2026-08-30,Seasonal Adjustment
-1474,16,139,1850.0,1940.0,2026-02-28,Cost Increase
-1475,16,141,260.0,270.0,2026-08-23,Seasonal Adjustment
-1476,16,142,330.0,350.0,2026-08-29,Market Adjustment
-1477,16,147,350.0,380.0,2026-06-01,Cost Increase
-1478,16,147,380.0,400.0,2026-08-04,Market Adjustment
-1479,16,148,790.0,870.0,2026-05-03,Seasonal Adjustment
-1480,16,148,870.0,930.0,2026-06-25,Seasonal Adjustment
-1481,16,148,930.0,860.0,2026-08-12,Market Adjustment
-1482,16,150,830.0,910.0,2026-02-02,Seasonal Adjustment
-1483,17,2,420.0,450.0,2026-01-12,Menu Revision
-1484,17,2,450.0,490.0,2026-04-05,Supplier Cost Change
-1485,17,6,720.0,760.0,2026-07-09,Cost Increase
-1486,17,11,430.0,410.0,2025-05-06,Seasonal Adjustment
-1487,17,12,300.0,320.0,2025-09-28,Menu Revision
-1488,17,13,240.0,260.0,2025-11-19,Supplier Cost Change
-1489,17,13,260.0,270.0,2026-03-25,Menu Revision
-1490,17,15,640.0,670.0,2025-11-26,Cost Increase
-1491,17,20,250.0,270.0,2025-07-13,Seasonal Adjustment
-1492,17,20,270.0,300.0,2026-04-13,Cost Increase
-1493,17,21,130.0,140.0,2026-04-25,Cost Increase
-1494,17,22,260.0,240.0,2026-08-14,Menu Revision
-1495,17,29,980.0,1050.0,2026-07-29,Seasonal Adjustment
-1496,17,30,730.0,690.0,2025-12-24,Cost Increase
-1497,17,34,290.0,280.0,2025-05-01,Seasonal Adjustment
-1498,17,36,270.0,280.0,2025-12-06,Cost Increase
-1499,17,37,410.0,450.0,2026-08-21,Menu Revision
-1500,17,41,750.0,800.0,2025-04-17,Seasonal Adjustment
-1501,17,41,800.0,820.0,2025-04-19,Supplier Cost Change
-1502,17,43,1330.0,1390.0,2025-12-24,Seasonal Adjustment
-1503,17,44,600.0,640.0,2026-05-28,Supplier Cost Change
-1504,17,46,170.0,180.0,2026-05-25,Menu Revision
-1505,17,48,360.0,400.0,2026-08-04,Menu Revision
-1506,17,53,1280.0,1330.0,2025-10-16,Cost Increase
-1507,17,58,220.0,240.0,2025-07-04,Menu Revision
-1508,17,66,950.0,1000.0,2026-02-28,Market Adjustment
-1509,17,68,230.0,240.0,2026-04-16,Market Adjustment
-1510,17,69,120.0,130.0,2025-12-09,Seasonal Adjustment
-1511,17,72,350.0,380.0,2026-04-01,Menu Revision
-1512,17,72,380.0,410.0,2026-04-27,Market Adjustment
-1513,17,76,1320.0,1400.0,2025-12-27,Seasonal Adjustment
-1514,17,76,1400.0,1510.0,2026-05-25,Seasonal Adjustment
-1515,17,77,560.0,590.0,2025-05-14,Supplier Cost Change
-1516,17,77,590.0,550.0,2026-01-13,Supplier Cost Change
-1517,17,77,550.0,590.0,2026-08-24,Cost Increase
-1518,17,80,370.0,400.0,2026-01-10,Cost Increase
-1519,17,80,400.0,430.0,2026-04-12,Menu Revision
-1520,17,81,260.0,240.0,2026-04-27,Seasonal Adjustment
-1521,17,83,280.0,270.0,2025-11-07,Menu Revision
-1522,17,90,640.0,670.0,2025-10-04,Menu Revision
-1523,17,90,670.0,730.0,2026-04-03,Supplier Cost Change
-1524,17,93,230.0,250.0,2026-06-17,Supplier Cost Change
-1525,17,94,140.0,150.0,2025-05-09,Market Adjustment
-1526,17,94,150.0,160.0,2025-08-18,Seasonal Adjustment
-1527,17,94,160.0,170.0,2025-09-15,Cost Increase
-1528,17,95,280.0,300.0,2026-07-05,Market Adjustment
-1529,17,97,430.0,460.0,2025-11-10,Market Adjustment
-1530,17,97,460.0,490.0,2026-06-25,Market Adjustment
-1531,17,100,780.0,810.0,2026-06-07,Menu Revision
-1532,17,100,810.0,890.0,2026-08-20,Supplier Cost Change
-1533,17,102,710.0,740.0,2025-04-30,Supplier Cost Change
-1534,17,105,140.0,150.0,2025-05-27,Market Adjustment
-1535,17,106,420.0,400.0,2026-08-04,Menu Revision
-1536,17,107,430.0,450.0,2025-12-27,Supplier Cost Change
-1537,17,107,450.0,480.0,2026-07-07,Supplier Cost Change
-1538,17,108,180.0,170.0,2025-06-08,Menu Revision
-1539,17,108,170.0,180.0,2025-06-20,Seasonal Adjustment
-1540,17,110,540.0,560.0,2025-05-20,Supplier Cost Change
-1541,17,110,560.0,580.0,2026-08-09,Seasonal Adjustment
-1542,17,111,730.0,760.0,2026-06-01,Menu Revision
-1543,17,111,760.0,800.0,2026-06-04,Supplier Cost Change
-1544,17,115,1510.0,1620.0,2026-02-25,Cost Increase
-1545,17,117,200.0,220.0,2026-03-31,Cost Increase
-1546,17,117,220.0,210.0,2026-07-16,Menu Revision
-1547,17,121,230.0,240.0,2025-07-11,Market Adjustment
-1548,17,121,240.0,260.0,2025-10-25,Market Adjustment
-1549,17,121,260.0,280.0,2026-03-18,Market Adjustment
-1550,17,122,610.0,640.0,2026-03-13,Seasonal Adjustment
-1551,17,123,490.0,510.0,2026-03-29,Supplier Cost Change
-1552,17,129,110.0,120.0,2026-03-05,Market Adjustment
-1553,17,131,440.0,480.0,2026-03-28,Cost Increase
-1554,17,131,480.0,520.0,2026-04-28,Menu Revision
-1555,17,136,1110.0,1190.0,2025-08-26,Menu Revision
-1556,17,137,1210.0,1320.0,2026-02-17,Supplier Cost Change
-1557,17,138,1030.0,1080.0,2025-04-04,Market Adjustment
-1558,17,138,1080.0,1150.0,2026-03-24,Menu Revision
-1559,17,146,700.0,760.0,2026-02-26,Cost Increase
-1560,17,146,760.0,790.0,2026-02-27,Market Adjustment
-1561,17,147,390.0,420.0,2026-04-25,Seasonal Adjustment
-1562,18,1,570.0,600.0,2025-10-26,Cost Increase
-1563,18,1,600.0,640.0,2026-08-13,Supplier Cost Change
-1564,18,2,570.0,550.0,2026-01-29,Supplier Cost Change
-1565,18,6,660.0,720.0,2026-07-30,Market Adjustment
-1566,18,8,480.0,500.0,2025-10-26,Cost Increase
-1567,18,9,250.0,260.0,2026-06-27,Cost Increase
-1568,18,11,430.0,460.0,2025-05-18,Menu Revision
-1569,18,11,460.0,440.0,2026-01-15,Supplier Cost Change
-1570,18,11,440.0,460.0,2026-04-13,Menu Revision
-1571,18,12,270.0,290.0,2026-04-18,Market Adjustment
-1572,18,14,1100.0,1200.0,2025-05-30,Cost Increase
-1573,18,14,1200.0,1300.0,2025-11-22,Market Adjustment
-1574,18,17,1240.0,1320.0,2025-08-31,Cost Increase
-1575,18,20,260.0,280.0,2026-05-31,Supplier Cost Change
-1576,18,22,250.0,260.0,2025-07-11,Market Adjustment
-1577,18,22,260.0,270.0,2025-10-31,Market Adjustment
-1578,18,26,1680.0,1570.0,2025-06-28,Market Adjustment
-1579,18,33,220.0,200.0,2026-01-07,Cost Increase
-1580,18,33,200.0,220.0,2026-03-26,Market Adjustment
-1581,18,34,250.0,260.0,2026-07-31,Supplier Cost Change
-1582,18,37,540.0,510.0,2025-12-09,Supplier Cost Change
-1583,18,38,1340.0,1400.0,2025-06-28,Market Adjustment
-1584,18,38,1400.0,1470.0,2026-04-29,Seasonal Adjustment
-1585,18,38,1470.0,1580.0,2026-08-04,Supplier Cost Change
-1586,18,42,1040.0,1080.0,2026-07-12,Seasonal Adjustment
-1587,18,46,150.0,160.0,2026-08-27,Cost Increase
-1588,18,47,550.0,570.0,2025-07-01,Cost Increase
-1589,18,48,410.0,450.0,2026-08-18,Market Adjustment
-1590,18,50,1480.0,1590.0,2025-12-13,Supplier Cost Change
-1591,18,50,1590.0,1650.0,2026-01-17,Supplier Cost Change
-1592,18,50,1650.0,1730.0,2026-03-25,Supplier Cost Change
-1593,18,55,860.0,900.0,2026-03-18,Seasonal Adjustment
-1594,18,55,900.0,970.0,2026-06-03,Menu Revision
-1595,18,58,230.0,240.0,2025-12-19,Cost Increase
-1596,18,58,240.0,230.0,2026-03-23,Cost Increase
-1597,18,60,270.0,250.0,2026-01-13,Seasonal Adjustment
-1598,18,60,250.0,270.0,2026-06-23,Supplier Cost Change
-1599,18,60,270.0,290.0,2026-08-26,Market Adjustment
-1600,18,61,330.0,350.0,2025-04-07,Menu Revision
-1601,18,62,970.0,1040.0,2025-08-20,Cost Increase
-1602,18,63,400.0,440.0,2025-07-08,Market Adjustment
-1603,18,63,440.0,460.0,2026-08-26,Menu Revision
-1604,18,64,1100.0,1030.0,2026-07-31,Cost Increase
-1605,18,66,1120.0,1070.0,2025-07-03,Seasonal Adjustment
-1606,18,68,240.0,260.0,2026-05-28,Cost Increase
-1607,18,71,500.0,520.0,2025-09-13,Market Adjustment
-1608,18,72,390.0,410.0,2026-06-17,Supplier Cost Change
-1609,18,73,280.0,300.0,2026-01-03,Seasonal Adjustment
-1610,18,75,730.0,750.0,2025-05-04,Cost Increase
-1611,18,75,750.0,800.0,2026-07-29,Supplier Cost Change
-1612,18,76,1450.0,1560.0,2025-10-28,Menu Revision
-1613,18,76,1560.0,1650.0,2025-11-21,Menu Revision
-1614,18,77,620.0,590.0,2026-01-28,Supplier Cost Change
-1615,18,79,1990.0,1850.0,2026-07-15,Menu Revision
-1616,18,81,230.0,240.0,2026-04-28,Market Adjustment
-1617,18,81,240.0,250.0,2026-06-27,Market Adjustment
-1618,18,87,370.0,390.0,2026-05-19,Cost Increase
-1619,18,88,1190.0,1290.0,2025-10-08,Menu Revision
-1620,18,90,810.0,760.0,2026-01-12,Market Adjustment
-1621,18,92,290.0,300.0,2026-04-23,Seasonal Adjustment
-1622,18,92,300.0,330.0,2026-07-01,Supplier Cost Change
-1623,18,94,180.0,170.0,2025-05-27,Supplier Cost Change
-1624,18,95,230.0,250.0,2026-07-12,Cost Increase
-1625,18,96,220.0,230.0,2025-04-15,Seasonal Adjustment
-1626,18,96,230.0,210.0,2025-06-11,Market Adjustment
-1627,18,98,550.0,570.0,2025-07-13,Cost Increase
-1628,18,100,800.0,850.0,2026-06-20,Cost Increase
-1629,18,100,850.0,900.0,2026-07-11,Market Adjustment
-1630,18,101,1110.0,1210.0,2025-03-31,Menu Revision
-1631,18,102,620.0,660.0,2025-07-02,Supplier Cost Change
-1632,18,102,660.0,710.0,2025-08-05,Cost Increase
-1633,18,106,340.0,350.0,2026-05-28,Supplier Cost Change
-1634,18,108,180.0,190.0,2026-04-06,Cost Increase
-1635,18,110,550.0,510.0,2026-02-26,Seasonal Adjustment
-1636,18,112,530.0,560.0,2025-09-13,Menu Revision
-1637,18,115,1480.0,1620.0,2026-06-16,Cost Increase
-1638,18,117,230.0,240.0,2025-05-29,Cost Increase
-1639,18,121,280.0,290.0,2025-05-19,Menu Revision
-1640,18,121,290.0,300.0,2025-11-05,Seasonal Adjustment
-1641,18,128,260.0,280.0,2026-06-02,Seasonal Adjustment
-1642,18,129,120.0,130.0,2026-07-13,Cost Increase
-1643,18,132,280.0,310.0,2025-11-02,Menu Revision
-1644,18,133,510.0,470.0,2026-05-22,Cost Increase
-1645,18,133,470.0,490.0,2026-06-26,Cost Increase
-1646,18,136,1280.0,1350.0,2026-08-03,Seasonal Adjustment
-1647,18,139,1590.0,1700.0,2025-07-16,Supplier Cost Change
-1648,18,139,1700.0,1780.0,2025-10-23,Cost Increase
-1649,18,139,1780.0,1950.0,2026-01-03,Market Adjustment
-1650,18,142,380.0,360.0,2025-07-23,Menu Revision
-1651,18,143,250.0,260.0,2025-11-14,Market Adjustment
-1652,18,145,510.0,540.0,2025-04-19,Seasonal Adjustment
-1653,18,146,890.0,920.0,2026-03-30,Menu Revision
-1654,18,148,1020.0,960.0,2026-05-01,Menu Revision
-1655,18,150,1110.0,1040.0,2025-06-01,Cost Increase
-1656,19,2,470.0,490.0,2025-09-13,Seasonal Adjustment
-1657,19,2,490.0,540.0,2026-02-04,Cost Increase
-1658,19,8,420.0,450.0,2025-08-09,Seasonal Adjustment
-1659,19,10,400.0,420.0,2026-08-15,Seasonal Adjustment
-1660,19,12,260.0,280.0,2025-07-16,Seasonal Adjustment
-1661,19,13,260.0,290.0,2025-09-22,Cost Increase
-1662,19,20,240.0,260.0,2025-07-18,Supplier Cost Change
-1663,19,21,130.0,140.0,2025-12-12,Supplier Cost Change
-1664,19,22,250.0,260.0,2026-04-23,Menu Revision
-1665,19,27,380.0,410.0,2026-07-20,Menu Revision
-1666,19,27,410.0,430.0,2026-08-22,Menu Revision
-1667,19,27,430.0,410.0,2026-08-24,Menu Revision
-1668,19,35,200.0,220.0,2025-07-26,Seasonal Adjustment
-1669,19,35,220.0,240.0,2025-10-16,Market Adjustment
-1670,19,35,240.0,250.0,2026-03-10,Menu Revision
-1671,19,36,290.0,320.0,2025-08-07,Supplier Cost Change
-1672,19,38,1130.0,1200.0,2025-06-20,Market Adjustment
-1673,19,38,1200.0,1250.0,2026-02-18,Cost Increase
-1674,19,38,1250.0,1350.0,2026-02-23,Seasonal Adjustment
-1675,19,42,970.0,1040.0,2026-03-29,Seasonal Adjustment
-1676,19,42,1040.0,1000.0,2026-04-01,Supplier Cost Change
-1677,19,43,1180.0,1270.0,2025-11-03,Seasonal Adjustment
-1678,19,43,1270.0,1350.0,2025-11-08,Menu Revision
-1679,19,43,1350.0,1420.0,2026-06-08,Supplier Cost Change
-1680,19,44,550.0,580.0,2026-05-04,Menu Revision
-1681,19,44,580.0,630.0,2026-05-18,Market Adjustment
-1682,19,45,250.0,270.0,2026-04-28,Cost Increase
-1683,19,48,380.0,410.0,2026-03-28,Market Adjustment
-1684,19,48,410.0,420.0,2026-04-14,Market Adjustment
-1685,19,49,380.0,410.0,2026-08-03,Cost Increase
-1686,19,53,1540.0,1450.0,2025-12-01,Seasonal Adjustment
-1687,19,55,1060.0,1010.0,2026-05-24,Cost Increase
-1688,19,55,1010.0,1090.0,2026-07-13,Market Adjustment
-1689,19,57,270.0,290.0,2026-08-18,Menu Revision
-1690,19,58,240.0,260.0,2025-09-21,Cost Increase
-1691,19,60,280.0,290.0,2025-05-07,Seasonal Adjustment
-1692,19,60,290.0,280.0,2026-04-22,Menu Revision
-1693,19,60,280.0,300.0,2026-06-17,Cost Increase
-1694,19,64,1150.0,1220.0,2026-01-15,Seasonal Adjustment
-1695,19,67,1210.0,1300.0,2025-12-28,Seasonal Adjustment
-1696,19,68,240.0,260.0,2026-02-02,Seasonal Adjustment
-1697,19,76,1690.0,1810.0,2025-08-06,Supplier Cost Change
-1698,19,76,1810.0,1720.0,2025-10-06,Seasonal Adjustment
-1699,19,77,630.0,680.0,2025-11-30,Seasonal Adjustment
-1700,19,78,940.0,980.0,2025-10-20,Supplier Cost Change
-1701,19,79,2160.0,2040.0,2026-03-02,Cost Increase
-1702,19,80,370.0,400.0,2026-04-19,Seasonal Adjustment
-1703,19,84,410.0,430.0,2025-11-01,Supplier Cost Change
-1704,19,85,470.0,510.0,2026-02-12,Market Adjustment
-1705,19,87,350.0,370.0,2026-06-23,Menu Revision
-1706,19,88,1150.0,1250.0,2025-06-29,Menu Revision
-1707,19,88,1250.0,1370.0,2025-12-12,Supplier Cost Change
-1708,19,90,660.0,690.0,2025-04-25,Menu Revision
-1709,19,90,690.0,710.0,2026-07-11,Supplier Cost Change
-1710,19,90,710.0,740.0,2026-08-10,Menu Revision
-1711,19,91,1080.0,1170.0,2025-09-13,Menu Revision
-1712,19,93,200.0,210.0,2025-06-19,Cost Increase
-1713,19,93,210.0,230.0,2025-12-22,Menu Revision
-1714,19,94,170.0,180.0,2025-05-15,Market Adjustment
-1715,19,95,250.0,270.0,2026-08-25,Menu Revision
-1716,19,96,180.0,190.0,2026-06-19,Cost Increase
-1717,19,97,420.0,440.0,2025-06-18,Cost Increase
-1718,19,97,440.0,470.0,2025-09-17,Cost Increase
-1719,19,100,830.0,770.0,2026-06-24,Cost Increase
-1720,19,104,540.0,580.0,2025-09-22,Market Adjustment
-1721,19,111,730.0,760.0,2026-08-27,Menu Revision
-1722,19,113,650.0,710.0,2025-08-24,Seasonal Adjustment
-1723,19,115,1480.0,1560.0,2025-04-23,Menu Revision
-1724,19,116,320.0,340.0,2025-06-16,Seasonal Adjustment
-1725,19,116,340.0,350.0,2026-06-24,Supplier Cost Change
-1726,19,117,240.0,250.0,2025-07-02,Cost Increase
-1727,19,123,440.0,460.0,2025-05-28,Market Adjustment
-1728,19,123,460.0,500.0,2025-09-27,Menu Revision
-1729,19,125,1110.0,1210.0,2025-06-12,Seasonal Adjustment
-1730,19,128,290.0,320.0,2026-07-29,Supplier Cost Change
-1731,19,128,320.0,310.0,2026-08-31,Supplier Cost Change
-1732,19,129,100.0,110.0,2025-08-14,Seasonal Adjustment
-1733,19,136,1240.0,1350.0,2025-04-04,Menu Revision
-1734,19,136,1350.0,1300.0,2025-12-08,Menu Revision
-1735,19,138,1080.0,1180.0,2026-06-13,Menu Revision
-1736,19,142,330.0,360.0,2026-07-04,Seasonal Adjustment
-1737,19,144,360.0,390.0,2025-12-22,Seasonal Adjustment
-1738,19,145,570.0,600.0,2026-08-05,Market Adjustment
-1739,19,146,770.0,820.0,2026-04-26,Market Adjustment
-1740,19,146,820.0,890.0,2026-08-14,Market Adjustment
-1741,20,2,440.0,470.0,2025-11-12,Menu Revision
-1742,20,4,1230.0,1310.0,2026-07-13,Market Adjustment
-1743,20,12,250.0,270.0,2025-11-12,Cost Increase
-1744,20,14,1230.0,1280.0,2026-05-23,Seasonal Adjustment
-1745,20,17,1490.0,1420.0,2026-02-12,Seasonal Adjustment
-1746,20,18,610.0,650.0,2026-06-02,Cost Increase
-1747,20,20,260.0,280.0,2025-07-26,Seasonal Adjustment
-1748,20,22,260.0,280.0,2026-04-09,Seasonal Adjustment
-1749,20,25,360.0,400.0,2026-05-26,Supplier Cost Change
-1750,20,26,1270.0,1390.0,2025-06-11,Market Adjustment
-1751,20,26,1390.0,1490.0,2026-03-07,Cost Increase
-1752,20,28,1340.0,1460.0,2025-12-24,Market Adjustment
-1753,20,30,670.0,720.0,2026-07-22,Cost Increase
-1754,20,31,1670.0,1750.0,2025-06-29,Seasonal Adjustment
-1755,20,31,1750.0,1920.0,2026-08-28,Cost Increase
-1756,20,38,1250.0,1350.0,2025-04-23,Seasonal Adjustment
-1757,20,42,980.0,1060.0,2026-08-13,Seasonal Adjustment
-1758,20,43,1280.0,1360.0,2025-05-05,Supplier Cost Change
-1759,20,43,1360.0,1490.0,2026-04-08,Seasonal Adjustment
-1760,20,48,350.0,370.0,2025-05-21,Cost Increase
-1761,20,48,370.0,400.0,2025-09-26,Seasonal Adjustment
-1762,20,49,370.0,410.0,2025-06-22,Supplier Cost Change
-1763,20,49,410.0,440.0,2025-08-15,Supplier Cost Change
-1764,20,49,440.0,480.0,2025-09-30,Cost Increase
-1765,20,50,1760.0,1910.0,2026-04-21,Cost Increase
-1766,20,51,760.0,830.0,2025-05-09,Menu Revision
-1767,20,51,830.0,790.0,2025-08-19,Seasonal Adjustment
-1768,20,51,790.0,860.0,2026-02-15,Cost Increase
-1769,20,52,1280.0,1350.0,2026-02-25,Cost Increase
-1770,20,54,1050.0,1140.0,2025-09-07,Supplier Cost Change
-1771,20,55,1010.0,960.0,2026-07-20,Menu Revision
-1772,20,55,960.0,1000.0,2026-08-07,Supplier Cost Change
-1773,20,56,290.0,320.0,2026-04-10,Seasonal Adjustment
-1774,20,57,260.0,270.0,2026-08-10,Supplier Cost Change
-1775,20,59,290.0,310.0,2026-03-17,Supplier Cost Change
-1776,20,60,300.0,310.0,2025-11-19,Cost Increase
-1777,20,60,310.0,290.0,2026-01-24,Supplier Cost Change
-1778,20,63,470.0,450.0,2025-07-10,Market Adjustment
-1779,20,64,1150.0,1200.0,2026-07-06,Cost Increase
-1780,20,66,840.0,890.0,2025-04-27,Supplier Cost Change
-1781,20,66,890.0,970.0,2025-12-19,Seasonal Adjustment
-1782,20,67,1200.0,1320.0,2025-11-30,Supplier Cost Change
-1783,20,68,250.0,260.0,2026-06-24,Cost Increase
-1784,20,72,430.0,450.0,2026-05-21,Supplier Cost Change
-1785,20,72,450.0,470.0,2026-06-11,Supplier Cost Change
-1786,20,73,300.0,330.0,2026-04-06,Market Adjustment
-1787,20,74,1320.0,1440.0,2026-04-29,Market Adjustment
-1788,20,75,680.0,740.0,2025-04-13,Menu Revision
-1789,20,77,550.0,590.0,2025-11-26,Menu Revision
-1790,20,79,2130.0,2320.0,2026-05-07,Menu Revision
-1791,20,79,2320.0,2160.0,2026-08-31,Seasonal Adjustment
-1792,20,82,320.0,330.0,2026-02-15,Cost Increase
-1793,20,82,330.0,310.0,2026-05-27,Menu Revision
-1794,20,84,400.0,430.0,2025-06-19,Menu Revision
-1795,20,86,1650.0,1740.0,2026-04-03,Supplier Cost Change
-1796,20,88,1200.0,1260.0,2025-08-15,Market Adjustment
-1797,20,90,720.0,780.0,2025-04-22,Seasonal Adjustment
-1798,20,90,780.0,820.0,2026-08-11,Menu Revision
-1799,20,91,1250.0,1330.0,2025-11-09,Cost Increase
-1800,20,93,210.0,220.0,2025-04-29,Cost Increase
-1801,20,93,220.0,230.0,2026-03-07,Cost Increase
-1802,20,94,150.0,160.0,2025-10-29,Cost Increase
-1803,20,96,220.0,200.0,2025-12-05,Seasonal Adjustment
-1804,20,96,200.0,190.0,2026-07-24,Cost Increase
-1805,20,99,950.0,880.0,2025-11-09,Supplier Cost Change
-1806,20,99,880.0,840.0,2026-07-24,Supplier Cost Change
-1807,20,104,530.0,570.0,2025-07-09,Supplier Cost Change
-1808,20,105,140.0,150.0,2025-07-02,Menu Revision
-1809,20,105,150.0,160.0,2026-03-28,Seasonal Adjustment
-1810,20,108,190.0,180.0,2025-12-09,Seasonal Adjustment
-1811,20,108,180.0,190.0,2026-08-21,Menu Revision
-1812,20,109,500.0,520.0,2025-05-28,Market Adjustment
-1813,20,109,520.0,550.0,2025-06-10,Menu Revision
-1814,20,111,770.0,720.0,2026-07-16,Market Adjustment
-1815,20,115,1710.0,1870.0,2025-06-03,Seasonal Adjustment
-1816,20,116,350.0,340.0,2026-06-21,Supplier Cost Change
-1817,20,116,340.0,360.0,2026-08-09,Menu Revision
-1818,20,117,210.0,220.0,2025-07-24,Cost Increase
-1819,20,117,220.0,240.0,2025-12-10,Seasonal Adjustment
-1820,20,126,460.0,500.0,2025-07-16,Supplier Cost Change
-1821,20,126,500.0,540.0,2026-07-11,Market Adjustment
-1822,20,127,1100.0,1140.0,2025-10-16,Supplier Cost Change
-1823,20,130,450.0,470.0,2026-07-31,Supplier Cost Change
-1824,20,131,500.0,480.0,2026-03-05,Cost Increase
-1825,20,131,480.0,510.0,2026-03-06,Seasonal Adjustment
-1826,20,132,270.0,300.0,2025-06-10,Seasonal Adjustment
-1827,20,132,300.0,320.0,2025-11-26,Seasonal Adjustment
-1828,20,134,1300.0,1420.0,2025-10-21,Supplier Cost Change
-1829,20,134,1420.0,1540.0,2026-08-04,Market Adjustment
-1830,20,135,630.0,680.0,2025-11-07,Seasonal Adjustment
-1831,20,137,1310.0,1420.0,2026-05-25,Cost Increase
-1832,20,137,1420.0,1500.0,2026-06-21,Market Adjustment
-1833,20,138,1060.0,1130.0,2025-11-27,Market Adjustment
-1834,20,142,310.0,320.0,2025-12-13,Menu Revision
-1835,20,143,270.0,280.0,2026-02-20,Menu Revision
-1836,20,146,840.0,890.0,2026-03-12,Seasonal Adjustment
-1837,20,146,890.0,930.0,2026-07-24,Seasonal Adjustment
-1838,20,148,970.0,930.0,2026-05-20,Seasonal Adjustment
-1839,20,150,900.0,980.0,2025-09-13,Seasonal Adjustment
-1840,20,150,980.0,950.0,2026-03-10,Menu Revision
+1,1,1,580.0,610.0,2025-08-30,Cost Increase
+2,1,2,850.0,810.0,2025-07-06,Supplier Cost Change
+3,1,2,810.0,830.0,2025-12-10,Supplier Cost Change
+4,1,5,1090.0,1200.0,2026-06-12,Supplier Cost Change
+5,1,8,320.0,300.0,2026-03-13,Seasonal Adjustment
+6,1,10,450.0,490.0,2026-07-07,Supplier Cost Change
+7,1,12,340.0,370.0,2026-08-04,Menu Revision
+8,1,14,570.0,600.0,2026-04-09,Menu Revision
+9,1,14,600.0,630.0,2026-07-24,Market Adjustment
+10,1,15,520.0,500.0,2025-04-11,Cost Increase
+11,1,19,1270.0,1360.0,2026-08-29,Menu Revision
+12,1,22,170.0,180.0,2026-02-05,Menu Revision
+13,1,23,430.0,470.0,2025-07-30,Menu Revision
+14,1,26,1370.0,1440.0,2026-07-31,Menu Revision
+15,1,28,970.0,1040.0,2025-10-20,Cost Increase
+16,1,31,1270.0,1180.0,2025-08-10,Supplier Cost Change
+17,1,31,1180.0,1270.0,2026-08-06,Menu Revision
+18,1,39,620.0,650.0,2025-08-27,Supplier Cost Change
+19,1,39,650.0,710.0,2026-05-27,Supplier Cost Change
+20,1,43,910.0,1000.0,2025-12-05,Seasonal Adjustment
+21,1,44,420.0,450.0,2025-10-31,Cost Increase
+22,1,48,190.0,210.0,2025-09-16,Seasonal Adjustment
+23,1,48,210.0,220.0,2026-03-07,Supplier Cost Change
+24,1,49,550.0,580.0,2025-09-23,Seasonal Adjustment
+25,1,49,580.0,640.0,2026-04-19,Seasonal Adjustment
+26,1,50,1470.0,1600.0,2026-05-13,Market Adjustment
+27,1,51,710.0,760.0,2026-01-13,Supplier Cost Change
+28,1,52,1330.0,1450.0,2026-08-25,Menu Revision
+29,1,57,150.0,160.0,2025-11-25,Market Adjustment
+30,1,57,160.0,180.0,2026-08-07,Supplier Cost Change
+31,1,58,400.0,420.0,2025-11-07,Market Adjustment
+32,1,61,560.0,610.0,2026-01-18,Supplier Cost Change
+33,1,62,670.0,720.0,2025-07-04,Market Adjustment
+34,1,63,480.0,440.0,2026-01-10,Cost Increase
+35,1,65,830.0,880.0,2026-02-07,Seasonal Adjustment
+36,1,65,880.0,940.0,2026-08-21,Supplier Cost Change
+37,1,67,1470.0,1590.0,2025-11-01,Market Adjustment
+38,1,67,1590.0,1710.0,2025-12-06,Cost Increase
+39,1,69,140.0,150.0,2025-06-18,Menu Revision
+40,1,69,150.0,160.0,2026-03-31,Supplier Cost Change
+41,1,72,390.0,410.0,2026-07-09,Cost Increase
+42,1,72,410.0,390.0,2026-08-20,Supplier Cost Change
+43,1,73,410.0,440.0,2026-03-25,Market Adjustment
+44,1,73,440.0,460.0,2026-05-13,Menu Revision
+45,1,74,1100.0,1140.0,2026-03-11,Supplier Cost Change
+46,1,75,480.0,450.0,2025-09-22,Market Adjustment
+47,1,76,810.0,830.0,2025-09-23,Seasonal Adjustment
+48,1,79,800.0,830.0,2026-06-05,Menu Revision
+49,1,80,360.0,350.0,2026-08-18,Market Adjustment
+50,1,81,160.0,170.0,2026-07-06,Menu Revision
+51,1,82,170.0,190.0,2025-06-24,Menu Revision
+52,1,82,190.0,210.0,2026-01-05,Cost Increase
+53,1,82,210.0,230.0,2026-07-26,Menu Revision
+54,1,87,390.0,410.0,2026-06-02,Supplier Cost Change
+55,1,91,1140.0,1250.0,2026-02-13,Supplier Cost Change
+56,1,94,360.0,380.0,2026-08-22,Cost Increase
+57,1,95,420.0,450.0,2026-08-25,Menu Revision
+58,1,96,210.0,230.0,2025-05-28,Supplier Cost Change
+59,1,100,820.0,770.0,2026-07-23,Menu Revision
+60,1,102,940.0,1020.0,2026-05-25,Seasonal Adjustment
+61,1,103,960.0,1030.0,2026-07-14,Supplier Cost Change
+62,1,104,480.0,520.0,2026-04-01,Market Adjustment
+63,1,105,210.0,220.0,2025-11-09,Market Adjustment
+64,1,105,220.0,230.0,2025-12-01,Market Adjustment
+65,1,105,230.0,250.0,2026-07-01,Supplier Cost Change
+66,1,108,230.0,240.0,2025-11-04,Cost Increase
+67,1,108,240.0,260.0,2026-03-16,Seasonal Adjustment
+68,1,110,520.0,550.0,2025-06-14,Menu Revision
+69,1,111,700.0,730.0,2026-05-20,Seasonal Adjustment
+70,1,112,760.0,820.0,2026-01-05,Supplier Cost Change
+71,1,112,820.0,870.0,2026-03-14,Cost Increase
+72,1,112,870.0,940.0,2026-04-07,Seasonal Adjustment
+73,1,113,820.0,850.0,2026-06-14,Cost Increase
+74,1,116,340.0,370.0,2025-12-12,Cost Increase
+75,1,116,370.0,390.0,2026-07-13,Menu Revision
+76,1,119,520.0,560.0,2026-05-03,Cost Increase
+77,1,119,560.0,610.0,2026-07-29,Supplier Cost Change
+78,1,121,370.0,400.0,2025-03-31,Supplier Cost Change
+79,1,121,400.0,430.0,2025-09-06,Supplier Cost Change
+80,1,122,510.0,550.0,2026-02-08,Seasonal Adjustment
+81,1,124,990.0,1060.0,2025-05-31,Cost Increase
+82,1,124,1060.0,1110.0,2025-12-02,Seasonal Adjustment
+83,1,124,1110.0,1160.0,2026-08-28,Menu Revision
+84,1,126,1150.0,1060.0,2025-12-29,Supplier Cost Change
+85,1,128,280.0,300.0,2026-07-09,Menu Revision
+86,1,129,300.0,310.0,2025-08-19,Cost Increase
+87,1,130,450.0,480.0,2026-08-07,Supplier Cost Change
+88,1,134,790.0,820.0,2025-06-02,Menu Revision
+89,1,134,820.0,870.0,2026-04-03,Cost Increase
+90,1,136,420.0,430.0,2025-07-05,Menu Revision
+91,1,136,430.0,470.0,2025-08-18,Seasonal Adjustment
+92,1,137,360.0,380.0,2026-06-29,Menu Revision
+93,1,137,380.0,400.0,2026-08-09,Cost Increase
+94,1,140,590.0,650.0,2026-03-28,Menu Revision
+95,1,141,290.0,300.0,2026-07-06,Seasonal Adjustment
+96,1,142,360.0,370.0,2025-08-23,Seasonal Adjustment
+97,1,144,270.0,260.0,2025-09-07,Cost Increase
+98,1,146,690.0,760.0,2026-05-15,Market Adjustment
+99,1,147,610.0,670.0,2026-07-02,Supplier Cost Change
+100,1,149,510.0,490.0,2026-02-15,Seasonal Adjustment
+101,1,150,860.0,940.0,2026-06-11,Cost Increase
+102,2,2,940.0,990.0,2025-04-21,Market Adjustment
+103,2,3,500.0,520.0,2025-08-08,Supplier Cost Change
+104,2,3,520.0,540.0,2025-08-24,Supplier Cost Change
+105,2,5,1310.0,1420.0,2025-05-18,Cost Increase
+106,2,6,460.0,510.0,2026-08-20,Cost Increase
+107,2,7,1060.0,1130.0,2025-07-24,Market Adjustment
+108,2,10,490.0,540.0,2026-08-22,Menu Revision
+109,2,14,610.0,640.0,2026-05-17,Market Adjustment
+110,2,15,480.0,500.0,2026-01-30,Cost Increase
+111,2,16,640.0,660.0,2025-10-31,Cost Increase
+112,2,16,660.0,720.0,2026-04-20,Seasonal Adjustment
+113,2,21,290.0,310.0,2025-09-18,Supplier Cost Change
+114,2,21,310.0,340.0,2025-12-03,Menu Revision
+115,2,23,460.0,500.0,2025-10-05,Seasonal Adjustment
+116,2,23,500.0,550.0,2026-02-08,Supplier Cost Change
+117,2,25,310.0,340.0,2026-08-26,Cost Increase
+118,2,27,660.0,710.0,2026-08-07,Cost Increase
+119,2,27,710.0,760.0,2026-08-12,Supplier Cost Change
+120,2,32,430.0,450.0,2025-11-03,Menu Revision
+121,2,33,320.0,340.0,2026-05-27,Market Adjustment
+122,2,36,300.0,320.0,2025-07-19,Seasonal Adjustment
+123,2,40,1120.0,1070.0,2025-09-23,Supplier Cost Change
+124,2,41,880.0,930.0,2025-07-15,Cost Increase
+125,2,41,930.0,1000.0,2025-11-20,Supplier Cost Change
+126,2,47,310.0,340.0,2025-06-29,Menu Revision
+127,2,48,180.0,190.0,2026-02-07,Supplier Cost Change
+128,2,49,560.0,590.0,2025-06-24,Cost Increase
+129,2,51,770.0,720.0,2026-01-23,Supplier Cost Change
+130,2,52,1370.0,1460.0,2026-08-31,Cost Increase
+131,2,54,710.0,680.0,2025-10-11,Market Adjustment
+132,2,55,1800.0,1870.0,2026-06-24,Supplier Cost Change
+133,2,57,190.0,180.0,2026-03-07,Supplier Cost Change
+134,2,61,700.0,650.0,2025-12-22,Cost Increase
+135,2,63,390.0,400.0,2026-08-24,Cost Increase
+136,2,66,890.0,940.0,2025-11-16,Cost Increase
+137,2,67,1520.0,1630.0,2026-07-11,Seasonal Adjustment
+138,2,68,200.0,210.0,2025-08-14,Seasonal Adjustment
+139,2,69,130.0,140.0,2025-08-09,Supplier Cost Change
+140,2,69,140.0,150.0,2025-09-11,Cost Increase
+141,2,69,150.0,160.0,2026-07-06,Seasonal Adjustment
+142,2,73,460.0,430.0,2025-08-22,Cost Increase
+143,2,74,1150.0,1250.0,2026-04-07,Cost Increase
+144,2,75,370.0,390.0,2025-08-23,Seasonal Adjustment
+145,2,75,390.0,410.0,2025-11-10,Seasonal Adjustment
+146,2,75,410.0,430.0,2026-01-23,Menu Revision
+147,2,84,480.0,450.0,2025-11-01,Supplier Cost Change
+148,2,84,450.0,480.0,2026-03-29,Seasonal Adjustment
+149,2,85,230.0,250.0,2026-06-22,Market Adjustment
+150,2,87,400.0,380.0,2026-05-10,Supplier Cost Change
+151,2,88,470.0,510.0,2025-09-22,Seasonal Adjustment
+152,2,88,510.0,540.0,2025-10-18,Cost Increase
+153,2,89,850.0,880.0,2025-08-21,Menu Revision
+154,2,89,880.0,930.0,2025-08-22,Market Adjustment
+155,2,89,930.0,890.0,2025-10-22,Seasonal Adjustment
+156,2,92,480.0,520.0,2026-05-14,Supplier Cost Change
+157,2,93,300.0,330.0,2025-08-27,Seasonal Adjustment
+158,2,94,350.0,360.0,2026-08-05,Market Adjustment
+159,2,101,680.0,710.0,2026-02-12,Menu Revision
+160,2,104,510.0,540.0,2026-03-16,Supplier Cost Change
+161,2,106,280.0,290.0,2026-05-03,Supplier Cost Change
+162,2,106,290.0,300.0,2026-06-12,Cost Increase
+163,2,106,300.0,330.0,2026-06-13,Supplier Cost Change
+164,2,111,680.0,720.0,2026-08-08,Supplier Cost Change
+165,2,114,610.0,580.0,2026-07-22,Seasonal Adjustment
+166,2,115,1930.0,2030.0,2025-08-06,Menu Revision
+167,2,119,550.0,590.0,2026-05-22,Cost Increase
+168,2,122,450.0,490.0,2025-12-26,Supplier Cost Change
+169,2,125,700.0,750.0,2025-09-08,Cost Increase
+170,2,125,750.0,810.0,2026-01-15,Supplier Cost Change
+171,2,126,1000.0,1040.0,2025-11-25,Supplier Cost Change
+172,2,128,250.0,270.0,2026-08-29,Cost Increase
+173,2,128,270.0,290.0,2026-08-31,Seasonal Adjustment
+174,2,129,260.0,280.0,2025-09-19,Market Adjustment
+175,2,129,280.0,270.0,2026-05-17,Seasonal Adjustment
+176,2,134,1000.0,930.0,2025-05-15,Seasonal Adjustment
+177,2,136,520.0,540.0,2025-08-25,Supplier Cost Change
+178,2,138,600.0,580.0,2026-08-19,Market Adjustment
+179,2,139,1380.0,1490.0,2026-02-10,Cost Increase
+180,2,139,1490.0,1540.0,2026-08-10,Menu Revision
+181,2,141,250.0,270.0,2026-06-22,Supplier Cost Change
+182,2,141,270.0,290.0,2026-08-14,Cost Increase
+183,2,142,340.0,370.0,2026-04-27,Supplier Cost Change
+184,2,146,650.0,670.0,2026-01-29,Cost Increase
+185,2,149,440.0,460.0,2025-04-26,Market Adjustment
+186,2,150,840.0,910.0,2026-05-25,Supplier Cost Change
+187,3,4,1040.0,960.0,2025-10-09,Seasonal Adjustment
+188,3,4,960.0,1030.0,2026-04-15,Menu Revision
+189,3,8,310.0,340.0,2025-11-01,Market Adjustment
+190,3,9,180.0,190.0,2026-01-25,Seasonal Adjustment
+191,3,9,190.0,210.0,2026-08-02,Market Adjustment
+192,3,14,570.0,600.0,2025-10-20,Cost Increase
+193,3,14,600.0,630.0,2026-03-05,Market Adjustment
+194,3,16,710.0,750.0,2026-02-27,Supplier Cost Change
+195,3,16,750.0,800.0,2026-05-24,Market Adjustment
+196,3,17,1370.0,1440.0,2025-06-13,Menu Revision
+197,3,18,1000.0,1080.0,2025-08-07,Cost Increase
+198,3,22,150.0,160.0,2026-08-20,Supplier Cost Change
+199,3,23,470.0,500.0,2025-08-23,Supplier Cost Change
+200,3,25,330.0,340.0,2026-05-24,Seasonal Adjustment
+201,3,27,770.0,800.0,2026-07-16,Market Adjustment
+202,3,33,310.0,320.0,2026-02-03,Cost Increase
+203,3,33,320.0,340.0,2026-04-26,Cost Increase
+204,3,35,550.0,590.0,2025-07-09,Market Adjustment
+205,3,35,590.0,550.0,2026-07-26,Menu Revision
+206,3,35,550.0,580.0,2026-08-19,Seasonal Adjustment
+207,3,38,560.0,610.0,2025-08-13,Menu Revision
+208,3,38,610.0,650.0,2026-07-19,Menu Revision
+209,3,38,650.0,690.0,2026-08-10,Supplier Cost Change
+210,3,40,1170.0,1110.0,2026-04-14,Supplier Cost Change
+211,3,43,1130.0,1080.0,2025-10-17,Seasonal Adjustment
+212,3,45,260.0,250.0,2025-07-06,Market Adjustment
+213,3,46,260.0,240.0,2026-02-18,Market Adjustment
+214,3,47,350.0,380.0,2026-03-22,Market Adjustment
+215,3,48,190.0,200.0,2025-09-02,Menu Revision
+216,3,48,200.0,180.0,2025-10-27,Market Adjustment
+217,3,48,180.0,190.0,2026-02-12,Seasonal Adjustment
+218,3,51,700.0,720.0,2025-08-29,Supplier Cost Change
+219,3,51,720.0,740.0,2026-04-26,Market Adjustment
+220,3,52,1430.0,1520.0,2025-04-20,Cost Increase
+221,3,52,1520.0,1440.0,2026-05-08,Market Adjustment
+222,3,52,1440.0,1380.0,2026-05-17,Cost Increase
+223,3,55,1490.0,1590.0,2026-07-24,Seasonal Adjustment
+224,3,55,1590.0,1650.0,2026-08-28,Menu Revision
+225,3,56,240.0,260.0,2025-11-20,Menu Revision
+226,3,58,420.0,450.0,2025-08-14,Cost Increase
+227,3,61,570.0,620.0,2026-01-22,Supplier Cost Change
+228,3,63,380.0,400.0,2025-08-03,Market Adjustment
+229,3,66,750.0,800.0,2025-04-30,Supplier Cost Change
+230,3,67,1640.0,1720.0,2026-01-08,Cost Increase
+231,3,67,1720.0,1780.0,2026-05-03,Supplier Cost Change
+232,3,67,1780.0,1880.0,2026-07-06,Menu Revision
+233,3,69,170.0,180.0,2025-11-11,Supplier Cost Change
+234,3,72,370.0,350.0,2026-07-05,Menu Revision
+235,3,74,1070.0,1150.0,2026-06-06,Menu Revision
+236,3,75,450.0,470.0,2025-09-06,Supplier Cost Change
+237,3,80,360.0,370.0,2026-05-22,Menu Revision
+238,3,80,370.0,380.0,2026-08-03,Cost Increase
+239,3,82,250.0,260.0,2025-09-11,Menu Revision
+240,3,85,220.0,240.0,2025-05-24,Market Adjustment
+241,3,92,480.0,520.0,2026-04-09,Menu Revision
+242,3,94,360.0,380.0,2026-05-06,Menu Revision
+243,3,95,390.0,410.0,2026-06-12,Supplier Cost Change
+244,3,95,410.0,450.0,2026-07-31,Menu Revision
+245,3,95,450.0,470.0,2026-08-04,Menu Revision
+246,3,96,230.0,250.0,2026-02-27,Menu Revision
+247,3,97,520.0,560.0,2026-01-18,Supplier Cost Change
+248,3,102,1000.0,1080.0,2026-07-09,Supplier Cost Change
+249,3,104,450.0,470.0,2025-06-16,Seasonal Adjustment
+250,3,104,470.0,490.0,2026-02-12,Seasonal Adjustment
+251,3,111,700.0,730.0,2026-07-19,Cost Increase
+252,3,114,670.0,700.0,2025-07-12,Supplier Cost Change
+253,3,116,350.0,370.0,2025-10-29,Menu Revision
+254,3,116,370.0,380.0,2026-02-26,Seasonal Adjustment
+255,3,119,580.0,620.0,2026-04-14,Market Adjustment
+256,3,121,450.0,480.0,2026-02-23,Supplier Cost Change
+257,3,124,1050.0,1110.0,2025-10-17,Cost Increase
+258,3,124,1110.0,1140.0,2025-11-25,Menu Revision
+259,3,125,770.0,820.0,2025-11-28,Market Adjustment
+260,3,126,1040.0,1080.0,2025-10-22,Seasonal Adjustment
+261,3,127,1470.0,1580.0,2025-11-09,Seasonal Adjustment
+262,3,137,370.0,400.0,2026-07-21,Supplier Cost Change
+263,3,137,400.0,440.0,2026-08-16,Market Adjustment
+264,3,140,710.0,740.0,2025-07-16,Cost Increase
+265,3,141,280.0,290.0,2026-07-21,Market Adjustment
+266,3,142,400.0,370.0,2025-09-02,Market Adjustment
+267,3,142,370.0,400.0,2026-02-26,Menu Revision
+268,3,142,400.0,430.0,2026-08-08,Supplier Cost Change
+269,3,148,950.0,1000.0,2026-05-21,Supplier Cost Change
+270,3,149,410.0,450.0,2026-02-03,Market Adjustment
+271,3,150,960.0,1000.0,2026-04-30,Menu Revision
+272,4,1,640.0,670.0,2026-03-23,Menu Revision
+273,4,4,980.0,1060.0,2025-12-27,Seasonal Adjustment
+274,4,8,320.0,340.0,2025-09-27,Market Adjustment
+275,4,8,340.0,320.0,2026-01-05,Supplier Cost Change
+276,4,9,190.0,200.0,2026-08-04,Cost Increase
+277,4,10,460.0,480.0,2026-06-13,Market Adjustment
+278,4,10,480.0,520.0,2026-07-18,Seasonal Adjustment
+279,4,10,520.0,500.0,2026-08-23,Cost Increase
+280,4,11,380.0,410.0,2026-08-08,Menu Revision
+281,4,12,310.0,340.0,2026-08-03,Supplier Cost Change
+282,4,13,300.0,310.0,2025-09-06,Seasonal Adjustment
+283,4,14,630.0,680.0,2025-09-27,Supplier Cost Change
+284,4,14,680.0,650.0,2026-05-21,Cost Increase
+285,4,14,650.0,690.0,2026-08-17,Seasonal Adjustment
+286,4,17,1230.0,1340.0,2025-11-10,Cost Increase
+287,4,20,680.0,640.0,2026-07-02,Menu Revision
+288,4,21,310.0,320.0,2026-01-23,Market Adjustment
+289,4,22,170.0,180.0,2025-09-15,Supplier Cost Change
+290,4,24,310.0,320.0,2025-10-26,Menu Revision
+291,4,24,320.0,300.0,2026-07-27,Market Adjustment
+292,4,27,850.0,820.0,2026-07-05,Seasonal Adjustment
+293,4,29,930.0,980.0,2025-07-10,Market Adjustment
+294,4,30,490.0,520.0,2026-04-25,Cost Increase
+295,4,31,1090.0,1160.0,2025-08-05,Supplier Cost Change
+296,4,38,690.0,730.0,2025-09-08,Cost Increase
+297,4,39,780.0,850.0,2026-01-30,Cost Increase
+298,4,40,1320.0,1220.0,2026-06-14,Cost Increase
+299,4,40,1220.0,1270.0,2026-08-19,Menu Revision
+300,4,44,470.0,500.0,2026-04-05,Supplier Cost Change
+301,4,45,210.0,220.0,2025-06-25,Market Adjustment
+302,4,45,220.0,230.0,2026-03-27,Menu Revision
+303,4,47,290.0,300.0,2026-04-14,Supplier Cost Change
+304,4,47,300.0,320.0,2026-04-28,Seasonal Adjustment
+305,4,48,180.0,200.0,2026-08-26,Supplier Cost Change
+306,4,49,580.0,620.0,2025-04-10,Market Adjustment
+307,4,51,660.0,720.0,2026-03-04,Cost Increase
+308,4,52,1210.0,1270.0,2025-10-28,Cost Increase
+309,4,52,1270.0,1370.0,2025-12-18,Menu Revision
+310,4,56,270.0,290.0,2025-08-24,Market Adjustment
+311,4,59,440.0,460.0,2026-07-23,Menu Revision
+312,4,60,370.0,400.0,2025-09-28,Supplier Cost Change
+313,4,61,540.0,570.0,2025-06-09,Supplier Cost Change
+314,4,61,570.0,600.0,2026-01-21,Supplier Cost Change
+315,4,71,460.0,510.0,2025-07-06,Cost Increase
+316,4,72,350.0,360.0,2026-04-13,Market Adjustment
+317,4,72,360.0,390.0,2026-04-27,Cost Increase
+318,4,75,390.0,430.0,2026-05-31,Cost Increase
+319,4,77,870.0,900.0,2025-08-13,Seasonal Adjustment
+320,4,77,900.0,860.0,2025-11-16,Menu Revision
+321,4,78,1060.0,1120.0,2025-12-09,Supplier Cost Change
+322,4,78,1120.0,1190.0,2026-04-19,Menu Revision
+323,4,80,330.0,310.0,2026-05-05,Market Adjustment
+324,4,80,310.0,340.0,2026-06-07,Seasonal Adjustment
+325,4,82,230.0,250.0,2026-03-26,Menu Revision
+326,4,83,500.0,550.0,2026-05-10,Market Adjustment
+327,4,85,210.0,230.0,2026-04-15,Market Adjustment
+328,4,87,340.0,370.0,2026-05-01,Seasonal Adjustment
+329,4,88,570.0,620.0,2025-08-21,Cost Increase
+330,4,89,780.0,840.0,2025-08-31,Cost Increase
+331,4,93,310.0,330.0,2026-05-23,Menu Revision
+332,4,96,230.0,220.0,2026-03-05,Market Adjustment
+333,4,97,490.0,530.0,2026-03-15,Menu Revision
+334,4,97,530.0,570.0,2026-06-15,Cost Increase
+335,4,99,630.0,680.0,2025-12-24,Cost Increase
+336,4,99,680.0,740.0,2025-12-26,Supplier Cost Change
+337,4,101,700.0,750.0,2026-01-26,Cost Increase
+338,4,103,820.0,850.0,2026-03-06,Seasonal Adjustment
+339,4,103,850.0,920.0,2026-04-06,Market Adjustment
+340,4,105,200.0,210.0,2026-05-08,Supplier Cost Change
+341,4,105,210.0,230.0,2026-06-22,Supplier Cost Change
+342,4,106,360.0,370.0,2026-06-24,Menu Revision
+343,4,108,230.0,250.0,2025-09-26,Supplier Cost Change
+344,4,108,250.0,270.0,2025-10-31,Supplier Cost Change
+345,4,108,270.0,290.0,2026-01-09,Supplier Cost Change
+346,4,109,560.0,590.0,2026-08-09,Menu Revision
+347,4,111,660.0,710.0,2026-07-20,Cost Increase
+348,4,115,2100.0,2240.0,2026-02-07,Menu Revision
+349,4,116,310.0,330.0,2026-06-30,Menu Revision
+350,4,116,330.0,360.0,2026-07-03,Menu Revision
+351,4,117,230.0,220.0,2025-11-28,Menu Revision
+352,4,119,540.0,570.0,2026-01-15,Menu Revision
+353,4,119,570.0,610.0,2026-01-21,Menu Revision
+354,4,123,780.0,730.0,2026-03-31,Cost Increase
+355,4,124,1050.0,1110.0,2025-07-31,Menu Revision
+356,4,124,1110.0,1180.0,2025-08-23,Supplier Cost Change
+357,4,124,1180.0,1250.0,2026-07-14,Supplier Cost Change
+358,4,126,770.0,820.0,2025-07-01,Supplier Cost Change
+359,4,126,820.0,880.0,2026-04-30,Seasonal Adjustment
+360,4,126,880.0,920.0,2026-08-16,Seasonal Adjustment
+361,4,128,270.0,300.0,2026-07-13,Market Adjustment
+362,4,131,380.0,420.0,2026-01-19,Cost Increase
+363,4,131,420.0,440.0,2026-03-30,Menu Revision
+364,4,132,360.0,400.0,2025-10-20,Supplier Cost Change
+365,4,133,440.0,460.0,2025-11-23,Supplier Cost Change
+366,4,135,690.0,750.0,2025-12-28,Market Adjustment
+367,4,138,630.0,600.0,2025-05-11,Cost Increase
+368,4,138,600.0,650.0,2025-09-20,Cost Increase
+369,4,139,1430.0,1470.0,2025-10-03,Market Adjustment
+370,4,139,1470.0,1610.0,2026-02-23,Seasonal Adjustment
+371,4,140,680.0,650.0,2025-07-28,Market Adjustment
+372,4,141,280.0,290.0,2026-07-28,Seasonal Adjustment
+373,4,141,290.0,300.0,2026-08-24,Menu Revision
+374,4,141,300.0,310.0,2026-08-31,Market Adjustment
+375,4,143,550.0,520.0,2025-06-26,Cost Increase
+376,4,143,520.0,570.0,2026-03-12,Seasonal Adjustment
+377,4,144,210.0,230.0,2026-05-02,Cost Increase
+378,4,144,230.0,240.0,2026-07-05,Market Adjustment
+379,4,147,640.0,680.0,2026-06-08,Market Adjustment
+380,4,148,970.0,1030.0,2026-06-06,Menu Revision
+381,4,149,460.0,430.0,2025-11-10,Seasonal Adjustment
+382,4,150,930.0,1000.0,2026-05-16,Supplier Cost Change
+383,5,3,470.0,510.0,2025-04-21,Cost Increase
+384,5,4,1030.0,980.0,2026-06-07,Menu Revision
+385,5,8,270.0,290.0,2026-01-18,Seasonal Adjustment
+386,5,8,290.0,300.0,2026-07-27,Seasonal Adjustment
+387,5,11,430.0,450.0,2025-10-27,Supplier Cost Change
+388,5,13,320.0,350.0,2026-04-03,Supplier Cost Change
+389,5,16,750.0,720.0,2026-07-07,Supplier Cost Change
+390,5,21,300.0,290.0,2025-11-13,Menu Revision
+391,5,21,290.0,300.0,2026-03-11,Menu Revision
+392,5,22,170.0,180.0,2025-08-26,Cost Increase
+393,5,22,180.0,170.0,2025-11-29,Supplier Cost Change
+394,5,22,170.0,180.0,2026-01-24,Seasonal Adjustment
+395,5,24,270.0,280.0,2025-05-05,Supplier Cost Change
+396,5,26,1330.0,1380.0,2025-11-12,Market Adjustment
+397,5,27,940.0,880.0,2026-07-18,Cost Increase
+398,5,33,330.0,320.0,2025-10-20,Seasonal Adjustment
+399,5,34,380.0,400.0,2025-08-25,Market Adjustment
+400,5,36,360.0,330.0,2025-06-07,Seasonal Adjustment
+401,5,37,590.0,550.0,2025-05-22,Supplier Cost Change
+402,5,40,1200.0,1270.0,2025-10-13,Seasonal Adjustment
+403,5,41,950.0,1010.0,2026-08-29,Supplier Cost Change
+404,5,43,820.0,890.0,2025-11-06,Market Adjustment
+405,5,43,890.0,950.0,2026-05-12,Seasonal Adjustment
+406,5,46,210.0,230.0,2026-05-05,Cost Increase
+407,5,48,190.0,200.0,2026-05-22,Supplier Cost Change
+408,5,50,1460.0,1580.0,2025-08-06,Menu Revision
+409,5,52,1460.0,1380.0,2025-09-16,Menu Revision
+410,5,52,1380.0,1440.0,2025-11-10,Seasonal Adjustment
+411,5,52,1440.0,1370.0,2026-07-04,Market Adjustment
+412,5,58,370.0,400.0,2025-04-05,Cost Increase
+413,5,58,400.0,440.0,2026-07-10,Menu Revision
+414,5,59,420.0,440.0,2026-07-02,Menu Revision
+415,5,59,440.0,470.0,2026-07-11,Seasonal Adjustment
+416,5,60,350.0,360.0,2025-05-01,Cost Increase
+417,5,60,360.0,380.0,2025-12-19,Seasonal Adjustment
+418,5,62,730.0,680.0,2026-03-09,Market Adjustment
+419,5,69,160.0,170.0,2025-08-26,Menu Revision
+420,5,69,170.0,180.0,2026-08-04,Menu Revision
+421,5,71,480.0,510.0,2025-10-01,Market Adjustment
+422,5,75,500.0,460.0,2025-09-06,Menu Revision
+423,5,82,250.0,270.0,2025-06-19,Market Adjustment
+424,5,83,440.0,460.0,2026-01-24,Market Adjustment
+425,5,84,370.0,400.0,2026-04-01,Supplier Cost Change
+426,5,86,1500.0,1440.0,2025-09-10,Cost Increase
+427,5,86,1440.0,1560.0,2026-04-13,Supplier Cost Change
+428,5,88,570.0,600.0,2026-08-31,Seasonal Adjustment
+429,5,90,500.0,540.0,2025-11-01,Seasonal Adjustment
+430,5,94,350.0,360.0,2025-08-12,Seasonal Adjustment
+431,5,96,250.0,260.0,2025-09-04,Market Adjustment
+432,5,103,1040.0,1100.0,2025-05-05,Cost Increase
+433,5,105,220.0,230.0,2025-12-14,Cost Increase
+434,5,106,310.0,340.0,2026-05-21,Market Adjustment
+435,5,109,430.0,460.0,2025-08-07,Menu Revision
+436,5,109,460.0,510.0,2026-01-16,Seasonal Adjustment
+437,5,111,680.0,740.0,2026-06-06,Cost Increase
+438,5,111,740.0,810.0,2026-08-12,Cost Increase
+439,5,112,870.0,910.0,2026-01-28,Market Adjustment
+440,5,112,910.0,980.0,2026-05-11,Supplier Cost Change
+441,5,113,820.0,760.0,2026-02-24,Supplier Cost Change
+442,5,116,310.0,330.0,2025-06-22,Market Adjustment
+443,5,116,330.0,360.0,2025-10-29,Menu Revision
+444,5,121,360.0,390.0,2025-08-23,Supplier Cost Change
+445,5,121,390.0,420.0,2026-02-09,Seasonal Adjustment
+446,5,122,540.0,560.0,2026-08-28,Cost Increase
+447,5,123,730.0,770.0,2025-06-06,Market Adjustment
+448,5,124,1200.0,1120.0,2026-02-16,Seasonal Adjustment
+449,5,124,1120.0,1190.0,2026-07-25,Menu Revision
+450,5,125,790.0,830.0,2025-12-10,Seasonal Adjustment
+451,5,125,830.0,880.0,2026-08-09,Market Adjustment
+452,5,129,270.0,300.0,2026-01-20,Supplier Cost Change
+453,5,129,300.0,320.0,2026-04-23,Cost Increase
+454,5,130,420.0,440.0,2026-08-08,Supplier Cost Change
+455,5,131,380.0,400.0,2026-02-13,Cost Increase
+456,5,131,400.0,420.0,2026-07-29,Seasonal Adjustment
+457,5,134,820.0,870.0,2026-08-21,Seasonal Adjustment
+458,5,135,590.0,630.0,2025-04-03,Menu Revision
+459,5,135,630.0,660.0,2026-05-30,Seasonal Adjustment
+460,5,136,490.0,520.0,2026-06-11,Supplier Cost Change
+461,5,137,420.0,440.0,2026-03-10,Market Adjustment
+462,5,138,660.0,620.0,2025-06-07,Cost Increase
+463,5,138,620.0,600.0,2025-10-23,Supplier Cost Change
+464,5,142,390.0,410.0,2025-04-21,Seasonal Adjustment
+465,5,144,210.0,200.0,2025-11-08,Menu Revision
+466,5,144,200.0,220.0,2026-06-09,Supplier Cost Change
+467,5,145,270.0,290.0,2025-05-30,Cost Increase
+468,6,1,500.0,530.0,2026-02-08,Cost Increase
+469,6,1,530.0,580.0,2026-03-21,Cost Increase
+470,6,1,580.0,630.0,2026-07-13,Supplier Cost Change
+471,6,4,910.0,850.0,2026-01-11,Cost Increase
+472,6,4,850.0,910.0,2026-07-07,Seasonal Adjustment
+473,6,4,910.0,1000.0,2026-08-24,Supplier Cost Change
+474,6,5,1230.0,1180.0,2026-02-22,Menu Revision
+475,6,6,470.0,510.0,2026-07-05,Seasonal Adjustment
+476,6,6,510.0,540.0,2026-07-31,Menu Revision
+477,6,7,1110.0,1150.0,2026-06-29,Seasonal Adjustment
+478,6,8,290.0,300.0,2026-04-06,Menu Revision
+479,6,11,410.0,450.0,2026-05-01,Cost Increase
+480,6,15,480.0,500.0,2025-06-01,Seasonal Adjustment
+481,6,15,500.0,520.0,2025-10-14,Market Adjustment
+482,6,20,650.0,620.0,2025-07-03,Menu Revision
+483,6,20,620.0,670.0,2025-09-18,Seasonal Adjustment
+484,6,22,160.0,170.0,2025-07-11,Supplier Cost Change
+485,6,22,170.0,180.0,2026-01-19,Market Adjustment
+486,6,24,280.0,300.0,2026-03-14,Cost Increase
+487,6,25,310.0,340.0,2026-07-29,Market Adjustment
+488,6,25,340.0,330.0,2026-08-29,Seasonal Adjustment
+489,6,27,830.0,880.0,2026-07-12,Supplier Cost Change
+490,6,28,980.0,1020.0,2025-07-22,Market Adjustment
+491,6,29,1090.0,1030.0,2025-12-26,Supplier Cost Change
+492,6,30,450.0,470.0,2025-12-17,Supplier Cost Change
+493,6,31,1390.0,1300.0,2025-11-16,Menu Revision
+494,6,32,380.0,410.0,2025-10-11,Market Adjustment
+495,6,36,340.0,350.0,2026-01-24,Market Adjustment
+496,6,37,550.0,570.0,2025-12-10,Supplier Cost Change
+497,6,38,720.0,750.0,2026-03-16,Seasonal Adjustment
+498,6,39,820.0,860.0,2026-01-02,Supplier Cost Change
+499,6,40,990.0,1070.0,2025-10-24,Seasonal Adjustment
+500,6,40,1070.0,1110.0,2026-02-26,Seasonal Adjustment
+501,6,43,1010.0,980.0,2025-12-08,Cost Increase
+502,6,43,980.0,1030.0,2026-02-10,Menu Revision
+503,6,43,1030.0,1110.0,2026-03-30,Market Adjustment
+504,6,44,480.0,510.0,2026-08-01,Seasonal Adjustment
+505,6,46,250.0,270.0,2026-02-06,Cost Increase
+506,6,48,170.0,180.0,2026-01-29,Menu Revision
+507,6,51,660.0,720.0,2026-03-31,Cost Increase
+508,6,51,720.0,690.0,2026-06-25,Cost Increase
+509,6,53,930.0,990.0,2025-07-30,Supplier Cost Change
+510,6,53,990.0,1040.0,2026-03-16,Supplier Cost Change
+511,6,62,670.0,690.0,2026-01-17,Menu Revision
+512,6,63,430.0,400.0,2025-07-30,Seasonal Adjustment
+513,6,64,1290.0,1360.0,2025-11-29,Supplier Cost Change
+514,6,65,850.0,900.0,2026-03-18,Cost Increase
+515,6,65,900.0,980.0,2026-05-13,Seasonal Adjustment
+516,6,65,980.0,1040.0,2026-07-06,Cost Increase
+517,6,71,590.0,560.0,2025-12-19,Seasonal Adjustment
+518,6,73,460.0,430.0,2025-11-04,Cost Increase
+519,6,73,430.0,470.0,2026-01-07,Cost Increase
+520,6,75,490.0,520.0,2026-01-11,Supplier Cost Change
+521,6,75,520.0,500.0,2026-08-02,Seasonal Adjustment
+522,6,77,840.0,800.0,2025-08-26,Menu Revision
+523,6,77,800.0,830.0,2025-10-04,Menu Revision
+524,6,77,830.0,860.0,2025-11-04,Market Adjustment
+525,6,82,260.0,280.0,2025-07-01,Seasonal Adjustment
+526,6,83,490.0,460.0,2026-01-19,Cost Increase
+527,6,87,360.0,380.0,2026-08-06,Cost Increase
+528,6,88,550.0,600.0,2026-07-24,Cost Increase
+529,6,90,530.0,550.0,2025-04-08,Menu Revision
+530,6,91,1260.0,1320.0,2026-06-19,Market Adjustment
+531,6,97,620.0,600.0,2025-08-20,Menu Revision
+532,6,99,770.0,740.0,2025-10-24,Menu Revision
+533,6,100,700.0,720.0,2026-03-22,Menu Revision
+534,6,100,720.0,770.0,2026-04-05,Supplier Cost Change
+535,6,102,1040.0,1080.0,2025-05-05,Menu Revision
+536,6,102,1080.0,1130.0,2025-07-18,Seasonal Adjustment
+537,6,106,400.0,390.0,2026-07-23,Supplier Cost Change
+538,6,107,440.0,460.0,2026-02-21,Market Adjustment
+539,6,108,290.0,300.0,2025-10-25,Market Adjustment
+540,6,111,830.0,780.0,2026-05-21,Menu Revision
+541,6,113,790.0,810.0,2025-11-09,Menu Revision
+542,6,114,530.0,570.0,2026-01-26,Supplier Cost Change
+543,6,114,570.0,620.0,2026-03-02,Supplier Cost Change
+544,6,115,1950.0,2090.0,2025-07-07,Market Adjustment
+545,6,121,510.0,490.0,2026-06-27,Supplier Cost Change
+546,6,122,490.0,540.0,2026-03-25,Seasonal Adjustment
+547,6,123,610.0,630.0,2025-10-31,Menu Revision
+548,6,123,630.0,660.0,2026-08-20,Cost Increase
+549,6,126,950.0,1020.0,2025-12-09,Market Adjustment
+550,6,130,410.0,440.0,2026-07-14,Cost Increase
+551,6,130,440.0,480.0,2026-08-01,Supplier Cost Change
+552,6,134,810.0,880.0,2026-08-22,Supplier Cost Change
+553,6,135,710.0,740.0,2025-05-25,Menu Revision
+554,6,138,540.0,580.0,2026-07-09,Seasonal Adjustment
+555,6,139,1620.0,1680.0,2025-10-29,Menu Revision
+556,6,141,290.0,300.0,2026-08-05,Market Adjustment
+557,6,142,360.0,390.0,2026-02-18,Cost Increase
+558,6,144,210.0,230.0,2026-05-12,Market Adjustment
+559,6,146,620.0,660.0,2026-06-17,Seasonal Adjustment
+560,6,146,660.0,710.0,2026-07-08,Market Adjustment
+561,6,148,930.0,980.0,2026-05-11,Seasonal Adjustment
+562,6,148,980.0,950.0,2026-07-08,Cost Increase
+563,7,2,950.0,980.0,2026-07-22,Menu Revision
+564,7,3,490.0,510.0,2026-06-08,Market Adjustment
+565,7,4,940.0,1000.0,2026-07-15,Supplier Cost Change
+566,7,7,1140.0,1210.0,2026-05-12,Supplier Cost Change
+567,7,8,340.0,360.0,2026-08-07,Supplier Cost Change
+568,7,11,420.0,440.0,2026-06-02,Seasonal Adjustment
+569,7,12,350.0,320.0,2026-06-12,Supplier Cost Change
+570,7,13,330.0,350.0,2026-06-20,Menu Revision
+571,7,13,350.0,360.0,2026-08-13,Market Adjustment
+572,7,15,460.0,490.0,2026-06-06,Supplier Cost Change
+573,7,17,1140.0,1220.0,2026-07-28,Supplier Cost Change
+574,7,21,280.0,290.0,2026-05-27,Market Adjustment
+575,7,22,190.0,200.0,2026-06-22,Market Adjustment
+576,7,22,200.0,190.0,2026-08-09,Seasonal Adjustment
+577,7,25,350.0,380.0,2026-05-22,Supplier Cost Change
+578,7,30,420.0,450.0,2026-07-10,Menu Revision
+579,7,37,490.0,510.0,2026-05-12,Menu Revision
+580,7,37,510.0,540.0,2026-08-27,Menu Revision
+581,7,44,430.0,450.0,2026-07-17,Cost Increase
+582,7,47,330.0,340.0,2026-06-15,Supplier Cost Change
+583,7,48,180.0,190.0,2026-06-19,Supplier Cost Change
+584,7,48,190.0,210.0,2026-07-17,Seasonal Adjustment
+585,7,55,1440.0,1490.0,2026-05-21,Menu Revision
+586,7,55,1490.0,1630.0,2026-05-28,Seasonal Adjustment
+587,7,57,190.0,200.0,2026-06-20,Seasonal Adjustment
+588,7,61,600.0,620.0,2026-06-12,Seasonal Adjustment
+589,7,62,580.0,630.0,2026-07-03,Supplier Cost Change
+590,7,64,1150.0,1220.0,2026-06-27,Seasonal Adjustment
+591,7,64,1220.0,1280.0,2026-07-02,Seasonal Adjustment
+592,7,64,1280.0,1390.0,2026-08-31,Market Adjustment
+593,7,65,890.0,960.0,2026-07-03,Menu Revision
+594,7,65,960.0,1040.0,2026-08-03,Seasonal Adjustment
+595,7,68,230.0,220.0,2026-06-13,Supplier Cost Change
+596,7,70,260.0,280.0,2026-08-23,Cost Increase
+597,7,72,360.0,380.0,2026-05-14,Cost Increase
+598,7,74,1060.0,1140.0,2026-06-02,Cost Increase
+599,7,74,1140.0,1210.0,2026-06-08,Market Adjustment
+600,7,74,1210.0,1270.0,2026-07-09,Supplier Cost Change
+601,7,75,390.0,420.0,2026-07-12,Menu Revision
+602,7,76,850.0,800.0,2026-07-04,Seasonal Adjustment
+603,7,77,910.0,860.0,2026-05-21,Menu Revision
+604,7,77,860.0,920.0,2026-06-17,Menu Revision
+605,7,77,920.0,950.0,2026-08-16,Supplier Cost Change
+606,7,79,730.0,780.0,2026-08-04,Market Adjustment
+607,7,84,360.0,390.0,2026-06-09,Market Adjustment
+608,7,84,390.0,420.0,2026-07-30,Menu Revision
+609,7,86,1350.0,1430.0,2026-08-21,Market Adjustment
+610,7,87,330.0,360.0,2026-07-17,Menu Revision
+611,7,87,360.0,390.0,2026-07-25,Cost Increase
+612,7,90,600.0,580.0,2026-05-31,Supplier Cost Change
+613,7,92,530.0,550.0,2026-08-19,Cost Increase
+614,7,93,340.0,320.0,2026-05-24,Seasonal Adjustment
+615,7,94,340.0,360.0,2026-07-04,Seasonal Adjustment
+616,7,94,360.0,370.0,2026-07-27,Market Adjustment
+617,7,94,370.0,400.0,2026-07-31,Market Adjustment
+618,7,98,960.0,1020.0,2026-08-08,Seasonal Adjustment
+619,7,100,710.0,770.0,2026-06-10,Cost Increase
+620,7,101,630.0,690.0,2026-05-11,Seasonal Adjustment
+621,7,101,690.0,660.0,2026-06-15,Market Adjustment
+622,7,101,660.0,700.0,2026-08-19,Supplier Cost Change
+623,7,103,920.0,1000.0,2026-06-06,Seasonal Adjustment
+624,7,104,500.0,520.0,2026-05-25,Market Adjustment
+625,7,108,260.0,270.0,2026-05-10,Cost Increase
+626,7,108,270.0,280.0,2026-07-18,Market Adjustment
+627,7,108,280.0,300.0,2026-08-05,Market Adjustment
+628,7,109,480.0,530.0,2026-08-27,Market Adjustment
+629,7,112,890.0,970.0,2026-06-22,Cost Increase
+630,7,115,1850.0,1940.0,2026-07-02,Cost Increase
+631,7,117,230.0,250.0,2026-06-29,Seasonal Adjustment
+632,7,117,250.0,240.0,2026-07-12,Supplier Cost Change
+633,7,117,240.0,250.0,2026-08-18,Seasonal Adjustment
+634,7,125,820.0,760.0,2026-07-09,Menu Revision
+635,7,131,380.0,410.0,2026-05-24,Seasonal Adjustment
+636,7,132,350.0,370.0,2026-05-26,Cost Increase
+637,7,138,550.0,600.0,2026-06-04,Market Adjustment
+638,7,139,1490.0,1560.0,2026-05-31,Menu Revision
+639,7,139,1560.0,1710.0,2026-08-28,Cost Increase
+640,7,143,620.0,600.0,2026-08-17,Cost Increase
+641,7,144,210.0,230.0,2026-05-30,Supplier Cost Change
+642,7,144,230.0,240.0,2026-08-03,Supplier Cost Change
+643,7,149,400.0,410.0,2026-07-06,Cost Increase
+644,7,149,410.0,420.0,2026-08-03,Supplier Cost Change
+645,7,150,900.0,960.0,2026-06-24,Supplier Cost Change
+646,8,2,920.0,950.0,2026-01-05,Cost Increase
+647,8,2,950.0,990.0,2026-04-06,Supplier Cost Change
+648,8,3,470.0,490.0,2026-03-23,Seasonal Adjustment
+649,8,4,860.0,900.0,2026-05-12,Seasonal Adjustment
+650,8,6,480.0,510.0,2026-08-09,Cost Increase
+651,8,6,510.0,560.0,2026-08-10,Supplier Cost Change
+652,8,10,430.0,470.0,2026-06-08,Seasonal Adjustment
+653,8,10,470.0,520.0,2026-08-23,Seasonal Adjustment
+654,8,17,1090.0,1140.0,2025-08-14,Supplier Cost Change
+655,8,17,1140.0,1190.0,2025-11-26,Seasonal Adjustment
+656,8,17,1190.0,1270.0,2026-05-31,Supplier Cost Change
+657,8,19,1270.0,1330.0,2026-08-27,Supplier Cost Change
+658,8,20,680.0,710.0,2025-06-21,Cost Increase
+659,8,22,180.0,190.0,2025-10-11,Cost Increase
+660,8,25,300.0,320.0,2026-07-15,Supplier Cost Change
+661,8,34,400.0,420.0,2025-07-30,Cost Increase
+662,8,38,690.0,750.0,2026-03-20,Seasonal Adjustment
+663,8,38,750.0,810.0,2026-06-17,Market Adjustment
+664,8,41,860.0,810.0,2025-08-02,Menu Revision
+665,8,41,810.0,880.0,2026-07-27,Market Adjustment
+666,8,43,910.0,970.0,2025-05-02,Seasonal Adjustment
+667,8,48,190.0,200.0,2026-05-14,Seasonal Adjustment
+668,8,53,960.0,1050.0,2026-02-10,Menu Revision
+669,8,54,790.0,740.0,2026-02-20,Cost Increase
+670,8,55,1730.0,1860.0,2026-07-17,Supplier Cost Change
+671,8,56,240.0,250.0,2026-07-07,Seasonal Adjustment
+672,8,58,380.0,410.0,2025-12-04,Market Adjustment
+673,8,65,980.0,1010.0,2025-12-11,Menu Revision
+674,8,66,820.0,870.0,2025-05-08,Seasonal Adjustment
+675,8,66,870.0,960.0,2025-05-29,Supplier Cost Change
+676,8,69,180.0,190.0,2025-05-04,Cost Increase
+677,8,70,230.0,250.0,2026-04-20,Menu Revision
+678,8,72,310.0,330.0,2026-06-30,Seasonal Adjustment
+679,8,73,420.0,450.0,2025-09-30,Cost Increase
+680,8,74,1160.0,1270.0,2026-08-02,Menu Revision
+681,8,75,440.0,450.0,2025-09-01,Menu Revision
+682,8,76,770.0,840.0,2026-08-07,Cost Increase
+683,8,77,840.0,910.0,2025-12-20,Supplier Cost Change
+684,8,77,910.0,960.0,2026-06-28,Seasonal Adjustment
+685,8,78,980.0,1020.0,2025-07-04,Menu Revision
+686,8,81,170.0,180.0,2026-06-13,Menu Revision
+687,8,81,180.0,190.0,2026-07-18,Seasonal Adjustment
+688,8,83,480.0,510.0,2026-04-20,Market Adjustment
+689,8,83,510.0,530.0,2026-05-22,Supplier Cost Change
+690,8,84,420.0,450.0,2026-02-04,Seasonal Adjustment
+691,8,85,280.0,270.0,2026-07-16,Cost Increase
+692,8,86,1520.0,1430.0,2025-07-22,Supplier Cost Change
+693,8,86,1430.0,1370.0,2025-09-09,Seasonal Adjustment
+694,8,86,1370.0,1480.0,2025-11-16,Market Adjustment
+695,8,89,690.0,740.0,2026-07-02,Menu Revision
+696,8,90,480.0,510.0,2025-11-14,Cost Increase
+697,8,98,1040.0,1120.0,2026-06-15,Cost Increase
+698,8,99,890.0,840.0,2026-05-02,Cost Increase
+699,8,102,1060.0,1110.0,2026-02-16,Menu Revision
+700,8,104,470.0,520.0,2026-01-24,Market Adjustment
+701,8,104,520.0,540.0,2026-06-09,Supplier Cost Change
+702,8,105,190.0,200.0,2025-08-31,Seasonal Adjustment
+703,8,105,200.0,220.0,2026-05-13,Seasonal Adjustment
+704,8,107,500.0,470.0,2026-04-25,Seasonal Adjustment
+705,8,107,470.0,500.0,2026-08-26,Market Adjustment
+706,8,108,240.0,260.0,2025-07-03,Menu Revision
+707,8,108,260.0,280.0,2026-01-05,Cost Increase
+708,8,108,280.0,300.0,2026-06-24,Seasonal Adjustment
+709,8,112,1010.0,1040.0,2026-08-02,Cost Increase
+710,8,113,720.0,750.0,2026-03-05,Menu Revision
+711,8,115,2000.0,2090.0,2025-09-26,Market Adjustment
+712,8,115,2090.0,2250.0,2026-04-09,Supplier Cost Change
+713,8,117,220.0,230.0,2025-04-01,Menu Revision
+714,8,117,230.0,240.0,2025-10-29,Market Adjustment
+715,8,119,620.0,640.0,2026-01-19,Market Adjustment
+716,8,122,440.0,480.0,2026-02-25,Seasonal Adjustment
+717,8,122,480.0,520.0,2026-03-29,Cost Increase
+718,8,123,660.0,700.0,2026-07-26,Supplier Cost Change
+719,8,124,1220.0,1280.0,2025-08-16,Cost Increase
+720,8,127,1440.0,1560.0,2025-04-27,Menu Revision
+721,8,127,1560.0,1700.0,2026-04-07,Cost Increase
+722,8,129,240.0,260.0,2025-04-11,Seasonal Adjustment
+723,8,129,260.0,270.0,2025-07-29,Seasonal Adjustment
+724,8,131,380.0,390.0,2026-05-27,Market Adjustment
+725,8,132,300.0,330.0,2025-08-03,Supplier Cost Change
+726,8,135,750.0,790.0,2026-01-16,Cost Increase
+727,8,135,790.0,770.0,2026-04-01,Seasonal Adjustment
+728,8,136,560.0,590.0,2025-11-10,Cost Increase
+729,8,136,590.0,540.0,2025-12-02,Supplier Cost Change
+730,8,139,1670.0,1790.0,2025-09-21,Menu Revision
+731,8,139,1790.0,1730.0,2026-06-24,Cost Increase
+732,8,140,670.0,700.0,2026-08-30,Market Adjustment
+733,8,141,270.0,290.0,2026-07-01,Seasonal Adjustment
+734,8,141,290.0,300.0,2026-07-18,Seasonal Adjustment
+735,8,142,340.0,360.0,2025-10-18,Menu Revision
+736,8,142,360.0,390.0,2026-04-26,Cost Increase
+737,8,144,210.0,230.0,2025-11-06,Supplier Cost Change
+738,8,144,230.0,240.0,2026-04-21,Market Adjustment
+739,8,144,240.0,250.0,2026-08-22,Seasonal Adjustment
+740,8,146,650.0,710.0,2026-05-06,Supplier Cost Change
+741,8,147,630.0,680.0,2026-05-13,Market Adjustment
+742,9,2,950.0,880.0,2026-06-05,Seasonal Adjustment
+743,9,4,1040.0,990.0,2025-12-01,Cost Increase
+744,9,4,990.0,1030.0,2025-12-11,Cost Increase
+745,9,5,1140.0,1190.0,2025-05-19,Market Adjustment
+746,9,5,1190.0,1260.0,2025-09-27,Cost Increase
+747,9,13,330.0,350.0,2026-06-06,Cost Increase
+748,9,16,750.0,790.0,2025-09-28,Cost Increase
+749,9,19,1090.0,1190.0,2026-08-21,Menu Revision
+750,9,21,290.0,310.0,2026-06-03,Menu Revision
+751,9,24,270.0,290.0,2026-05-20,Supplier Cost Change
+752,9,27,700.0,760.0,2026-07-07,Cost Increase
+753,9,28,950.0,1030.0,2025-09-06,Supplier Cost Change
+754,9,28,1030.0,1070.0,2025-09-18,Seasonal Adjustment
+755,9,28,1070.0,1130.0,2026-07-16,Menu Revision
+756,9,30,490.0,510.0,2025-12-29,Supplier Cost Change
+757,9,32,370.0,400.0,2026-05-15,Supplier Cost Change
+758,9,33,350.0,380.0,2025-10-07,Supplier Cost Change
+759,9,34,430.0,460.0,2025-10-23,Seasonal Adjustment
+760,9,35,500.0,550.0,2026-08-09,Market Adjustment
+761,9,36,320.0,340.0,2026-08-11,Supplier Cost Change
+762,9,37,470.0,510.0,2025-08-07,Seasonal Adjustment
+763,9,41,750.0,780.0,2025-10-23,Seasonal Adjustment
+764,9,41,780.0,860.0,2026-05-01,Cost Increase
+765,9,44,480.0,500.0,2025-11-06,Supplier Cost Change
+766,9,44,500.0,530.0,2026-03-05,Market Adjustment
+767,9,44,530.0,510.0,2026-03-25,Market Adjustment
+768,9,45,200.0,210.0,2026-01-05,Menu Revision
+769,9,45,210.0,230.0,2026-06-05,Cost Increase
+770,9,47,320.0,340.0,2025-04-05,Market Adjustment
+771,9,47,340.0,350.0,2026-07-05,Market Adjustment
+772,9,48,210.0,200.0,2026-03-12,Menu Revision
+773,9,50,1450.0,1580.0,2025-12-08,Supplier Cost Change
+774,9,51,670.0,700.0,2025-05-03,Cost Increase
+775,9,51,700.0,730.0,2025-08-31,Menu Revision
+776,9,51,730.0,680.0,2026-08-22,Supplier Cost Change
+777,9,55,1830.0,1930.0,2026-05-16,Seasonal Adjustment
+778,9,61,620.0,670.0,2026-01-20,Supplier Cost Change
+779,9,64,1220.0,1290.0,2025-06-15,Cost Increase
+780,9,64,1290.0,1420.0,2025-12-05,Menu Revision
+781,9,64,1420.0,1500.0,2026-03-26,Menu Revision
+782,9,67,1570.0,1640.0,2026-07-19,Supplier Cost Change
+783,9,68,210.0,200.0,2025-12-09,Seasonal Adjustment
+784,9,71,470.0,450.0,2025-04-14,Market Adjustment
+785,9,71,450.0,490.0,2026-04-01,Menu Revision
+786,9,73,460.0,480.0,2025-06-19,Menu Revision
+787,9,74,1220.0,1270.0,2026-07-28,Cost Increase
+788,9,76,770.0,830.0,2025-11-29,Menu Revision
+789,9,78,1080.0,1180.0,2026-05-10,Market Adjustment
+790,9,79,740.0,790.0,2026-05-28,Market Adjustment
+791,9,81,170.0,180.0,2026-07-22,Menu Revision
+792,9,81,180.0,200.0,2026-08-07,Market Adjustment
+793,9,86,1420.0,1490.0,2026-07-10,Menu Revision
+794,9,87,370.0,400.0,2026-05-31,Market Adjustment
+795,9,89,680.0,740.0,2025-05-18,Market Adjustment
+796,9,94,450.0,420.0,2026-06-06,Market Adjustment
+797,9,95,440.0,460.0,2026-06-20,Cost Increase
+798,9,95,460.0,490.0,2026-08-06,Supplier Cost Change
+799,9,97,530.0,570.0,2025-09-03,Menu Revision
+800,9,98,950.0,990.0,2025-04-23,Seasonal Adjustment
+801,9,100,700.0,740.0,2026-04-19,Supplier Cost Change
+802,9,101,640.0,690.0,2026-04-17,Seasonal Adjustment
+803,9,101,690.0,730.0,2026-05-01,Seasonal Adjustment
+804,9,101,730.0,750.0,2026-07-28,Market Adjustment
+805,9,104,450.0,480.0,2025-12-07,Supplier Cost Change
+806,9,106,320.0,330.0,2026-07-28,Menu Revision
+807,9,107,390.0,420.0,2026-03-26,Seasonal Adjustment
+808,9,108,260.0,280.0,2026-04-11,Market Adjustment
+809,9,110,430.0,470.0,2025-08-20,Seasonal Adjustment
+810,9,110,470.0,510.0,2026-01-09,Seasonal Adjustment
+811,9,111,770.0,840.0,2026-06-17,Supplier Cost Change
+812,9,117,180.0,200.0,2025-08-07,Seasonal Adjustment
+813,9,117,200.0,210.0,2025-10-02,Cost Increase
+814,9,117,210.0,220.0,2026-02-24,Supplier Cost Change
+815,9,123,660.0,720.0,2025-12-16,Seasonal Adjustment
+816,9,124,1200.0,1280.0,2026-08-23,Cost Increase
+817,9,125,630.0,680.0,2025-04-09,Seasonal Adjustment
+818,9,125,680.0,730.0,2025-06-15,Supplier Cost Change
+819,9,125,730.0,800.0,2026-08-27,Cost Increase
+820,9,126,860.0,930.0,2025-06-21,Cost Increase
+821,9,126,930.0,1000.0,2025-07-30,Seasonal Adjustment
+822,9,126,1000.0,1060.0,2026-05-29,Cost Increase
+823,9,127,1790.0,1680.0,2026-04-14,Market Adjustment
+824,9,127,1680.0,1770.0,2026-04-30,Cost Increase
+825,9,128,250.0,270.0,2026-06-13,Cost Increase
+826,9,130,500.0,480.0,2026-08-26,Menu Revision
+827,9,131,410.0,430.0,2026-01-23,Supplier Cost Change
+828,9,131,430.0,450.0,2026-06-12,Seasonal Adjustment
+829,9,134,860.0,920.0,2025-07-24,Supplier Cost Change
+830,9,138,590.0,630.0,2026-04-07,Menu Revision
+831,9,138,630.0,580.0,2026-06-20,Seasonal Adjustment
+832,9,139,1530.0,1580.0,2025-06-30,Market Adjustment
+833,9,139,1580.0,1710.0,2026-01-30,Market Adjustment
+834,9,141,250.0,260.0,2026-06-30,Menu Revision
+835,9,141,260.0,270.0,2026-07-11,Menu Revision
+836,9,141,270.0,300.0,2026-08-20,Menu Revision
+837,9,144,230.0,240.0,2025-08-07,Menu Revision
+838,9,146,690.0,750.0,2026-08-08,Seasonal Adjustment
+839,9,148,900.0,960.0,2026-08-05,Market Adjustment
+840,9,149,390.0,430.0,2026-06-25,Seasonal Adjustment
+841,9,150,960.0,1030.0,2025-05-17,Seasonal Adjustment
+842,9,150,1030.0,1120.0,2026-05-09,Menu Revision
+843,9,150,1120.0,1040.0,2026-07-19,Menu Revision
+844,10,1,600.0,620.0,2025-09-03,Seasonal Adjustment
+845,10,2,770.0,850.0,2025-09-24,Menu Revision
+846,10,5,1270.0,1350.0,2026-04-04,Cost Increase
+847,10,10,480.0,510.0,2026-07-26,Market Adjustment
+848,10,11,410.0,430.0,2025-07-04,Market Adjustment
+849,10,11,430.0,460.0,2025-07-28,Supplier Cost Change
+850,10,12,310.0,340.0,2025-08-26,Seasonal Adjustment
+851,10,13,340.0,360.0,2025-12-02,Market Adjustment
+852,10,14,690.0,710.0,2025-12-06,Supplier Cost Change
+853,10,15,540.0,580.0,2025-05-02,Seasonal Adjustment
+854,10,15,580.0,550.0,2025-10-28,Seasonal Adjustment
+855,10,17,1550.0,1440.0,2025-11-16,Market Adjustment
+856,10,18,900.0,980.0,2025-08-25,Cost Increase
+857,10,20,690.0,650.0,2025-12-23,Supplier Cost Change
+858,10,21,280.0,310.0,2026-01-28,Market Adjustment
+859,10,26,1200.0,1250.0,2025-10-23,Seasonal Adjustment
+860,10,26,1250.0,1330.0,2025-11-06,Cost Increase
+861,10,28,950.0,980.0,2026-04-23,Menu Revision
+862,10,33,330.0,360.0,2025-12-11,Menu Revision
+863,10,34,360.0,380.0,2025-09-18,Market Adjustment
+864,10,34,380.0,410.0,2026-03-22,Cost Increase
+865,10,36,280.0,290.0,2026-03-28,Seasonal Adjustment
+866,10,37,450.0,480.0,2025-07-11,Cost Increase
+867,10,38,740.0,800.0,2026-03-19,Market Adjustment
+868,10,39,760.0,710.0,2025-11-05,Menu Revision
+869,10,39,710.0,760.0,2026-08-08,Cost Increase
+870,10,46,220.0,240.0,2026-04-07,Seasonal Adjustment
+871,10,50,1350.0,1420.0,2026-04-29,Market Adjustment
+872,10,53,900.0,970.0,2025-10-16,Market Adjustment
+873,10,54,660.0,710.0,2025-10-02,Supplier Cost Change
+874,10,55,1810.0,1980.0,2026-08-15,Cost Increase
+875,10,57,160.0,170.0,2026-03-06,Menu Revision
+876,10,58,450.0,470.0,2026-07-11,Market Adjustment
+877,10,59,400.0,420.0,2026-03-14,Market Adjustment
+878,10,59,420.0,450.0,2026-06-23,Cost Increase
+879,10,61,510.0,550.0,2025-05-07,Cost Increase
+880,10,62,640.0,690.0,2025-06-02,Menu Revision
+881,10,64,1230.0,1310.0,2026-03-25,Market Adjustment
+882,10,64,1310.0,1390.0,2026-07-14,Market Adjustment
+883,10,66,810.0,870.0,2025-10-12,Menu Revision
+884,10,68,210.0,220.0,2025-09-26,Menu Revision
+885,10,70,270.0,290.0,2026-08-11,Menu Revision
+886,10,71,530.0,500.0,2025-07-27,Seasonal Adjustment
+887,10,75,460.0,500.0,2025-12-12,Supplier Cost Change
+888,10,76,720.0,780.0,2025-10-12,Market Adjustment
+889,10,78,1060.0,1010.0,2026-02-07,Market Adjustment
+890,10,81,160.0,170.0,2026-05-12,Menu Revision
+891,10,82,250.0,260.0,2026-04-18,Cost Increase
+892,10,82,260.0,270.0,2026-06-09,Seasonal Adjustment
+893,10,86,1330.0,1260.0,2025-09-15,Seasonal Adjustment
+894,10,86,1260.0,1360.0,2025-11-19,Market Adjustment
+895,10,88,480.0,460.0,2025-05-16,Menu Revision
+896,10,88,460.0,500.0,2025-06-21,Cost Increase
+897,10,88,500.0,530.0,2026-07-01,Supplier Cost Change
+898,10,90,480.0,500.0,2025-09-28,Cost Increase
+899,10,90,500.0,520.0,2026-04-13,Seasonal Adjustment
+900,10,91,1000.0,1100.0,2025-04-07,Market Adjustment
+901,10,91,1100.0,1200.0,2025-10-28,Supplier Cost Change
+902,10,92,510.0,540.0,2026-08-13,Seasonal Adjustment
+903,10,93,310.0,340.0,2026-02-04,Seasonal Adjustment
+904,10,96,210.0,220.0,2026-07-03,Seasonal Adjustment
+905,10,98,1070.0,1120.0,2025-07-22,Seasonal Adjustment
+906,10,101,740.0,810.0,2025-12-22,Supplier Cost Change
+907,10,102,950.0,1000.0,2025-11-12,Cost Increase
+908,10,104,590.0,550.0,2025-09-28,Menu Revision
+909,10,106,370.0,340.0,2026-06-24,Menu Revision
+910,10,107,390.0,420.0,2026-06-10,Supplier Cost Change
+911,10,108,290.0,300.0,2025-11-10,Market Adjustment
+912,10,112,930.0,1020.0,2025-11-02,Cost Increase
+913,10,113,760.0,800.0,2025-11-30,Supplier Cost Change
+914,10,116,350.0,360.0,2025-08-15,Supplier Cost Change
+915,10,122,480.0,500.0,2025-07-16,Menu Revision
+916,10,123,730.0,760.0,2026-08-01,Seasonal Adjustment
+917,10,129,280.0,310.0,2026-08-01,Market Adjustment
+918,10,135,660.0,690.0,2025-10-11,Cost Increase
+919,10,139,1510.0,1590.0,2025-12-15,Supplier Cost Change
+920,10,139,1590.0,1490.0,2026-06-06,Market Adjustment
+921,10,139,1490.0,1580.0,2026-08-05,Market Adjustment
+922,10,140,750.0,710.0,2026-01-18,Seasonal Adjustment
+923,10,140,710.0,760.0,2026-02-19,Seasonal Adjustment
+924,10,141,350.0,340.0,2026-07-15,Cost Increase
+925,10,142,370.0,400.0,2025-05-24,Cost Increase
+926,10,142,400.0,370.0,2025-11-15,Market Adjustment
+927,10,144,220.0,230.0,2026-07-14,Menu Revision
+928,10,145,320.0,330.0,2025-07-01,Supplier Cost Change
+929,10,146,630.0,670.0,2026-04-29,Seasonal Adjustment
+930,10,149,450.0,470.0,2025-12-28,Cost Increase
+931,10,149,470.0,440.0,2026-08-18,Seasonal Adjustment
+932,10,150,850.0,890.0,2025-09-27,Seasonal Adjustment
+933,10,150,890.0,970.0,2026-04-15,Seasonal Adjustment
+934,11,1,590.0,610.0,2025-09-13,Menu Revision
+935,11,1,610.0,660.0,2026-08-06,Market Adjustment
+936,11,4,1110.0,1040.0,2026-05-31,Supplier Cost Change
+937,11,6,520.0,490.0,2026-08-28,Market Adjustment
+938,11,13,300.0,320.0,2026-08-15,Cost Increase
+939,11,14,580.0,610.0,2026-02-14,Seasonal Adjustment
+940,11,15,510.0,530.0,2026-04-10,Market Adjustment
+941,11,18,790.0,850.0,2025-06-21,Supplier Cost Change
+942,11,18,850.0,900.0,2026-05-05,Cost Increase
+943,11,18,900.0,940.0,2026-08-28,Cost Increase
+944,11,19,1200.0,1290.0,2026-08-21,Market Adjustment
+945,11,22,160.0,170.0,2025-12-14,Market Adjustment
+946,11,24,240.0,250.0,2025-06-30,Market Adjustment
+947,11,24,250.0,270.0,2025-11-20,Menu Revision
+948,11,24,270.0,290.0,2026-06-12,Market Adjustment
+949,11,26,1240.0,1360.0,2025-10-17,Market Adjustment
+950,11,29,1030.0,1080.0,2026-05-24,Supplier Cost Change
+951,11,30,510.0,530.0,2026-02-24,Seasonal Adjustment
+952,11,32,370.0,390.0,2026-08-18,Supplier Cost Change
+953,11,33,320.0,340.0,2026-01-15,Cost Increase
+954,11,34,390.0,420.0,2026-03-24,Supplier Cost Change
+955,11,41,890.0,920.0,2025-08-01,Cost Increase
+956,11,44,440.0,460.0,2025-11-10,Seasonal Adjustment
+957,11,45,200.0,210.0,2025-07-09,Seasonal Adjustment
+958,11,45,210.0,230.0,2026-01-19,Cost Increase
+959,11,45,230.0,240.0,2026-08-03,Menu Revision
+960,11,48,200.0,220.0,2025-10-20,Menu Revision
+961,11,49,600.0,650.0,2025-10-22,Cost Increase
+962,11,51,700.0,720.0,2025-11-02,Menu Revision
+963,11,53,1040.0,990.0,2025-05-20,Cost Increase
+964,11,53,990.0,1040.0,2025-08-29,Menu Revision
+965,11,54,740.0,680.0,2025-12-27,Seasonal Adjustment
+966,11,56,240.0,250.0,2026-07-27,Seasonal Adjustment
+967,11,58,400.0,410.0,2026-08-20,Supplier Cost Change
+968,11,60,320.0,340.0,2025-09-26,Seasonal Adjustment
+969,11,60,340.0,360.0,2026-01-07,Menu Revision
+970,11,61,540.0,580.0,2026-03-29,Market Adjustment
+971,11,63,370.0,390.0,2026-06-03,Supplier Cost Change
+972,11,65,1000.0,1080.0,2026-03-03,Menu Revision
+973,11,67,1390.0,1490.0,2025-10-10,Cost Increase
+974,11,67,1490.0,1630.0,2026-07-31,Cost Increase
+975,11,70,250.0,260.0,2026-07-28,Cost Increase
+976,11,70,260.0,280.0,2026-08-24,Seasonal Adjustment
+977,11,71,450.0,490.0,2025-09-07,Seasonal Adjustment
+978,11,71,490.0,470.0,2025-12-04,Cost Increase
+979,11,72,360.0,390.0,2026-07-06,Cost Increase
+980,11,73,450.0,490.0,2026-01-17,Market Adjustment
+981,11,74,1070.0,1100.0,2026-08-08,Menu Revision
+982,11,78,1050.0,990.0,2026-02-23,Supplier Cost Change
+983,11,78,990.0,1050.0,2026-05-20,Supplier Cost Change
+984,11,78,1050.0,1130.0,2026-08-20,Cost Increase
+985,11,79,890.0,930.0,2026-01-21,Supplier Cost Change
+986,11,80,310.0,340.0,2025-12-06,Market Adjustment
+987,11,83,410.0,440.0,2025-12-29,Menu Revision
+988,11,83,440.0,470.0,2026-06-05,Cost Increase
+989,11,83,470.0,510.0,2026-06-18,Seasonal Adjustment
+990,11,85,220.0,240.0,2025-06-16,Seasonal Adjustment
+991,11,86,1360.0,1440.0,2026-01-08,Supplier Cost Change
+992,11,86,1440.0,1510.0,2026-06-19,Seasonal Adjustment
+993,11,89,800.0,850.0,2026-05-04,Cost Increase
+994,11,91,1100.0,1170.0,2025-10-22,Supplier Cost Change
+995,11,91,1170.0,1230.0,2025-10-23,Supplier Cost Change
+996,11,92,450.0,470.0,2026-04-14,Supplier Cost Change
+997,11,92,470.0,520.0,2026-04-17,Cost Increase
+998,11,92,520.0,540.0,2026-08-17,Menu Revision
+999,11,94,340.0,360.0,2025-05-22,Supplier Cost Change
+1000,11,94,360.0,370.0,2025-06-04,Cost Increase
+1001,11,94,370.0,400.0,2025-12-12,Market Adjustment
+1002,11,95,440.0,410.0,2026-06-18,Cost Increase
+1003,11,95,410.0,440.0,2026-07-31,Menu Revision
+1004,11,95,440.0,470.0,2026-08-06,Seasonal Adjustment
+1005,11,96,220.0,230.0,2025-08-09,Supplier Cost Change
+1006,11,101,660.0,710.0,2025-08-02,Seasonal Adjustment
+1007,11,101,710.0,760.0,2026-07-04,Cost Increase
+1008,11,102,1070.0,1140.0,2025-12-01,Market Adjustment
+1009,11,106,320.0,340.0,2026-06-24,Market Adjustment
+1010,11,113,960.0,910.0,2025-10-18,Market Adjustment
+1011,11,113,910.0,840.0,2026-04-23,Market Adjustment
+1012,11,113,840.0,890.0,2026-06-03,Menu Revision
+1013,11,115,1820.0,1690.0,2025-09-05,Seasonal Adjustment
+1014,11,115,1690.0,1850.0,2025-10-01,Cost Increase
+1015,11,115,1850.0,1980.0,2026-03-25,Supplier Cost Change
+1016,11,119,560.0,600.0,2026-05-18,Menu Revision
+1017,11,121,520.0,490.0,2025-06-09,Cost Increase
+1018,11,122,510.0,550.0,2026-03-31,Supplier Cost Change
+1019,11,129,290.0,280.0,2026-03-10,Seasonal Adjustment
+1020,11,133,460.0,490.0,2025-04-19,Seasonal Adjustment
+1021,11,133,490.0,520.0,2025-09-26,Cost Increase
+1022,11,133,520.0,560.0,2025-11-05,Menu Revision
+1023,11,135,620.0,660.0,2025-08-16,Supplier Cost Change
+1024,11,137,410.0,430.0,2026-06-13,Market Adjustment
+1025,11,138,510.0,480.0,2025-04-25,Menu Revision
+1026,11,138,480.0,520.0,2026-03-18,Seasonal Adjustment
+1027,11,138,520.0,550.0,2026-06-17,Supplier Cost Change
+1028,11,139,1560.0,1680.0,2025-08-03,Seasonal Adjustment
+1029,11,139,1680.0,1560.0,2026-02-02,Cost Increase
+1030,11,140,680.0,720.0,2025-07-29,Menu Revision
+1031,11,141,270.0,290.0,2026-08-24,Menu Revision
+1032,11,143,470.0,510.0,2025-10-31,Menu Revision
+1033,11,143,510.0,550.0,2026-07-12,Seasonal Adjustment
+1034,11,147,590.0,610.0,2026-06-03,Market Adjustment
+1035,12,1,580.0,630.0,2025-12-12,Seasonal Adjustment
+1036,12,2,890.0,920.0,2025-11-08,Supplier Cost Change
+1037,12,3,480.0,530.0,2025-04-27,Market Adjustment
+1038,12,4,910.0,960.0,2026-03-29,Seasonal Adjustment
+1039,12,4,960.0,1050.0,2026-06-01,Seasonal Adjustment
+1040,12,7,1110.0,1220.0,2025-09-30,Menu Revision
+1041,12,7,1220.0,1150.0,2026-05-11,Seasonal Adjustment
+1042,12,8,290.0,310.0,2025-07-15,Cost Increase
+1043,12,9,200.0,210.0,2025-04-03,Cost Increase
+1044,12,12,290.0,280.0,2025-05-02,Seasonal Adjustment
+1045,12,12,280.0,310.0,2025-07-17,Market Adjustment
+1046,12,12,310.0,330.0,2026-03-23,Supplier Cost Change
+1047,12,13,340.0,320.0,2026-03-01,Cost Increase
+1048,12,15,500.0,550.0,2025-06-16,Cost Increase
+1049,12,21,300.0,320.0,2025-09-10,Cost Increase
+1050,12,22,150.0,160.0,2025-08-16,Supplier Cost Change
+1051,12,22,160.0,170.0,2025-09-20,Seasonal Adjustment
+1052,12,23,590.0,560.0,2026-06-24,Menu Revision
+1053,12,29,1060.0,1130.0,2025-09-24,Menu Revision
+1054,12,30,440.0,460.0,2026-08-17,Seasonal Adjustment
+1055,12,31,1080.0,1170.0,2026-03-20,Market Adjustment
+1056,12,34,390.0,430.0,2026-07-14,Menu Revision
+1057,12,35,490.0,510.0,2025-05-14,Seasonal Adjustment
+1058,12,35,510.0,540.0,2026-06-09,Cost Increase
+1059,12,36,320.0,340.0,2026-01-17,Market Adjustment
+1060,12,38,720.0,780.0,2025-08-29,Market Adjustment
+1061,12,41,950.0,980.0,2026-01-30,Supplier Cost Change
+1062,12,41,980.0,1020.0,2026-05-15,Menu Revision
+1063,12,43,960.0,1050.0,2026-01-15,Seasonal Adjustment
+1064,12,45,230.0,240.0,2025-06-18,Cost Increase
+1065,12,49,570.0,610.0,2025-11-26,Supplier Cost Change
+1066,12,52,1410.0,1460.0,2025-08-07,Supplier Cost Change
+1067,12,53,910.0,970.0,2026-02-07,Seasonal Adjustment
+1068,12,56,230.0,250.0,2025-04-30,Seasonal Adjustment
+1069,12,59,460.0,480.0,2026-06-16,Market Adjustment
+1070,12,60,450.0,420.0,2025-05-26,Seasonal Adjustment
+1071,12,62,650.0,710.0,2026-05-29,Supplier Cost Change
+1072,12,63,330.0,360.0,2025-09-16,Supplier Cost Change
+1073,12,63,360.0,390.0,2026-08-29,Seasonal Adjustment
+1074,12,64,1410.0,1490.0,2026-01-27,Cost Increase
+1075,12,64,1490.0,1600.0,2026-08-07,Supplier Cost Change
+1076,12,67,1480.0,1630.0,2026-04-09,Supplier Cost Change
+1077,12,68,180.0,200.0,2026-06-29,Supplier Cost Change
+1078,12,70,260.0,270.0,2026-05-30,Market Adjustment
+1079,12,70,270.0,280.0,2026-08-14,Cost Increase
+1080,12,71,530.0,490.0,2025-09-20,Market Adjustment
+1081,12,71,490.0,510.0,2026-03-24,Supplier Cost Change
+1082,12,72,330.0,360.0,2026-06-30,Menu Revision
+1083,12,76,650.0,680.0,2026-02-21,Cost Increase
+1084,12,76,680.0,730.0,2026-07-21,Seasonal Adjustment
+1085,12,78,990.0,920.0,2025-10-01,Menu Revision
+1086,12,78,920.0,1000.0,2025-12-13,Seasonal Adjustment
+1087,12,78,1000.0,1060.0,2026-07-27,Seasonal Adjustment
+1088,12,85,210.0,230.0,2026-07-22,Menu Revision
+1089,12,86,1200.0,1270.0,2025-05-15,Seasonal Adjustment
+1090,12,86,1270.0,1350.0,2025-11-12,Supplier Cost Change
+1091,12,86,1350.0,1430.0,2026-08-04,Seasonal Adjustment
+1092,12,88,560.0,610.0,2026-03-30,Supplier Cost Change
+1093,12,91,1360.0,1420.0,2025-05-28,Seasonal Adjustment
+1094,12,93,290.0,320.0,2026-08-04,Menu Revision
+1095,12,94,410.0,380.0,2025-11-12,Cost Increase
+1096,12,94,380.0,390.0,2026-01-13,Seasonal Adjustment
+1097,12,96,230.0,240.0,2026-01-14,Seasonal Adjustment
+1098,12,96,240.0,220.0,2026-03-07,Market Adjustment
+1099,12,97,620.0,580.0,2025-05-03,Seasonal Adjustment
+1100,12,100,670.0,690.0,2026-03-10,Cost Increase
+1101,12,100,690.0,720.0,2026-04-28,Menu Revision
+1102,12,100,720.0,760.0,2026-07-31,Cost Increase
+1103,12,101,650.0,690.0,2026-03-31,Cost Increase
+1104,12,102,860.0,890.0,2026-03-25,Seasonal Adjustment
+1105,12,102,890.0,950.0,2026-04-25,Cost Increase
+1106,12,103,1040.0,1110.0,2025-05-12,Menu Revision
+1107,12,104,420.0,460.0,2026-01-28,Menu Revision
+1108,12,104,460.0,480.0,2026-08-28,Supplier Cost Change
+1109,12,105,240.0,250.0,2025-11-21,Menu Revision
+1110,12,106,360.0,380.0,2026-05-06,Seasonal Adjustment
+1111,12,107,450.0,460.0,2025-11-21,Cost Increase
+1112,12,114,550.0,610.0,2025-07-07,Supplier Cost Change
+1113,12,114,610.0,590.0,2025-09-18,Market Adjustment
+1114,12,116,350.0,360.0,2026-04-24,Menu Revision
+1115,12,119,520.0,550.0,2026-05-05,Seasonal Adjustment
+1116,12,124,1080.0,1160.0,2026-03-30,Market Adjustment
+1117,12,124,1160.0,1270.0,2026-06-04,Cost Increase
+1118,12,125,720.0,770.0,2025-08-11,Market Adjustment
+1119,12,125,770.0,820.0,2026-05-30,Seasonal Adjustment
+1120,12,128,290.0,320.0,2026-06-18,Menu Revision
+1121,12,138,510.0,560.0,2025-05-26,Menu Revision
+1122,12,139,1670.0,1730.0,2025-06-09,Menu Revision
+1123,12,140,680.0,650.0,2025-12-24,Supplier Cost Change
+1124,12,141,290.0,310.0,2026-07-02,Menu Revision
+1125,12,144,250.0,260.0,2025-08-10,Supplier Cost Change
+1126,12,145,290.0,310.0,2026-03-16,Cost Increase
+1127,12,145,310.0,330.0,2026-06-18,Seasonal Adjustment
+1128,12,148,1000.0,1070.0,2026-05-17,Menu Revision
+1129,12,150,1000.0,1040.0,2026-04-30,Menu Revision
+1130,13,5,1200.0,1270.0,2025-12-19,Seasonal Adjustment
+1131,13,8,310.0,320.0,2025-10-04,Menu Revision
+1132,13,11,400.0,430.0,2025-12-08,Cost Increase
+1133,13,11,430.0,450.0,2026-04-11,Supplier Cost Change
+1134,13,13,310.0,340.0,2026-07-21,Menu Revision
+1135,13,13,340.0,360.0,2026-08-08,Cost Increase
+1136,13,16,760.0,800.0,2026-01-18,Supplier Cost Change
+1137,13,18,900.0,970.0,2025-09-28,Market Adjustment
+1138,13,19,1260.0,1160.0,2026-08-13,Menu Revision
+1139,13,21,300.0,330.0,2025-08-20,Market Adjustment
+1140,13,24,250.0,260.0,2026-05-28,Cost Increase
+1141,13,25,320.0,350.0,2026-05-20,Menu Revision
+1142,13,25,350.0,370.0,2026-06-08,Supplier Cost Change
+1143,13,26,1270.0,1360.0,2026-07-05,Market Adjustment
+1144,13,38,790.0,820.0,2025-07-02,Market Adjustment
+1145,13,39,810.0,850.0,2025-12-25,Market Adjustment
+1146,13,40,1150.0,1240.0,2026-04-09,Cost Increase
+1147,13,42,670.0,730.0,2025-12-19,Market Adjustment
+1148,13,42,730.0,800.0,2026-04-18,Market Adjustment
+1149,13,44,460.0,510.0,2025-12-10,Supplier Cost Change
+1150,13,45,230.0,250.0,2025-11-03,Market Adjustment
+1151,13,46,230.0,240.0,2026-06-20,Market Adjustment
+1152,13,47,410.0,380.0,2026-03-24,Supplier Cost Change
+1153,13,48,160.0,180.0,2026-05-12,Market Adjustment
+1154,13,53,920.0,990.0,2025-04-14,Supplier Cost Change
+1155,13,53,990.0,1040.0,2026-01-20,Cost Increase
+1156,13,58,430.0,470.0,2026-06-14,Seasonal Adjustment
+1157,13,59,400.0,420.0,2026-03-29,Market Adjustment
+1158,13,59,420.0,460.0,2026-05-22,Menu Revision
+1159,13,59,460.0,500.0,2026-08-09,Supplier Cost Change
+1160,13,62,700.0,650.0,2025-05-30,Cost Increase
+1161,13,65,1030.0,1070.0,2026-05-24,Market Adjustment
+1162,13,67,1620.0,1760.0,2026-06-13,Menu Revision
+1163,13,67,1760.0,1840.0,2026-08-24,Seasonal Adjustment
+1164,13,69,140.0,150.0,2025-12-21,Market Adjustment
+1165,13,69,150.0,160.0,2026-06-13,Market Adjustment
+1166,13,70,240.0,250.0,2026-07-24,Market Adjustment
+1167,13,72,330.0,350.0,2026-04-01,Seasonal Adjustment
+1168,13,73,430.0,440.0,2025-04-16,Market Adjustment
+1169,13,73,440.0,460.0,2026-01-21,Supplier Cost Change
+1170,13,75,420.0,450.0,2026-08-24,Market Adjustment
+1171,13,76,860.0,810.0,2025-11-24,Market Adjustment
+1172,13,80,320.0,350.0,2025-11-29,Menu Revision
+1173,13,80,350.0,380.0,2026-02-21,Menu Revision
+1174,13,81,180.0,190.0,2026-07-01,Supplier Cost Change
+1175,13,84,390.0,420.0,2025-11-20,Menu Revision
+1176,13,84,420.0,450.0,2026-07-06,Market Adjustment
+1177,13,86,1420.0,1520.0,2025-06-08,Market Adjustment
+1178,13,88,500.0,540.0,2025-06-27,Supplier Cost Change
+1179,13,88,540.0,560.0,2026-03-24,Supplier Cost Change
+1180,13,88,560.0,610.0,2026-08-21,Market Adjustment
+1181,13,89,700.0,760.0,2025-08-13,Supplier Cost Change
+1182,13,90,580.0,550.0,2025-09-14,Menu Revision
+1183,13,91,1020.0,1070.0,2026-01-16,Market Adjustment
+1184,13,91,1070.0,1150.0,2026-02-18,Cost Increase
+1185,13,91,1150.0,1220.0,2026-07-24,Supplier Cost Change
+1186,13,92,480.0,520.0,2026-06-07,Supplier Cost Change
+1187,13,92,520.0,540.0,2026-06-25,Market Adjustment
+1188,13,92,540.0,500.0,2026-08-28,Market Adjustment
+1189,13,95,440.0,460.0,2026-06-09,Cost Increase
+1190,13,95,460.0,480.0,2026-06-23,Market Adjustment
+1191,13,95,480.0,520.0,2026-08-27,Market Adjustment
+1192,13,99,730.0,790.0,2025-12-05,Supplier Cost Change
+1193,13,100,760.0,810.0,2026-05-10,Market Adjustment
+1194,13,102,1070.0,1110.0,2025-11-17,Supplier Cost Change
+1195,13,104,490.0,530.0,2025-07-16,Market Adjustment
+1196,13,104,530.0,490.0,2026-05-07,Menu Revision
+1197,13,106,340.0,350.0,2026-03-26,Cost Increase
+1198,13,106,350.0,330.0,2026-04-10,Menu Revision
+1199,13,108,270.0,290.0,2025-08-28,Menu Revision
+1200,13,112,880.0,930.0,2025-10-15,Cost Increase
+1201,13,112,930.0,990.0,2025-10-23,Menu Revision
+1202,13,115,2110.0,2270.0,2026-04-10,Menu Revision
+1203,13,126,960.0,900.0,2026-07-20,Supplier Cost Change
+1204,13,134,830.0,910.0,2025-11-09,Market Adjustment
+1205,13,135,740.0,790.0,2026-03-17,Supplier Cost Change
+1206,13,137,330.0,360.0,2026-03-05,Cost Increase
+1207,13,137,360.0,400.0,2026-03-10,Cost Increase
+1208,13,138,530.0,560.0,2025-06-10,Seasonal Adjustment
+1209,13,138,560.0,610.0,2025-10-05,Cost Increase
+1210,13,139,1560.0,1710.0,2025-08-31,Menu Revision
+1211,13,140,650.0,670.0,2025-12-25,Cost Increase
+1212,13,141,270.0,290.0,2026-06-22,Supplier Cost Change
+1213,13,141,290.0,310.0,2026-06-26,Menu Revision
+1214,13,142,370.0,410.0,2025-11-26,Cost Increase
+1215,13,145,290.0,310.0,2025-07-23,Seasonal Adjustment
+1216,13,147,610.0,640.0,2026-05-04,Menu Revision
+1217,13,148,1000.0,1060.0,2026-05-21,Market Adjustment
+1218,13,149,410.0,420.0,2025-10-20,Menu Revision
+1219,13,150,810.0,890.0,2026-02-02,Menu Revision
+1220,13,150,890.0,930.0,2026-07-30,Menu Revision
+1221,14,1,600.0,620.0,2026-03-21,Seasonal Adjustment
+1222,14,5,1490.0,1410.0,2025-04-10,Menu Revision
+1223,14,7,1040.0,1110.0,2025-09-18,Menu Revision
+1224,14,7,1110.0,1030.0,2026-05-23,Market Adjustment
+1225,14,7,1030.0,1080.0,2026-08-11,Cost Increase
+1226,14,9,210.0,220.0,2026-05-08,Market Adjustment
+1227,14,13,280.0,300.0,2026-02-11,Supplier Cost Change
+1228,14,13,300.0,310.0,2026-02-14,Market Adjustment
+1229,14,14,620.0,680.0,2026-02-14,Seasonal Adjustment
+1230,14,16,750.0,710.0,2026-02-08,Menu Revision
+1231,14,18,920.0,1000.0,2026-05-20,Supplier Cost Change
+1232,14,19,1260.0,1350.0,2026-08-23,Supplier Cost Change
+1233,14,20,700.0,730.0,2026-06-26,Cost Increase
+1234,14,22,160.0,170.0,2026-02-15,Supplier Cost Change
+1235,14,24,240.0,260.0,2025-08-01,Market Adjustment
+1236,14,27,780.0,810.0,2026-07-02,Menu Revision
+1237,14,30,480.0,510.0,2026-03-17,Seasonal Adjustment
+1238,14,34,390.0,410.0,2025-06-03,Seasonal Adjustment
+1239,14,34,410.0,420.0,2025-09-20,Cost Increase
+1240,14,38,760.0,820.0,2025-07-12,Menu Revision
+1241,14,39,900.0,970.0,2026-03-24,Seasonal Adjustment
+1242,14,39,970.0,920.0,2026-03-30,Menu Revision
+1243,14,39,920.0,850.0,2026-07-24,Cost Increase
+1244,14,41,910.0,960.0,2026-02-05,Cost Increase
+1245,14,43,890.0,940.0,2025-11-21,Cost Increase
+1246,14,45,230.0,240.0,2025-10-27,Market Adjustment
+1247,14,47,340.0,360.0,2025-10-04,Cost Increase
+1248,14,52,1220.0,1270.0,2025-07-14,Cost Increase
+1249,14,52,1270.0,1340.0,2026-08-03,Cost Increase
+1250,14,54,610.0,650.0,2025-06-08,Supplier Cost Change
+1251,14,58,420.0,450.0,2026-08-14,Seasonal Adjustment
+1252,14,59,420.0,440.0,2026-05-12,Seasonal Adjustment
+1253,14,60,370.0,390.0,2025-10-10,Supplier Cost Change
+1254,14,64,1520.0,1600.0,2025-08-03,Menu Revision
+1255,14,66,810.0,850.0,2025-06-21,Menu Revision
+1256,14,66,850.0,920.0,2026-08-18,Market Adjustment
+1257,14,67,1660.0,1730.0,2025-08-09,Menu Revision
+1258,14,67,1730.0,1880.0,2026-06-08,Supplier Cost Change
+1259,14,68,190.0,210.0,2025-05-08,Seasonal Adjustment
+1260,14,68,210.0,230.0,2025-07-04,Seasonal Adjustment
+1261,14,69,170.0,180.0,2026-08-17,Market Adjustment
+1262,14,70,260.0,270.0,2026-06-10,Menu Revision
+1263,14,70,270.0,290.0,2026-06-11,Menu Revision
+1264,14,71,570.0,550.0,2025-04-17,Menu Revision
+1265,14,71,550.0,510.0,2025-05-01,Market Adjustment
+1266,14,72,330.0,340.0,2026-04-04,Menu Revision
+1267,14,75,420.0,440.0,2025-06-17,Seasonal Adjustment
+1268,14,76,780.0,850.0,2025-12-31,Market Adjustment
+1269,14,78,1060.0,1140.0,2025-05-12,Market Adjustment
+1270,14,80,370.0,350.0,2026-04-05,Market Adjustment
+1271,14,81,220.0,210.0,2026-08-04,Cost Increase
+1272,14,90,550.0,580.0,2026-06-19,Cost Increase
+1273,14,91,1280.0,1340.0,2026-03-17,Market Adjustment
+1274,14,91,1340.0,1410.0,2026-08-02,Market Adjustment
+1275,14,93,300.0,320.0,2026-06-19,Market Adjustment
+1276,14,95,420.0,460.0,2026-06-15,Supplier Cost Change
+1277,14,97,480.0,520.0,2026-02-16,Cost Increase
+1278,14,98,1030.0,990.0,2025-11-14,Market Adjustment
+1279,14,100,720.0,760.0,2026-04-09,Seasonal Adjustment
+1280,14,101,740.0,780.0,2025-04-05,Menu Revision
+1281,14,103,890.0,940.0,2026-02-01,Menu Revision
+1282,14,105,220.0,240.0,2026-06-06,Market Adjustment
+1283,14,106,370.0,350.0,2026-06-08,Supplier Cost Change
+1284,14,108,290.0,300.0,2026-02-24,Market Adjustment
+1285,14,114,610.0,650.0,2026-05-24,Market Adjustment
+1286,14,114,650.0,690.0,2026-06-20,Cost Increase
+1287,14,115,2150.0,2230.0,2025-10-31,Menu Revision
+1288,14,116,340.0,370.0,2025-06-27,Market Adjustment
+1289,14,116,370.0,390.0,2025-09-23,Market Adjustment
+1290,14,121,440.0,460.0,2025-08-10,Market Adjustment
+1291,14,121,460.0,490.0,2025-09-09,Seasonal Adjustment
+1292,14,122,520.0,540.0,2025-05-27,Seasonal Adjustment
+1293,14,123,740.0,760.0,2025-12-18,Supplier Cost Change
+1294,14,124,1190.0,1270.0,2025-10-26,Supplier Cost Change
+1295,14,124,1270.0,1360.0,2026-02-20,Supplier Cost Change
+1296,14,126,970.0,1010.0,2026-05-13,Market Adjustment
+1297,14,128,290.0,310.0,2026-07-12,Menu Revision
+1298,14,130,470.0,490.0,2026-07-12,Menu Revision
+1299,14,132,340.0,360.0,2025-06-21,Supplier Cost Change
+1300,14,132,360.0,390.0,2026-01-13,Seasonal Adjustment
+1301,14,136,500.0,540.0,2025-07-15,Market Adjustment
+1302,14,141,350.0,320.0,2026-08-28,Seasonal Adjustment
+1303,14,146,640.0,700.0,2026-04-24,Seasonal Adjustment
+1304,14,149,380.0,410.0,2025-05-01,Seasonal Adjustment
+1305,14,149,410.0,450.0,2025-12-07,Menu Revision
+1306,14,149,450.0,490.0,2026-05-29,Menu Revision
+1307,14,150,890.0,940.0,2025-11-29,Supplier Cost Change
+1308,15,2,850.0,900.0,2025-12-26,Seasonal Adjustment
+1309,15,2,900.0,960.0,2026-07-03,Menu Revision
+1310,15,4,980.0,1050.0,2026-07-24,Menu Revision
+1311,15,5,1490.0,1380.0,2025-12-31,Supplier Cost Change
+1312,15,6,540.0,510.0,2026-07-18,Cost Increase
+1313,15,7,1310.0,1210.0,2026-06-16,Supplier Cost Change
+1314,15,8,310.0,340.0,2026-01-10,Cost Increase
+1315,15,8,340.0,320.0,2026-02-17,Cost Increase
+1316,15,9,180.0,200.0,2026-08-24,Menu Revision
+1317,15,10,490.0,520.0,2026-08-12,Cost Increase
+1318,15,12,290.0,310.0,2026-02-22,Supplier Cost Change
+1319,15,13,330.0,360.0,2025-08-31,Seasonal Adjustment
+1320,15,16,720.0,760.0,2025-06-09,Menu Revision
+1321,15,17,1190.0,1300.0,2026-01-26,Supplier Cost Change
+1322,15,20,670.0,710.0,2025-11-18,Menu Revision
+1323,15,21,300.0,330.0,2025-06-27,Market Adjustment
+1324,15,22,160.0,170.0,2025-10-13,Menu Revision
+1325,15,22,170.0,180.0,2025-11-27,Seasonal Adjustment
+1326,15,26,1440.0,1480.0,2025-07-26,Market Adjustment
+1327,15,27,850.0,890.0,2026-07-02,Menu Revision
+1328,15,28,910.0,950.0,2026-04-09,Cost Increase
+1329,15,33,340.0,370.0,2026-02-28,Menu Revision
+1330,15,34,440.0,450.0,2025-12-31,Supplier Cost Change
+1331,15,35,450.0,490.0,2025-10-03,Supplier Cost Change
+1332,15,35,490.0,520.0,2026-01-21,Cost Increase
+1333,15,36,270.0,280.0,2025-05-21,Supplier Cost Change
+1334,15,36,280.0,290.0,2025-10-25,Supplier Cost Change
+1335,15,36,290.0,300.0,2026-07-28,Supplier Cost Change
+1336,15,37,530.0,580.0,2026-03-09,Seasonal Adjustment
+1337,15,38,650.0,700.0,2026-01-21,Market Adjustment
+1338,15,40,1150.0,1200.0,2025-10-23,Market Adjustment
+1339,15,41,1080.0,1000.0,2025-11-09,Supplier Cost Change
+1340,15,42,620.0,670.0,2026-05-01,Cost Increase
+1341,15,42,670.0,730.0,2026-07-17,Market Adjustment
+1342,15,44,460.0,480.0,2026-03-16,Supplier Cost Change
+1343,15,48,170.0,180.0,2026-03-23,Menu Revision
+1344,15,49,580.0,600.0,2025-07-18,Supplier Cost Change
+1345,15,49,600.0,650.0,2025-10-11,Cost Increase
+1346,15,55,1720.0,1830.0,2026-07-02,Menu Revision
+1347,15,57,160.0,170.0,2025-09-27,Seasonal Adjustment
+1348,15,60,330.0,350.0,2025-06-18,Market Adjustment
+1349,15,60,350.0,360.0,2025-08-24,Market Adjustment
+1350,15,60,360.0,380.0,2025-08-26,Menu Revision
+1351,15,63,390.0,410.0,2025-06-13,Supplier Cost Change
+1352,15,64,1490.0,1560.0,2025-04-13,Menu Revision
+1353,15,69,170.0,180.0,2025-11-10,Menu Revision
+1354,15,70,280.0,290.0,2026-04-26,Supplier Cost Change
+1355,15,73,460.0,440.0,2025-08-10,Market Adjustment
+1356,15,73,440.0,470.0,2025-11-29,Menu Revision
+1357,15,74,1070.0,1110.0,2026-06-12,Market Adjustment
+1358,15,75,470.0,440.0,2025-06-12,Seasonal Adjustment
+1359,15,75,440.0,460.0,2026-05-10,Menu Revision
+1360,15,78,1010.0,1050.0,2025-07-21,Supplier Cost Change
+1361,15,78,1050.0,1130.0,2026-02-21,Supplier Cost Change
+1362,15,79,780.0,810.0,2026-03-18,Seasonal Adjustment
+1363,15,79,810.0,840.0,2026-07-22,Menu Revision
+1364,15,83,450.0,480.0,2026-02-14,Cost Increase
+1365,15,83,480.0,520.0,2026-04-15,Market Adjustment
+1366,15,85,210.0,230.0,2025-03-31,Seasonal Adjustment
+1367,15,85,230.0,250.0,2025-08-06,Seasonal Adjustment
+1368,15,85,250.0,260.0,2026-03-25,Seasonal Adjustment
+1369,15,87,340.0,360.0,2026-07-15,Supplier Cost Change
+1370,15,90,500.0,530.0,2025-07-02,Menu Revision
+1371,15,90,530.0,580.0,2025-12-28,Market Adjustment
+1372,15,90,580.0,600.0,2026-02-20,Seasonal Adjustment
+1373,15,92,560.0,590.0,2026-04-11,Cost Increase
+1374,15,97,470.0,520.0,2025-08-27,Menu Revision
+1375,15,102,990.0,1030.0,2026-03-15,Menu Revision
+1376,15,104,490.0,540.0,2025-12-13,Seasonal Adjustment
+1377,15,104,540.0,520.0,2026-05-19,Market Adjustment
+1378,15,106,330.0,350.0,2026-03-29,Supplier Cost Change
+1379,15,107,420.0,440.0,2025-11-20,Cost Increase
+1380,15,113,720.0,790.0,2025-11-26,Seasonal Adjustment
+1381,15,114,680.0,630.0,2025-11-10,Supplier Cost Change
+1382,15,117,200.0,220.0,2026-03-13,Supplier Cost Change
+1383,15,119,540.0,560.0,2026-08-02,Menu Revision
+1384,15,121,410.0,450.0,2025-07-21,Menu Revision
+1385,15,122,500.0,530.0,2025-06-25,Supplier Cost Change
+1386,15,122,530.0,490.0,2026-07-04,Cost Increase
+1387,15,126,930.0,960.0,2026-03-25,Menu Revision
+1388,15,127,1620.0,1740.0,2026-06-22,Supplier Cost Change
+1389,15,128,300.0,290.0,2026-08-02,Menu Revision
+1390,15,128,290.0,310.0,2026-08-31,Menu Revision
+1391,15,129,280.0,310.0,2025-10-13,Seasonal Adjustment
+1392,15,131,350.0,380.0,2025-12-17,Seasonal Adjustment
+1393,15,131,380.0,390.0,2026-06-21,Market Adjustment
+1394,15,135,680.0,740.0,2025-04-09,Seasonal Adjustment
+1395,15,135,740.0,800.0,2025-10-03,Menu Revision
+1396,15,136,470.0,500.0,2026-01-13,Seasonal Adjustment
+1397,15,139,1740.0,1650.0,2026-05-16,Supplier Cost Change
+1398,15,148,940.0,1000.0,2026-05-25,Supplier Cost Change
+1399,15,148,1000.0,1080.0,2026-06-29,Menu Revision
+1400,15,149,390.0,420.0,2025-11-09,Supplier Cost Change
+1401,16,2,900.0,870.0,2025-11-11,Cost Increase
+1402,16,4,980.0,1050.0,2026-03-04,Supplier Cost Change
+1403,16,4,1050.0,1090.0,2026-04-13,Cost Increase
+1404,16,6,480.0,520.0,2026-08-13,Cost Increase
+1405,16,8,380.0,350.0,2025-08-24,Menu Revision
+1406,16,8,350.0,360.0,2025-11-02,Menu Revision
+1407,16,8,360.0,340.0,2026-08-29,Menu Revision
+1408,16,9,210.0,230.0,2026-02-23,Supplier Cost Change
+1409,16,10,420.0,450.0,2026-08-05,Market Adjustment
+1410,16,10,450.0,500.0,2026-08-22,Cost Increase
+1411,16,10,500.0,530.0,2026-08-30,Cost Increase
+1412,16,12,310.0,320.0,2025-07-23,Menu Revision
+1413,16,12,320.0,330.0,2025-09-17,Supplier Cost Change
+1414,16,15,530.0,560.0,2025-08-03,Cost Increase
+1415,16,19,1160.0,1250.0,2026-08-29,Market Adjustment
+1416,16,21,320.0,340.0,2025-09-28,Menu Revision
+1417,16,22,160.0,180.0,2025-10-08,Supplier Cost Change
+1418,16,22,180.0,190.0,2026-02-11,Menu Revision
+1419,16,25,350.0,370.0,2026-06-15,Cost Increase
+1420,16,30,420.0,450.0,2026-01-26,Seasonal Adjustment
+1421,16,30,450.0,490.0,2026-06-12,Cost Increase
+1422,16,32,410.0,430.0,2026-04-25,Cost Increase
+1423,16,34,410.0,430.0,2026-06-07,Supplier Cost Change
+1424,16,35,530.0,580.0,2025-09-05,Menu Revision
+1425,16,36,340.0,320.0,2025-06-22,Cost Increase
+1426,16,37,430.0,420.0,2025-06-27,Seasonal Adjustment
+1427,16,37,420.0,460.0,2026-01-25,Market Adjustment
+1428,16,37,460.0,500.0,2026-03-02,Menu Revision
+1429,16,38,700.0,730.0,2025-12-06,Cost Increase
+1430,16,39,670.0,730.0,2026-05-07,Menu Revision
+1431,16,41,920.0,980.0,2025-04-17,Seasonal Adjustment
+1432,16,41,980.0,1010.0,2025-04-19,Supplier Cost Change
+1433,16,43,1060.0,1110.0,2025-12-24,Seasonal Adjustment
+1434,16,46,230.0,250.0,2026-06-14,Supplier Cost Change
+1435,16,50,1280.0,1330.0,2026-06-16,Menu Revision
+1436,16,52,1170.0,1290.0,2026-08-04,Menu Revision
+1437,16,54,640.0,670.0,2026-04-05,Cost Increase
+1438,16,57,160.0,170.0,2025-07-04,Menu Revision
+1439,16,62,660.0,710.0,2026-03-07,Supplier Cost Change
+1440,16,64,1290.0,1350.0,2026-04-16,Market Adjustment
+1441,16,65,980.0,1070.0,2026-07-11,Seasonal Adjustment
+1442,16,69,140.0,150.0,2026-05-17,Supplier Cost Change
+1443,16,69,150.0,160.0,2026-06-02,Menu Revision
+1444,16,71,450.0,490.0,2026-02-28,Menu Revision
+1445,16,75,420.0,450.0,2026-03-08,Seasonal Adjustment
+1446,16,76,870.0,810.0,2025-11-23,Market Adjustment
+1447,16,76,810.0,750.0,2026-02-15,Cost Increase
+1448,16,77,870.0,920.0,2025-10-31,Supplier Cost Change
+1449,16,81,170.0,190.0,2026-05-10,Cost Increase
+1450,16,81,190.0,200.0,2026-06-02,Menu Revision
+1451,16,82,300.0,280.0,2025-04-01,Seasonal Adjustment
+1452,16,84,430.0,410.0,2025-05-27,Menu Revision
+1453,16,89,800.0,750.0,2025-07-18,Seasonal Adjustment
+1454,16,89,750.0,790.0,2026-07-20,Menu Revision
+1455,16,91,1170.0,1220.0,2026-04-09,Menu Revision
+1456,16,94,340.0,370.0,2025-08-18,Supplier Cost Change
+1457,16,94,370.0,390.0,2025-09-15,Market Adjustment
+1458,16,94,390.0,410.0,2026-04-03,Seasonal Adjustment
+1459,16,96,240.0,260.0,2025-04-16,Market Adjustment
+1460,16,97,510.0,550.0,2025-11-10,Market Adjustment
+1461,16,97,550.0,590.0,2026-06-25,Market Adjustment
+1462,16,100,680.0,700.0,2026-06-07,Menu Revision
+1463,16,100,700.0,770.0,2026-08-20,Supplier Cost Change
+1464,16,103,930.0,980.0,2025-04-30,Supplier Cost Change
+1465,16,107,430.0,460.0,2025-11-01,Market Adjustment
+1466,16,108,250.0,270.0,2026-03-13,Cost Increase
+1467,16,109,560.0,580.0,2025-09-16,Market Adjustment
+1468,16,110,460.0,500.0,2025-10-09,Supplier Cost Change
+1469,16,111,660.0,720.0,2026-05-29,Menu Revision
+1470,16,111,720.0,760.0,2026-07-25,Seasonal Adjustment
+1471,16,112,920.0,960.0,2025-05-20,Supplier Cost Change
+1472,16,112,960.0,990.0,2026-08-09,Seasonal Adjustment
+1473,16,113,720.0,750.0,2025-10-11,Menu Revision
+1474,16,113,750.0,790.0,2025-10-25,Supplier Cost Change
+1475,16,117,210.0,230.0,2026-02-25,Cost Increase
+1476,16,119,510.0,530.0,2026-03-25,Cost Increase
+1477,16,119,530.0,560.0,2026-06-07,Menu Revision
+1478,16,121,350.0,370.0,2025-07-11,Market Adjustment
+1479,16,121,370.0,410.0,2025-10-25,Market Adjustment
+1480,16,121,410.0,440.0,2026-03-18,Market Adjustment
+1481,16,122,470.0,490.0,2026-03-13,Seasonal Adjustment
+1482,16,124,1270.0,1320.0,2026-03-29,Supplier Cost Change
+1483,16,130,410.0,430.0,2026-08-02,Market Adjustment
+1484,16,132,320.0,350.0,2025-11-01,Cost Increase
+1485,16,132,350.0,380.0,2026-01-02,Menu Revision
+1486,16,137,420.0,450.0,2026-08-03,Seasonal Adjustment
+1487,16,140,670.0,730.0,2025-11-13,Supplier Cost Change
+1488,16,141,300.0,320.0,2026-06-20,Market Adjustment
+1489,16,141,320.0,340.0,2026-08-03,Menu Revision
+1490,16,147,560.0,610.0,2026-03-22,Cost Increase
+1491,16,147,610.0,640.0,2026-03-23,Market Adjustment
+1492,16,148,1000.0,1080.0,2026-06-15,Seasonal Adjustment
+1493,17,3,480.0,510.0,2025-10-26,Cost Increase
+1494,17,3,510.0,550.0,2026-08-13,Supplier Cost Change
+1495,17,4,1110.0,1070.0,2026-02-04,Supplier Cost Change
+1496,17,7,1040.0,1140.0,2026-06-30,Market Adjustment
+1497,17,9,220.0,230.0,2025-10-26,Cost Increase
+1498,17,11,390.0,400.0,2026-06-27,Cost Increase
+1499,17,12,310.0,330.0,2025-05-18,Menu Revision
+1500,17,12,330.0,320.0,2026-01-15,Supplier Cost Change
+1501,17,12,320.0,340.0,2026-04-13,Menu Revision
+1502,17,13,330.0,360.0,2026-02-26,Market Adjustment
+1503,17,15,420.0,460.0,2025-05-30,Cost Increase
+1504,17,15,460.0,500.0,2025-11-22,Market Adjustment
+1505,17,17,1330.0,1410.0,2025-08-31,Cost Increase
+1506,17,21,290.0,310.0,2026-05-31,Supplier Cost Change
+1507,17,23,460.0,490.0,2025-04-07,Market Adjustment
+1508,17,23,490.0,520.0,2025-11-16,Market Adjustment
+1509,17,25,370.0,340.0,2026-08-23,Supplier Cost Change
+1510,17,26,1170.0,1230.0,2025-05-03,Seasonal Adjustment
+1511,17,26,1230.0,1300.0,2025-05-08,Cost Increase
+1512,17,26,1300.0,1410.0,2025-07-18,Market Adjustment
+1513,17,27,780.0,820.0,2026-08-21,Supplier Cost Change
+1514,17,31,1200.0,1130.0,2025-12-09,Supplier Cost Change
+1515,17,32,370.0,390.0,2025-06-28,Market Adjustment
+1516,17,32,390.0,410.0,2026-04-29,Seasonal Adjustment
+1517,17,32,410.0,440.0,2026-08-04,Supplier Cost Change
+1518,17,34,430.0,450.0,2026-05-15,Seasonal Adjustment
+1519,17,35,500.0,540.0,2026-05-21,Seasonal Adjustment
+1520,17,39,710.0,770.0,2026-05-05,Market Adjustment
+1521,17,42,620.0,670.0,2026-04-26,Supplier Cost Change
+1522,17,42,670.0,700.0,2026-05-14,Supplier Cost Change
+1523,17,42,700.0,740.0,2026-06-16,Supplier Cost Change
+1524,17,46,230.0,250.0,2026-08-08,Supplier Cost Change
+1525,17,46,250.0,260.0,2026-08-25,Seasonal Adjustment
+1526,17,47,370.0,380.0,2026-05-07,Supplier Cost Change
+1527,17,48,180.0,190.0,2026-04-26,Cost Increase
+1528,17,48,190.0,210.0,2026-08-15,Supplier Cost Change
+1529,17,53,870.0,930.0,2025-11-24,Seasonal Adjustment
+1530,17,53,930.0,1000.0,2025-12-26,Market Adjustment
+1531,17,54,590.0,640.0,2025-11-14,Cost Increase
+1532,17,57,150.0,160.0,2026-07-08,Seasonal Adjustment
+1533,17,57,160.0,170.0,2026-08-05,Seasonal Adjustment
+1534,17,58,440.0,460.0,2025-04-14,Menu Revision
+1535,17,59,440.0,470.0,2026-03-02,Market Adjustment
+1536,17,59,470.0,490.0,2026-07-23,Cost Increase
+1537,17,61,650.0,620.0,2025-07-03,Seasonal Adjustment
+1538,17,62,660.0,620.0,2026-06-24,Seasonal Adjustment
+1539,17,65,960.0,1010.0,2026-02-23,Market Adjustment
+1540,17,66,760.0,810.0,2026-02-10,Supplier Cost Change
+1541,17,67,1680.0,1760.0,2026-08-11,Seasonal Adjustment
+1542,17,70,250.0,270.0,2026-08-13,Seasonal Adjustment
+1543,17,73,440.0,470.0,2025-04-10,Menu Revision
+1544,17,73,470.0,440.0,2025-05-21,Supplier Cost Change
+1545,17,75,390.0,430.0,2026-05-23,Supplier Cost Change
+1546,17,80,360.0,370.0,2025-12-11,Market Adjustment
+1547,17,80,370.0,390.0,2026-01-11,Market Adjustment
+1548,17,80,390.0,370.0,2026-07-22,Supplier Cost Change
+1549,17,81,190.0,200.0,2026-07-22,Seasonal Adjustment
+1550,17,84,420.0,440.0,2025-06-23,Menu Revision
+1551,17,85,210.0,230.0,2026-07-19,Supplier Cost Change
+1552,17,86,1340.0,1390.0,2025-09-03,Market Adjustment
+1553,17,86,1390.0,1520.0,2025-12-11,Market Adjustment
+1554,17,88,500.0,530.0,2026-05-13,Cost Increase
+1555,17,92,480.0,510.0,2026-04-20,Cost Increase
+1556,17,93,350.0,320.0,2025-06-11,Menu Revision
+1557,17,94,330.0,350.0,2025-09-19,Seasonal Adjustment
+1558,17,94,350.0,380.0,2025-11-28,Cost Increase
+1559,17,95,380.0,410.0,2026-06-14,Cost Increase
+1560,17,95,410.0,450.0,2026-08-25,Market Adjustment
+1561,17,96,210.0,230.0,2025-03-31,Menu Revision
+1562,17,97,530.0,570.0,2025-07-02,Supplier Cost Change
+1563,17,97,570.0,610.0,2025-08-05,Cost Increase
+1564,17,100,790.0,820.0,2026-04-02,Supplier Cost Change
+1565,17,102,930.0,990.0,2026-04-06,Cost Increase
+1566,17,103,990.0,920.0,2026-02-26,Seasonal Adjustment
+1567,17,105,230.0,240.0,2025-09-13,Menu Revision
+1568,17,110,470.0,520.0,2026-06-16,Cost Increase
+1569,17,111,800.0,770.0,2026-08-30,Market Adjustment
+1570,17,112,860.0,890.0,2025-11-05,Supplier Cost Change
+1571,17,112,890.0,940.0,2026-03-29,Seasonal Adjustment
+1572,17,113,800.0,870.0,2026-04-10,Supplier Cost Change
+1573,17,114,620.0,640.0,2025-04-30,Supplier Cost Change
+1574,17,115,2050.0,2130.0,2026-06-04,Seasonal Adjustment
+1575,17,115,2130.0,2250.0,2026-07-13,Seasonal Adjustment
+1576,17,116,330.0,360.0,2025-10-25,Cost Increase
+1577,17,121,390.0,410.0,2025-05-30,Cost Increase
+1578,17,122,480.0,500.0,2026-06-27,Cost Increase
+1579,17,122,500.0,540.0,2026-08-03,Seasonal Adjustment
+1580,17,123,640.0,670.0,2025-10-23,Cost Increase
+1581,17,123,670.0,730.0,2026-01-03,Menu Revision
+1582,17,125,750.0,780.0,2026-04-11,Seasonal Adjustment
+1583,17,126,960.0,1040.0,2026-08-29,Seasonal Adjustment
+1584,17,127,1690.0,1740.0,2025-07-18,Menu Revision
+1585,17,127,1740.0,1810.0,2025-07-26,Menu Revision
+1586,17,128,260.0,280.0,2026-06-24,Cost Increase
+1587,17,129,300.0,320.0,2026-07-02,Cost Increase
+1588,17,131,360.0,390.0,2026-07-09,Cost Increase
+1589,17,131,390.0,420.0,2026-08-10,Menu Revision
+1590,17,134,830.0,860.0,2026-02-04,Menu Revision
+1591,17,136,490.0,470.0,2025-12-16,Supplier Cost Change
+1592,17,137,350.0,370.0,2026-07-16,Supplier Cost Change
+1593,17,139,1620.0,1700.0,2025-04-30,Seasonal Adjustment
+1594,17,139,1700.0,1760.0,2026-08-07,Cost Increase
+1595,17,140,620.0,640.0,2025-05-24,Supplier Cost Change
+1596,17,140,640.0,690.0,2025-12-14,Cost Increase
+1597,17,149,440.0,470.0,2025-07-18,Supplier Cost Change
+1598,17,150,1000.0,1070.0,2025-12-12,Supplier Cost Change
+1599,18,2,930.0,980.0,2026-01-21,Menu Revision
+1600,18,4,830.0,910.0,2025-11-19,Supplier Cost Change
+1601,18,6,490.0,530.0,2026-08-21,Menu Revision
+1602,18,8,340.0,360.0,2025-06-04,Market Adjustment
+1603,18,8,360.0,380.0,2025-11-29,Cost Increase
+1604,18,8,380.0,360.0,2026-01-17,Menu Revision
+1605,18,9,210.0,220.0,2025-11-08,Market Adjustment
+1606,18,10,530.0,510.0,2026-08-09,Supplier Cost Change
+1607,18,11,360.0,390.0,2026-02-18,Menu Revision
+1608,18,13,320.0,350.0,2026-04-19,Seasonal Adjustment
+1609,18,17,1290.0,1390.0,2025-10-18,Seasonal Adjustment
+1610,18,17,1390.0,1340.0,2025-10-23,Supplier Cost Change
+1611,18,18,790.0,850.0,2025-11-03,Seasonal Adjustment
+1612,18,18,850.0,900.0,2025-11-08,Menu Revision
+1613,18,18,900.0,950.0,2026-06-08,Supplier Cost Change
+1614,18,19,1240.0,1350.0,2026-08-24,Menu Revision
+1615,18,20,640.0,670.0,2026-01-31,Cost Increase
+1616,18,22,200.0,190.0,2025-07-31,Cost Increase
+1617,18,23,420.0,460.0,2026-03-28,Market Adjustment
+1618,18,23,460.0,480.0,2026-04-14,Market Adjustment
+1619,18,25,300.0,320.0,2026-07-16,Cost Increase
+1620,18,27,840.0,790.0,2026-08-18,Seasonal Adjustment
+1621,18,29,1080.0,1030.0,2025-12-24,Cost Increase
+1622,18,29,1030.0,1110.0,2026-07-14,Market Adjustment
+1623,18,30,430.0,460.0,2026-08-14,Menu Revision
+1624,18,31,1050.0,1140.0,2025-09-21,Cost Increase
+1625,18,34,380.0,400.0,2025-05-07,Seasonal Adjustment
+1626,18,34,400.0,380.0,2026-04-22,Menu Revision
+1627,18,34,380.0,410.0,2026-06-17,Cost Increase
+1628,18,36,300.0,320.0,2026-01-15,Seasonal Adjustment
+1629,18,39,720.0,770.0,2026-01-19,Seasonal Adjustment
+1630,18,40,1130.0,1230.0,2026-02-02,Seasonal Adjustment
+1631,18,49,630.0,680.0,2025-08-17,Supplier Cost Change
+1632,18,49,680.0,650.0,2025-12-17,Seasonal Adjustment
+1633,18,50,1270.0,1370.0,2025-11-30,Seasonal Adjustment
+1634,18,51,730.0,760.0,2025-10-20,Supplier Cost Change
+1635,18,52,1420.0,1340.0,2025-09-05,Cost Increase
+1636,18,53,890.0,970.0,2026-07-20,Seasonal Adjustment
+1637,18,56,250.0,270.0,2025-11-01,Supplier Cost Change
+1638,18,57,170.0,190.0,2026-02-12,Market Adjustment
+1639,18,60,380.0,400.0,2026-07-03,Menu Revision
+1640,18,61,500.0,540.0,2025-06-29,Menu Revision
+1641,18,61,540.0,590.0,2025-12-12,Supplier Cost Change
+1642,18,63,370.0,390.0,2025-04-25,Menu Revision
+1643,18,63,390.0,400.0,2026-07-11,Supplier Cost Change
+1644,18,63,400.0,420.0,2026-08-10,Menu Revision
+1645,18,64,1260.0,1370.0,2025-09-13,Menu Revision
+1646,18,65,940.0,980.0,2026-01-11,Cost Increase
+1647,18,65,980.0,1080.0,2026-04-14,Menu Revision
+1648,18,66,790.0,840.0,2025-05-15,Market Adjustment
+1649,18,68,250.0,230.0,2025-05-26,Menu Revision
+1650,18,69,160.0,180.0,2025-08-01,Market Adjustment
+1651,18,71,460.0,480.0,2025-07-04,Supplier Cost Change
+1652,18,71,480.0,520.0,2026-06-30,Supplier Cost Change
+1653,18,72,330.0,340.0,2026-04-02,Supplier Cost Change
+1654,18,73,420.0,430.0,2025-08-10,Cost Increase
+1655,18,73,430.0,460.0,2025-09-22,Supplier Cost Change
+1656,18,78,970.0,1040.0,2026-03-29,Supplier Cost Change
+1657,18,79,960.0,930.0,2025-12-18,Supplier Cost Change
+1658,18,79,930.0,880.0,2026-06-13,Menu Revision
+1659,18,80,350.0,370.0,2025-12-24,Seasonal Adjustment
+1660,18,80,370.0,380.0,2026-06-29,Supplier Cost Change
+1661,18,81,200.0,210.0,2026-05-08,Cost Increase
+1662,18,83,490.0,520.0,2026-01-08,Menu Revision
+1663,18,83,520.0,540.0,2026-07-30,Cost Increase
+1664,18,87,340.0,370.0,2026-06-27,Market Adjustment
+1665,18,88,570.0,530.0,2025-05-16,Cost Increase
+1666,18,90,510.0,530.0,2026-03-10,Supplier Cost Change
+1667,18,90,530.0,550.0,2026-03-21,Cost Increase
+1668,18,93,330.0,320.0,2025-05-26,Menu Revision
+1669,18,93,320.0,330.0,2025-07-24,Cost Increase
+1670,18,95,410.0,420.0,2026-07-27,Menu Revision
+1671,18,95,420.0,440.0,2026-08-03,Market Adjustment
+1672,18,97,560.0,520.0,2025-05-02,Supplier Cost Change
+1673,18,97,520.0,570.0,2026-07-04,Supplier Cost Change
+1674,18,100,770.0,830.0,2026-06-02,Market Adjustment
+1675,18,101,660.0,710.0,2025-06-06,Cost Increase
+1676,18,107,400.0,420.0,2026-01-13,Seasonal Adjustment
+1677,18,109,550.0,600.0,2026-07-18,Seasonal Adjustment
+1678,18,110,500.0,520.0,2026-07-27,Market Adjustment
+1679,18,115,2060.0,2210.0,2025-11-12,Cost Increase
+1680,18,119,540.0,560.0,2026-04-07,Seasonal Adjustment
+1681,18,123,710.0,680.0,2026-02-12,Seasonal Adjustment
+1682,18,124,1120.0,1190.0,2026-06-02,Cost Increase
+1683,18,125,740.0,800.0,2025-07-26,Seasonal Adjustment
+1684,18,127,1440.0,1580.0,2025-04-12,Supplier Cost Change
+1685,18,128,280.0,300.0,2026-06-09,Cost Increase
+1686,18,128,300.0,290.0,2026-07-28,Seasonal Adjustment
+1687,18,128,290.0,320.0,2026-08-17,Seasonal Adjustment
+1688,18,131,410.0,440.0,2026-01-15,Supplier Cost Change
+1689,18,132,360.0,390.0,2025-09-21,Seasonal Adjustment
+1690,18,135,640.0,690.0,2025-05-06,Menu Revision
+1691,18,135,690.0,720.0,2025-06-29,Menu Revision
+1692,18,135,720.0,790.0,2026-08-28,Menu Revision
+1693,18,136,470.0,500.0,2025-10-28,Market Adjustment
+1694,18,137,350.0,370.0,2026-01-15,Supplier Cost Change
+1695,18,137,370.0,410.0,2026-05-18,Menu Revision
+1696,18,138,590.0,640.0,2026-07-19,Seasonal Adjustment
+1697,18,139,1490.0,1580.0,2025-05-05,Supplier Cost Change
+1698,18,139,1580.0,1720.0,2026-04-08,Seasonal Adjustment
+1699,18,143,530.0,560.0,2025-05-21,Cost Increase
+1700,18,143,560.0,610.0,2025-09-26,Seasonal Adjustment
+1701,18,144,170.0,190.0,2025-06-22,Supplier Cost Change
+1702,18,144,190.0,210.0,2025-08-15,Supplier Cost Change
+1703,18,144,210.0,230.0,2025-09-30,Cost Increase
+1704,18,145,280.0,300.0,2026-04-21,Cost Increase
+1705,18,146,710.0,680.0,2026-01-18,Menu Revision
+1706,18,146,680.0,750.0,2026-05-30,Menu Revision
+1707,18,146,750.0,780.0,2026-08-19,Seasonal Adjustment
+1708,19,2,770.0,800.0,2026-02-16,Cost Increase
+1709,19,2,800.0,850.0,2026-02-18,Supplier Cost Change
+1710,19,5,1150.0,1240.0,2025-12-24,Supplier Cost Change
+1711,19,5,1240.0,1300.0,2026-08-12,Supplier Cost Change
+1712,19,6,500.0,530.0,2026-08-30,Menu Revision
+1713,19,9,210.0,230.0,2025-07-08,Menu Revision
+1714,19,11,370.0,400.0,2026-01-24,Market Adjustment
+1715,19,11,400.0,430.0,2026-01-27,Cost Increase
+1716,19,12,310.0,330.0,2026-05-19,Cost Increase
+1717,19,13,260.0,280.0,2025-11-17,Cost Increase
+1718,19,13,280.0,310.0,2026-04-25,Market Adjustment
+1719,19,14,690.0,710.0,2026-05-14,Menu Revision
+1720,19,15,460.0,500.0,2025-05-06,Menu Revision
+1721,19,15,500.0,550.0,2026-03-18,Market Adjustment
+1722,19,16,760.0,830.0,2025-05-31,Market Adjustment
+1723,19,17,1220.0,1270.0,2026-01-18,Market Adjustment
+1724,19,20,660.0,690.0,2026-03-27,Seasonal Adjustment
+1725,19,20,690.0,720.0,2026-04-14,Market Adjustment
+1726,19,20,720.0,750.0,2026-06-27,Market Adjustment
+1727,19,21,310.0,340.0,2025-04-13,Menu Revision
+1728,19,23,460.0,500.0,2025-11-26,Menu Revision
+1729,19,27,750.0,820.0,2026-07-28,Menu Revision
+1730,19,27,820.0,760.0,2026-08-26,Seasonal Adjustment
+1731,19,32,400.0,420.0,2026-02-15,Cost Increase
+1732,19,32,420.0,390.0,2026-05-27,Menu Revision
+1733,19,35,520.0,560.0,2025-06-19,Menu Revision
+1734,19,37,540.0,570.0,2026-04-03,Supplier Cost Change
+1735,19,38,740.0,780.0,2025-08-15,Market Adjustment
+1736,19,41,800.0,860.0,2025-04-22,Seasonal Adjustment
+1737,19,41,860.0,910.0,2026-08-11,Menu Revision
+1738,19,43,1060.0,1130.0,2025-11-09,Cost Increase
+1739,19,44,420.0,430.0,2025-09-24,Cost Increase
+1740,19,44,430.0,450.0,2026-02-27,Cost Increase
+1741,19,45,240.0,250.0,2025-10-29,Cost Increase
+1742,19,49,630.0,580.0,2025-12-05,Seasonal Adjustment
+1743,19,49,580.0,560.0,2026-07-24,Cost Increase
+1744,19,53,890.0,970.0,2025-06-12,Cost Increase
+1745,19,53,970.0,1040.0,2026-08-17,Supplier Cost Change
+1746,19,56,250.0,270.0,2026-03-20,Cost Increase
+1747,19,56,270.0,290.0,2026-05-26,Seasonal Adjustment
+1748,19,59,410.0,430.0,2026-04-14,Supplier Cost Change
+1749,19,60,320.0,350.0,2025-12-09,Cost Increase
+1750,19,61,540.0,560.0,2025-06-10,Market Adjustment
+1751,19,61,560.0,580.0,2026-08-03,Market Adjustment
+1752,19,62,630.0,690.0,2026-07-10,Menu Revision
+1753,19,64,1280.0,1330.0,2025-05-22,Seasonal Adjustment
+1754,19,64,1330.0,1390.0,2025-09-01,Seasonal Adjustment
+1755,19,66,850.0,910.0,2025-09-11,Menu Revision
+1756,19,67,1400.0,1500.0,2025-10-27,Cost Increase
+1757,19,67,1500.0,1630.0,2025-11-01,Seasonal Adjustment
+1758,19,67,1630.0,1780.0,2025-12-25,Supplier Cost Change
+1759,19,69,140.0,150.0,2026-04-26,Market Adjustment
+1760,19,71,510.0,540.0,2026-02-27,Cost Increase
+1761,19,73,400.0,440.0,2026-01-08,Supplier Cost Change
+1762,19,76,660.0,720.0,2026-03-06,Supplier Cost Change
+1763,19,79,850.0,890.0,2026-05-23,Supplier Cost Change
+1764,19,81,160.0,180.0,2026-05-18,Market Adjustment
+1765,19,81,180.0,190.0,2026-07-24,Cost Increase
+1766,19,83,440.0,480.0,2026-03-30,Market Adjustment
+1767,19,84,380.0,400.0,2025-11-09,Market Adjustment
+1768,19,85,250.0,240.0,2025-12-28,Menu Revision
+1769,19,87,340.0,360.0,2026-05-24,Menu Revision
+1770,19,87,360.0,380.0,2026-06-03,Cost Increase
+1771,19,87,380.0,400.0,2026-08-03,Seasonal Adjustment
+1772,19,89,650.0,690.0,2025-08-19,Market Adjustment
+1773,19,89,690.0,750.0,2026-01-05,Cost Increase
+1774,19,92,580.0,550.0,2026-08-09,Supplier Cost Change
+1775,19,92,550.0,580.0,2026-08-29,Cost Increase
+1776,19,96,250.0,260.0,2026-03-01,Market Adjustment
+1777,19,98,900.0,960.0,2025-12-14,Menu Revision
+1778,19,98,960.0,1000.0,2026-05-03,Market Adjustment
+1779,19,98,1000.0,1080.0,2026-07-26,Supplier Cost Change
+1780,19,99,620.0,670.0,2025-10-28,Seasonal Adjustment
+1781,19,99,670.0,720.0,2026-02-12,Market Adjustment
+1782,19,99,720.0,780.0,2026-05-10,Menu Revision
+1783,19,101,720.0,740.0,2026-08-08,Cost Increase
+1784,19,101,740.0,790.0,2026-08-16,Market Adjustment
+1785,19,102,960.0,930.0,2026-01-08,Cost Increase
+1786,19,102,930.0,990.0,2026-02-05,Supplier Cost Change
+1787,19,103,840.0,870.0,2025-09-04,Cost Increase
+1788,19,103,870.0,910.0,2026-01-10,Supplier Cost Change
+1789,19,107,430.0,460.0,2026-04-15,Cost Increase
+1790,19,109,540.0,570.0,2026-06-23,Seasonal Adjustment
+1791,19,110,510.0,550.0,2025-05-14,Market Adjustment
+1792,19,114,550.0,590.0,2025-10-04,Cost Increase
+1793,19,114,590.0,650.0,2025-11-12,Supplier Cost Change
+1794,19,116,320.0,340.0,2025-04-28,Cost Increase
+1795,19,116,340.0,370.0,2026-04-10,Menu Revision
+1796,19,119,470.0,520.0,2026-07-08,Menu Revision
+1797,19,119,520.0,560.0,2026-08-14,Market Adjustment
+1798,19,123,640.0,680.0,2026-05-15,Seasonal Adjustment
+1799,19,124,1090.0,1200.0,2025-04-04,Seasonal Adjustment
+1800,19,124,1200.0,1260.0,2025-04-12,Cost Increase
+1801,19,126,900.0,940.0,2025-12-21,Market Adjustment
+1802,19,126,940.0,990.0,2026-03-12,Market Adjustment
+1803,19,131,390.0,420.0,2026-03-29,Supplier Cost Change
+1804,19,132,320.0,340.0,2025-06-26,Menu Revision
+1805,19,134,880.0,850.0,2025-12-23,Market Adjustment
+1806,19,134,850.0,930.0,2026-06-28,Seasonal Adjustment
+1807,19,135,710.0,770.0,2025-10-23,Menu Revision
+1808,19,136,550.0,530.0,2026-02-26,Cost Increase
+1809,19,138,540.0,570.0,2025-10-18,Cost Increase
+1810,19,138,570.0,600.0,2026-02-17,Market Adjustment
+1811,19,139,1280.0,1400.0,2026-07-04,Supplier Cost Change
+1812,19,139,1400.0,1490.0,2026-07-24,Seasonal Adjustment
+1813,19,140,700.0,730.0,2026-03-20,Market Adjustment
+1814,19,146,620.0,670.0,2026-01-29,Menu Revision
+1815,19,146,670.0,700.0,2026-08-12,Menu Revision
+1816,19,146,700.0,770.0,2026-08-29,Cost Increase
+1817,20,2,830.0,890.0,2025-12-04,Seasonal Adjustment
+1818,20,2,890.0,970.0,2026-01-12,Seasonal Adjustment
+1819,20,3,460.0,490.0,2025-08-03,Market Adjustment
+1820,20,5,1280.0,1360.0,2026-02-16,Seasonal Adjustment
+1821,20,8,330.0,320.0,2026-01-24,Market Adjustment
+1822,20,8,320.0,310.0,2026-04-16,Menu Revision
+1823,20,11,470.0,450.0,2025-12-07,Cost Increase
+1824,20,19,1060.0,1150.0,2026-08-18,Supplier Cost Change
+1825,20,24,260.0,280.0,2026-04-16,Menu Revision
+1826,20,27,740.0,800.0,2026-07-06,Cost Increase
+1827,20,28,850.0,880.0,2025-05-24,Supplier Cost Change
+1828,20,28,880.0,910.0,2025-07-27,Menu Revision
+1829,20,28,910.0,960.0,2025-11-01,Menu Revision
+1830,20,29,1070.0,1140.0,2025-04-14,Supplier Cost Change
+1831,20,31,1170.0,1240.0,2025-08-20,Seasonal Adjustment
+1832,20,38,640.0,700.0,2025-07-10,Menu Revision
+1833,20,38,700.0,760.0,2026-04-28,Supplier Cost Change
+1834,20,40,1030.0,1100.0,2025-04-19,Cost Increase
+1835,20,41,900.0,950.0,2025-06-22,Market Adjustment
+1836,20,42,680.0,710.0,2026-07-18,Supplier Cost Change
+1837,20,44,440.0,480.0,2026-06-28,Cost Increase
+1838,20,45,230.0,240.0,2025-04-09,Market Adjustment
+1839,20,47,300.0,330.0,2025-08-11,Cost Increase
+1840,20,49,630.0,660.0,2025-09-27,Supplier Cost Change
+1841,20,49,660.0,620.0,2026-01-11,Menu Revision
+1842,20,52,1240.0,1310.0,2025-04-20,Cost Increase
+1843,20,52,1310.0,1420.0,2025-08-23,Market Adjustment
+1844,20,52,1420.0,1350.0,2026-07-06,Cost Increase
+1845,20,54,630.0,670.0,2026-07-13,Cost Increase
+1846,20,58,460.0,440.0,2026-01-30,Cost Increase
+1847,20,66,800.0,870.0,2026-07-09,Seasonal Adjustment
+1848,20,68,200.0,220.0,2025-04-14,Market Adjustment
+1849,20,69,170.0,180.0,2026-06-19,Menu Revision
+1850,20,70,220.0,230.0,2026-04-10,Seasonal Adjustment
+1851,20,70,230.0,250.0,2026-06-15,Menu Revision
+1852,20,70,250.0,260.0,2026-08-01,Menu Revision
+1853,20,72,330.0,360.0,2026-04-30,Seasonal Adjustment
+1854,20,74,1000.0,1080.0,2026-06-05,Supplier Cost Change
+1855,20,81,220.0,200.0,2026-05-08,Seasonal Adjustment
+1856,20,81,200.0,190.0,2026-07-09,Menu Revision
+1857,20,81,190.0,180.0,2026-08-27,Seasonal Adjustment
+1858,20,83,410.0,430.0,2025-12-04,Menu Revision
+1859,20,83,430.0,440.0,2026-05-01,Cost Increase
+1860,20,83,440.0,470.0,2026-05-23,Menu Revision
+1861,20,84,400.0,440.0,2026-05-31,Supplier Cost Change
+1862,20,85,220.0,230.0,2026-07-03,Market Adjustment
+1863,20,87,370.0,390.0,2026-05-15,Supplier Cost Change
+1864,20,87,390.0,410.0,2026-06-27,Seasonal Adjustment
+1865,20,89,850.0,810.0,2025-08-11,Cost Increase
+1866,20,91,1170.0,1280.0,2025-12-30,Market Adjustment
+1867,20,91,1280.0,1380.0,2026-03-19,Seasonal Adjustment
+1868,20,94,330.0,350.0,2026-08-06,Cost Increase
+1869,20,94,350.0,360.0,2026-08-17,Menu Revision
+1870,20,95,410.0,390.0,2026-06-20,Cost Increase
+1871,20,95,390.0,420.0,2026-07-22,Cost Increase
+1872,20,95,420.0,450.0,2026-08-23,Cost Increase
+1873,20,97,650.0,620.0,2026-01-29,Menu Revision
+1874,20,98,920.0,970.0,2026-01-06,Supplier Cost Change
+1875,20,98,970.0,1020.0,2026-04-05,Menu Revision
+1876,20,99,790.0,820.0,2026-04-27,Cost Increase
+1877,20,100,780.0,860.0,2026-02-21,Supplier Cost Change
+1878,20,102,1040.0,980.0,2025-07-06,Supplier Cost Change
+1879,20,102,980.0,1060.0,2026-07-26,Seasonal Adjustment
+1880,20,108,240.0,250.0,2026-01-26,Menu Revision
+1881,20,108,250.0,260.0,2026-05-02,Market Adjustment
+1882,20,110,600.0,570.0,2025-05-17,Market Adjustment
+1883,20,110,570.0,550.0,2025-12-06,Market Adjustment
+1884,20,111,750.0,790.0,2026-06-06,Market Adjustment
+1885,20,111,790.0,820.0,2026-08-22,Menu Revision
+1886,20,112,780.0,830.0,2025-06-10,Supplier Cost Change
+1887,20,112,830.0,900.0,2026-03-11,Supplier Cost Change
+1888,20,113,780.0,840.0,2026-01-09,Cost Increase
+1889,20,116,300.0,330.0,2026-03-27,Cost Increase
+1890,20,117,220.0,230.0,2025-08-15,Seasonal Adjustment
+1891,20,119,530.0,550.0,2025-12-26,Menu Revision
+1892,20,121,450.0,490.0,2025-12-18,Cost Increase
+1893,20,123,670.0,710.0,2026-02-22,Cost Increase
+1894,20,126,890.0,970.0,2026-01-07,Market Adjustment
+1895,20,127,1660.0,1710.0,2025-08-04,Seasonal Adjustment
+1896,20,127,1710.0,1770.0,2026-05-12,Cost Increase
+1897,20,130,420.0,450.0,2026-08-15,Supplier Cost Change
+1898,20,133,490.0,520.0,2025-05-22,Menu Revision
+1899,20,138,550.0,600.0,2025-05-11,Cost Increase
+1900,20,139,1310.0,1380.0,2026-01-13,Market Adjustment
+1901,20,139,1380.0,1460.0,2026-05-13,Supplier Cost Change
+1902,20,141,300.0,280.0,2026-07-07,Cost Increase
+1903,20,141,280.0,300.0,2026-07-23,Menu Revision
+1904,20,146,660.0,690.0,2026-02-22,Supplier Cost Change
+1905,20,146,690.0,740.0,2026-06-24,Market Adjustment
+1906,20,147,620.0,670.0,2026-07-11,Cost Increase
+1907,20,148,910.0,980.0,2026-06-09,Seasonal Adjustment
+1908,20,148,980.0,1070.0,2026-07-16,Seasonal Adjustment
+1909,20,150,910.0,980.0,2026-06-29,Menu Revision

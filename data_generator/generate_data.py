@@ -162,17 +162,318 @@ flat_discounts = [100, 150, 200, 250, 300, 500]
 wastage_reasons = ["Expired", "Spoiled", "Overproduction", "Damaged"]
 prefixes = ["Desi", "Khyber", "Shahi", "Hot", "Savor", "Royal", "Gourmet"]
 suffixes = ["Dhaba", "Karahi & BBQ", "Shinwari", "Foods", "Kitchen", "Lounge"]
+ingredient_pool = {
+    "Chicken": "kg",
+    "Beef": "kg",
+    "Mutton": "kg",
+    "Prawns": "kg",
+    "Sausage": "kg",
+    "Potatoes": "kg",
+    "Onions": "kg",
+    "Tomatoes": "kg",
+    "Bell Peppers": "kg",
+    "Green Chillies": "kg",
+    "Lettuce": "kg",
+    "Spinach": "kg",
+    "Okra": "kg",
+    "Mixed Vegetables": "kg",
+    "Chickpeas": "kg",
+    "Rice": "kg",
+    "Flour": "kg",
+    "Pasta": "kg",
+    "Noodles": "kg",
+    "Lentils": "kg",
+    "Burger Buns": "pieces",
+    "Tortillas": "pieces",
+    "Parathas": "pieces",
+    "Pizza Dough": "pieces",
+    "Spring Roll Wrappers": "pieces",
+    "Eggs": "pieces",
+    "Cheese": "kg",
+    "Paneer": "kg",
+    "Milk": "liters",
+    "Cream": "liters",
+    "Yogurt": "kg",
+    "Butter": "kg",
+    "Cooking Oil": "liters",
+    "Tomato Sauce": "liters",
+    "Burger Sauce": "liters",
+    "Soy Sauce": "liters",
+    "Hot Sauce": "liters",
+    "BBQ Sauce": "liters",
+    "Mayonnaise": "liters",
+    "Salt": "kg",
+    "Sugar": "kg",
+    "Black Pepper": "kg",
+    "Red Chilli Powder": "kg",
+    "Garam Masala": "kg",
+    "Biryani Masala": "kg",
+    "Tikka Masala": "kg",
+    "Chaat Masala": "kg",
+    "Ginger Garlic Paste": "kg",
+    "Tea Leaves": "kg",
+    "Coffee": "kg",
+    "Chocolate": "kg",
+    "Ice Cream": "liters",
+    "Fruit Pulp": "liters",
+    "Lemon/Lime": "kg",
+    "Soda Water": "liters"
+}
+ingredient_unit_cost = {"Chicken": 650, "Beef": 900, "Mutton": 1500, "Prawns": 1200, "Sausage": 850, "Potatoes": 120, "Onions": 140, "Tomatoes": 180, "Bell Peppers": 450, "Green Chillies": 300, "Lettuce": 220, "Spinach": 160, "Okra": 240, "Mixed Vegetables": 260, "Chickpeas": 300, "Rice": 320, "Flour": 180, "Pasta": 450, "Noodles": 400, "Lentils": 350, "Burger Buns": 55, "Tortillas": 45, "Parathas": 60, "Pizza Dough": 180, "Spring Roll Wrappers": 25, "Eggs": 35, "Cheese": 1600, "Paneer": 1100, "Milk": 300, "Cream": 750, "Yogurt": 280, "Butter": 1400, "Cooking Oil": 550, "Tomato Sauce": 500, "Burger Sauce": 650, "Soy Sauce": 700, "Hot Sauce": 650, "BBQ Sauce": 750, "Mayonnaise": 700, "Salt": 80, "Sugar": 170, "Black Pepper": 1400, "Red Chilli Powder": 900, "Garam Masala": 1200, "Biryani Masala": 1300, "Tikka Masala": 1250, "Chaat Masala": 1000, "Ginger Garlic Paste": 500, "Tea Leaves": 1800, "Coffee": 3500, "Chocolate": 1800, "Ice Cream": 700, "Fruit Pulp": 650, "Lemon/Lime": 350, "Soda Water": 120}
+common_ingredient_map = {
+    7: ["Pizza Dough", "Tomato Sauce", "Cheese"],
+}
+type_ingredient_map = {
+    1: {
+        "Fries": ["Potatoes", "Cooking Oil", "Salt"],
+        "Wings": ["Chicken", "Flour", "Cooking Oil"],
+        "Nuggets": ["Chicken", "Flour", "Cooking Oil"],
+        "Cheese Sticks": ["Cheese", "Flour", "Cooking Oil"],
+        "Samosa Bites": ["Potatoes", "Flour", "Cooking Oil"],
+        "Pakora": ["Onions", "Flour", "Cooking Oil"],
+        "Chicken Rolls": ["Chicken", "Flour", "Cooking Oil"],
+        "Spring Rolls": ["Mixed Vegetables", "Spring Roll Wrappers", "Cooking Oil"],
+    },
+    2: {
+        "Chicken Seekh": ["Chicken", "Ginger Garlic Paste", "Garam Masala"],
+        "Beef Boti": ["Beef", "Ginger Garlic Paste", "Garam Masala"],
+        "Kebab": ["Beef", "Ginger Garlic Paste", "Garam Masala"],
+        "Chops": ["Mutton", "Ginger Garlic Paste", "Garam Masala"],
+        "Sajji": ["Chicken", "Salt", "Garam Masala"],
+        "Tikka Leg Piece": ["Chicken", "Tikka Masala", "Yogurt"],
+        "Malai Boti": ["Chicken", "Cream", "Yogurt"],
+        "Chicken Chargha": ["Chicken", "Garam Masala", "Cooking Oil"],
+    },
+    3: {
+        "Beef": ["Beef", "Burger Buns", "Burger Sauce"],
+        "Chicken": ["Chicken", "Burger Buns", "Burger Sauce"],
+        "Zinger": ["Chicken", "Flour", "Burger Buns"],
+        "Club": ["Chicken", "Burger Buns", "Mayonnaise"],
+        "Steak": ["Beef", "Burger Buns", "BBQ Sauce"],
+        "Bihari Boti": ["Beef", "Ginger Garlic Paste", "Tortillas"],
+    },
+    4: {
+        "Chicken": ["Chicken", "Tomatoes", "Cooking Oil"],
+        "Mutton": ["Mutton", "Tomatoes", "Cooking Oil"],
+        "Paneer": ["Paneer", "Tomatoes", "Cooking Oil"],
+        "Beef": ["Beef", "Tomatoes", "Cooking Oil"],
+    },
+    5: {
+        "Chicken": ["Chicken"],
+        "Beef": ["Beef"],
+        "Mutton": ["Mutton"],
+        "Egg Fried": ["Eggs"],
+        "Prawn": ["Prawns"],
+    },
+    6: {
+        "Chicken": ["Chicken"],
+        "Prawn": ["Prawns"],
+        "Vegetable": ["Mixed Vegetables"],
+        "Beef": ["Beef"],
+    },
+    8: {
+        "Kheer": ["Milk", "Rice", "Sugar"],
+        "Gulab Jamun": ["Milk", "Flour", "Sugar"],
+        "Brownie": ["Chocolate", "Flour", "Sugar"],
+        "Ice Cream": ["Ice Cream", "Milk"],
+        "Molten Lava Cake": ["Chocolate", "Flour", "Sugar"],
+        "Ras Malai": ["Milk", "Paneer", "Sugar"],
+        "Kulfi": ["Milk", "Sugar", "Cream"],
+    },
+    10: {
+        "Lemonade": ["Lemon/Lime", "Sugar", "Soda Water"],
+        "Margarita": ["Lemon/Lime", "Sugar"],
+        "Shake": ["Milk", "Ice Cream", "Sugar"],
+        "Lassi": ["Yogurt", "Sugar"],
+        "Soda": ["Soda Water"],
+        "Sharbat": ["Fruit Pulp", "Sugar"],
+    },
+    12: {
+        "Chana Masala": ["Chickpeas", "Tomatoes", "Garam Masala"],
+        "Daal Mash": ["Lentils", "Onions"],
+        "Daal Chana": ["Lentils", "Chickpeas"],
+        "Raita": ["Yogurt"],
+        "Salad": ["Tomatoes", "Onions", "Lettuce"],
+        "Chutney": ["Tomatoes", "Green Chillies"],
+    },
+}
+style_ingredient_map = {
+    1: {
+        "Garlic": ["Ginger Garlic Paste"],
+        "Spicy": ["Red Chilli Powder"],
+        "Crispy": ["Flour"],
+        "Loaded": ["Cheese"],
+        "Honey Mustard": ["Mayonnaise"],
+        "Cheesy": ["Cheese"],
+        "Chatpata": ["Chaat Masala"],
+        "Masala": ["Garam Masala"],
+        "Peri Peri": ["Hot Sauce"],
+        "Tandoori": ["Tikka Masala"],
+    },
+    2: {
+        "Reshmi": ["Cream"],
+        "Tikka": ["Tikka Masala"],
+        "Behari": ["Chaat Masala"],
+        "Malai": ["Cream"],
+        "Kasturi": ["Cheese"],
+        "Achari": ["Red Chilli Powder"],
+        "Chargha Style": ["Cooking Oil"],
+        "Peshawari": ["Garam Masala"],
+        "Angara": ["Red Chilli Powder"],
+        "Bihari": ["Yogurt"],
+    },
+    3: {
+        "Classic": ["Mayonnaise"],
+        "Crispy": ["Flour"],
+        "Spicy": ["Hot Sauce"],
+        "Smoky": ["BBQ Sauce"],
+        "Double": ["Cheese"],
+        "Loaded": ["Cheese"],
+        "Grilled": ["Cooking Oil"],
+        "Zafrani": ["Cream"],
+        "Desi Style": ["Chaat Masala"],
+    },
+    4: {
+        "Peshawari": ["Garam Masala"],
+        "Makhni": ["Butter", "Cream"],
+        "Achari": ["Red Chilli Powder"],
+        "Desi White": ["Yogurt"],
+        "Koyla": ["Butter"],
+        "Shinwari": ["Black Pepper"],
+        "Lahori": ["Garam Masala"],
+        "Green Chilli": ["Green Chillies"],
+        "Dhaba Style": ["Ginger Garlic Paste"],
+        "Kala Namak": ["Salt"],
+    },
+    5: {
+        "Sindhi": ["Yogurt"],
+        "Bombay": ["Red Chilli Powder"],
+        "Special VIP": ["Cream"],
+        "Nawabi": ["Cream"],
+        "Kachay Gosht Ki": ["Yogurt"],
+        "Hyderabadi": ["Yogurt"],
+        "Karachi Style": ["Red Chilli Powder"],
+        "Dum": ["Cooking Oil"],
+    },
+    6: {
+        "Creamy Alfredo": ["Cream", "Cheese"],
+        "Spicy Arrabbiata": ["Tomato Sauce", "Red Chilli Powder"],
+        "Cheesy Baked": ["Cheese"],
+        "Chilli Garlic": ["Ginger Garlic Paste", "Hot Sauce"],
+        "Peri Peri": ["Hot Sauce"],
+        "Chinese Style": ["Soy Sauce"],
+        "White Sauce": ["Cream", "Butter"],
+        "Schezwan": ["Soy Sauce", "Red Chilli Powder"],
+    },
+    7: {
+        "Chicken Tikka": ["Chicken", "Tikka Masala"],
+        "Fajita": ["Chicken", "Bell Peppers"],
+        "Mughlai": ["Chicken", "Cream"],
+        "Pepperoni": ["Sausage"],
+        "Veggie": ["Mixed Vegetables"],
+        "Malai Boti": ["Chicken", "Cream"],
+        "BBQ Chicken": ["Chicken", "BBQ Sauce"],
+        "Tandoori": ["Chicken", "Tikka Masala"],
+        "Cheese": ["Cheese"],
+        "Achari Chicken": ["Chicken", "Red Chilli Powder"],
+        "Behari Boti": ["Beef", "Ginger Garlic Paste"],
+        "Spicy Sausage": ["Sausage", "Red Chilli Powder"],
+        "Hawaiian": ["Cheese"],
+        "Loaded Meat": ["Beef", "Sausage", "Chicken"],
+        "Karahi": ["Chicken", "Tomatoes"],
+    },
+    8: {
+        "Shahi": ["Cream"],
+        "Warm": ["Butter"],
+        "Chilled": ["Milk"],
+        "Chocolate": ["Chocolate"],
+        "Lotus Biscoff": ["Sugar"],
+        "Kesar Pista": ["Cream"],
+        "Caramel": ["Sugar"],
+        "Rabri": ["Milk", "Cream"],
+    },
+    9: {
+        "Karak": ["Milk"],
+        "Doodh Patti": ["Milk"],
+        "Kashmiri": ["Milk"],
+        "Green": ["Tea Leaves"],
+        "Espresso": ["Coffee"],
+        "Cappuccino": ["Coffee", "Milk"],
+        "Adrak": ["Tea Leaves"],
+        "Elaichi": ["Tea Leaves"],
+        "Peshawari Qehwa": ["Tea Leaves"],
+    },
+    10: {
+        "Mint": ["Sugar"],
+        "Classic": ["Sugar"],
+        "Mango": ["Fruit Pulp"],
+        "Blueberry": ["Fruit Pulp"],
+        "Chocolate": ["Chocolate"],
+        "Fresh Lime": ["Lemon/Lime"],
+        "Rose": ["Sugar"],
+        "Strawberry": ["Fruit Pulp"],
+    },
+    11: {
+        "Chicken": ["Chicken"],
+        "Beef": ["Beef"],
+        "Seekh Kebab": ["Beef", "Ginger Garlic Paste", "Garam Masala"],
+        "Aloo": ["Potatoes"],
+        "Keema": ["Beef", "Ginger Garlic Paste"],
+        "Malai Boti": ["Chicken", "Cream"],
+        "Spicy Chicken": ["Chicken", "Red Chilli Powder"],
+        "Achari": ["Chicken", "Red Chilli Powder"],
+    },
+    12: {
+        "Aloo": ["Potatoes"],
+        "Chana": ["Chickpeas"],
+        "Mix Veg": ["Mixed Vegetables"],
+        "Daal": ["Lentils"],
+        "Bhindi": ["Okra"],
+        "Palak": ["Spinach"],
+        "Raita": ["Yogurt"],
+    },
+}
+ending_ingredient_map = {
+    3: {
+        "Burger": [],
+        "Cheese Burger": ["Cheese"],
+        "Sandwich": [],
+        "Wrap": ["Tortillas"],
+    },
+    5: {
+        "Biryani": ["Rice", "Biryani Masala"],
+        "Pulao": ["Rice", "Garam Masala"],
+        "Rice": ["Rice"],
+        "Tehari": ["Rice", "Garam Masala"],
+    },
+    6: {
+        "Pasta": ["Pasta"],
+        "Noodles": ["Noodles"],
+        "Spaghetti": ["Pasta"],
+        "Chowmein": ["Noodles"],
+    },
+    9: {
+        "Chai": ["Tea Leaves", "Milk", "Sugar"],
+        "Tea": ["Tea Leaves", "Sugar"],
+        "Coffee": ["Coffee", "Milk", "Sugar"],
+        "Qehwa": ["Tea Leaves", "Sugar"],
+    },
+    11: {
+        "Roll": ["Parathas", "Cooking Oil"],
+        "Paratha": ["Parathas", "Cooking Oil"],
+        "Wrap": ["Tortillas"],
+        "Frankie": ["Tortillas", "Cooking Oil"],
+    },
+}
 
 def generate_prep_time(cat_id):
     low, high = category_prep_time.get(cat_id, (5, 20))
     return random.randint(low, high)
 
-def generate_price_and_cost(cat_id):
+def generate_price(cat_id):
     low, high = category_price_ranges.get(cat_id)
     base_price = round(random.randint(low, high), -1)
-    food_cost_pct = random.uniform(0.28, 0.38)
-    base_cost = round(base_price * food_cost_pct, -1)
-    return base_price, base_cost
+    return base_price
 
 def generate_restaurant_price(base_price):
     multiplier = random.uniform(0.90, 1.10)
@@ -216,16 +517,16 @@ def generate_menu_item_name(cat_id, max_attempts=50):
     components = category_pools.get(cat_id, {"styles": ["Generic"], "types": ["Dish"]})
 
     for _ in range(max_attempts):
-        style_format = random.choice(components.get("styles", [""]))
+        style = random.choice(components.get("styles", [""]))
         item_type = random.choice(components.get("types", [""]))
         ending = random.choice(components.get("endings", [""]))
 
-        name_parts = [part for part in [style_format, item_type, ending] if part]
+        name_parts = [part for part in [style, item_type, ending] if part]
         item_name = " ".join(name_parts)
 
         if item_name not in used_menu_item_names:
             used_menu_item_names.add(item_name)
-            return item_name
+            return item_name, style, item_type, ending
     raise RuntimeError("failed to generate new name")
 
 def generate_customers(n=100):
@@ -255,6 +556,17 @@ def generate_restaurant(n=20):
         })
     return restaurants
 
+def generate_ingredient(ingredient_list=ingredient_pool):
+    ingredients = []
+    for index, (name, unit) in enumerate(ingredient_list.items(), start=1):
+        ingredients.append({
+            "ingredient_id": index,
+            "ingredient": name,
+            "unit": unit,
+            "unit_cost": ingredient_unit_cost[name]
+        })
+    return ingredients
+
 def generate_menu_categories():
 
     categories_data = [
@@ -275,23 +587,136 @@ def generate_menu_categories():
 
 def generate_menu_items(n=150):
     items = []
+    components_list = []
     categories = generate_menu_categories()
     cat_ids = [c["category_id"] for c in categories]
 
     for i in range(1, n + 1):
         cat_id = cat_ids[(i - 1) % len(cat_ids)]
-        base_price, base_cost = generate_price_and_cost(cat_id)
+        base_price = generate_price(cat_id)
+        name, style, item_type, ending = generate_menu_item_name(cat_id)
+
         items.append({
             "menu_items_id": i,
             "cat_id": cat_id,
-            "name": generate_menu_item_name(cat_id),
+            "name": name,
             "base_price": base_price,
-            "base_cost": base_cost,
             "prep_time_minutes": generate_prep_time(cat_id),
             "introduced_date": fake.date_between(start_date=DATASET_END - timedelta(days=1460), end_date=DATASET_END),
             "discontinued_date": None
         })
-    return items
+
+        components_list.append({
+            "menu_items_id": i,
+            "cat_id": cat_id,
+            "style": style,
+            "type": item_type,
+            "ending": ending
+        })
+
+    return items, components_list
+
+def random_quantity(ingredient_name, unit):
+
+    meats = ["Chicken", "Beef", "Mutton", "Prawns", "Sausage"]
+    vegetables = ["Potatoes", "Onions", "Tomatoes", "Bell Peppers", "Green Chillies", "Lettuce", "Spinach", "Okra", "Mixed Vegetables", "Chickpeas"]
+    grains = ["Rice", "Flour", "Pasta", "Noodles", "Lentils"]
+    dairy_kg = ["Cheese", "Paneer", "Yogurt", "Butter"]
+    spices = ["Salt", "Black Pepper", "Red Chilli Powder", "Garam Masala", "Biryani Masala", "Tikka Masala", "Chaat Masala"]
+    sauces = ["Tomato Sauce", "Burger Sauce", "Soy Sauce", "Hot Sauce", "BBQ Sauce", "Mayonnaise"]
+    liquids = ["Milk", "Cream", "Cooking Oil", "Ice Cream", "Fruit Pulp", "Soda Water"]
+    pieces = ["Burger Buns", "Tortillas", "Parathas", "Pizza Dough", "Spring Roll Wrappers", "Eggs"]
+
+    if ingredient_name in meats:
+        return round(random.uniform(0.10, 0.30), 3)
+
+    elif ingredient_name in vegetables:
+        return round(random.uniform(0.03, 0.20), 3)
+
+    elif ingredient_name in grains:
+        return round(random.uniform(0.05, 0.25), 3)
+
+    elif ingredient_name in dairy_kg:
+        return round(random.uniform(0.02, 0.15), 3)
+
+    elif ingredient_name in spices:
+        return round(random.uniform(0.002, 0.015), 3)
+
+    elif ingredient_name == "Ginger Garlic Paste":
+        return round(random.uniform(0.005, 0.030), 3)
+
+    elif ingredient_name == "Tea Leaves":
+        return round(random.uniform(0.003, 0.010), 3)
+
+    elif ingredient_name == "Coffee":
+        return round(random.uniform(0.005, 0.020), 3)
+
+    elif ingredient_name == "Sugar":
+        return round(random.uniform(0.010, 0.040), 3)
+
+    elif ingredient_name == "Chocolate":
+        return round(random.uniform(0.02, 0.08), 3)
+
+    elif ingredient_name == "Lemon/Lime":
+        return round(random.uniform(0.03, 0.10), 3)
+
+    elif ingredient_name in sauces:
+        return round(random.uniform(0.01, 0.05), 3)
+
+    elif ingredient_name in liquids:
+        return round(random.uniform(0.02, 0.30), 3)
+
+    elif ingredient_name in pieces:
+        return 1.0
+
+    if unit == "kg":
+        return round(random.uniform(0.02, 0.15), 3)
+    elif unit == "liters":
+        return round(random.uniform(0.02, 0.20), 3)
+    elif unit == "pieces":
+        return 1.0
+    
+def generate_menu_item_ingredients(components_list, ingredient_pool):
+    """Builds the menu_item -> ingredient BOM table using the
+    common/type/style/ending ingredient maps above."""
+    ingredient_lookup = {name: idx for idx, name in enumerate(ingredient_pool.keys(), start=1)}
+    menu_item_ingredients = []
+    row_id = 1
+    unmapped_items = []
+
+    for comp in components_list:
+        cat_id = comp["cat_id"]
+        style = comp["style"]
+        item_type = comp["type"]
+        ending = comp["ending"]
+
+        needed = set()
+        needed.update(common_ingredient_map.get(cat_id, []))
+        needed.update(type_ingredient_map.get(cat_id, {}).get(item_type, []))
+        needed.update(style_ingredient_map.get(cat_id, {}).get(style, []))
+        needed.update(ending_ingredient_map.get(cat_id, {}).get(ending, []))
+
+        if not needed:
+            unmapped_items.append(comp)
+            continue
+
+        for ingredient_name in needed:
+            unit = ingredient_pool[ingredient_name]
+            menu_item_ingredients.append({
+                "menu_item_ingredient_id": row_id,
+                "menu_item_id": comp["menu_items_id"],
+                "ingredient_id": ingredient_lookup[ingredient_name],
+                "quantity_required": random_quantity(ingredient_name, unit)
+            })
+            row_id += 1
+
+    if unmapped_items:
+        print(f"WARNING: {len(unmapped_items)} menu items had no ingredient mapping match:")
+        for item in unmapped_items:
+            print(f"  menu_items_id={item['menu_items_id']} cat_id={item['cat_id']} "
+                  f"style='{item['style']}' type='{item['type']}' ending='{item['ending']}'")
+
+    return menu_item_ingredients
 
 def generate_restaurant_menu_items(restaurants, menu_items):
     restaurant_menu = []
@@ -395,8 +820,14 @@ def generate_pricing_history(restaurant_menu_items, menu_items, restaurants):
 
     return pricing_history
 
-def generate_promotion(n, restaurants, restaurant_menu_items, inventories):
+def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_item_ingredients):
     promotions = []
+
+    ingredient_items = {}
+    for recipe in menu_item_ingredients:
+        ingredient_id = recipe["ingredient_id"]
+        item_id = recipe["menu_item_id"]
+        ingredient_items.setdefault(ingredient_id, []).append(item_id)
 
     for i in range(1, n + 1):
         inventory_driven = random.random() < 0.30
@@ -412,23 +843,37 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories):
             if valid_inventory:
                 inventory = random.choice(valid_inventory)
                 restaurant_id = inventory["restaurant_id"]
-                item_id = inventory["item_id"]
+                ingredient_id = inventory["ingredient_id"]
+                possible_item_ids = ingredient_items.get(ingredient_id, [])
 
-                selected_item = next(item for item in restaurant_menu_items if item["restaurant_id"] == restaurant_id and item["item_id"] == item_id)
-                item_price = selected_item["price"]
+                available_items = [
+                    item for item in restaurant_menu_items
+                    if item["restaurant_id"] == restaurant_id
+                    and item["item_id"] in possible_item_ids
+                    and item["is_available"]
+                ]
 
-                days_before_expiry = random.randint(2, 5)
-                start_date = max(inventory["received_date"], inventory["expiry_date"] - timedelta(days=days_before_expiry))
-                end_date = inventory["expiry_date"]
+                if available_items:
+                    selected_item = random.choice(available_items)
+                    item_id = selected_item["item_id"]
+                    item_price = selected_item["price"]
 
-                name = random.choice(["Stock Clearance Deal", "Fresh Stock Special", "Limited Time Deal", "Chef's Special"])
+                    days_before_expiry = random.randint(2, 5)
+                    start_date = max(
+                        inventory["received_date"],
+                        inventory["expiry_date"] - timedelta(days=days_before_expiry)
+                    )
+                    end_date = inventory["expiry_date"]
+
+                    name = random.choice(["Stock Clearance Deal","Fresh Stock Special","Limited Time Deal","Chef's Special"])
+                else:
+                    inventory_driven = False
             else:
                 inventory_driven = False
 
         if not inventory_driven:
             restaurant = random.choice(restaurants)
             restaurant_id = restaurant["restaurants_id"]
-
             available_items = [item for item in restaurant_menu_items if item["restaurant_id"] == restaurant_id and item["is_available"]]
 
             if not available_items:
@@ -437,7 +882,6 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories):
             selected_item = random.choice(available_items)
             item_id = selected_item["item_id"]
             item_price = selected_item["price"]
-
             start_date = fake.date_between(start_date=DATASET_START, end_date=DATASET_END - timedelta(days=3))
             duration_days = random.choice([3, 5, 7, 10, 14, 21, 30])
             end_date = min(start_date + timedelta(days=duration_days), DATASET_END)
@@ -450,14 +894,12 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories):
         else:
             max_discount = item_price * 0.60
             valid_discounts = [discount for discount in flat_discounts if discount <= max_discount]
-
             if valid_discounts:
                 discount_value = random.choice(valid_discounts)
             else:
                 discount_value = int(max_discount // 10) * 10
 
         minimum_order_value = random.choice([None, None, 500, 750, 1000, 1500, 2000, 2500])
-
         if random.random() < 0.35:
             coupon_code = "SAVE" + str(random.randint(10, 99))
         else:
@@ -478,42 +920,57 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories):
 
     return promotions
 
-def generate_inventory(restaurant_menu_items, menu_items):
+def generate_inventory(restaurant_menu_items, menu_item_ingredients, ingredients, menu_items):
     inventories = []
     inventory_id = 1
+    ingredient_lookup = {ingredient["ingredient_id"]: ingredient for ingredient in ingredients}
+    recipes_by_item = {}
     item_lookup = {item["menu_items_id"]: item for item in menu_items}
 
+    for recipe in menu_item_ingredients:
+        recipes_by_item.setdefault(recipe["menu_item_id"], set()).add(recipe["ingredient_id"])
+
+    restaurant_ingredients = {}
     for restaurant_item in restaurant_menu_items:
         restaurant_id = restaurant_item["restaurant_id"]
         item_id = restaurant_item["item_id"]
-        item = item_lookup[item_id]
+        for ingredient_id in recipes_by_item.get(item_id, []):
+            restaurant_ingredients.setdefault(restaurant_id, set()).add(ingredient_id)
 
-        inventory_start = max(DATASET_START, item["introduced_date"])
-        if inventory_start >= DATASET_END:
-            continue
+    for restaurant_id, ingredient_ids in restaurant_ingredients.items():
+        for ingredient_id in ingredient_ids:
+            ingredient = ingredient_lookup[ingredient_id]
+            related_items = [item_lookup[item["item_id"]] for item in restaurant_menu_items if item["restaurant_id"] == restaurant_id and ingredient_id in recipes_by_item.get(item["item_id"], set())]
+            inventory_start = max(DATASET_START, min(item["introduced_date"] for item in related_items))
+            if inventory_start >= DATASET_END:
+                continue
 
-        available_days = (DATASET_END - inventory_start).days
-        num_batches = max(1, available_days // random.randint(20, 35))
+            available_days = (DATASET_END - inventory_start).days
+            num_batches = max(1, available_days // random.randint(20, 35))
 
-        for _ in range(num_batches):
-            received_date = inventory_start + timedelta(days=random.randint(0, max(0, available_days - 14)))
-            quantity_received = random.randint(20, 120)
-            quantity_remaining = random.randint(0, quantity_received)
-            unit_cost = round(item["base_cost"] * random.uniform(0.90, 1.10), -1)
-            expiry_date = min(received_date + timedelta(days=random.randint(3, 14)), DATASET_END)
+            for _ in range(num_batches):
+                received_date = inventory_start + timedelta(days=random.randint(0, max(0, available_days - 14)))
+                if ingredient["unit"] == "pieces":
+                    quantity_received = random.randint(40, 250)
+                    quantity_remaining = random.randint(0, quantity_received)
+                else:
+                    quantity_received = round(random.uniform(10, 80), 2)
+                    quantity_remaining = round(random.uniform(0, quantity_received), 2)
+                unit_cost = round(ingredient["unit_cost"] * random.uniform(0.90, 1.10), 2)
+                expiry_date = min(received_date + timedelta(days=random.randint(3, 30)), DATASET_END)
 
-            inventories.append({
-                "inventory_id": inventory_id,
-                "restaurant_id": restaurant_id,
-                "item_id": item_id,
-                "quantity_received": quantity_received,
-                "quantity_remaining": quantity_remaining,
-                "unit_cost": unit_cost,
-                "received_date": received_date,
-                "expiry_date": expiry_date
-            })
-
-            inventory_id += 1
+                inventories.append({
+                    "inventory_id": inventory_id,
+                    "restaurant_id": restaurant_id,
+                    "ingredient_id": ingredient_id,
+                    "quantity_received": quantity_received,
+                    "quantity_remaining": quantity_remaining,
+                    "unit": ingredient["unit"],
+                    "unit_cost": unit_cost,
+                    "received_date": received_date,
+                    "expiry_date": expiry_date
+                })
+                inventory_id += 1
 
     return inventories
 
@@ -619,8 +1076,6 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
                     break
                 unit_price = change["new_price"]
 
-            unit_cost = round(item_lookup[item_id]["base_cost"] * random.uniform(0.90, 1.10), -1)
-
             line_subtotal = unit_price * quantity
             line_discount = 0
 
@@ -642,7 +1097,6 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
                 "item_id": item_id,
                 "quantity": quantity,
                 "unit_price": unit_price,
-                "unit_cost": unit_cost,
                 "discount_amount": line_discount,
                 "line_total": line_total
             }
@@ -694,18 +1148,21 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
 def generate_wastage(inventories, n=50000):
     wastage = []
     wastage_id = 1
-
     remaining_stock = {inventory["inventory_id"]: inventory["quantity_remaining"] for inventory in inventories}
     valid_inventories = [inventory for inventory in inventories if inventory["quantity_remaining"] > 0]
 
     while len(wastage) < n:
         inventory = random.choice(valid_inventories)
         available_quantity = remaining_stock[inventory["inventory_id"]]
-
         if available_quantity <= 0:
             continue
 
-        quantity = random.randint(1, min(available_quantity, 5))
+        if inventory["unit"] == "pieces":
+            if available_quantity < 1:
+                continue
+            quantity = random.randint(1, min(int(available_quantity), 5))
+        else:
+            quantity = round(random.uniform(0.1, min(available_quantity, 5)), 2)
         reason = random.choices(["Expired", "Spoiled", "Overproduction", "Damaged"],weights=[60, 20, 15, 5])[0]
 
         if reason == "Expired":
@@ -715,20 +1172,19 @@ def generate_wastage(inventories, n=50000):
 
         unit_cost = inventory["unit_cost"]
         cost = round(quantity * unit_cost, 2)
-
         wastage.append({
             "wastage_id": wastage_id,
             "restaurant_id": inventory["restaurant_id"],
-            "item_id": inventory["item_id"],
+            "ingredient_id": inventory["ingredient_id"],
             "inventory_id": inventory["inventory_id"],
             "wastage_date": wastage_date,
             "quantity": quantity,
+            "unit": inventory["unit"],
             "unit_cost": unit_cost,
             "cost": cost,
             "reason": reason
         })
-
-        remaining_stock[inventory["inventory_id"]] -= quantity
+        remaining_stock[inventory["inventory_id"]] = round(remaining_stock[inventory["inventory_id"]] - quantity, 2)
         wastage_id += 1
 
     return wastage
@@ -776,8 +1232,14 @@ restaurants = generate_restaurant(20)
 print("generating menu categories...")
 menu_categories = generate_menu_categories()
 
+print("generating ingredients...")
+ingredients = generate_ingredient()
+
 print("generating menu items...")
-menu_items = generate_menu_items(150)
+menu_items, menu_item_components = generate_menu_items(150)
+
+print("generating menu item ingredients (BOM)...")
+menu_item_ingredients = generate_menu_item_ingredients(menu_item_components, ingredient_pool)
 
 print("generating restaurant menu items...")
 restaurant_menu_items = generate_restaurant_menu_items(restaurants, menu_items)
@@ -786,10 +1248,10 @@ print("generating pricing history...")
 pricing_history = generate_pricing_history(restaurant_menu_items, menu_items, restaurants)
 
 print("generating inventory...")
-inventories = generate_inventory(restaurant_menu_items, menu_items)
+inventories = generate_inventory(restaurant_menu_items, menu_item_ingredients, ingredients, menu_items)
 
 print("generating promotions...")
-promotions = generate_promotion(100, restaurants, restaurant_menu_items, inventories)
+promotions = generate_promotion(100, restaurants, restaurant_menu_items, inventories, menu_item_ingredients)
 
 print("generating orders and order items...")
 orders, order_items = generate_orders(
@@ -813,14 +1275,18 @@ print("Saving csv files")
 pd.DataFrame(customers).to_csv(f"{output_folder}/customers.csv", index=False)
 pd.DataFrame(restaurants).to_csv(f"{output_folder}/restaurants.csv", index=False)
 pd.DataFrame(menu_categories).to_csv(f"{output_folder}/menu_categories.csv", index=False)
+pd.DataFrame(ingredients).to_csv(f"{output_folder}/ingredients.csv", index=False)
 pd.DataFrame(menu_items).to_csv(f"{output_folder}/menu_items.csv", index=False)
+pd.DataFrame(menu_item_ingredients).to_csv(f"{output_folder}/menu_item_ingredients.csv", index=False)
 pd.DataFrame(restaurant_menu_items).to_csv(f"{output_folder}/restaurant_menu_items.csv", index=False)
 pd.DataFrame(pricing_history).to_csv(f"{output_folder}/pricing_history.csv", index=False)
 pd.DataFrame(inventories).to_csv(f"{output_folder}/inventory.csv", index=False)
 pd.DataFrame(promotions).to_csv(f"{output_folder}/promotions.csv", index=False)
+
 orders_df = pd.DataFrame(orders)
 orders_df["promotion_id"] = orders_df["promotion_id"].astype("Int64")
 orders_df.to_csv(f"{output_folder}/orders.csv", index=False)
+
 pd.DataFrame(order_items).to_csv(f"{output_folder}/order_items.csv", index=False)
 pd.DataFrame(wastage).to_csv(f"{output_folder}/wastage.csv", index=False)
 pd.DataFrame(ratings).to_csv(f"{output_folder}/ratings.csv", index=False)
@@ -830,7 +1296,9 @@ print("------------------------")
 print(f"Customers:             {len(customers):,}")
 print(f"Restaurants:           {len(restaurants):,}")
 print(f"Menu Categories:       {len(menu_categories):,}")
+print(f"Ingredients:           {len(ingredients):,}")
 print(f"Menu Items:            {len(menu_items):,}")
+print(f"Recipe Rows:           {len(menu_item_ingredients):,}")
 print(f"Restaurant Menu Items: {len(restaurant_menu_items):,}")
 print(f"Pricing History:       {len(pricing_history):,}")
 print(f"Inventory:             {len(inventories):,}")

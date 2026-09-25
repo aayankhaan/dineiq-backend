@@ -1,101 +1,101 @@
 promotion_id,name,discount_type,discount_value,start_date,end_date,restaurant_id,item_id,minimum_order_value,coupon_code
-1,Online Order Deal,Flat,150,2025-07-19,2025-08-09,19,87,2500.0,SAVE14
-2,Weekend Special,Flat,100,2025-04-20,2025-04-25,3,49,1500.0,
-3,New Year Special,Percentage,20,2026-07-27,2026-08-06,17,43,500.0,SAVE43
-4,Summer Special,Percentage,15,2025-06-10,2025-06-13,14,17,2000.0,
-5,Payday Special,Percentage,10,2025-12-25,2025-12-30,8,21,750.0,
-6,Monsoon Deal,Percentage,15,2025-06-04,2025-06-14,14,59,2500.0,
-7,Family Dinner Deal,Flat,300,2025-04-08,2025-05-08,8,110,1500.0,
-8,Summer Special,Percentage,25,2026-06-02,2026-06-23,14,94,750.0,
-9,Fresh Stock Special,Flat,250,2025-04-09,2025-04-11,10,97,1500.0,
-10,Stock Clearance Deal,Percentage,25,2025-09-18,2025-09-23,16,98,1000.0,SAVE85
-11,Monsoon Deal,Flat,250,2026-08-03,2026-08-13,16,53,2500.0,SAVE76
-12,Online Order Deal,Flat,300,2026-08-25,2026-08-31,9,7,,
-13,Summer Special,Flat,100,2026-07-10,2026-08-09,16,18,1500.0,SAVE99
-14,Eid Family Feast,Percentage,5,2025-03-04,2025-03-11,18,90,500.0,SAVE78
-15,New Year Special,Percentage,10,2026-01-25,2026-02-24,17,123,,
-16,New Year Special,Flat,200,2026-08-18,2026-08-31,5,40,500.0,
-17,Monsoon Deal,Flat,200,2025-05-31,2025-06-05,19,4,500.0,SAVE99
-18,Ramadan Sehri Special,Flat,200,2025-04-07,2025-04-17,15,54,500.0,
-19,Friday Feast,Flat,100,2025-06-15,2025-07-15,20,81,,
-20,Student Special,Percentage,20,2026-05-18,2026-06-08,16,9,750.0,
-21,Eid Family Feast,Percentage,10,2025-12-28,2026-01-27,9,134,1500.0,
-22,New Year Special,Percentage,20,2026-03-02,2026-03-12,4,133,2500.0,SAVE26
-23,Delivery Special,Percentage,20,2025-09-24,2025-10-08,16,39,,
-24,Limited Time Deal,Percentage,10,2025-12-17,2025-12-22,10,11,2500.0,
-25,Online Order Deal,Flat,150,2026-01-19,2026-01-29,18,54,1500.0,
-26,Fresh Stock Special,Flat,300,2026-04-01,2026-04-06,17,1,750.0,
-27,Friday Feast,Flat,100,2026-06-05,2026-06-12,1,140,,SAVE51
-28,Stock Clearance Deal,Percentage,10,2025-06-08,2025-06-13,14,60,2000.0,
-29,Family Dinner Deal,Flat,300,2026-02-28,2026-03-21,15,98,2000.0,
-30,Independence Day Special,Flat,100,2026-02-04,2026-02-07,7,117,,SAVE67
-31,Summer Special,Percentage,15,2026-04-02,2026-04-07,16,69,500.0,
-32,Eid Family Feast,Flat,100,2025-03-20,2025-04-10,16,25,500.0,
-33,Stock Clearance Deal,Flat,100,2025-09-20,2025-09-24,10,51,1000.0,SAVE36
-34,Eid Family Feast,Flat,100,2025-07-29,2025-08-01,14,111,,
-35,Defence Day Deal,Percentage,15,2025-10-07,2025-10-14,5,74,500.0,
-36,Stock Clearance Deal,Percentage,15,2026-04-17,2026-04-20,16,89,,
-37,Weekend Special,Percentage,10,2026-05-18,2026-06-08,5,145,,
-38,Friday Feast,Percentage,15,2025-07-29,2025-08-03,2,20,750.0,
-39,Delivery Special,Percentage,10,2025-05-21,2025-05-28,5,73,750.0,SAVE68
-40,Ramadan Iftar Deal,Flat,500,2026-02-02,2026-02-16,15,55,2000.0,
-41,New Year Special,Percentage,20,2025-08-28,2025-09-04,7,92,,
-42,Ramadan Iftar Deal,Flat,100,2026-06-05,2026-06-10,3,36,1500.0,SAVE69
-43,Midnight Deal,Percentage,20,2025-08-15,2025-08-25,5,130,2000.0,
-44,Stock Clearance Deal,Percentage,10,2026-07-22,2026-07-27,20,9,2000.0,
-45,Ramadan Iftar Deal,Percentage,10,2026-08-23,2026-08-31,18,16,750.0,
-46,Eid Special,Flat,100,2025-10-23,2025-11-13,17,103,500.0,
-47,Stock Clearance Deal,Flat,300,2025-10-04,2025-10-07,13,104,2500.0,
-48,Eid Special,Percentage,10,2026-04-27,2026-05-02,6,84,,
-49,Friday Feast,Flat,100,2025-08-30,2025-09-02,5,118,1000.0,SAVE12
-50,Delivery Special,Flat,150,2025-12-10,2025-12-20,4,23,1000.0,
-51,Fresh Stock Special,Flat,300,2026-06-26,2026-06-30,11,55,,
-52,Weekend Special,Flat,250,2025-12-08,2026-01-07,9,113,1000.0,
-53,Independence Day Special,Flat,100,2026-02-07,2026-02-28,5,128,2000.0,SAVE32
-54,Delivery Special,Percentage,30,2025-10-29,2025-11-01,16,19,750.0,
-55,Payday Special,Percentage,20,2026-05-22,2026-06-12,17,36,1000.0,SAVE52
-56,Ramadan Sehri Special,Flat,100,2025-03-23,2025-04-06,13,81,,SAVE28
-57,Lunch Special,Flat,150,2026-04-25,2026-05-25,14,90,,SAVE28
-58,Weekend Special,Flat,100,2025-11-21,2025-11-28,8,103,500.0,SAVE48
-59,Summer Special,Flat,100,2026-02-05,2026-03-07,18,128,2500.0,SAVE18
-60,New Year Special,Flat,200,2025-10-19,2025-11-09,15,138,500.0,SAVE80
-61,Limited Time Deal,Percentage,10,2025-08-26,2025-08-29,13,85,2500.0,SAVE57
-62,Defence Day Deal,Flat,200,2026-03-14,2026-03-17,6,84,,
-63,Stock Clearance Deal,Flat,200,2025-10-03,2025-10-05,5,75,2500.0,
-64,Limited Time Deal,Flat,200,2026-03-12,2026-03-15,3,62,750.0,
-65,New Year Special,Flat,150,2025-05-04,2025-05-07,16,104,750.0,
-66,Stock Clearance Deal,Flat,200,2025-04-27,2025-05-01,13,2,2000.0,SAVE72
-67,Eid Family Feast,Percentage,20,2026-03-17,2026-03-24,20,3,2500.0,SAVE39
-68,Stock Clearance Deal,Percentage,10,2025-05-31,2025-06-04,7,82,750.0,
-69,Friday Feast,Flat,100,2026-02-07,2026-02-21,4,67,750.0,SAVE37
-70,Lunch Special,Percentage,10,2025-05-23,2025-06-13,17,127,2000.0,
-71,Ramadan Iftar Deal,Flat,200,2025-11-04,2025-11-25,2,86,1000.0,
-72,Payday Special,Flat,100,2025-11-15,2025-11-25,9,11,1500.0,
-73,Chef's Special,Percentage,5,2025-03-24,2025-03-29,8,86,2500.0,
-74,Happy Hour,Flat,150,2026-01-13,2026-01-23,19,111,2000.0,
-75,Independence Day Special,Percentage,25,2025-10-13,2025-11-12,4,45,1000.0,
-76,Stock Clearance Deal,Percentage,15,2025-07-08,2025-07-12,3,88,2000.0,SAVE58
-77,Ramadan Sehri Special,Percentage,15,2026-04-10,2026-05-01,15,117,2500.0,
-78,Summer Special,Flat,150,2026-05-21,2026-06-20,11,22,,
-79,Student Special,Flat,100,2026-08-19,2026-08-31,16,12,500.0,
-80,Independence Day Special,Percentage,15,2025-12-18,2025-12-25,17,28,,
-81,Limited Time Deal,Percentage,10,2026-05-06,2026-05-10,19,64,2500.0,
-82,Summer Special,Percentage,10,2025-09-13,2025-10-13,20,15,,
-83,Eid Special,Flat,150,2025-08-31,2025-09-07,9,59,1000.0,
-84,Midnight Deal,Flat,100,2025-06-27,2025-07-18,11,108,2500.0,SAVE21
-85,Delivery Special,Percentage,10,2025-06-26,2025-07-17,16,18,1000.0,
-86,Payday Special,Flat,150,2025-09-20,2025-09-25,7,109,500.0,
-87,Student Special,Percentage,25,2025-12-30,2026-01-09,12,112,750.0,
-88,Winter Special,Flat,500,2026-05-31,2026-06-14,10,150,500.0,SAVE35
-89,Eid Family Feast,Percentage,10,2025-12-26,2026-01-16,2,90,1000.0,SAVE18
-90,Winter Special,Flat,150,2025-08-28,2025-09-04,4,87,750.0,
-91,Independence Day Special,Percentage,30,2025-05-22,2025-05-25,5,50,750.0,
-92,Stock Clearance Deal,Percentage,30,2025-04-18,2025-04-22,12,114,,
-93,Lunch Special,Percentage,10,2026-04-19,2026-05-03,13,89,750.0,SAVE41
-94,Student Special,Percentage,25,2026-07-06,2026-07-20,9,7,,
-95,Defence Day Deal,Percentage,10,2025-05-18,2025-05-23,9,105,,
-96,Family Dinner Deal,Flat,90,2025-11-08,2025-12-08,16,46,,
-97,Ramadan Sehri Special,Flat,200,2026-04-18,2026-05-09,2,142,750.0,SAVE62
-98,Family Dinner Deal,Flat,200,2026-06-06,2026-06-09,15,135,750.0,SAVE56
-99,Stock Clearance Deal,Percentage,30,2025-08-12,2025-08-17,17,143,1500.0,
-100,Ramadan Iftar Deal,Flat,100,2026-06-20,2026-06-27,5,96,,
+1,Student Special,Percentage,15,2025-07-19,2025-08-18,20,16,,
+2,Stock Clearance Deal,Percentage,20,2026-04-30,2026-05-04,10,68,750.0,SAVE67
+3,Eid Family Feast,Percentage,20,2025-04-20,2025-05-04,11,39,500.0,SAVE93
+4,Online Order Deal,Percentage,10,2026-07-27,2026-08-26,18,80,2000.0,
+5,Chef's Special,Flat,150,2025-05-21,2025-05-25,2,15,2000.0,SAVE27
+6,Ramadan Iftar Deal,Percentage,30,2025-06-10,2025-06-20,5,62,2000.0,SAVE15
+7,Eid Family Feast,Flat,100,2025-12-25,2026-01-24,13,9,,
+8,Midnight Deal,Flat,500,2025-06-04,2025-06-18,17,19,1000.0,
+9,Student Special,Flat,100,2025-04-08,2025-04-13,19,19,,
+10,Family Dinner Deal,Flat,200,2026-06-02,2026-06-12,7,87,750.0,
+11,Lunch Special,Percentage,30,2026-08-03,2026-08-31,14,26,2000.0,
+12,Happy Hour,Flat,150,2026-08-25,2026-08-31,1,5,500.0,
+13,Limited Time Deal,Flat,200,2026-05-03,2026-05-05,17,121,750.0,SAVE58
+14,Delivery Special,Percentage,20,2026-07-10,2026-07-17,2,59,,
+15,New Year Special,Percentage,5,2025-03-04,2025-03-09,3,107,500.0,SAVE88
+16,Lunch Special,Percentage,15,2026-01-25,2026-02-01,17,85,,SAVE45
+17,Monsoon Deal,Flat,200,2026-08-18,2026-08-31,9,97,2000.0,
+18,Stock Clearance Deal,Flat,150,2025-05-24,2025-05-26,14,24,750.0,
+19,Defence Day Deal,Percentage,10,2025-05-31,2025-06-14,16,115,1500.0,SAVE69
+20,Student Special,Percentage,5,2025-04-07,2025-05-07,13,76,2500.0,
+21,Defence Day Deal,Percentage,25,2025-06-15,2025-07-06,2,6,750.0,SAVE38
+22,Family Dinner Deal,Percentage,25,2026-05-18,2026-05-28,7,132,500.0,SAVE47
+23,Lunch Special,Percentage,30,2025-12-28,2026-01-18,16,121,1500.0,SAVE15
+24,New Year Special,Percentage,25,2026-03-02,2026-03-23,5,115,1000.0,
+25,Limited Time Deal,Flat,100,2025-10-28,2025-11-02,16,84,500.0,
+26,Fresh Stock Special,Percentage,20,2026-06-13,2026-06-17,4,114,1000.0,SAVE98
+27,Friday Feast,Flat,300,2025-09-24,2025-09-27,19,66,500.0,
+28,Weekend Special,Flat,100,2026-01-19,2026-02-09,18,69,1500.0,
+29,Weekend Special,Flat,250,2026-06-05,2026-07-05,17,76,,
+30,Eid Special,Percentage,15,2026-02-28,2026-03-05,18,78,1500.0,
+31,Student Special,Flat,100,2026-02-04,2026-02-07,14,10,,
+32,Summer Special,Flat,150,2026-04-02,2026-04-23,7,131,1500.0,SAVE69
+33,Stock Clearance Deal,Percentage,25,2025-11-11,2025-11-16,19,64,500.0,SAVE22
+34,Limited Time Deal,Percentage,5,2026-07-30,2026-08-01,17,25,750.0,
+35,Ramadan Iftar Deal,Flat,100,2025-03-20,2025-03-23,11,68,1000.0,
+36,Lunch Special,Flat,100,2025-07-29,2025-08-28,17,118,2500.0,SAVE54
+37,Family Dinner Deal,Flat,100,2025-10-07,2025-10-12,10,28,1000.0,
+38,Summer Special,Percentage,20,2026-05-18,2026-05-23,6,5,2500.0,SAVE62
+39,Delivery Special,Percentage,20,2025-07-29,2025-08-12,18,35,1000.0,
+40,Happy Hour,Flat,150,2025-05-21,2025-05-26,7,93,750.0,SAVE28
+41,Ramadan Iftar Deal,Flat,250,2026-02-02,2026-03-04,15,107,750.0,SAVE60
+42,Lunch Special,Flat,200,2025-08-28,2025-09-18,20,33,2000.0,
+43,Friday Feast,Flat,200,2026-06-05,2026-06-08,6,106,750.0,
+44,Limited Time Deal,Flat,250,2025-03-22,2025-03-25,6,123,1500.0,SAVE37
+45,Monsoon Deal,Percentage,5,2025-08-15,2025-08-29,20,47,750.0,
+46,New Year Special,Percentage,25,2026-08-23,2026-08-31,7,20,,
+47,Defence Day Deal,Percentage,25,2025-10-23,2025-11-02,10,123,2000.0,
+48,New Year Special,Percentage,10,2026-04-27,2026-05-27,17,120,2000.0,
+49,Midnight Deal,Flat,250,2025-08-30,2025-09-04,20,83,2000.0,
+50,Fresh Stock Special,Percentage,20,2025-06-28,2025-07-02,19,140,,
+51,Winter Special,Flat,150,2025-12-10,2026-01-09,11,18,2000.0,
+52,Defence Day Deal,Flat,150,2025-12-08,2025-12-13,13,55,1000.0,
+53,Summer Special,Flat,200,2026-02-07,2026-02-17,5,62,2000.0,
+54,Winter Special,Flat,100,2025-10-29,2025-11-01,6,12,1500.0,
+55,Stock Clearance Deal,Percentage,20,2026-04-30,2026-05-05,13,102,,
+56,Stock Clearance Deal,Flat,100,2025-07-08,2025-07-11,15,7,500.0,
+57,Weekend Special,Percentage,20,2026-05-22,2026-06-05,9,65,1000.0,SAVE22
+58,Stock Clearance Deal,Flat,100,2026-04-02,2026-04-07,7,138,1000.0,
+59,Independence Day Special,Percentage,20,2025-03-23,2025-03-28,10,62,1500.0,
+60,Online Order Deal,Flat,100,2026-04-25,2026-05-09,2,19,1500.0,
+61,Midnight Deal,Flat,200,2025-11-21,2025-12-01,13,6,1000.0,
+62,Eid Family Feast,Percentage,20,2026-02-05,2026-02-26,6,83,500.0,SAVE96
+63,Chef's Special,Percentage,10,2026-04-08,2026-04-11,9,43,500.0,
+64,Ramadan Sehri Special,Percentage,25,2025-10-19,2025-10-22,6,148,1500.0,
+65,Chef's Special,Flat,150,2025-10-28,2025-10-31,5,36,,SAVE52
+66,Student Special,Flat,300,2026-03-14,2026-03-24,20,14,1500.0,SAVE16
+67,Chef's Special,Flat,300,2025-10-31,2025-11-03,4,65,1000.0,
+68,Ramadan Iftar Deal,Percentage,5,2025-05-04,2025-05-14,14,102,,
+69,Payday Special,Percentage,10,2026-03-17,2026-04-16,2,138,,SAVE96
+70,Eid Special,Percentage,5,2026-02-07,2026-02-10,20,38,2500.0,
+71,Winter Special,Percentage,5,2025-05-23,2025-06-13,16,15,2500.0,SAVE25
+72,Limited Time Deal,Percentage,15,2025-12-23,2025-12-28,4,88,,
+73,Ramadan Iftar Deal,Flat,200,2025-11-04,2025-11-18,15,64,2500.0,
+74,Chef's Special,Percentage,30,2026-08-11,2026-08-16,7,27,500.0,
+75,New Year Special,Flat,100,2025-11-15,2025-11-22,4,97,500.0,SAVE34
+76,Ramadan Sehri Special,Flat,250,2026-01-13,2026-01-23,13,102,2500.0,
+77,Eid Family Feast,Percentage,30,2025-10-13,2025-10-23,20,124,500.0,
+78,Limited Time Deal,Percentage,10,2025-04-19,2025-04-24,7,92,2000.0,SAVE98
+79,Chef's Special,Percentage,5,2025-09-27,2025-09-29,6,144,,SAVE14
+80,Payday Special,Percentage,10,2026-04-10,2026-04-24,12,102,,
+81,Eid Family Feast,Flat,100,2026-05-21,2026-06-04,13,130,,
+82,Midnight Deal,Percentage,20,2026-08-19,2026-08-31,18,41,750.0,
+83,Independence Day Special,Flat,250,2025-12-18,2026-01-01,4,140,,SAVE64
+84,Payday Special,Flat,300,2025-09-13,2025-10-13,4,143,750.0,
+85,Delivery Special,Flat,500,2025-08-31,2025-09-03,17,4,,
+86,Happy Hour,Flat,100,2025-06-27,2025-07-11,5,135,,
+87,Limited Time Deal,Percentage,5,2025-07-21,2025-07-25,17,116,750.0,
+88,Eid Family Feast,Flat,250,2025-06-26,2025-07-03,13,150,,
+89,Ramadan Iftar Deal,Flat,100,2025-09-20,2025-10-04,9,128,2500.0,
+90,Delivery Special,Percentage,25,2025-12-30,2026-01-29,20,31,1500.0,SAVE14
+91,Fresh Stock Special,Percentage,30,2025-11-21,2025-11-25,8,6,1500.0,SAVE30
+92,Friday Feast,Percentage,30,2026-05-31,2026-06-14,16,87,500.0,
+93,Delivery Special,Percentage,10,2025-12-26,2025-12-29,14,83,,
+94,Limited Time Deal,Flat,250,2025-10-14,2025-10-16,20,67,,SAVE16
+95,Weekend Special,Percentage,5,2025-08-28,2025-09-11,19,139,500.0,SAVE65
+96,Weekend Special,Flat,150,2025-05-22,2025-05-29,20,108,1500.0,
+97,Family Dinner Deal,Percentage,10,2026-04-19,2026-05-19,13,5,1500.0,SAVE89
+98,Stock Clearance Deal,Flat,300,2026-02-27,2026-03-01,2,136,1000.0,
+99,Online Order Deal,Flat,500,2026-07-06,2026-07-27,16,50,,SAVE78
+100,Fresh Stock Special,Percentage,25,2026-04-11,2026-04-14,6,56,2000.0,

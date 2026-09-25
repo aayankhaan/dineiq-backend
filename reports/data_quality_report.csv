@@ -1,0 +1,175 @@
+dataset,check,column,issue_count,status
+Orders,Null Values,order_id,0,PASS
+Orders,Null Values,customer_id,50,ISSUES FOUND
+Orders,Null Values,restaurant_id,0,PASS
+Orders,Null Values,promotion_id,92061,ISSUES FOUND
+Orders,Null Values,order_datetime,0,PASS
+Orders,Null Values,ordering_channel,0,PASS
+Orders,Null Values,order_status,0,PASS
+Orders,Null Values,subtotal,0,PASS
+Orders,Null Values,discount_amount,0,PASS
+Orders,Null Values,tax_amount,0,PASS
+Orders,Null Values,delivery_fee,0,PASS
+Orders,Null Values,total_amount,0,PASS
+Orders,Null Values,payment_method,0,PASS
+Orders,Duplicate IDs,order_id,0,PASS
+Orders,Negative Values,subtotal,0,PASS
+Orders,Negative Values,discount_amount,0,PASS
+Orders,Negative Values,tax_amount,0,PASS
+Orders,Negative Values,delivery_fee,0,PASS
+Orders,Negative Values,total_amount,0,PASS
+Orders,Invalid Values,order_status,0,PASS
+Orders,Invalid Values,ordering_channel,0,PASS
+Orders,Invalid Values,payment_method,0,PASS
+Orders,Incorrect Discounts,discount_amount,30,ISSUES FOUND
+Orders,Cancelled Transactions,order_status,2938,ISSUES FOUND
+Orders,Invalid Dates,order_datetime,20,ISSUES FOUND
+Orders,Invalid Foreign Key,customer_id,0,PASS
+Orders,Invalid Foreign Key,restaurant_id,25,ISSUES FOUND
+Orders,Invalid Foreign Key,promotion_id,0,PASS
+Order Items,Null Values,order_item_id,0,PASS
+Order Items,Null Values,order_id,0,PASS
+Order Items,Null Values,item_id,0,PASS
+Order Items,Null Values,quantity,0,PASS
+Order Items,Null Values,unit_price,0,PASS
+Order Items,Null Values,discount_amount,0,PASS
+Order Items,Null Values,line_total,0,PASS
+Order Items,Duplicate IDs,order_item_id,100,ISSUES FOUND
+Order Items,Negative Values,quantity,50,ISSUES FOUND
+Order Items,Negative Values,unit_price,0,PASS
+Order Items,Negative Values,discount_amount,0,PASS
+Order Items,Negative Values,line_total,0,PASS
+Order Items,Invalid Range,quantity,50,ISSUES FOUND
+Order Items,Invalid Foreign Key,order_id,0,PASS
+Order Items,Invalid Foreign Key,item_id,30,ISSUES FOUND
+Customers,Null Values,customer_id,0,PASS
+Customers,Null Values,signup_date,0,PASS
+Customers,Null Values,birth_year,0,PASS
+Customers,Null Values,gender,0,PASS
+Customers,Null Values,city,0,PASS
+Customers,Duplicate IDs,customer_id,0,PASS
+Restaurants,Null Values,restaurant_id,0,PASS
+Restaurants,Null Values,name,0,PASS
+Restaurants,Null Values,city,0,PASS
+Restaurants,Null Values,area,0,PASS
+Restaurants,Null Values,opening_date,0,PASS
+Restaurants,Null Values,status,0,PASS
+Restaurants,Duplicate IDs,restaurant_id,0,PASS
+Menu Categories,Null Values,category_id,0,PASS
+Menu Categories,Null Values,name,0,PASS
+Menu Categories,Duplicate IDs,category_id,0,PASS
+Menu Items,Null Values,menu_items_id,0,PASS
+Menu Items,Null Values,cat_id,0,PASS
+Menu Items,Null Values,name,0,PASS
+Menu Items,Null Values,base_price,0,PASS
+Menu Items,Null Values,prep_time_minutes,0,PASS
+Menu Items,Null Values,introduced_date,0,PASS
+Menu Items,Null Values,discontinued_date,150,ISSUES FOUND
+Menu Items,Duplicate IDs,menu_items_id,0,PASS
+Menu Items,Negative Values,base_price,5,ISSUES FOUND
+Menu Items,Negative Values,prep_time_minutes,0,PASS
+Menu Items,Invalid Range,base_price,10,ISSUES FOUND
+Menu Items,Invalid Foreign Key,cat_id,0,PASS
+Ingredients,Null Values,ingredient_id,0,PASS
+Ingredients,Null Values,ingredient,0,PASS
+Ingredients,Null Values,unit,0,PASS
+Ingredients,Null Values,unit_cost,0,PASS
+Ingredients,Duplicate IDs,ingredient_id,0,PASS
+Ingredients,Negative Values,unit_cost,0,PASS
+Ingredients,Invalid Range,unit_cost,0,PASS
+Ingredients,Invalid Values,unit,0,PASS
+Menu Item Ingredients,Null Values,menu_item_ingredient_id,0,PASS
+Menu Item Ingredients,Null Values,menu_item_id,0,PASS
+Menu Item Ingredients,Null Values,ingredient_id,0,PASS
+Menu Item Ingredients,Null Values,quantity_required,0,PASS
+Menu Item Ingredients,Duplicate IDs,menu_item_ingredient_id,0,PASS
+Menu Item Ingredients,Invalid Range,quantity_required,0,PASS
+Menu Item Ingredients,Invalid Foreign Key,menu_item_id,0,PASS
+Menu Item Ingredients,Invalid Foreign Key,ingredient_id,0,PASS
+Restaurant Menu Items,Null Values,restaurant_menu_id,0,PASS
+Restaurant Menu Items,Null Values,restaurant_id,0,PASS
+Restaurant Menu Items,Null Values,item_id,0,PASS
+Restaurant Menu Items,Null Values,price,0,PASS
+Restaurant Menu Items,Null Values,is_available,0,PASS
+Restaurant Menu Items,Duplicate IDs,restaurant_menu_id,0,PASS
+Restaurant Menu Items,Negative Values,price,0,PASS
+Restaurant Menu Items,Invalid Foreign Key,restaurant_id,0,PASS
+Restaurant Menu Items,Invalid Foreign Key,item_id,0,PASS
+Pricing History,Null Values,price_history_id,0,PASS
+Pricing History,Null Values,restaurant_id,0,PASS
+Pricing History,Null Values,item_id,0,PASS
+Pricing History,Null Values,old_price,0,PASS
+Pricing History,Null Values,new_price,0,PASS
+Pricing History,Null Values,effective_date,0,PASS
+Pricing History,Null Values,reason,0,PASS
+Pricing History,Duplicate IDs,price_history_id,0,PASS
+Pricing History,Negative Values,old_price,0,PASS
+Pricing History,Negative Values,new_price,0,PASS
+Pricing History,Invalid Foreign Key,restaurant_id,0,PASS
+Pricing History,Invalid Foreign Key,item_id,0,PASS
+Promotions,Null Values,promotion_id,0,PASS
+Promotions,Null Values,name,0,PASS
+Promotions,Null Values,discount_type,0,PASS
+Promotions,Null Values,discount_value,0,PASS
+Promotions,Null Values,start_date,0,PASS
+Promotions,Null Values,end_date,0,PASS
+Promotions,Null Values,restaurant_id,0,PASS
+Promotions,Null Values,item_id,0,PASS
+Promotions,Null Values,minimum_order_value,24,ISSUES FOUND
+Promotions,Null Values,coupon_code,65,ISSUES FOUND
+Promotions,Duplicate IDs,promotion_id,0,PASS
+Promotions,Negative Values,discount_value,0,PASS
+Promotions,Negative Values,minimum_order_value,0,PASS
+Promotions,Invalid Foreign Key,restaurant_id,0,PASS
+Promotions,Invalid Foreign Key,item_id,0,PASS
+Ratings,Null Values,rating_id,0,PASS
+Ratings,Null Values,customer_id,0,PASS
+Ratings,Null Values,order_id,0,PASS
+Ratings,Null Values,restaurant_id,0,PASS
+Ratings,Null Values,item_id,0,PASS
+Ratings,Null Values,rating,0,PASS
+Ratings,Null Values,rating_date,0,PASS
+Ratings,Duplicate IDs,rating_id,0,PASS
+Ratings,Invalid Range,rating,50,ISSUES FOUND
+Ratings,Invalid Foreign Key,customer_id,0,PASS
+Ratings,Invalid Foreign Key,order_id,0,PASS
+Ratings,Invalid Foreign Key,restaurant_id,0,PASS
+Ratings,Invalid Foreign Key,item_id,0,PASS
+Inventory,Null Values,inventory_id,0,PASS
+Inventory,Null Values,restaurant_id,0,PASS
+Inventory,Null Values,ingredient_id,0,PASS
+Inventory,Null Values,quantity_received,0,PASS
+Inventory,Null Values,quantity_remaining,0,PASS
+Inventory,Null Values,unit,0,PASS
+Inventory,Null Values,unit_cost,0,PASS
+Inventory,Null Values,received_date,0,PASS
+Inventory,Null Values,expiry_date,0,PASS
+Inventory,Duplicate IDs,inventory_id,0,PASS
+Inventory,Negative Values,quantity_received,0,PASS
+Inventory,Negative Values,quantity_remaining,0,PASS
+Inventory,Negative Values,unit_cost,0,PASS
+Inventory,Invalid Range,quantity_received,0,PASS
+Inventory,Invalid Foreign Key,restaurant_id,0,PASS
+Inventory,Invalid Foreign Key,ingredient_id,0,PASS
+Wastage,Null Values,wastage_id,0,PASS
+Wastage,Null Values,restaurant_id,0,PASS
+Wastage,Null Values,ingredient_id,0,PASS
+Wastage,Null Values,inventory_id,0,PASS
+Wastage,Null Values,wastage_date,0,PASS
+Wastage,Null Values,quantity,0,PASS
+Wastage,Null Values,unit,0,PASS
+Wastage,Null Values,unit_cost,0,PASS
+Wastage,Null Values,cost,0,PASS
+Wastage,Null Values,reason,0,PASS
+Wastage,Duplicate IDs,wastage_id,0,PASS
+Wastage,Negative Values,quantity,0,PASS
+Wastage,Negative Values,unit_cost,0,PASS
+Wastage,Negative Values,cost,0,PASS
+Wastage,Invalid Range,quantity,0,PASS
+Wastage,Invalid Foreign Key,restaurant_id,0,PASS
+Wastage,Invalid Foreign Key,ingredient_id,20,ISSUES FOUND
+Wastage,Invalid Foreign Key,inventory_id,0,PASS
+Wastage,Impossible Wastage,quantity,30,ISSUES FOUND
+Ingredients,Invalid Units,unit,0,PASS
+Inventory,Inconsistent Units,unit,30,ISSUES FOUND
+Wastage,Inconsistent Units,unit,97,ISSUES FOUND

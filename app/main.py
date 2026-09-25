@@ -1,3 +1,4 @@
+import os
 from fastapi import Cookie, FastAPI, Depends, HTTPException, Response, status
 from app.database import create_db_and_tables, get_session, Session
 from sqlmodel import select
@@ -11,7 +12,7 @@ app = FastAPI(title="DineIQ API", version="1.0.0")
 
 pwd_context = PasswordHash.recommended()
 
-SECRET_KEY = "secret-key-key-key-873y458735-iuefngdfg"
+SECRET_KEY = os.environ["SECRET_KEY"]
 ALGORITHM = "HS256"
 ONE_MONTH = 60 * 60 * 24 * 30
 
@@ -37,7 +38,7 @@ def check_health():
 def login(data: LoginData, response: Response, db: Session = Depends(get_session)):
     user = db.exec(select(User).where(User.email == data.email)).first()
 
-    if not user or not pwd_context.verify(data.password, user.password_hash):
+    if not user or not user.is_active or not pwd_context.verify(data.password, user.password_hash):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password",

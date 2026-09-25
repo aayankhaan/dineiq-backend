@@ -584,7 +584,7 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             and x["item_id"] in available_item_ids
         ]
 
-        promotion = random.choice(active_promotions) if active_promotions and random.random() < 0.45 else None
+        promotion = random.choice(active_promotions) if active_promotions and random.random() < 0.85 else None
         promotion_id = promotion["promotion_id"] if promotion else None
 
         channel = random.choices(["Dine-in", "Takeaway", "Website/App", "Third-Party Delivery"],weights=[40, 20, 20, 20])[0]
@@ -677,7 +677,7 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             "order_id": order_id,
             "customer_id": customer_id,
             "restaurant_id": restaurant_id,
-            "promotion_id": promotion_id,
+            "promotion_id": int(promotion_id) if promotion_id is not None else None,
             "order_datetime": order_datetime,
             "ordering_channel": channel,
             "order_status": order_status,
@@ -818,7 +818,9 @@ pd.DataFrame(restaurant_menu_items).to_csv(f"{output_folder}/restaurant_menu_ite
 pd.DataFrame(pricing_history).to_csv(f"{output_folder}/pricing_history.csv", index=False)
 pd.DataFrame(inventories).to_csv(f"{output_folder}/inventory.csv", index=False)
 pd.DataFrame(promotions).to_csv(f"{output_folder}/promotions.csv", index=False)
-pd.DataFrame(orders).to_csv(f"{output_folder}/orders.csv", index=False)
+orders_df = pd.DataFrame(orders)
+orders_df["promotion_id"] = orders_df["promotion_id"].astype("Int64")
+orders_df.to_csv(f"{output_folder}/orders.csv", index=False)
 pd.DataFrame(order_items).to_csv(f"{output_folder}/order_items.csv", index=False)
 pd.DataFrame(wastage).to_csv(f"{output_folder}/wastage.csv", index=False)
 pd.DataFrame(ratings).to_csv(f"{output_folder}/ratings.csv", index=False)

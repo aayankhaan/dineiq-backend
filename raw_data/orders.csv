@@ -850,7 +850,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 849,990,1,,2026-05-20 19:55:00,Website/App,Completed,9290.0,0.0,464.5,0,9754.5,Digital Wallet
 850,26624,19,,2025-12-03 17:49:00,Third-Party Delivery,Completed,16350.0,0.0,817.5,100,17267.5,Card
 851,1048,5,,2025-12-19 23:12:00,Dine-in,Completed,9870.0,0.0,493.5,0,10363.5,Card
-852,4751,12,,2026-08-14 11:48:00,Dine-in,Completed,5410.0,0.0,270.5,0,5680.5,Digital Wallet
+852,,12,,2026-08-14 11:48:00,Dine-in,Completed,5410.0,0.0,270.5,0,5680.5,Digital Wallet
 853,14826,6,,2025-05-11 20:35:00,Third-Party Delivery,Completed,7980.0,0.0,399.0,150,8529.0,Digital Wallet
 854,45811,12,,2026-08-30 19:17:00,Website/App,Completed,9230.0,0.0,461.5,0,9691.5,Cash
 855,27875,11,,2025-03-14 22:27:00,Dine-in,Completed,11760.0,0.0,588.0,0,12348.0,Cash
@@ -3277,7 +3277,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 3276,46960,20,,2025-06-27 19:39:00,Takeaway,Completed,7450.0,0.0,372.5,0,7822.5,Digital Wallet
 3277,16353,12,,2026-05-03 13:56:00,Dine-in,Completed,7630.0,0.0,381.5,0,8011.5,Digital Wallet
 3278,44025,2,,2025-05-19 18:43:00,Website/App,Completed,10600.0,0.0,530.0,100,11230.0,Digital Wallet
-3279,48219,17,16,2026-01-27 19:23:00,Website/App,Completed,6570.0,31.5,326.93,150,7015.43,Card
+3279,,17,16,2026-01-27 19:23:00,Website/App,Completed,6570.0,31.5,326.93,150,7015.43,Card
 3280,39807,1,,2026-05-25 13:21:00,Dine-in,Completed,9480.0,0.0,474.0,0,9954.0,Card
 3281,18875,12,,2025-09-30 13:28:00,Third-Party Delivery,Completed,5440.0,0.0,272.0,250,5962.0,Card
 3282,19945,1,,2026-05-22 19:44:00,Dine-in,Completed,6610.0,0.0,330.5,0,6940.5,Digital Wallet
@@ -3477,7 +3477,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 3476,24152,1,,2026-07-24 20:28:00,Dine-in,Completed,6070.0,0.0,303.5,0,6373.5,Cash
 3477,10027,1,,2026-07-08 15:29:00,Dine-in,Completed,5460.0,0.0,273.0,0,5733.0,Digital Wallet
 3478,45808,9,,2026-06-12 11:07:00,Takeaway,Completed,8450.0,0.0,422.5,0,8872.5,Digital Wallet
-3479,1678,12,,2025-12-06 16:33:00,Takeaway,Completed,6310.0,0.0,315.5,0,6625.5,Digital Wallet
+3479,,12,,2025-12-06 16:33:00,Takeaway,Completed,6310.0,0.0,315.5,0,6625.5,Digital Wallet
 3480,22502,14,11,2026-08-20 18:15:00,Website/App,Completed,7730.0,465.0,363.25,0,7628.25,Digital Wallet
 3481,49452,8,,2025-03-13 18:50:00,Dine-in,Completed,14380.0,0.0,719.0,0,15099.0,Digital Wallet
 3482,33882,12,,2025-08-17 13:55:00,Dine-in,Completed,6430.0,0.0,321.5,0,6751.5,Cash
@@ -3904,7 +3904,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 3903,6975,12,,2025-12-19 18:21:00,Dine-in,Completed,9940.0,0.0,497.0,0,10437.0,Cash
 3904,22983,1,,2025-05-16 20:27:00,Third-Party Delivery,Completed,9190.0,0.0,459.5,100,9749.5,Digital Wallet
 3905,25286,12,,2026-02-13 10:03:00,Third-Party Delivery,Completed,8810.0,0.0,440.5,100,9350.5,Digital Wallet
-3906,21610,15,,2026-01-19 15:25:00,Dine-in,Completed,4130.0,0.0,206.5,0,4336.5,Cash
+3906,,15,,2026-01-19 15:25:00,Dine-in,Completed,4130.0,0.0,206.5,0,4336.5,Cash
 3907,17433,8,,2025-10-31 18:26:00,Dine-in,Completed,10470.0,0.0,523.5,0,10993.5,Digital Wallet
 3908,33303,6,,2025-08-23 21:52:00,Takeaway,Completed,10610.0,0.0,530.5,0,11140.5,Cash
 3909,35065,10,,2026-03-30 12:00:00,Takeaway,Completed,13330.0,0.0,666.5,0,13996.5,Digital Wallet
@@ -4164,7 +4164,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 4163,47277,12,,2025-06-20 18:21:00,Dine-in,Completed,7500.0,0.0,375.0,0,7875.0,Cash
 4164,3697,12,,2025-08-27 21:43:00,Takeaway,Completed,6560.0,0.0,328.0,0,6888.0,Cash
 4165,29033,7,,2026-06-25 13:55:00,Website/App,Completed,5770.0,0.0,288.5,0,6058.5,Card
-4166,13906,12,,2026-06-20 20:07:00,Takeaway,Completed,12780.0,0.0,639.0,0,13419.0,Cash
+4166,,12,,2026-06-20 20:07:00,Takeaway,Completed,12780.0,0.0,639.0,0,13419.0,Cash
 4167,20351,16,,2026-06-26 22:57:00,Third-Party Delivery,Completed,6620.0,0.0,331.0,200,7151.0,Card
 4168,11821,14,,2026-05-31 13:08:00,Dine-in,Completed,6240.0,0.0,312.0,0,6552.0,Digital Wallet
 4169,34074,12,,2026-07-13 19:32:00,Website/App,Completed,6120.0,0.0,306.0,100,6526.0,Cash
@@ -4211,7 +4211,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 4210,886,3,,2025-10-11 13:07:00,Dine-in,Completed,8980.0,0.0,449.0,0,9429.0,Card
 4211,26419,3,,2025-03-13 14:13:00,Dine-in,Completed,6990.0,0.0,349.5,0,7339.5,Card
 4212,28368,12,,2025-06-30 23:21:00,Dine-in,Completed,5990.0,0.0,299.5,0,6289.5,Cash
-4213,39355,8,,2026-02-09 18:53:00,Takeaway,Completed,6050.0,0.0,302.5,0,6352.5,Cash
+4213,39355,8,,2035-01-01 12:00:00,Takeaway,Completed,6050.0,0.0,302.5,0,6352.5,Cash
 4214,43755,12,,2025-05-17 14:35:00,Takeaway,Completed,6590.0,0.0,329.5,0,6919.5,Card
 4215,10874,19,,2026-07-13 20:01:00,Website/App,Completed,6170.0,0.0,308.5,150,6628.5,Digital Wallet
 4216,10207,12,,2026-05-14 14:23:00,Dine-in,Completed,10150.0,0.0,507.5,0,10657.5,Digital Wallet
@@ -5699,7 +5699,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 5698,13750,12,,2026-04-11 22:32:00,Third-Party Delivery,Completed,8640.0,0.0,432.0,200,9272.0,Cash
 5699,5629,12,,2026-04-25 15:11:00,Website/App,Completed,5560.0,0.0,278.0,100,5938.0,Cash
 5700,45546,6,,2026-07-21 22:59:00,Website/App,Completed,6360.0,0.0,318.0,0,6678.0,Cash
-5701,10082,16,,2025-10-09 15:39:00,Dine-in,Completed,6400.0,0.0,320.0,0,6720.0,Digital Wallet
+5701,10082,9999,,2025-10-09 15:39:00,Dine-in,Completed,6400.0,0.0,320.0,0,6720.0,Digital Wallet
 5702,7135,10,,2026-07-04 20:09:00,Takeaway,Completed,11470.0,0.0,573.5,0,12043.5,Digital Wallet
 5703,45812,19,,2025-10-29 21:21:00,Website/App,Completed,8860.0,0.0,443.0,0,9303.0,Card
 5704,46453,9,,2025-09-23 10:45:00,Dine-in,Completed,8480.0,0.0,424.0,0,8904.0,Digital Wallet
@@ -6010,7 +6010,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 6009,20258,1,,2025-09-09 13:11:00,Third-Party Delivery,Completed,5950.0,0.0,297.5,100,6347.5,Cash
 6010,26273,1,,2026-05-11 16:47:00,Dine-in,Completed,8160.0,0.0,408.0,0,8568.0,Card
 6011,46364,14,11,2026-08-20 18:55:00,Takeaway,Completed,9280.0,930.0,417.5,0,8767.5,Card
-6012,34386,16,,2026-03-03 11:36:00,Dine-in,Completed,5860.0,0.0,293.0,0,6153.0,Card
+6012,34386,9999,,2026-03-03 11:36:00,Dine-in,Completed,5860.0,0.0,293.0,0,6153.0,Card
 6013,42593,15,,2026-05-17 12:30:00,Dine-in,Completed,11430.0,0.0,571.5,0,12001.5,Digital Wallet
 6014,25870,12,,2026-08-28 19:22:00,Dine-in,Completed,6670.0,0.0,333.5,0,7003.5,Cash
 6015,9554,10,,2026-04-20 21:26:00,Dine-in,Completed,7050.0,0.0,352.5,0,7402.5,Card
@@ -7337,7 +7337,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 7336,24873,19,,2025-05-02 15:53:00,Dine-in,Completed,6630.0,0.0,331.5,0,6961.5,Cash
 7337,2556,20,,2026-08-02 17:33:00,Takeaway,Completed,12750.0,0.0,637.5,0,13387.5,Digital Wallet
 7338,34499,1,,2026-03-26 23:40:00,Takeaway,Completed,5480.0,0.0,274.0,0,5754.0,Card
-7339,42867,5,,2025-09-05 13:19:00,Takeaway,Completed,9360.0,0.0,468.0,0,9828.0,Card
+7339,42867,5,,2035-01-01 12:00:00,Takeaway,Completed,9360.0,0.0,468.0,0,9828.0,Card
 7340,44037,20,,2025-06-22 18:36:00,Dine-in,Completed,9850.0,0.0,492.5,0,10342.5,Digital Wallet
 7341,14481,20,,2025-11-04 14:19:00,Takeaway,Completed,5850.0,0.0,292.5,0,6142.5,Card
 7342,6740,16,99,2026-07-16 14:03:00,Dine-in,Completed,12030.0,500.0,576.5,0,12106.5,Card
@@ -8681,7 +8681,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 8680,43628,8,,2026-08-30 19:00:00,Dine-in,Completed,6570.0,0.0,328.5,0,6898.5,Card
 8681,16006,9,,2025-08-23 12:05:00,Dine-in,Completed,12650.0,0.0,632.5,0,13282.5,Card
 8682,38731,1,,2025-11-21 14:40:00,Third-Party Delivery,Completed,11750.0,0.0,587.5,200,12537.5,Card
-8683,49898,12,,2026-03-26 12:54:00,Dine-in,Completed,4240.0,0.0,212.0,0,4452.0,Digital Wallet
+8683,49898,12,,2035-01-01 12:00:00,Dine-in,Completed,4240.0,0.0,212.0,0,4452.0,Digital Wallet
 8684,32517,8,,2025-05-12 19:04:00,Website/App,Completed,10310.0,0.0,515.5,0,10825.5,Card
 8685,24170,7,46,2026-08-26 18:38:00,Dine-in,Completed,14640.0,162.5,723.88,0,15201.38,Digital Wallet
 8686,40763,9,,2025-09-26 18:26:00,Dine-in,Completed,8090.0,0.0,404.5,0,8494.5,Card
@@ -9120,7 +9120,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 9119,30307,12,,2026-06-15 19:40:00,Dine-in,Cancelled,6220.0,0.0,311.0,0,0.0,Card
 9120,25706,6,,2026-03-03 16:01:00,Dine-in,Completed,7510.0,0.0,375.5,0,7885.5,Cash
 9121,45993,10,,2026-07-06 20:47:00,Website/App,Completed,6420.0,0.0,321.0,150,6891.0,Card
-9122,41507,18,,2025-08-17 22:30:00,Dine-in,Completed,4950.0,0.0,247.5,0,5197.5,Cash
+9122,41507,9999,,2025-08-17 22:30:00,Dine-in,Completed,4950.0,0.0,247.5,0,5197.5,Cash
 9123,4009,8,,2025-10-13 12:42:00,Dine-in,Completed,5620.0,0.0,281.0,0,5901.0,Digital Wallet
 9124,13573,18,4,2026-08-23 21:42:00,Dine-in,Completed,5810.0,38.0,288.6,0,6060.6,Digital Wallet
 9125,25348,16,,2025-03-25 20:56:00,Dine-in,Completed,8110.0,0.0,405.5,0,8515.5,Cash
@@ -9365,7 +9365,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 9364,17302,11,,2026-01-10 14:26:00,Dine-in,Completed,8020.0,0.0,401.0,0,8421.0,Cash
 9365,18714,3,,2026-06-07 22:46:00,Dine-in,Completed,8910.0,0.0,445.5,0,9355.5,Digital Wallet
 9366,444,20,,2025-06-15 19:38:00,Dine-in,Cancelled,11530.0,0.0,576.5,0,0.0,Digital Wallet
-9367,5557,7,,2026-06-19 22:21:00,Dine-in,Completed,7290.0,0.0,364.5,0,7654.5,Card
+9367,5557,7,,2026-06-19 22:21:00,Dine-in,Completed,7290.0,7790.0,364.5,0,7654.5,Card
 9368,30080,15,,2025-12-21 20:02:00,Takeaway,Completed,9450.0,0.0,472.5,0,9922.5,Cash
 9369,9513,9,,2026-03-04 11:58:00,Website/App,Completed,12150.0,0.0,607.5,100,12857.5,Digital Wallet
 9370,14925,19,,2025-11-03 14:02:00,Dine-in,Completed,12720.0,0.0,636.0,0,13356.0,Digital Wallet
@@ -10332,7 +10332,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 10331,23291,18,,2025-07-28 17:56:00,Dine-in,Completed,11900.0,0.0,595.0,0,12495.0,Card
 10332,30852,3,,2025-05-15 19:06:00,Website/App,Completed,8160.0,0.0,408.0,0,8568.0,Digital Wallet
 10333,37897,14,,2026-06-16 14:11:00,Dine-in,Completed,11820.0,0.0,591.0,0,12411.0,Cash
-10334,37611,7,74,2026-08-15 18:58:00,Takeaway,Completed,14770.0,1638.0,656.6,0,13788.6,Digital Wallet
+10334,37611,9999,74,2026-08-15 18:58:00,Takeaway,Completed,14770.0,1638.0,656.6,0,13788.6,Digital Wallet
 10335,27391,16,,2025-09-06 20:12:00,Third-Party Delivery,Completed,12940.0,0.0,647.0,250,13837.0,Card
 10336,7282,12,,2026-07-04 13:03:00,Takeaway,Completed,6930.0,0.0,346.5,0,7276.5,Card
 10337,11171,12,,2026-06-24 12:57:00,Dine-in,Completed,5770.0,0.0,288.5,0,6058.5,Cash
@@ -10462,7 +10462,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 10461,44407,12,,2025-07-14 19:29:00,Takeaway,Completed,12860.0,0.0,643.0,0,13503.0,Cash
 10462,14209,10,,2026-04-29 20:02:00,Takeaway,Completed,10830.0,0.0,541.5,0,11371.5,Cash
 10463,36860,1,,2025-10-04 13:22:00,Takeaway,Completed,6750.0,0.0,337.5,0,7087.5,Cash
-10464,45734,9,17,2026-08-24 18:55:00,Website/App,Completed,8900.0,400.0,425.0,100,9025.0,Cash
+10464,45734,9999,17,2026-08-24 18:55:00,Website/App,Completed,8900.0,400.0,425.0,100,9025.0,Cash
 10465,8828,16,,2026-04-17 22:31:00,Takeaway,Completed,12000.0,0.0,600.0,0,12600.0,Digital Wallet
 10466,31315,7,46,2026-08-27 19:11:00,Third-Party Delivery,Completed,10270.0,325.0,497.25,100,10542.25,Card
 10467,40700,20,,2026-06-22 18:47:00,Website/App,Completed,4570.0,0.0,228.5,150,4948.5,Cash
@@ -11394,7 +11394,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 11393,15272,13,,2026-01-27 13:27:00,Third-Party Delivery,Completed,11290.0,0.0,564.5,250,12104.5,Digital Wallet
 11394,36291,18,28,2026-02-05 14:52:00,Takeaway,Completed,8900.0,100.0,440.0,0,9240.0,Card
 11395,8582,12,,2026-01-01 12:59:00,Dine-in,Completed,14420.0,0.0,721.0,0,15141.0,Card
-11396,33802,2,,2026-08-05 13:27:00,Dine-in,Completed,10740.0,0.0,537.0,0,11277.0,Card
+11396,,2,,2026-08-05 13:27:00,Dine-in,Completed,10740.0,0.0,537.0,0,11277.0,Card
 11397,40791,10,,2026-07-07 14:38:00,Website/App,Completed,11820.0,0.0,591.0,100,12511.0,Card
 11398,25153,15,,2025-11-19 19:48:00,Third-Party Delivery,Completed,9880.0,0.0,494.0,150,10524.0,Card
 11399,7797,1,,2025-11-07 17:17:00,Dine-in,Completed,9570.0,0.0,478.5,0,10048.5,Cash
@@ -12155,7 +12155,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 12154,15901,20,,2025-11-16 23:52:00,Website/App,Completed,10930.0,0.0,546.5,100,11576.5,Cash
 12155,15658,19,,2026-08-11 16:09:00,Dine-in,Completed,8480.0,0.0,424.0,0,8904.0,Digital Wallet
 12156,22323,8,,2025-10-18 20:27:00,Third-Party Delivery,Completed,11400.0,0.0,570.0,100,12070.0,Cash
-12157,32455,16,92,2026-06-09 13:33:00,Third-Party Delivery,Completed,10120.0,246.0,493.7,250,10617.7,Cash
+12157,,16,92,2026-06-09 13:33:00,Third-Party Delivery,Completed,10120.0,246.0,493.7,250,10617.7,Cash
 12158,41239,20,,2025-06-04 12:19:00,Website/App,Completed,9520.0,0.0,476.0,0,9996.0,Card
 12159,6730,10,,2026-06-19 22:22:00,Third-Party Delivery,Completed,9060.0,0.0,453.0,150,9663.0,Digital Wallet
 12160,4066,8,,2025-08-28 20:20:00,Third-Party Delivery,Completed,15530.0,0.0,776.5,150,16456.5,Digital Wallet
@@ -12279,7 +12279,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 12278,13947,13,,2026-02-24 21:35:00,Dine-in,Completed,7880.0,0.0,394.0,0,8274.0,Cash
 12279,10491,18,,2025-11-05 14:16:00,Third-Party Delivery,Cancelled,8770.0,0.0,438.5,250,0.0,Digital Wallet
 12280,8649,13,,2026-06-10 19:14:00,Takeaway,Completed,13570.0,0.0,678.5,0,14248.5,Cash
-12281,4971,12,,2026-07-15 22:20:00,Website/App,Completed,9040.0,0.0,452.0,150,9642.0,Cash
+12281,,12,,2026-07-15 22:20:00,Website/App,Completed,9040.0,0.0,452.0,150,9642.0,Cash
 12282,22613,1,,2026-03-07 17:56:00,Takeaway,Completed,11430.0,0.0,571.5,0,12001.5,Cash
 12283,14948,17,,2025-05-29 11:42:00,Third-Party Delivery,Completed,13060.0,0.0,653.0,200,13913.0,Digital Wallet
 12284,3525,4,,2025-08-12 14:00:00,Takeaway,Completed,9750.0,0.0,487.5,0,10237.5,Digital Wallet
@@ -12675,7 +12675,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 12674,15249,12,,2025-11-01 22:45:00,Dine-in,Cancelled,5000.0,0.0,250.0,0,0.0,Digital Wallet
 12675,33609,2,,2025-12-13 14:37:00,Third-Party Delivery,Completed,8510.0,0.0,425.5,200,9135.5,Digital Wallet
 12676,9436,2,69,2026-04-03 18:34:00,Third-Party Delivery,Completed,9580.0,60.0,476.0,100,10096.0,Card
-12677,43910,8,,2026-06-11 22:55:00,Takeaway,Completed,13530.0,0.0,676.5,0,14206.5,Card
+12677,,8,,2026-06-11 22:55:00,Takeaway,Completed,13530.0,0.0,676.5,0,14206.5,Card
 12678,42660,7,,2026-07-09 19:49:00,Dine-in,Completed,10970.0,0.0,548.5,0,11518.5,Card
 12679,28461,8,,2025-06-06 14:18:00,Website/App,Completed,6100.0,0.0,305.0,100,6505.0,Cash
 12680,37292,12,,2026-06-09 16:27:00,Dine-in,Completed,7670.0,0.0,383.5,0,8053.5,Card
@@ -13251,7 +13251,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 13250,22121,7,,2026-07-15 18:48:00,Third-Party Delivery,Completed,11670.0,0.0,583.5,150,12403.5,Card
 13251,42506,13,,2026-08-18 17:17:00,Dine-in,Completed,9640.0,0.0,482.0,0,10122.0,Digital Wallet
 13252,30304,5,,2025-09-06 20:54:00,Dine-in,Completed,8520.0,0.0,426.0,0,8946.0,Digital Wallet
-13253,21113,18,,2025-08-29 18:36:00,Website/App,Completed,8450.0,0.0,422.5,0,8872.5,Cash
+13253,21113,18,,2025-08-29 18:36:00,Website/App,Completed,8450.0,8950.0,422.5,0,8872.5,Cash
 13254,14370,5,,2025-07-18 12:28:00,Dine-in,Completed,8550.0,0.0,427.5,0,8977.5,Cash
 13255,43392,1,,2026-05-28 12:14:00,Takeaway,Completed,8920.0,0.0,446.0,0,9366.0,Card
 13256,1901,7,,2026-06-13 13:18:00,Third-Party Delivery,Completed,7770.0,0.0,388.5,200,8358.5,Card
@@ -13395,7 +13395,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 13394,2003,1,,2025-06-09 17:51:00,Takeaway,Completed,5280.0,0.0,264.0,0,5544.0,Digital Wallet
 13395,4139,10,,2026-04-02 20:39:00,Third-Party Delivery,Cancelled,3850.0,0.0,192.5,250,0.0,Card
 13396,7489,20,,2026-08-30 21:07:00,Third-Party Delivery,Completed,3960.0,0.0,198.0,100,4258.0,Card
-13397,44368,10,,2026-08-30 21:07:00,Takeaway,Completed,7160.0,0.0,358.0,0,7518.0,Digital Wallet
+13397,,10,,2026-08-30 21:07:00,Takeaway,Completed,7160.0,0.0,358.0,0,7518.0,Digital Wallet
 13398,32652,20,,2025-11-02 15:56:00,Third-Party Delivery,Completed,11110.0,0.0,555.5,200,11865.5,Digital Wallet
 13399,37291,9,,2025-08-09 19:49:00,Takeaway,Completed,5660.0,0.0,283.0,0,5943.0,Digital Wallet
 13400,25556,8,,2025-11-05 18:53:00,Website/App,Completed,11220.0,0.0,561.0,100,11881.0,Digital Wallet
@@ -13433,7 +13433,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 13432,7186,17,,2025-11-04 18:14:00,Third-Party Delivery,Completed,10820.0,0.0,541.0,200,11561.0,Cash
 13433,30652,7,22,2026-05-23 11:16:00,Takeaway,Completed,6670.0,175.0,324.75,0,6819.75,Card
 13434,4644,20,,2025-05-09 15:22:00,Dine-in,Completed,10690.0,0.0,534.5,0,11224.5,Cash
-13435,42013,7,,2026-07-24 20:01:00,Dine-in,Completed,11960.0,0.0,598.0,0,12558.0,Card
+13435,,7,,2026-07-24 20:01:00,Dine-in,Completed,11960.0,0.0,598.0,0,12558.0,Card
 13436,16079,7,32,2026-04-17 18:51:00,Takeaway,Completed,9720.0,150.0,478.5,0,10048.5,Cash
 13437,40631,3,,2025-12-21 21:32:00,Third-Party Delivery,Completed,9400.0,0.0,470.0,200,10070.0,Cash
 13438,41116,13,,2025-11-07 18:52:00,Third-Party Delivery,Completed,6510.0,0.0,325.5,200,7035.5,Digital Wallet
@@ -14591,7 +14591,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 14590,26682,10,,2026-01-30 21:28:00,Third-Party Delivery,Completed,10910.0,0.0,545.5,250,11705.5,Digital Wallet
 14591,20188,1,,2026-08-04 12:26:00,Third-Party Delivery,Completed,7600.0,0.0,380.0,100,8080.0,Digital Wallet
 14592,35889,2,,2026-07-02 12:23:00,Takeaway,Completed,12870.0,0.0,643.5,0,13513.5,Cash
-14593,17505,12,,2026-07-03 22:51:00,Dine-in,Completed,5200.0,0.0,260.0,0,5460.0,Cash
+14593,,12,,2026-07-03 22:51:00,Dine-in,Completed,5200.0,0.0,260.0,0,5460.0,Cash
 14594,6325,12,,2026-07-31 21:43:00,Third-Party Delivery,Completed,10490.0,0.0,524.5,250,11264.5,Card
 14595,24424,4,,2026-04-04 18:40:00,Dine-in,Completed,7950.0,0.0,397.5,0,8347.5,Cash
 14596,36437,12,,2026-03-14 22:15:00,Third-Party Delivery,Completed,12010.0,0.0,600.5,250,12860.5,Card
@@ -16372,7 +16372,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 16371,1228,12,,2026-03-17 12:13:00,Dine-in,Completed,6620.0,0.0,331.0,0,6951.0,Cash
 16372,24119,8,,2026-03-28 18:31:00,Takeaway,Completed,6300.0,0.0,315.0,0,6615.0,Card
 16373,32127,12,,2026-05-22 18:58:00,Website/App,Completed,8640.0,0.0,432.0,150,9222.0,Card
-16374,32526,6,,2026-08-01 20:06:00,Takeaway,Completed,4390.0,0.0,219.5,0,4609.5,Card
+16374,32526,9999,,2026-08-01 20:06:00,Takeaway,Completed,4390.0,0.0,219.5,0,4609.5,Card
 16375,30996,19,,2025-04-22 21:59:00,Dine-in,Completed,8000.0,0.0,400.0,0,8400.0,Cash
 16376,37057,6,,2025-07-29 15:21:00,Dine-in,Completed,11280.0,0.0,564.0,0,11844.0,Cash
 16377,14812,12,,2026-03-16 20:40:00,Third-Party Delivery,Completed,11130.0,0.0,556.5,200,11886.5,Card
@@ -18288,7 +18288,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 18287,22009,12,,2026-02-26 21:09:00,Third-Party Delivery,Completed,7160.0,0.0,358.0,100,7618.0,Card
 18288,48861,8,,2026-08-18 13:48:00,Dine-in,Completed,7150.0,0.0,357.5,0,7507.5,Card
 18289,14933,7,,2026-07-29 18:55:00,Website/App,Completed,7060.0,0.0,353.0,100,7513.0,Cash
-18290,21926,5,,2026-06-11 19:39:00,Dine-in,Completed,9460.0,0.0,473.0,0,9933.0,Cash
+18290,,5,,2026-06-11 19:39:00,Dine-in,Completed,9460.0,0.0,473.0,0,9933.0,Cash
 18291,21603,12,,2025-07-15 22:41:00,Dine-in,Completed,11440.0,0.0,572.0,0,12012.0,Card
 18292,6066,1,,2026-01-18 22:10:00,Dine-in,Completed,7070.0,0.0,353.5,0,7423.5,Card
 18293,47175,18,,2026-05-30 14:53:00,Takeaway,Completed,7180.0,0.0,359.0,0,7539.0,Digital Wallet
@@ -18746,7 +18746,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 18745,27059,18,,2025-09-27 21:48:00,Dine-in,Completed,7490.0,0.0,374.5,0,7864.5,Digital Wallet
 18746,12213,7,,2026-08-21 21:48:00,Dine-in,Completed,10310.0,0.0,515.5,0,10825.5,Cash
 18747,8404,17,,2025-10-29 13:36:00,Third-Party Delivery,Completed,6710.0,0.0,335.5,100,7145.5,Card
-18748,24169,12,,2026-05-10 14:50:00,Dine-in,Completed,8250.0,0.0,412.5,0,8662.5,Cash
+18748,24169,12,,2035-01-01 12:00:00,Dine-in,Completed,8250.0,0.0,412.5,0,8662.5,Cash
 18749,4142,3,,2025-11-20 14:14:00,Third-Party Delivery,Completed,9850.0,0.0,492.5,150,10492.5,Cash
 18750,15535,14,,2026-02-28 14:03:00,Dine-in,Completed,9640.0,0.0,482.0,0,10122.0,Cash
 18751,10283,1,,2026-06-24 20:54:00,Takeaway,Cancelled,13370.0,0.0,668.5,0,0.0,Card
@@ -20378,7 +20378,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 20377,46028,13,97,2026-05-16 20:35:00,Third-Party Delivery,Completed,14740.0,127.0,730.65,100,15443.65,Cash
 20378,21896,12,,2025-07-14 13:09:00,Takeaway,Completed,6480.0,0.0,324.0,0,6804.0,Cash
 20379,29963,18,82,2026-08-19 18:30:00,Takeaway,Completed,10120.0,196.0,496.2,0,10420.2,Card
-20380,14547,14,,2025-03-13 19:39:00,Dine-in,Completed,7720.0,0.0,386.0,0,8106.0,Cash
+20380,,14,,2025-03-13 19:39:00,Dine-in,Completed,7720.0,0.0,386.0,0,8106.0,Cash
 20381,8614,12,,2025-08-01 18:40:00,Dine-in,Completed,8150.0,0.0,407.5,0,8557.5,Digital Wallet
 20382,28764,12,,2025-05-17 19:46:00,Dine-in,Completed,9910.0,0.0,495.5,0,10405.5,Cash
 20383,12796,16,,2026-08-27 19:47:00,Website/App,Completed,7640.0,0.0,382.0,0,8022.0,Card
@@ -20925,7 +20925,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 20924,14448,6,,2025-07-24 19:28:00,Dine-in,Completed,8110.0,0.0,405.5,0,8515.5,Digital Wallet
 20925,6913,8,,2026-04-14 20:06:00,Dine-in,Completed,6740.0,0.0,337.0,0,7077.0,Digital Wallet
 20926,31973,11,,2025-12-02 20:00:00,Takeaway,Cancelled,12060.0,0.0,603.0,0,0.0,Card
-20927,7336,12,,2026-07-01 21:05:00,Website/App,Completed,7560.0,0.0,378.0,0,7938.0,Digital Wallet
+20927,,12,,2026-07-01 21:05:00,Website/App,Completed,7560.0,0.0,378.0,0,7938.0,Digital Wallet
 20928,48000,12,,2026-06-07 13:04:00,Dine-in,Completed,10930.0,0.0,546.5,0,11476.5,Card
 20929,15742,19,,2025-12-23 13:38:00,Dine-in,Completed,4400.0,0.0,220.0,0,4620.0,Card
 20930,25505,5,,2025-07-30 18:39:00,Dine-in,Completed,7950.0,0.0,397.5,0,8347.5,Digital Wallet
@@ -21339,7 +21339,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 21338,20507,12,,2026-03-17 12:32:00,Third-Party Delivery,Completed,11640.0,0.0,582.0,250,12472.0,Card
 21339,42794,20,45,2025-08-26 12:25:00,Third-Party Delivery,Cancelled,7450.0,33.0,370.85,150,0.0,Digital Wallet
 21340,39294,1,,2026-03-29 18:22:00,Dine-in,Completed,4550.0,0.0,227.5,0,4777.5,Card
-21341,13038,12,,2026-07-30 13:28:00,Takeaway,Completed,6560.0,0.0,328.0,0,6888.0,Card
+21341,13038,12,,2026-07-30 13:28:00,Takeaway,Completed,6560.0,7060.0,328.0,0,6888.0,Card
 21342,18704,4,,2025-08-07 18:32:00,Takeaway,Completed,8610.0,0.0,430.5,0,9040.5,Cash
 21343,28097,12,,2026-07-04 23:27:00,Dine-in,Completed,9810.0,0.0,490.5,0,10300.5,Cash
 21344,14247,12,,2026-05-20 22:50:00,Takeaway,Completed,4890.0,0.0,244.5,0,5134.5,Card
@@ -21437,7 +21437,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 21436,16433,12,,2025-05-21 13:54:00,Third-Party Delivery,Completed,10090.0,0.0,504.5,100,10694.5,Card
 21437,28470,10,,2026-06-16 12:57:00,Takeaway,Completed,12120.0,0.0,606.0,0,12726.0,Digital Wallet
 21438,25908,20,,2026-01-31 12:49:00,Takeaway,Completed,9610.0,0.0,480.5,0,10090.5,Card
-21439,40079,10,,2026-06-08 12:19:00,Third-Party Delivery,Completed,7530.0,0.0,376.5,250,8156.5,Card
+21439,40079,10,,2026-06-08 12:19:00,Third-Party Delivery,Completed,7530.0,8030.0,376.5,250,8156.5,Card
 21440,33527,12,,2026-03-12 13:13:00,Dine-in,Completed,10000.0,0.0,500.0,0,10500.0,Card
 21441,47773,10,,2025-04-27 15:06:00,Takeaway,Completed,11280.0,0.0,564.0,0,11844.0,Digital Wallet
 21442,7235,17,,2026-03-18 22:10:00,Dine-in,Completed,8180.0,0.0,409.0,0,8589.0,Digital Wallet
@@ -22451,7 +22451,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 22450,31093,10,,2026-04-30 12:23:00,Takeaway,Completed,5480.0,0.0,274.0,0,5754.0,Digital Wallet
 22451,34425,8,,2026-04-19 13:44:00,Takeaway,Completed,8290.0,0.0,414.5,0,8704.5,Digital Wallet
 22452,42176,13,,2026-08-15 10:00:00,Third-Party Delivery,Completed,6660.0,0.0,333.0,250,7243.0,Digital Wallet
-22453,39637,17,,2026-07-20 13:41:00,Website/App,Completed,6660.0,0.0,333.0,100,7093.0,Cash
+22453,39637,17,,2026-07-20 13:41:00,Website/App,Completed,6660.0,7160.0,333.0,100,7093.0,Cash
 22454,12008,17,,2026-01-30 17:13:00,Website/App,Completed,7970.0,0.0,398.5,0,8368.5,Digital Wallet
 22455,40585,18,,2026-05-10 10:24:00,Website/App,Completed,8520.0,0.0,426.0,150,9096.0,Digital Wallet
 22456,139,8,,2026-06-27 20:45:00,Takeaway,Completed,7990.0,0.0,399.5,0,8389.5,Card
@@ -25217,7 +25217,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 25216,36745,17,,2025-04-10 12:59:00,Dine-in,Completed,5530.0,0.0,276.5,0,5806.5,Card
 25217,28882,8,,2025-10-21 12:26:00,Takeaway,Completed,7550.0,0.0,377.5,0,7927.5,Cash
 25218,5680,19,,2026-06-22 12:29:00,Dine-in,Completed,5930.0,0.0,296.5,0,6226.5,Digital Wallet
-25219,28937,8,,2026-06-05 22:09:00,Website/App,Completed,11980.0,0.0,599.0,0,12579.0,Cash
+25219,28937,9999,,2026-06-05 22:09:00,Website/App,Completed,11980.0,0.0,599.0,0,12579.0,Cash
 25220,8305,19,,2026-02-16 11:29:00,Takeaway,Completed,7690.0,0.0,384.5,0,8074.5,Card
 25221,21711,6,,2026-08-30 13:50:00,Dine-in,Completed,5900.0,0.0,295.0,0,6195.0,Card
 25222,18579,4,,2026-02-27 14:26:00,Website/App,Completed,10890.0,0.0,544.5,100,11534.5,Cash
@@ -26061,7 +26061,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 26060,30595,1,,2025-03-31 12:22:00,Website/App,Completed,9940.0,0.0,497.0,0,10437.0,Card
 26061,9942,7,,2026-06-12 20:47:00,Dine-in,Cancelled,14070.0,0.0,703.5,0,0.0,Card
 26062,16980,1,,2025-03-29 20:31:00,Takeaway,Completed,6340.0,0.0,317.0,0,6657.0,Cash
-26063,21164,19,,2025-10-03 14:32:00,Takeaway,Completed,5730.0,0.0,286.5,0,6016.5,Digital Wallet
+26063,,19,,2025-10-03 14:32:00,Takeaway,Completed,5730.0,0.0,286.5,0,6016.5,Digital Wallet
 26064,36032,1,,2026-06-23 18:04:00,Third-Party Delivery,Completed,9970.0,0.0,498.5,250,10718.5,Cash
 26065,36208,8,,2026-04-24 17:45:00,Dine-in,Completed,12510.0,0.0,625.5,0,13135.5,Cash
 26066,9407,10,,2025-08-06 22:38:00,Takeaway,Completed,10710.0,0.0,535.5,0,11245.5,Card
@@ -27482,7 +27482,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 27481,27587,1,,2025-03-20 21:49:00,Website/App,Completed,8340.0,0.0,417.0,150,8907.0,Digital Wallet
 27482,11116,1,,2026-03-12 13:00:00,Third-Party Delivery,Completed,7720.0,0.0,386.0,250,8356.0,Cash
 27483,49417,20,,2025-12-21 14:23:00,Website/App,Completed,7920.0,0.0,396.0,150,8466.0,Card
-27484,30438,12,,2026-06-05 14:41:00,Third-Party Delivery,Completed,9740.0,0.0,487.0,100,10327.0,Cash
+27484,30438,12,,2026-06-05 14:41:00,Third-Party Delivery,Completed,9740.0,10240.0,487.0,100,10327.0,Cash
 27485,5602,12,,2026-04-04 16:08:00,Takeaway,Completed,5510.0,0.0,275.5,0,5785.5,Cash
 27486,26144,14,,2026-06-01 15:47:00,Dine-in,Completed,7410.0,0.0,370.5,0,7780.5,Cash
 27487,26592,12,,2025-05-22 14:14:00,Dine-in,Completed,6760.0,0.0,338.0,0,7098.0,Digital Wallet
@@ -27681,7 +27681,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 27680,7566,3,,2025-03-31 12:16:00,Third-Party Delivery,Completed,7270.0,0.0,363.5,100,7733.5,Cash
 27681,46882,4,,2025-07-05 12:34:00,Third-Party Delivery,Completed,9920.0,0.0,496.0,250,10666.0,Digital Wallet
 27682,49046,19,,2026-01-26 13:37:00,Third-Party Delivery,Completed,8750.0,0.0,437.5,200,9387.5,Cash
-27683,7056,19,,2026-01-27 14:41:00,Third-Party Delivery,Completed,7250.0,0.0,362.5,250,7862.5,Digital Wallet
+27683,7056,19,,2035-01-01 12:00:00,Third-Party Delivery,Completed,7250.0,0.0,362.5,250,7862.5,Digital Wallet
 27684,49200,10,,2025-09-25 23:55:00,Dine-in,Completed,10630.0,0.0,531.5,0,11161.5,Card
 27685,6934,3,,2025-10-31 11:22:00,Takeaway,Completed,9720.0,0.0,486.0,0,10206.0,Cash
 27686,39316,12,,2026-08-18 12:17:00,Takeaway,Completed,5010.0,0.0,250.5,0,5260.5,Cash
@@ -27897,7 +27897,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 27896,2527,19,,2026-06-06 22:02:00,Takeaway,Completed,7340.0,0.0,367.0,0,7707.0,Card
 27897,9377,16,,2025-11-20 11:04:00,Dine-in,Completed,7730.0,0.0,386.5,0,8116.5,Digital Wallet
 27898,29940,13,,2025-10-13 11:04:00,Dine-in,Completed,9550.0,0.0,477.5,0,10027.5,Cash
-27899,14777,12,,2026-03-15 15:08:00,Dine-in,Completed,7830.0,0.0,391.5,0,8221.5,Cash
+27899,14777,12,,2035-01-01 12:00:00,Dine-in,Completed,7830.0,0.0,391.5,0,8221.5,Cash
 27900,25365,16,,2026-07-01 12:02:00,Website/App,Completed,5020.0,0.0,251.0,150,5421.0,Digital Wallet
 27901,40011,1,,2025-09-11 21:49:00,Website/App,Completed,4910.0,0.0,245.5,100,5255.5,Cash
 27902,27560,3,,2026-05-02 21:20:00,Dine-in,Completed,10080.0,0.0,504.0,0,10584.0,Digital Wallet
@@ -28220,7 +28220,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 28219,8832,10,,2025-06-09 14:20:00,Dine-in,Completed,9810.0,0.0,490.5,0,10300.5,Card
 28220,8702,14,,2026-03-02 12:52:00,Dine-in,Completed,10060.0,0.0,503.0,0,10563.0,Cash
 28221,8495,19,,2026-07-11 14:25:00,Third-Party Delivery,Completed,10040.0,0.0,502.0,100,10642.0,Cash
-28222,2450,12,,2025-08-26 20:20:00,Website/App,Completed,6860.0,0.0,343.0,150,7353.0,Digital Wallet
+28222,,12,,2025-08-26 20:20:00,Website/App,Completed,6860.0,0.0,343.0,150,7353.0,Digital Wallet
 28223,20326,18,,2025-10-28 21:17:00,Dine-in,Cancelled,7970.0,0.0,398.5,0,0.0,Digital Wallet
 28224,30558,1,,2025-06-19 13:52:00,Third-Party Delivery,Completed,9480.0,0.0,474.0,150,10104.0,Cash
 28225,41106,10,,2026-06-24 13:53:00,Dine-in,Completed,9960.0,0.0,498.0,0,10458.0,Digital Wallet
@@ -28656,7 +28656,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 28655,589,5,,2026-05-08 14:05:00,Third-Party Delivery,Completed,14390.0,0.0,719.5,250,15359.5,Card
 28656,46350,12,,2026-08-05 12:33:00,Dine-in,Completed,5390.0,0.0,269.5,0,5659.5,Card
 28657,33973,8,,2025-11-15 14:20:00,Dine-in,Completed,4170.0,0.0,208.5,0,4378.5,Cash
-28658,36005,4,,2026-08-10 11:04:00,Third-Party Delivery,Completed,8580.0,0.0,429.0,200,9209.0,Cash
+28658,,4,,2026-08-10 11:04:00,Third-Party Delivery,Completed,8580.0,0.0,429.0,200,9209.0,Cash
 28659,39946,2,,2026-04-24 16:56:00,Dine-in,Completed,6500.0,0.0,325.0,0,6825.0,Digital Wallet
 28660,10540,18,82,2026-08-25 23:15:00,Takeaway,Completed,9040.0,588.0,422.6,0,8874.6,Cash
 28661,36254,12,,2026-06-28 12:36:00,Third-Party Delivery,Completed,5870.0,0.0,293.5,150,6313.5,Cash
@@ -28809,7 +28809,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 28808,31159,12,,2026-07-15 15:38:00,Third-Party Delivery,Completed,9780.0,0.0,489.0,250,10519.0,Cash
 28809,9131,2,,2026-02-16 20:19:00,Dine-in,Completed,5400.0,0.0,270.0,0,5670.0,Cash
 28810,30650,13,,2025-09-25 22:56:00,Website/App,Cancelled,9720.0,0.0,486.0,150,0.0,Cash
-28811,44409,8,,2026-04-04 17:47:00,Takeaway,Completed,9370.0,0.0,468.5,0,9838.5,Digital Wallet
+28811,44409,8,,2026-04-04 17:47:00,Takeaway,Completed,9370.0,9870.0,468.5,0,9838.5,Digital Wallet
 28812,24072,13,,2025-10-14 14:46:00,Third-Party Delivery,Completed,8960.0,0.0,448.0,150,9558.0,Digital Wallet
 28813,20297,7,,2026-07-15 14:53:00,Third-Party Delivery,Completed,10000.0,0.0,500.0,200,10700.0,Card
 28814,4215,18,,2026-02-14 21:20:00,Website/App,Completed,9520.0,0.0,476.0,0,9996.0,Digital Wallet
@@ -28892,7 +28892,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 28891,11612,2,,2025-03-31 17:48:00,Takeaway,Completed,6520.0,0.0,326.0,0,6846.0,Digital Wallet
 28892,4290,9,,2025-10-29 22:34:00,Website/App,Completed,7220.0,0.0,361.0,100,7681.0,Cash
 28893,20821,1,,2026-08-04 12:41:00,Dine-in,Completed,9970.0,0.0,498.5,0,10468.5,Cash
-28894,46052,1,,2026-02-26 12:38:00,Dine-in,Completed,10390.0,0.0,519.5,0,10909.5,Digital Wallet
+28894,,1,,2026-02-26 12:38:00,Dine-in,Completed,10390.0,0.0,519.5,0,10909.5,Digital Wallet
 28895,1915,1,,2025-12-15 15:03:00,Takeaway,Completed,6020.0,0.0,301.0,0,6321.0,Digital Wallet
 28896,36177,12,,2026-08-08 13:45:00,Third-Party Delivery,Completed,6190.0,0.0,309.5,100,6599.5,Cash
 28897,18726,19,,2026-07-22 19:10:00,Takeaway,Completed,16130.0,0.0,806.5,0,16936.5,Card
@@ -29255,7 +29255,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 29254,19026,13,,2025-09-14 22:21:00,Website/App,Completed,7910.0,0.0,395.5,150,8455.5,Cash
 29255,45021,19,,2025-10-22 13:28:00,Third-Party Delivery,Completed,7160.0,0.0,358.0,200,7718.0,Card
 29256,30416,1,,2026-04-05 22:24:00,Dine-in,Completed,5910.0,0.0,295.5,0,6205.5,Digital Wallet
-29257,27823,12,,2025-11-29 17:58:00,Dine-in,Completed,12360.0,0.0,618.0,0,12978.0,Cash
+29257,,12,,2025-11-29 17:58:00,Dine-in,Completed,12360.0,0.0,618.0,0,12978.0,Cash
 29258,36692,12,,2026-06-24 14:01:00,Dine-in,Completed,6900.0,0.0,345.0,0,7245.0,Card
 29259,18763,18,,2025-06-13 13:03:00,Website/App,Cancelled,8380.0,0.0,419.0,0,0.0,Digital Wallet
 29260,7148,8,,2026-02-25 10:35:00,Dine-in,Completed,9470.0,0.0,473.5,0,9943.5,Card
@@ -29890,7 +29890,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 29889,26243,1,,2025-04-24 22:40:00,Third-Party Delivery,Cancelled,6340.0,0.0,317.0,100,0.0,Digital Wallet
 29890,46964,17,,2025-08-20 18:27:00,Dine-in,Completed,7560.0,0.0,378.0,0,7938.0,Cash
 29891,31794,15,,2026-04-07 11:23:00,Dine-in,Completed,10890.0,0.0,544.5,0,11434.5,Card
-29892,11326,17,,2025-09-24 22:44:00,Website/App,Completed,5880.0,0.0,294.0,100,6274.0,Digital Wallet
+29892,11326,9999,,2025-09-24 22:44:00,Website/App,Completed,5880.0,0.0,294.0,100,6274.0,Digital Wallet
 29893,29999,12,,2025-05-12 20:19:00,Website/App,Completed,5260.0,0.0,263.0,0,5523.0,Card
 29894,15134,18,,2025-05-20 21:49:00,Website/App,Completed,6290.0,0.0,314.5,0,6604.5,Cash
 29895,8348,9,,2026-06-27 12:01:00,Takeaway,Completed,6780.0,0.0,339.0,0,7119.0,Cash
@@ -30055,7 +30055,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 30054,18091,11,,2026-06-27 21:55:00,Dine-in,Completed,8270.0,0.0,413.5,0,8683.5,Card
 30055,10506,3,,2025-09-20 22:49:00,Website/App,Completed,6360.0,0.0,318.0,0,6678.0,Digital Wallet
 30056,30401,17,16,2026-01-27 15:44:00,Third-Party Delivery,Completed,11080.0,31.5,552.43,200,11800.93,Digital Wallet
-30057,13930,18,,2026-05-01 11:44:00,Takeaway,Cancelled,8730.0,0.0,436.5,0,0.0,Digital Wallet
+30057,13930,18,,2035-01-01 12:00:00,Takeaway,Cancelled,8730.0,0.0,436.5,0,0.0,Digital Wallet
 30058,38904,6,,2026-06-01 12:11:00,Website/App,Completed,4960.0,0.0,248.0,150,5358.0,Digital Wallet
 30059,30490,18,,2025-04-27 10:43:00,Takeaway,Completed,15390.0,0.0,769.5,0,16159.5,Card
 30060,6878,1,,2025-12-07 14:33:00,Takeaway,Completed,7990.0,0.0,399.5,0,8389.5,Cash
@@ -30494,7 +30494,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 30493,17846,13,,2025-06-12 14:28:00,Third-Party Delivery,Completed,5160.0,0.0,258.0,150,5568.0,Digital Wallet
 30494,8637,12,,2025-08-16 22:33:00,Website/App,Completed,7490.0,0.0,374.5,100,7964.5,Card
 30495,2850,1,,2025-06-22 21:12:00,Takeaway,Completed,6270.0,0.0,313.5,0,6583.5,Digital Wallet
-30496,38265,16,,2026-05-17 19:48:00,Website/App,Completed,10460.0,0.0,523.0,150,11133.0,Digital Wallet
+30496,,16,,2026-05-17 19:48:00,Website/App,Completed,10460.0,0.0,523.0,150,11133.0,Digital Wallet
 30497,7662,12,,2026-07-24 21:52:00,Dine-in,Completed,10730.0,0.0,536.5,0,11266.5,Card
 30498,3266,7,,2026-07-26 16:00:00,Dine-in,Completed,5290.0,0.0,264.5,0,5554.5,Card
 30499,34163,19,,2026-01-13 21:21:00,Dine-in,Completed,6460.0,0.0,323.0,0,6783.0,Card
@@ -30532,7 +30532,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 30531,24591,19,,2026-05-31 19:21:00,Third-Party Delivery,Completed,11110.0,0.0,555.5,100,11765.5,Cash
 30532,19076,20,1,2025-08-07 12:59:00,Dine-in,Completed,7210.0,108.0,355.1,0,7457.1,Digital Wallet
 30533,45682,1,,2025-05-11 18:04:00,Dine-in,Completed,9690.0,0.0,484.5,0,10174.5,Card
-30534,16131,2,,2025-09-22 14:35:00,Website/App,Completed,4690.0,0.0,234.5,150,5074.5,Cash
+30534,16131,9999,,2025-09-22 14:35:00,Website/App,Completed,4690.0,0.0,234.5,150,5074.5,Cash
 30535,5093,16,,2025-05-11 12:21:00,Dine-in,Completed,11810.0,0.0,590.5,0,12400.5,Cash
 30536,38240,18,28,2026-02-04 20:59:00,Dine-in,Completed,4220.0,100.0,206.0,0,4326.0,Cash
 30537,2159,10,,2026-08-11 18:57:00,Third-Party Delivery,Completed,8300.0,0.0,415.0,150,8865.0,Cash
@@ -32097,7 +32097,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 32096,40490,12,80,2026-04-21 10:34:00,Dine-in,Completed,9270.0,89.0,459.05,0,9640.05,Card
 32097,3605,6,62,2026-02-08 19:03:00,Dine-in,Completed,6300.0,92.0,310.4,0,6518.4,Cash
 32098,47247,3,,2025-04-12 22:26:00,Dine-in,Completed,9580.0,0.0,479.0,0,10059.0,Cash
-32099,45654,7,32,2026-04-20 18:43:00,Dine-in,Completed,10290.0,150.0,507.0,0,10647.0,Card
+32099,,7,32,2026-04-20 18:43:00,Dine-in,Completed,10290.0,150.0,507.0,0,10647.0,Card
 32100,39241,11,,2025-03-24 22:41:00,Takeaway,Completed,15260.0,0.0,763.0,0,16023.0,Cash
 32101,16706,19,,2026-03-07 12:55:00,Dine-in,Completed,6560.0,0.0,328.0,0,6888.0,Cash
 32102,18840,13,,2025-12-05 13:23:00,Dine-in,Completed,13050.0,0.0,652.5,0,13702.5,Card
@@ -32117,7 +32117,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 32116,12638,2,,2025-07-08 12:20:00,Dine-in,Completed,9260.0,0.0,463.0,0,9723.0,Cash
 32117,28544,5,,2025-12-29 13:08:00,Dine-in,Completed,8740.0,0.0,437.0,0,9177.0,Card
 32118,22665,20,,2025-09-29 18:30:00,Dine-in,Completed,10160.0,0.0,508.0,0,10668.0,Card
-32119,4592,12,,2025-09-30 14:49:00,Website/App,Completed,8590.0,0.0,429.5,0,9019.5,Cash
+32119,4592,12,,2025-09-30 14:49:00,Website/App,Completed,8590.0,9090.0,429.5,0,9019.5,Cash
 32120,47812,18,,2025-08-20 22:56:00,Takeaway,Completed,12150.0,0.0,607.5,0,12757.5,Cash
 32121,44880,13,,2025-08-26 18:24:00,Website/App,Completed,7920.0,0.0,396.0,100,8416.0,Cash
 32122,12094,12,,2025-06-09 18:23:00,Takeaway,Completed,6330.0,0.0,316.5,0,6646.5,Cash
@@ -34692,7 +34692,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 34691,44448,7,,2026-07-17 14:37:00,Third-Party Delivery,Completed,8420.0,0.0,421.0,200,9041.0,Cash
 34692,30518,7,10,2026-06-04 20:55:00,Takeaway,Completed,4440.0,396.0,202.2,0,4246.2,Digital Wallet
 34693,6085,2,,2025-07-13 11:37:00,Website/App,Completed,9850.0,0.0,492.5,0,10342.5,Digital Wallet
-34694,25638,20,,2026-04-24 20:16:00,Dine-in,Completed,6180.0,0.0,309.0,0,6489.0,Cash
+34694,25638,9999,,2026-04-24 20:16:00,Dine-in,Completed,6180.0,0.0,309.0,0,6489.0,Cash
 34695,8261,1,,2025-10-29 21:39:00,Dine-in,Completed,10650.0,0.0,532.5,0,11182.5,Cash
 34696,46814,12,,2026-05-02 18:53:00,Dine-in,Completed,6900.0,0.0,345.0,0,7245.0,Digital Wallet
 34697,26350,14,,2026-01-31 22:29:00,Dine-in,Completed,7010.0,0.0,350.5,0,7360.5,Cash
@@ -35024,7 +35024,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 35023,37517,5,,2026-06-03 19:59:00,Website/App,Completed,5830.0,0.0,291.5,150,6271.5,Cash
 35024,45909,12,,2025-06-02 19:16:00,Takeaway,Completed,7970.0,0.0,398.5,0,8368.5,Card
 35025,1051,1,,2025-06-04 17:22:00,Third-Party Delivery,Completed,11820.0,0.0,591.0,100,12511.0,Card
-35026,8939,4,,2026-03-07 22:07:00,Dine-in,Completed,5870.0,0.0,293.5,0,6163.5,Cash
+35026,8939,4,,2026-03-07 22:07:00,Dine-in,Completed,5870.0,6370.0,293.5,0,6163.5,Cash
 35027,35916,12,,2026-06-13 20:20:00,Website/App,Completed,8140.0,0.0,407.0,150,8697.0,Digital Wallet
 35028,43715,12,,2026-06-20 14:19:00,Dine-in,Completed,6570.0,0.0,328.5,0,6898.5,Digital Wallet
 35029,43149,12,,2026-05-07 12:39:00,Website/App,Cancelled,7980.0,0.0,399.0,0,0.0,Digital Wallet
@@ -35133,7 +35133,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 35132,46195,12,80,2026-04-15 19:05:00,Takeaway,Completed,7010.0,89.0,346.05,0,7267.05,Digital Wallet
 35133,6250,6,,2026-01-17 13:08:00,Dine-in,Completed,10760.0,0.0,538.0,0,11298.0,Digital Wallet
 35134,37151,1,,2026-06-21 20:07:00,Third-Party Delivery,Completed,6690.0,0.0,334.5,150,7174.5,Card
-35135,22248,12,,2026-03-22 12:40:00,Dine-in,Completed,10320.0,0.0,516.0,0,10836.0,Digital Wallet
+35135,22248,12,,2035-01-01 12:00:00,Dine-in,Completed,10320.0,0.0,516.0,0,10836.0,Digital Wallet
 35136,1076,18,,2026-05-29 18:00:00,Website/App,Completed,9490.0,0.0,474.5,0,9964.5,Cash
 35137,18269,6,,2025-03-16 11:55:00,Website/App,Completed,6850.0,0.0,342.5,0,7192.5,Digital Wallet
 35138,33407,1,,2025-10-18 16:01:00,Takeaway,Completed,12260.0,0.0,613.0,0,12873.0,Digital Wallet
@@ -35413,7 +35413,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 35412,43083,12,,2025-09-21 18:08:00,Dine-in,Completed,9420.0,0.0,471.0,0,9891.0,Cash
 35413,1071,20,42,2025-09-03 22:42:00,Takeaway,Completed,6190.0,200.0,299.5,0,6289.5,Card
 35414,8666,2,,2026-07-05 12:12:00,Takeaway,Completed,6380.0,0.0,319.0,0,6699.0,Digital Wallet
-35415,3844,8,,2025-05-14 10:01:00,Dine-in,Completed,10300.0,0.0,515.0,0,10815.0,Cash
+35415,3844,8,,2025-05-14 10:01:00,Dine-in,Completed,10300.0,10800.0,515.0,0,10815.0,Cash
 35416,37076,19,,2026-06-22 14:44:00,Third-Party Delivery,Completed,8170.0,0.0,408.5,200,8778.5,Cash
 35417,46876,1,,2025-11-02 12:36:00,Third-Party Delivery,Completed,11310.0,0.0,565.5,150,12025.5,Cash
 35418,16337,6,,2026-05-31 19:23:00,Website/App,Completed,5810.0,0.0,290.5,0,6100.5,Card
@@ -36047,7 +36047,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 36046,24998,15,,2026-05-19 20:27:00,Website/App,Completed,8300.0,0.0,415.0,150,8865.0,Card
 36047,2197,10,,2026-03-10 19:39:00,Takeaway,Completed,8440.0,0.0,422.0,0,8862.0,Card
 36048,32853,20,,2026-07-05 19:08:00,Takeaway,Completed,12390.0,0.0,619.5,0,13009.5,Digital Wallet
-36049,29904,16,,2025-07-09 12:30:00,Dine-in,Completed,6960.0,0.0,348.0,0,7308.0,Cash
+36049,,16,,2025-07-09 12:30:00,Dine-in,Completed,6960.0,0.0,348.0,0,7308.0,Cash
 36050,17973,1,,2026-01-12 20:55:00,Takeaway,Completed,11280.0,0.0,564.0,0,11844.0,Cash
 36051,21119,13,,2025-06-14 12:41:00,Dine-in,Completed,9160.0,0.0,458.0,0,9618.0,Card
 36052,2805,18,,2025-07-21 22:35:00,Dine-in,Completed,8060.0,0.0,403.0,0,8463.0,Digital Wallet
@@ -36420,7 +36420,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 36419,28208,11,,2025-11-23 13:00:00,Takeaway,Completed,9990.0,0.0,499.5,0,10489.5,Cash
 36420,7043,1,,2026-08-06 19:10:00,Takeaway,Completed,8720.0,0.0,436.0,0,9156.0,Cash
 36421,32842,10,,2026-01-02 18:25:00,Dine-in,Completed,10880.0,0.0,544.0,0,11424.0,Digital Wallet
-36422,16244,6,,2025-09-16 15:44:00,Website/App,Completed,7390.0,0.0,369.5,0,7759.5,Cash
+36422,,6,,2025-09-16 15:44:00,Website/App,Completed,7390.0,0.0,369.5,0,7759.5,Cash
 36423,3366,18,,2025-12-08 18:11:00,Website/App,Completed,9670.0,0.0,483.5,100,10253.5,Digital Wallet
 36424,1416,12,,2025-11-11 12:47:00,Website/App,Completed,12210.0,0.0,610.5,0,12820.5,Digital Wallet
 36425,5194,19,,2026-06-07 20:50:00,Dine-in,Completed,8590.0,0.0,429.5,0,9019.5,Digital Wallet
@@ -36462,13 +36462,13 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 36461,42860,17,,2026-07-20 21:18:00,Third-Party Delivery,Completed,9830.0,0.0,491.5,100,10421.5,Cash
 36462,36868,18,30,2026-03-03 14:33:00,Dine-in,Completed,6670.0,145.5,326.23,0,6850.73,Digital Wallet
 36463,49175,12,,2025-06-28 17:30:00,Website/App,Cancelled,7870.0,0.0,393.5,100,0.0,Cash
-36464,31103,10,37,2025-10-09 16:08:00,Dine-in,Completed,17660.0,100.0,878.0,0,18438.0,Card
+36464,,10,37,2025-10-09 16:08:00,Dine-in,Completed,17660.0,100.0,878.0,0,18438.0,Card
 36465,39427,9,,2025-03-23 23:24:00,Third-Party Delivery,Completed,6060.0,0.0,303.0,150,6513.0,Card
 36466,48714,7,,2026-08-17 14:28:00,Dine-in,Completed,11540.0,0.0,577.0,0,12117.0,Card
 36467,31730,3,,2026-01-07 13:58:00,Takeaway,Completed,8320.0,0.0,416.0,0,8736.0,Digital Wallet
 36468,2548,9,,2026-05-11 20:26:00,Dine-in,Completed,8390.0,0.0,419.5,0,8809.5,Cash
 36469,2152,12,,2025-11-14 19:10:00,Third-Party Delivery,Completed,5460.0,0.0,273.0,250,5983.0,Cash
-36470,45216,12,,2026-08-19 11:36:00,Dine-in,Completed,10360.0,0.0,518.0,0,10878.0,Digital Wallet
+36470,45216,12,,2026-08-19 11:36:00,Dine-in,Completed,10360.0,10860.0,518.0,0,10878.0,Digital Wallet
 36471,21543,12,,2026-07-27 17:53:00,Takeaway,Completed,13140.0,0.0,657.0,0,13797.0,Card
 36472,2964,14,,2026-05-14 12:41:00,Dine-in,Completed,6970.0,0.0,348.5,0,7318.5,Card
 36473,5431,16,,2026-04-02 12:50:00,Dine-in,Completed,11190.0,0.0,559.5,0,11749.5,Digital Wallet
@@ -37954,7 +37954,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 37953,33835,18,,2025-11-28 12:14:00,Third-Party Delivery,Completed,6600.0,0.0,330.0,250,7180.0,Digital Wallet
 37954,49330,8,,2025-12-14 21:37:00,Takeaway,Completed,5890.0,0.0,294.5,0,6184.5,Digital Wallet
 37955,23339,3,,2026-08-15 20:34:00,Third-Party Delivery,Completed,7040.0,0.0,352.0,100,7492.0,Card
-37956,3821,16,,2025-10-16 23:10:00,Third-Party Delivery,Completed,10530.0,0.0,526.5,100,11156.5,Card
+37956,3821,9999,,2025-10-16 23:10:00,Third-Party Delivery,Completed,10530.0,0.0,526.5,100,11156.5,Card
 37957,41379,12,,2026-08-27 17:44:00,Website/App,Completed,6560.0,0.0,328.0,100,6988.0,Cash
 37958,23011,8,,2026-07-09 15:44:00,Website/App,Completed,9200.0,0.0,460.0,150,9810.0,Card
 37959,33203,10,,2026-05-25 12:23:00,Third-Party Delivery,Completed,8200.0,0.0,410.0,100,8710.0,Cash
@@ -38451,7 +38451,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 38450,6520,18,,2025-11-14 19:46:00,Website/App,Completed,8590.0,0.0,429.5,150,9169.5,Card
 38451,35982,18,30,2026-03-05 13:35:00,Third-Party Delivery,Completed,6050.0,145.5,295.23,150,6349.73,Card
 38452,28663,5,,2025-07-18 13:01:00,Takeaway,Completed,7910.0,0.0,395.5,0,8305.5,Digital Wallet
-38453,7669,9,,2025-05-28 12:23:00,Takeaway,Completed,8680.0,0.0,434.0,0,9114.0,Card
+38453,7669,9999,,2025-05-28 12:23:00,Takeaway,Completed,8680.0,0.0,434.0,0,9114.0,Card
 38454,28253,19,,2026-03-05 12:09:00,Dine-in,Completed,6910.0,0.0,345.5,0,7255.5,Card
 38455,39334,20,,2025-12-02 16:33:00,Website/App,Completed,8720.0,0.0,436.0,0,9156.0,Card
 38456,3556,8,,2026-02-23 21:30:00,Dine-in,Cancelled,11370.0,0.0,568.5,0,0.0,Card
@@ -41292,7 +41292,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 41291,17368,18,,2025-11-21 21:21:00,Website/App,Completed,9770.0,0.0,488.5,0,10258.5,Cash
 41292,6032,12,,2026-07-09 22:44:00,Dine-in,Completed,7520.0,0.0,376.0,0,7896.0,Cash
 41293,5144,18,,2025-09-09 10:58:00,Takeaway,Completed,10280.0,0.0,514.0,0,10794.0,Digital Wallet
-41294,36928,10,,2026-04-29 15:45:00,Takeaway,Completed,8840.0,0.0,442.0,0,9282.0,Digital Wallet
+41294,36928,10,,2035-01-01 12:00:00,Takeaway,Completed,8840.0,0.0,442.0,0,9282.0,Digital Wallet
 41295,7025,7,46,2026-08-30 20:10:00,Dine-in,Completed,6900.0,162.5,336.88,0,7074.38,Digital Wallet
 41296,1969,18,82,2026-08-29 12:53:00,Dine-in,Completed,9580.0,392.0,459.4,0,9647.4,Digital Wallet
 41297,47135,8,,2025-07-29 12:12:00,Website/App,Completed,6800.0,0.0,340.0,0,7140.0,Digital Wallet
@@ -41394,7 +41394,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 41393,33589,2,,2026-01-17 14:24:00,Website/App,Completed,8860.0,0.0,443.0,150,9453.0,Digital Wallet
 41394,47921,8,,2026-08-08 21:37:00,Third-Party Delivery,Completed,5850.0,0.0,292.5,250,6392.5,Cash
 41395,27790,18,39,2025-08-02 20:12:00,Dine-in,Completed,10270.0,116.0,507.7,0,10661.7,Digital Wallet
-41396,12493,16,,2026-06-19 21:34:00,Dine-in,Completed,13270.0,0.0,663.5,0,13933.5,Cash
+41396,12493,16,,2035-01-01 12:00:00,Dine-in,Completed,13270.0,0.0,663.5,0,13933.5,Cash
 41397,21917,13,,2025-09-30 18:31:00,Dine-in,Completed,8250.0,0.0,412.5,0,8662.5,Digital Wallet
 41398,20194,18,,2025-08-13 13:23:00,Website/App,Completed,13440.0,0.0,672.0,0,14112.0,Cash
 41399,45785,10,,2025-07-22 10:26:00,Website/App,Completed,8170.0,0.0,408.5,100,8678.5,Cash
@@ -42551,7 +42551,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 42550,11063,4,,2026-01-24 23:55:00,Dine-in,Completed,14220.0,0.0,711.0,0,14931.0,Digital Wallet
 42551,39965,1,,2025-09-16 13:12:00,Dine-in,Completed,10480.0,0.0,524.0,0,11004.0,Digital Wallet
 42552,12659,2,,2025-06-12 20:25:00,Dine-in,Completed,10500.0,0.0,525.0,0,11025.0,Digital Wallet
-42553,20803,11,,2026-05-24 20:27:00,Dine-in,Completed,9790.0,0.0,489.5,0,10279.5,Digital Wallet
+42553,20803,11,,2035-01-01 12:00:00,Dine-in,Completed,9790.0,0.0,489.5,0,10279.5,Digital Wallet
 42554,38987,7,,2026-07-30 19:24:00,Website/App,Completed,6640.0,0.0,332.0,150,7122.0,Cash
 42555,22604,12,,2026-05-27 20:28:00,Third-Party Delivery,Completed,8060.0,0.0,403.0,250,8713.0,Card
 42556,16285,9,,2026-07-30 11:45:00,Takeaway,Completed,7560.0,0.0,378.0,0,7938.0,Card
@@ -44117,7 +44117,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 44116,7154,1,,2026-03-26 19:04:00,Dine-in,Completed,5420.0,0.0,271.0,0,5691.0,Cash
 44117,37287,1,,2026-05-13 23:12:00,Takeaway,Completed,6780.0,0.0,339.0,0,7119.0,Card
 44118,42352,13,,2026-07-27 20:28:00,Takeaway,Completed,8940.0,0.0,447.0,0,9387.0,Card
-44119,7687,11,,2025-07-11 15:23:00,Dine-in,Completed,13010.0,0.0,650.5,0,13660.5,Card
+44119,,11,,2025-07-11 15:23:00,Dine-in,Completed,13010.0,0.0,650.5,0,13660.5,Card
 44120,30338,16,,2026-08-26 18:32:00,Dine-in,Completed,5150.0,0.0,257.5,0,5407.5,Card
 44121,16781,10,47,2025-10-29 18:43:00,Third-Party Delivery,Completed,6600.0,182.5,320.88,150,6888.38,Digital Wallet
 44122,26843,2,,2026-08-14 21:47:00,Takeaway,Completed,8930.0,0.0,446.5,0,9376.5,Cash
@@ -44596,7 +44596,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 44595,9193,1,,2025-07-27 14:28:00,Takeaway,Completed,7860.0,0.0,393.0,0,8253.0,Digital Wallet
 44596,36435,20,,2026-08-14 20:28:00,Takeaway,Cancelled,8700.0,0.0,435.0,0,0.0,Digital Wallet
 44597,8825,10,,2026-04-20 21:40:00,Third-Party Delivery,Completed,7280.0,0.0,364.0,150,7794.0,Card
-44598,7609,19,,2025-05-22 21:15:00,Third-Party Delivery,Completed,5330.0,0.0,266.5,100,5696.5,Cash
+44598,,19,,2025-05-22 21:15:00,Third-Party Delivery,Completed,5330.0,0.0,266.5,100,5696.5,Cash
 44599,9009,6,,2026-01-28 18:52:00,Takeaway,Completed,9950.0,0.0,497.5,0,10447.5,Card
 44600,11126,5,53,2026-02-17 19:07:00,Website/App,Completed,16890.0,400.0,824.5,100,17414.5,Card
 44601,24063,4,,2025-12-07 13:32:00,Takeaway,Completed,8270.0,0.0,413.5,0,8683.5,Card
@@ -45108,7 +45108,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 45107,15974,15,,2026-03-22 20:47:00,Third-Party Delivery,Completed,13300.0,0.0,665.0,150,14115.0,Digital Wallet
 45108,37151,8,,2026-03-31 18:17:00,Dine-in,Completed,6160.0,0.0,308.0,0,6468.0,Digital Wallet
 45109,45789,18,,2026-01-04 10:33:00,Takeaway,Completed,10520.0,0.0,526.0,0,11046.0,Cash
-45110,47752,12,,2026-05-13 19:18:00,Website/App,Completed,7610.0,0.0,380.5,100,8090.5,Cash
+45110,47752,9999,,2026-05-13 19:18:00,Website/App,Completed,7610.0,0.0,380.5,100,8090.5,Cash
 45111,19046,13,,2025-06-06 20:32:00,Third-Party Delivery,Completed,6390.0,0.0,319.5,200,6909.5,Cash
 45112,11921,5,,2025-09-19 19:03:00,Takeaway,Completed,8550.0,0.0,427.5,0,8977.5,Digital Wallet
 45113,36856,17,29,2026-06-30 22:20:00,Dine-in,Completed,8450.0,250.0,410.0,0,8610.0,Card
@@ -46605,7 +46605,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 46604,9239,18,,2025-12-23 20:42:00,Dine-in,Completed,7320.0,0.0,366.0,0,7686.0,Card
 46605,41897,12,,2025-06-23 10:07:00,Dine-in,Completed,6770.0,0.0,338.5,0,7108.5,Card
 46606,27396,2,,2026-07-24 12:02:00,Dine-in,Completed,4540.0,0.0,227.0,0,4767.0,Card
-46607,25561,5,,2026-01-10 12:08:00,Dine-in,Completed,12580.0,0.0,629.0,0,13209.0,Card
+46607,25561,5,,2026-01-10 12:08:00,Dine-in,Completed,12580.0,13080.0,629.0,0,13209.0,Card
 46608,17837,15,,2025-04-04 14:59:00,Dine-in,Completed,9410.0,0.0,470.5,0,9880.5,Card
 46609,33032,19,,2025-12-25 12:35:00,Dine-in,Completed,8390.0,0.0,419.5,0,8809.5,Cash
 46610,11206,13,55,2026-05-04 12:40:00,Dine-in,Completed,7900.0,222.0,383.9,0,8061.9,Cash
@@ -47051,7 +47051,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 47050,10249,12,,2026-01-17 12:41:00,Website/App,Completed,9820.0,0.0,491.0,150,10461.0,Cash
 47051,42631,15,,2026-07-05 13:58:00,Dine-in,Completed,5330.0,0.0,266.5,0,5596.5,Cash
 47052,24430,20,,2026-04-24 17:56:00,Third-Party Delivery,Completed,6120.0,0.0,306.0,250,6676.0,Cash
-47053,14974,12,,2026-03-08 13:18:00,Dine-in,Completed,7650.0,0.0,382.5,0,8032.5,Card
+47053,,12,,2026-03-08 13:18:00,Dine-in,Completed,7650.0,0.0,382.5,0,8032.5,Card
 47054,5019,4,,2026-08-20 13:12:00,Dine-in,Completed,9570.0,0.0,478.5,0,10048.5,Card
 47055,4277,20,,2026-08-30 18:41:00,Dine-in,Completed,9130.0,0.0,456.5,0,9586.5,Cash
 47056,43184,20,,2025-12-05 19:05:00,Dine-in,Completed,8960.0,0.0,448.0,0,9408.0,Cash
@@ -47427,7 +47427,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 47426,18226,15,,2026-06-14 12:21:00,Third-Party Delivery,Completed,7720.0,0.0,386.0,100,8206.0,Cash
 47427,40247,20,,2026-07-25 20:37:00,Takeaway,Cancelled,14140.0,0.0,707.0,0,0.0,Card
 47428,31645,16,,2025-03-03 10:53:00,Takeaway,Completed,7940.0,0.0,397.0,0,8337.0,Card
-47429,29215,6,,2026-03-13 21:18:00,Takeaway,Completed,12670.0,0.0,633.5,0,13303.5,Card
+47429,29215,9999,,2026-03-13 21:18:00,Takeaway,Completed,12670.0,0.0,633.5,0,13303.5,Card
 47430,22833,12,,2026-07-18 22:33:00,Third-Party Delivery,Completed,6700.0,0.0,335.0,250,7285.0,Digital Wallet
 47431,26810,11,,2025-05-07 12:23:00,Website/App,Completed,7470.0,0.0,373.5,100,7943.5,Digital Wallet
 47432,20745,12,,2025-05-25 14:44:00,Dine-in,Completed,6660.0,0.0,333.0,0,6993.0,Card
@@ -47860,7 +47860,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 47859,42909,10,,2026-07-04 12:02:00,Dine-in,Completed,7220.0,0.0,361.0,0,7581.0,Digital Wallet
 47860,29473,6,,2026-08-26 13:59:00,Website/App,Completed,10520.0,0.0,526.0,150,11196.0,Card
 47861,15635,20,90,2026-01-02 20:42:00,Third-Party Delivery,Completed,7860.0,310.0,377.5,100,8027.5,Card
-47862,26552,20,,2025-09-19 13:16:00,Dine-in,Completed,10460.0,0.0,523.0,0,10983.0,Cash
+47862,26552,20,,2025-09-19 13:16:00,Dine-in,Completed,10460.0,10960.0,523.0,0,10983.0,Cash
 47863,23917,12,,2025-05-24 20:19:00,Dine-in,Completed,8200.0,0.0,410.0,0,8610.0,Card
 47864,11849,11,,2026-03-11 18:20:00,Third-Party Delivery,Completed,7930.0,0.0,396.5,100,8426.5,Digital Wallet
 47865,32413,6,,2026-06-11 14:20:00,Website/App,Completed,8880.0,0.0,444.0,150,9474.0,Card
@@ -48561,7 +48561,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 48560,1849,18,,2026-02-27 21:24:00,Takeaway,Completed,8050.0,0.0,402.5,0,8452.5,Cash
 48561,45395,11,,2025-11-08 14:04:00,Dine-in,Completed,9220.0,0.0,461.0,0,9681.0,Cash
 48562,35784,10,,2025-08-05 22:45:00,Takeaway,Completed,9780.0,0.0,489.0,0,10269.0,Digital Wallet
-48563,15009,2,,2025-05-11 12:05:00,Dine-in,Completed,6890.0,0.0,344.5,0,7234.5,Digital Wallet
+48563,15009,2,,2025-05-11 12:05:00,Dine-in,Completed,6890.0,7390.0,344.5,0,7234.5,Digital Wallet
 48564,24283,5,,2026-06-26 17:32:00,Dine-in,Completed,8320.0,0.0,416.0,0,8736.0,Card
 48565,39400,17,,2025-04-05 22:21:00,Takeaway,Completed,5840.0,0.0,292.0,0,6132.0,Cash
 48566,34572,12,,2025-12-12 18:51:00,Dine-in,Completed,6090.0,0.0,304.5,0,6394.5,Card
@@ -49642,7 +49642,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 49641,16058,12,,2026-06-04 22:36:00,Takeaway,Completed,10250.0,0.0,512.5,0,10762.5,Card
 49642,614,19,,2026-03-03 21:19:00,Dine-in,Completed,8430.0,0.0,421.5,0,8851.5,Cash
 49643,35466,10,47,2025-10-27 13:52:00,Takeaway,Completed,6240.0,182.5,302.88,0,6360.38,Card
-49644,36573,13,,2025-05-13 22:27:00,Third-Party Delivery,Completed,11190.0,0.0,559.5,250,11999.5,Digital Wallet
+49644,36573,9999,,2025-05-13 22:27:00,Third-Party Delivery,Completed,11190.0,0.0,559.5,250,11999.5,Digital Wallet
 49645,39772,19,,2026-02-28 16:41:00,Website/App,Completed,7570.0,0.0,378.5,0,7948.5,Digital Wallet
 49646,7700,12,,2026-05-22 22:41:00,Dine-in,Cancelled,9460.0,0.0,473.0,0,0.0,Cash
 49647,19344,3,,2025-03-01 12:02:00,Takeaway,Completed,7980.0,0.0,399.0,0,8379.0,Card
@@ -49777,7 +49777,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 49776,9535,13,,2025-10-22 14:36:00,Takeaway,Completed,11840.0,0.0,592.0,0,12432.0,Card
 49777,17599,7,74,2026-08-16 14:55:00,Dine-in,Completed,6930.0,273.0,332.85,0,6989.85,Digital Wallet
 49778,13802,12,,2025-05-21 19:34:00,Takeaway,Completed,15060.0,0.0,753.0,0,15813.0,Cash
-49779,16897,20,,2026-05-18 22:08:00,Website/App,Completed,4840.0,0.0,242.0,0,5082.0,Cash
+49779,16897,20,,2026-05-18 22:08:00,Website/App,Completed,4840.0,5340.0,242.0,0,5082.0,Cash
 49780,5997,11,,2026-08-12 19:08:00,Takeaway,Completed,6670.0,0.0,333.5,0,7003.5,Card
 49781,49565,7,10,2026-06-07 20:45:00,Dine-in,Completed,8090.0,198.0,394.6,0,8286.6,Card
 49782,10707,10,,2025-03-10 14:58:00,Dine-in,Completed,5980.0,0.0,299.0,0,6279.0,Card
@@ -49796,7 +49796,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 49795,38963,14,,2026-05-11 12:32:00,Website/App,Completed,5730.0,0.0,286.5,100,6116.5,Cash
 49796,37779,11,,2026-08-30 18:11:00,Dine-in,Completed,5160.0,0.0,258.0,0,5418.0,Digital Wallet
 49797,2319,4,,2026-03-18 18:35:00,Dine-in,Completed,8600.0,0.0,430.0,0,9030.0,Card
-49798,48962,9,,2026-03-18 19:39:00,Takeaway,Completed,12090.0,0.0,604.5,0,12694.5,Digital Wallet
+49798,,9,,2026-03-18 19:39:00,Takeaway,Completed,12090.0,0.0,604.5,0,12694.5,Digital Wallet
 49799,48178,1,,2025-04-12 14:35:00,Takeaway,Completed,11220.0,0.0,561.0,0,11781.0,Digital Wallet
 49800,14802,12,,2026-05-02 22:46:00,Takeaway,Completed,10000.0,0.0,500.0,0,10500.0,Cash
 49801,1935,20,90,2026-01-10 19:44:00,Dine-in,Completed,7530.0,310.0,361.0,0,7581.0,Card
@@ -49866,7 +49866,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 49865,9681,11,,2026-06-21 21:36:00,Takeaway,Completed,5960.0,0.0,298.0,0,6258.0,Digital Wallet
 49866,4431,14,,2025-09-04 13:18:00,Dine-in,Completed,5400.0,0.0,270.0,0,5670.0,Card
 49867,329,3,,2026-04-22 12:22:00,Website/App,Completed,7710.0,0.0,385.5,150,8245.5,Cash
-49868,303,16,,2026-05-11 13:50:00,Third-Party Delivery,Completed,9610.0,0.0,480.5,200,10290.5,Card
+49868,303,16,,2026-05-11 13:50:00,Third-Party Delivery,Completed,9610.0,10110.0,480.5,200,10290.5,Card
 49869,42524,15,,2025-06-30 20:54:00,Takeaway,Completed,7160.0,0.0,358.0,0,7518.0,Cash
 49870,12531,13,,2026-02-22 12:37:00,Takeaway,Completed,11980.0,0.0,599.0,0,12579.0,Card
 49871,1754,4,,2026-08-09 21:49:00,Third-Party Delivery,Completed,13350.0,0.0,667.5,200,14217.5,Cash
@@ -51915,7 +51915,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 51914,8060,13,,2026-08-08 22:05:00,Dine-in,Cancelled,11170.0,0.0,558.5,0,0.0,Card
 51915,37117,4,,2026-06-09 18:33:00,Dine-in,Completed,6260.0,0.0,313.0,0,6573.0,Digital Wallet
 51916,3010,8,,2026-08-25 23:30:00,Dine-in,Completed,7400.0,0.0,370.0,0,7770.0,Cash
-51917,32238,4,,2025-04-17 14:45:00,Takeaway,Completed,10530.0,0.0,526.5,0,11056.5,Cash
+51917,32238,4,,2035-01-01 12:00:00,Takeaway,Completed,10530.0,0.0,526.5,0,11056.5,Cash
 51918,39682,12,,2026-05-30 20:50:00,Website/App,Completed,13990.0,0.0,699.5,100,14789.5,Cash
 51919,3608,20,,2025-07-16 22:52:00,Third-Party Delivery,Completed,9890.0,0.0,494.5,250,10634.5,Digital Wallet
 51920,40494,19,,2026-07-13 18:44:00,Third-Party Delivery,Completed,7700.0,0.0,385.0,150,8235.0,Cash
@@ -52640,7 +52640,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 52639,12443,12,,2026-02-03 14:50:00,Third-Party Delivery,Completed,6330.0,0.0,316.5,250,6896.5,Digital Wallet
 52640,42329,12,,2025-06-13 22:31:00,Dine-in,Completed,10720.0,0.0,536.0,0,11256.0,Card
 52641,28331,16,,2026-08-15 19:43:00,Website/App,Completed,8770.0,0.0,438.5,150,9358.5,Digital Wallet
-52642,48754,13,76,2026-01-20 14:19:00,Dine-in,Cancelled,6660.0,250.0,320.5,0,0.0,Card
+52642,48754,13,76,2035-01-01 12:00:00,Dine-in,Cancelled,6660.0,250.0,320.5,0,0.0,Card
 52643,49491,11,,2025-04-23 16:05:00,Dine-in,Completed,5380.0,0.0,269.0,0,5649.0,Cash
 52644,26818,14,,2026-05-26 22:44:00,Takeaway,Completed,8720.0,0.0,436.0,0,9156.0,Digital Wallet
 52645,15329,19,,2025-05-26 19:04:00,Dine-in,Completed,8510.0,0.0,425.5,0,8935.5,Cash
@@ -54986,7 +54986,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 54985,40976,16,,2025-10-14 13:22:00,Third-Party Delivery,Completed,5300.0,0.0,265.0,250,5815.0,Card
 54986,7632,12,,2026-05-22 20:43:00,Third-Party Delivery,Completed,13710.0,0.0,685.5,150,14545.5,Cash
 54987,25266,3,,2025-11-21 22:33:00,Third-Party Delivery,Completed,5420.0,0.0,271.0,150,5841.0,Cash
-54988,33522,2,,2026-06-23 18:39:00,Dine-in,Completed,7150.0,0.0,357.5,0,7507.5,Cash
+54988,,2,,2026-06-23 18:39:00,Dine-in,Completed,7150.0,0.0,357.5,0,7507.5,Cash
 54989,43242,8,,2025-04-06 20:43:00,Dine-in,Completed,13940.0,0.0,697.0,0,14637.0,Card
 54990,43296,12,,2026-01-07 12:17:00,Takeaway,Completed,8280.0,0.0,414.0,0,8694.0,Card
 54991,9392,6,,2025-08-09 12:09:00,Third-Party Delivery,Completed,6580.0,0.0,329.0,200,7109.0,Card
@@ -55301,7 +55301,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 55300,14224,12,,2025-09-27 13:01:00,Website/App,Completed,6150.0,0.0,307.5,0,6457.5,Cash
 55301,3020,8,,2026-07-29 22:24:00,Website/App,Completed,5760.0,0.0,288.0,100,6148.0,Cash
 55302,5726,6,54,2025-10-31 21:17:00,Dine-in,Completed,7000.0,100.0,345.0,0,7245.0,Digital Wallet
-55303,49953,9,,2025-03-26 12:35:00,Third-Party Delivery,Completed,8390.0,0.0,419.5,200,9009.5,Digital Wallet
+55303,,9,,2025-03-26 12:35:00,Third-Party Delivery,Completed,8390.0,0.0,419.5,200,9009.5,Digital Wallet
 55304,34689,10,,2026-07-23 11:09:00,Dine-in,Completed,8650.0,0.0,432.5,0,9082.5,Cash
 55305,16068,6,38,2026-05-18 15:24:00,Dine-in,Completed,8790.0,472.0,415.9,0,8733.9,Digital Wallet
 55306,12267,20,,2026-07-17 14:23:00,Dine-in,Completed,10290.0,0.0,514.5,0,10804.5,Digital Wallet
@@ -55391,7 +55391,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 55390,25875,13,,2025-08-13 12:27:00,Dine-in,Completed,9760.0,0.0,488.0,0,10248.0,Digital Wallet
 55391,44134,14,,2026-06-23 22:56:00,Dine-in,Completed,10730.0,0.0,536.5,0,11266.5,Card
 55392,36595,12,,2025-10-20 20:13:00,Dine-in,Completed,6860.0,0.0,343.0,0,7203.0,Card
-55393,28836,14,11,2026-08-18 22:28:00,Dine-in,Completed,11800.0,465.0,566.75,0,11901.75,Card
+55393,,14,11,2026-08-18 22:28:00,Dine-in,Completed,11800.0,465.0,566.75,0,11901.75,Card
 55394,48768,12,,2026-05-29 22:42:00,Third-Party Delivery,Completed,9880.0,0.0,494.0,200,10574.0,Cash
 55395,33696,7,22,2026-05-23 17:13:00,Third-Party Delivery,Completed,10200.0,87.5,505.62,150,10768.12,Card
 55396,21817,12,,2026-07-15 20:16:00,Website/App,Completed,6310.0,0.0,315.5,150,6775.5,Card
@@ -58877,7 +58877,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 58876,22778,10,,2026-03-15 15:31:00,Dine-in,Completed,6280.0,0.0,314.0,0,6594.0,Digital Wallet
 58877,40366,4,,2025-06-05 18:48:00,Dine-in,Completed,5380.0,0.0,269.0,0,5649.0,Card
 58878,29617,16,,2026-08-11 20:53:00,Dine-in,Completed,5450.0,0.0,272.5,0,5722.5,Digital Wallet
-58879,29394,19,,2025-10-23 14:58:00,Third-Party Delivery,Completed,5570.0,0.0,278.5,200,6048.5,Cash
+58879,,19,,2025-10-23 14:58:00,Third-Party Delivery,Completed,5570.0,0.0,278.5,200,6048.5,Cash
 58880,20690,19,,2025-07-12 12:51:00,Website/App,Completed,7750.0,0.0,387.5,150,8287.5,Digital Wallet
 58881,31527,8,,2025-06-08 13:48:00,Website/App,Completed,13680.0,0.0,684.0,0,14364.0,Cash
 58882,15882,12,,2026-07-07 12:44:00,Third-Party Delivery,Cancelled,13490.0,0.0,674.5,150,0.0,Cash
@@ -59476,7 +59476,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 59475,20408,1,,2026-03-22 19:24:00,Third-Party Delivery,Completed,8360.0,0.0,418.0,150,8928.0,Card
 59476,47374,8,,2025-03-24 17:17:00,Dine-in,Completed,8920.0,0.0,446.0,0,9366.0,Cash
 59477,20666,12,80,2026-04-21 22:18:00,Takeaway,Completed,8920.0,178.0,437.1,0,9179.1,Digital Wallet
-59478,28933,17,,2026-07-21 19:09:00,Dine-in,Cancelled,8530.0,0.0,426.5,0,0.0,Card
+59478,28933,17,,2026-07-21 19:09:00,Dine-in,Cancelled,8530.0,9030.0,426.5,0,0.0,Card
 59479,19659,9,,2026-01-14 16:31:00,Dine-in,Completed,10180.0,0.0,509.0,0,10689.0,Digital Wallet
 59480,41827,10,,2026-05-17 12:13:00,Dine-in,Completed,5550.0,0.0,277.5,0,5827.5,Cash
 59481,25856,12,,2026-08-07 13:46:00,Website/App,Completed,11050.0,0.0,552.5,0,11602.5,Card
@@ -60206,7 +60206,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 60205,24723,12,,2026-03-10 17:43:00,Dine-in,Completed,8800.0,0.0,440.0,0,9240.0,Cash
 60206,5182,2,,2026-02-07 19:53:00,Website/App,Completed,7690.0,0.0,384.5,150,8224.5,Digital Wallet
 60207,22136,11,,2025-07-26 13:50:00,Takeaway,Completed,8830.0,0.0,441.5,0,9271.5,Cash
-60208,32648,18,,2025-10-26 16:05:00,Dine-in,Completed,7590.0,0.0,379.5,0,7969.5,Card
+60208,32648,18,,2035-01-01 12:00:00,Dine-in,Completed,7590.0,0.0,379.5,0,7969.5,Card
 60209,12166,19,,2026-06-05 12:13:00,Dine-in,Completed,9120.0,0.0,456.0,0,9576.0,Digital Wallet
 60210,17203,18,,2025-04-10 14:00:00,Third-Party Delivery,Completed,7480.0,0.0,374.0,150,8004.0,Cash
 60211,28708,12,,2025-06-15 14:44:00,Dine-in,Completed,4750.0,0.0,237.5,0,4987.5,Digital Wallet
@@ -60249,7 +60249,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 60248,47849,12,,2026-06-23 21:17:00,Dine-in,Completed,10700.0,0.0,535.0,0,11235.0,Cash
 60249,31585,8,,2026-08-24 21:29:00,Third-Party Delivery,Completed,7870.0,0.0,393.5,250,8513.5,Digital Wallet
 60250,14434,1,,2026-03-12 18:50:00,Dine-in,Completed,10070.0,0.0,503.5,0,10573.5,Card
-60251,38010,7,,2026-06-28 13:13:00,Takeaway,Completed,7580.0,0.0,379.0,0,7959.0,Digital Wallet
+60251,38010,9999,,2026-06-28 13:13:00,Takeaway,Completed,7580.0,0.0,379.0,0,7959.0,Digital Wallet
 60252,6525,6,,2025-12-15 15:51:00,Dine-in,Completed,8090.0,0.0,404.5,0,8494.5,Digital Wallet
 60253,39610,8,,2026-07-05 22:57:00,Third-Party Delivery,Completed,5510.0,0.0,275.5,200,5985.5,Digital Wallet
 60254,11283,10,,2025-09-06 23:48:00,Website/App,Completed,7290.0,0.0,364.5,150,7804.5,Card
@@ -60637,7 +60637,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 60636,20620,12,,2026-02-07 20:01:00,Dine-in,Completed,10680.0,0.0,534.0,0,11214.0,Digital Wallet
 60637,17276,1,,2025-06-27 11:00:00,Third-Party Delivery,Completed,9590.0,0.0,479.5,100,10169.5,Cash
 60638,3012,20,,2026-07-17 10:54:00,Dine-in,Completed,8740.0,0.0,437.0,0,9177.0,Cash
-60639,1170,7,32,2026-04-17 21:43:00,Third-Party Delivery,Completed,5290.0,300.0,249.5,100,5339.5,Card
+60639,1170,7,32,2026-04-17 21:43:00,Third-Party Delivery,Completed,5290.0,5790.0,249.5,100,5339.5,Card
 60640,30335,7,,2026-07-31 18:40:00,Website/App,Completed,11190.0,0.0,559.5,150,11899.5,Card
 60641,4617,18,,2026-02-18 19:22:00,Takeaway,Completed,7800.0,0.0,390.0,0,8190.0,Card
 60642,21608,19,,2025-04-25 10:31:00,Website/App,Completed,4290.0,0.0,214.5,0,4504.5,Cash
@@ -65501,7 +65501,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 65500,47076,14,,2026-08-02 12:24:00,Dine-in,Completed,6530.0,0.0,326.5,0,6856.5,Cash
 65501,22034,18,,2026-06-21 18:28:00,Dine-in,Completed,8540.0,0.0,427.0,0,8967.0,Cash
 65502,35508,17,,2025-09-09 21:45:00,Takeaway,Completed,10090.0,0.0,504.5,0,10594.5,Card
-65503,31855,12,,2026-08-08 19:57:00,Dine-in,Completed,4850.0,0.0,242.5,0,5092.5,Card
+65503,31855,12,,2035-01-01 12:00:00,Dine-in,Completed,4850.0,0.0,242.5,0,5092.5,Card
 65504,36187,1,,2026-07-16 19:08:00,Website/App,Completed,5390.0,0.0,269.5,100,5759.5,Digital Wallet
 65505,14475,12,,2026-08-01 10:08:00,Dine-in,Completed,7270.0,0.0,363.5,0,7633.5,Card
 65506,37534,8,,2026-07-16 23:53:00,Takeaway,Completed,7520.0,0.0,376.0,0,7896.0,Digital Wallet
@@ -66236,7 +66236,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 66235,15035,8,,2026-01-16 18:31:00,Website/App,Completed,7940.0,0.0,397.0,100,8437.0,Card
 66236,12247,18,4,2026-07-31 19:02:00,Third-Party Delivery,Cancelled,9950.0,38.0,495.6,200,0.0,Cash
 66237,20392,20,,2025-06-25 22:41:00,Website/App,Completed,5340.0,0.0,267.0,100,5707.0,Digital Wallet
-66238,23959,13,97,2026-05-15 21:00:00,Website/App,Completed,10020.0,127.0,494.65,100,10487.65,Digital Wallet
+66238,,13,97,2026-05-15 21:00:00,Website/App,Completed,10020.0,127.0,494.65,100,10487.65,Digital Wallet
 66239,20012,10,,2025-11-14 19:49:00,Website/App,Completed,11600.0,0.0,580.0,150,12330.0,Cash
 66240,1437,11,,2026-01-13 22:30:00,Third-Party Delivery,Completed,7650.0,0.0,382.5,100,8132.5,Card
 66241,40211,19,,2025-07-03 19:16:00,Dine-in,Completed,6200.0,0.0,310.0,0,6510.0,Card
@@ -70059,7 +70059,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 70058,13340,20,,2026-06-21 18:28:00,Dine-in,Completed,5640.0,0.0,282.0,0,5922.0,Cash
 70059,11952,2,,2026-01-02 22:17:00,Third-Party Delivery,Completed,5590.0,0.0,279.5,200,6069.5,Card
 70060,3826,20,,2025-10-01 21:29:00,Third-Party Delivery,Completed,8370.0,0.0,418.5,250,9038.5,Digital Wallet
-70061,42867,2,,2025-12-23 16:10:00,Third-Party Delivery,Completed,9830.0,0.0,491.5,200,10521.5,Digital Wallet
+70061,42867,2,,2025-12-23 16:10:00,Third-Party Delivery,Completed,9830.0,10330.0,491.5,200,10521.5,Digital Wallet
 70062,2758,15,,2025-08-27 13:45:00,Dine-in,Completed,7860.0,0.0,393.0,0,8253.0,Card
 70063,33856,18,,2025-12-09 19:01:00,Dine-in,Completed,9380.0,0.0,469.0,0,9849.0,Digital Wallet
 70064,37970,9,,2025-10-15 16:01:00,Dine-in,Completed,8770.0,0.0,438.5,0,9208.5,Card
@@ -70317,7 +70317,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 70316,36596,18,,2026-04-22 13:08:00,Third-Party Delivery,Completed,8980.0,0.0,449.0,100,9529.0,Cash
 70317,18689,14,,2026-03-20 22:34:00,Dine-in,Completed,10710.0,0.0,535.5,0,11245.5,Digital Wallet
 70318,14816,14,,2026-03-08 19:16:00,Takeaway,Completed,9870.0,0.0,493.5,0,10363.5,Cash
-70319,41558,10,,2025-12-27 14:17:00,Dine-in,Completed,13360.0,0.0,668.0,0,14028.0,Cash
+70319,41558,9999,,2025-12-27 14:17:00,Dine-in,Completed,13360.0,0.0,668.0,0,14028.0,Cash
 70320,30371,16,,2026-08-18 14:25:00,Dine-in,Completed,8740.0,0.0,437.0,0,9177.0,Card
 70321,22456,3,,2026-08-18 16:13:00,Website/App,Completed,8360.0,0.0,418.0,0,8778.0,Digital Wallet
 70322,36128,12,,2025-06-22 13:40:00,Website/App,Completed,6570.0,0.0,328.5,150,7048.5,Card
@@ -71425,7 +71425,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 71424,15661,14,,2025-09-14 19:38:00,Third-Party Delivery,Completed,6380.0,0.0,319.0,150,6849.0,Cash
 71425,46667,1,,2026-05-14 18:35:00,Third-Party Delivery,Completed,9810.0,0.0,490.5,100,10400.5,Cash
 71426,7907,2,,2025-12-19 13:03:00,Takeaway,Completed,5880.0,0.0,294.0,0,6174.0,Digital Wallet
-71427,2811,9,63,2026-04-11 13:22:00,Dine-in,Completed,9640.0,190.0,472.5,0,9922.5,Card
+71427,,9,63,2026-04-11 13:22:00,Dine-in,Completed,9640.0,190.0,472.5,0,9922.5,Card
 71428,8917,18,28,2026-02-01 12:34:00,Website/App,Completed,5790.0,100.0,284.5,150,6124.5,Digital Wallet
 71429,5088,10,,2026-01-17 18:49:00,Website/App,Completed,11420.0,0.0,571.0,150,12141.0,Cash
 71430,13416,7,,2026-06-28 19:51:00,Website/App,Completed,7810.0,0.0,390.5,150,8350.5,Card
@@ -71481,7 +71481,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 71480,6295,12,,2025-06-03 20:52:00,Takeaway,Completed,6340.0,0.0,317.0,0,6657.0,Digital Wallet
 71481,21236,16,,2026-03-03 13:13:00,Dine-in,Completed,10280.0,0.0,514.0,0,10794.0,Cash
 71482,3503,18,,2026-06-19 16:22:00,Website/App,Completed,11020.0,0.0,551.0,100,11671.0,Digital Wallet
-71483,20566,15,,2025-07-31 15:13:00,Website/App,Completed,6000.0,0.0,300.0,0,6300.0,Digital Wallet
+71483,,15,,2025-07-31 15:13:00,Website/App,Completed,6000.0,0.0,300.0,0,6300.0,Digital Wallet
 71484,5523,5,,2025-09-18 20:43:00,Dine-in,Completed,7830.0,0.0,391.5,0,8221.5,Digital Wallet
 71485,46590,5,,2026-01-03 21:20:00,Takeaway,Completed,8860.0,0.0,443.0,0,9303.0,Digital Wallet
 71486,3224,15,,2026-03-20 14:50:00,Takeaway,Completed,7980.0,0.0,399.0,0,8379.0,Digital Wallet
@@ -72392,7 +72392,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 72391,11274,12,,2026-02-21 22:23:00,Dine-in,Completed,4210.0,0.0,210.5,0,4420.5,Card
 72392,7271,12,,2026-03-17 13:01:00,Takeaway,Completed,10700.0,0.0,535.0,0,11235.0,Cash
 72393,22659,19,,2025-10-17 22:14:00,Third-Party Delivery,Completed,6070.0,0.0,303.5,150,6523.5,Card
-72394,40516,10,,2025-08-03 17:27:00,Third-Party Delivery,Completed,9240.0,0.0,462.0,250,9952.0,Digital Wallet
+72394,40516,9999,,2025-08-03 17:27:00,Third-Party Delivery,Completed,9240.0,0.0,462.0,250,9952.0,Digital Wallet
 72395,18926,19,,2026-08-05 13:00:00,Dine-in,Completed,6370.0,0.0,318.5,0,6688.5,Card
 72396,22242,12,,2026-07-02 21:08:00,Dine-in,Completed,8380.0,0.0,419.0,0,8799.0,Digital Wallet
 72397,45989,17,,2026-08-30 20:52:00,Dine-in,Completed,14180.0,0.0,709.0,0,14889.0,Digital Wallet
@@ -73053,7 +73053,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 73052,38590,6,62,2026-02-09 12:59:00,Dine-in,Completed,9460.0,92.0,468.4,0,9836.4,Card
 73053,306,5,,2026-01-07 18:13:00,Website/App,Completed,8940.0,0.0,447.0,0,9387.0,Card
 73054,8421,1,12,2026-08-28 18:50:00,Takeaway,Completed,11110.0,150.0,548.0,0,11508.0,Card
-73055,1844,4,84,2025-09-13 19:53:00,Website/App,Completed,7040.0,300.0,337.0,100,7177.0,Card
+73055,1844,4,84,2025-09-13 19:53:00,Website/App,Completed,7040.0,7540.0,337.0,100,7177.0,Card
 73056,44736,8,,2026-05-16 12:33:00,Dine-in,Completed,9160.0,0.0,458.0,0,9618.0,Cash
 73057,9484,20,,2025-11-18 20:29:00,Third-Party Delivery,Completed,8740.0,0.0,437.0,150,9327.0,Cash
 73058,4048,9,,2025-10-12 18:11:00,Third-Party Delivery,Completed,10050.0,0.0,502.5,200,10752.5,Digital Wallet
@@ -73562,7 +73562,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 73561,34191,14,,2025-04-24 19:35:00,Third-Party Delivery,Completed,10840.0,0.0,542.0,200,11582.0,Cash
 73562,49308,11,,2026-08-28 13:08:00,Takeaway,Completed,6620.0,0.0,331.0,0,6951.0,Cash
 73563,33662,10,,2025-07-15 12:49:00,Dine-in,Completed,9460.0,0.0,473.0,0,9933.0,Cash
-73564,29611,11,,2026-02-11 14:59:00,Dine-in,Completed,7170.0,0.0,358.5,0,7528.5,Digital Wallet
+73564,,11,,2026-02-11 14:59:00,Dine-in,Completed,7170.0,0.0,358.5,0,7528.5,Digital Wallet
 73565,35893,7,22,2026-05-22 20:32:00,Dine-in,Completed,7370.0,87.5,364.12,0,7646.62,Digital Wallet
 73566,34657,1,,2026-01-05 14:28:00,Dine-in,Completed,5480.0,0.0,274.0,0,5754.0,Digital Wallet
 73567,25291,12,,2026-02-01 18:05:00,Takeaway,Completed,6560.0,0.0,328.0,0,6888.0,Cash
@@ -74415,7 +74415,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 74414,13176,10,,2025-04-19 14:40:00,Third-Party Delivery,Completed,11940.0,0.0,597.0,250,12787.0,Card
 74415,32280,8,,2025-08-07 14:18:00,Dine-in,Completed,8280.0,0.0,414.0,0,8694.0,Digital Wallet
 74416,37647,10,,2025-05-09 20:38:00,Third-Party Delivery,Completed,10300.0,0.0,515.0,100,10915.0,Cash
-74417,13807,8,,2026-01-22 17:55:00,Website/App,Completed,13080.0,0.0,654.0,100,13834.0,Digital Wallet
+74417,13807,8,,2035-01-01 12:00:00,Website/App,Completed,13080.0,0.0,654.0,100,13834.0,Digital Wallet
 74418,32222,14,,2025-10-22 22:38:00,Website/App,Completed,5310.0,0.0,265.5,0,5575.5,Cash
 74419,29190,15,,2025-07-22 10:40:00,Dine-in,Completed,12650.0,0.0,632.5,0,13282.5,Cash
 74420,5667,12,,2025-09-27 22:22:00,Takeaway,Completed,5850.0,0.0,292.5,0,6142.5,Card
@@ -75710,7 +75710,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 75709,48358,2,,2025-10-06 22:00:00,Dine-in,Completed,6630.0,0.0,331.5,0,6961.5,Digital Wallet
 75710,17415,18,,2026-05-16 12:24:00,Takeaway,Completed,7740.0,0.0,387.0,0,8127.0,Cash
 75711,47317,18,39,2025-08-04 19:57:00,Dine-in,Completed,9940.0,348.0,479.6,0,10071.6,Card
-75712,23710,19,,2026-03-27 16:05:00,Website/App,Completed,8780.0,0.0,439.0,0,9219.0,Cash
+75712,23710,9999,,2026-03-27 16:05:00,Website/App,Completed,8780.0,0.0,439.0,0,9219.0,Cash
 75713,42476,8,,2026-03-27 15:07:00,Dine-in,Completed,11700.0,0.0,585.0,0,12285.0,Digital Wallet
 75714,28222,1,,2025-07-11 18:04:00,Dine-in,Completed,7420.0,0.0,371.0,0,7791.0,Digital Wallet
 75715,12887,20,1,2025-07-29 13:11:00,Dine-in,Completed,8630.0,108.0,426.1,0,8948.1,Card
@@ -77235,7 +77235,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 77234,365,20,66,2026-03-22 12:54:00,Dine-in,Completed,11230.0,300.0,546.5,0,11476.5,Digital Wallet
 77235,49935,8,,2026-05-13 18:22:00,Dine-in,Completed,8920.0,0.0,446.0,0,9366.0,Digital Wallet
 77236,37731,10,,2025-05-13 11:38:00,Dine-in,Completed,5180.0,0.0,259.0,0,5439.0,Card
-77237,11838,13,,2025-12-09 11:57:00,Takeaway,Completed,9020.0,0.0,451.0,0,9471.0,Digital Wallet
+77237,,13,,2025-12-09 11:57:00,Takeaway,Completed,9020.0,0.0,451.0,0,9471.0,Digital Wallet
 77238,13059,19,,2026-05-29 12:57:00,Third-Party Delivery,Completed,8500.0,0.0,425.0,150,9075.0,Digital Wallet
 77239,39196,16,23,2026-01-18 21:07:00,Website/App,Completed,7400.0,123.0,363.85,150,7790.85,Digital Wallet
 77240,23128,8,,2025-11-04 19:57:00,Website/App,Completed,12070.0,0.0,603.5,0,12673.5,Cash
@@ -77396,7 +77396,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 77395,48075,12,,2025-11-12 19:48:00,Dine-in,Completed,6810.0,0.0,340.5,0,7150.5,Cash
 77396,45331,11,,2025-03-24 21:03:00,Dine-in,Completed,6090.0,0.0,304.5,0,6394.5,Card
 77397,3060,1,,2026-06-08 14:14:00,Takeaway,Completed,8600.0,0.0,430.0,0,9030.0,Cash
-77398,36623,19,,2025-09-01 11:19:00,Website/App,Completed,9900.0,0.0,495.0,150,10545.0,Digital Wallet
+77398,,19,,2025-09-01 11:19:00,Website/App,Completed,9900.0,0.0,495.0,150,10545.0,Digital Wallet
 77399,22176,12,,2025-03-01 11:52:00,Third-Party Delivery,Completed,10590.0,0.0,529.5,100,11219.5,Card
 77400,30389,5,,2025-05-10 12:37:00,Website/App,Completed,4730.0,0.0,236.5,150,5116.5,Card
 77401,8534,1,,2026-07-26 18:33:00,Website/App,Completed,14110.0,0.0,705.5,150,14965.5,Digital Wallet
@@ -78906,7 +78906,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 78905,46253,16,,2026-03-27 20:02:00,Website/App,Completed,13860.0,0.0,693.0,0,14553.0,Card
 78906,27247,7,,2026-05-08 22:01:00,Third-Party Delivery,Completed,11290.0,0.0,564.5,250,12104.5,Cash
 78907,31816,20,,2025-04-28 18:05:00,Takeaway,Completed,8380.0,0.0,419.0,0,8799.0,Card
-78908,20254,19,,2025-04-10 20:53:00,Third-Party Delivery,Completed,7100.0,0.0,355.0,100,7555.0,Card
+78908,,19,,2025-04-10 20:53:00,Third-Party Delivery,Completed,7100.0,0.0,355.0,100,7555.0,Card
 78909,3992,13,55,2026-05-04 12:41:00,Takeaway,Completed,10770.0,222.0,527.4,0,11075.4,Cash
 78910,33154,1,,2025-11-10 22:02:00,Dine-in,Completed,5340.0,0.0,267.0,0,5607.0,Cash
 78911,5859,18,,2025-07-25 21:10:00,Third-Party Delivery,Completed,10250.0,0.0,512.5,150,10912.5,Digital Wallet
@@ -79170,7 +79170,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 79169,23515,12,,2025-05-25 22:18:00,Third-Party Delivery,Completed,7770.0,0.0,388.5,150,8308.5,Cash
 79170,9269,2,,2025-12-20 20:56:00,Website/App,Completed,11520.0,0.0,576.0,150,12246.0,Cash
 79171,11613,10,,2026-04-16 19:39:00,Dine-in,Completed,7310.0,0.0,365.5,0,7675.5,Cash
-79172,20795,16,,2025-03-29 16:42:00,Third-Party Delivery,Completed,6290.0,0.0,314.5,200,6804.5,Cash
+79172,20795,9999,,2025-03-29 16:42:00,Third-Party Delivery,Completed,6290.0,0.0,314.5,200,6804.5,Cash
 79173,829,10,,2025-04-07 18:24:00,Website/App,Completed,9920.0,0.0,496.0,100,10516.0,Card
 79174,1809,12,,2026-03-09 20:56:00,Takeaway,Completed,3650.0,0.0,182.5,0,3832.5,Card
 79175,45401,12,,2026-06-13 18:43:00,Website/App,Completed,6050.0,0.0,302.5,0,6352.5,Card
@@ -79899,7 +79899,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 79898,4221,19,,2026-02-28 19:49:00,Website/App,Completed,14850.0,0.0,742.5,150,15742.5,Digital Wallet
 79899,39425,16,,2026-06-28 20:30:00,Dine-in,Completed,8290.0,0.0,414.5,0,8704.5,Card
 79900,46331,19,,2026-08-27 10:58:00,Dine-in,Completed,10320.0,0.0,516.0,0,10836.0,Digital Wallet
-79901,35968,12,,2026-06-22 14:49:00,Dine-in,Completed,5400.0,0.0,270.0,0,5670.0,Digital Wallet
+79901,35968,12,,2026-06-22 14:49:00,Dine-in,Completed,5400.0,5900.0,270.0,0,5670.0,Digital Wallet
 79902,8046,17,,2026-06-03 16:37:00,Third-Party Delivery,Completed,7790.0,0.0,389.5,100,8279.5,Digital Wallet
 79903,37557,10,,2026-03-06 19:22:00,Takeaway,Completed,3810.0,0.0,190.5,0,4000.5,Card
 79904,1626,6,,2026-06-23 10:35:00,Dine-in,Completed,10040.0,0.0,502.0,0,10542.0,Digital Wallet
@@ -81109,7 +81109,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 81108,14023,1,,2026-05-04 20:50:00,Takeaway,Completed,7230.0,0.0,361.5,0,7591.5,Digital Wallet
 81109,18310,18,82,2026-08-26 10:00:00,Website/App,Completed,7820.0,196.0,381.2,150,8155.2,Cash
 81110,2081,9,57,2026-06-03 18:50:00,Third-Party Delivery,Completed,10930.0,210.0,536.0,100,11356.0,Cash
-81111,47481,10,,2026-07-23 21:32:00,Website/App,Completed,6020.0,0.0,301.0,0,6321.0,Digital Wallet
+81111,47481,9999,,2026-07-23 21:32:00,Website/App,Completed,6020.0,0.0,301.0,0,6321.0,Digital Wallet
 81112,40762,16,,2026-05-08 19:18:00,Dine-in,Completed,6040.0,0.0,302.0,0,6342.0,Digital Wallet
 81113,24177,13,,2026-03-06 22:27:00,Website/App,Completed,7950.0,0.0,397.5,0,8347.5,Digital Wallet
 81114,37897,15,41,2026-02-27 19:37:00,Dine-in,Completed,8920.0,250.0,433.5,0,9103.5,Digital Wallet
@@ -82436,7 +82436,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 82435,41575,19,,2025-08-03 15:46:00,Takeaway,Completed,7450.0,0.0,372.5,0,7822.5,Digital Wallet
 82436,35405,12,,2025-07-03 12:14:00,Third-Party Delivery,Completed,9020.0,0.0,451.0,200,9671.0,Cash
 82437,38355,3,,2026-05-26 17:37:00,Website/App,Completed,6730.0,0.0,336.5,0,7066.5,Digital Wallet
-82438,10024,12,,2025-05-09 14:49:00,Takeaway,Completed,7660.0,0.0,383.0,0,8043.0,Cash
+82438,10024,9999,,2025-05-09 14:49:00,Takeaway,Completed,7660.0,0.0,383.0,0,8043.0,Cash
 82439,20106,19,,2026-07-11 12:01:00,Website/App,Completed,12270.0,0.0,613.5,0,12883.5,Digital Wallet
 82440,32016,7,10,2026-06-10 17:21:00,Third-Party Delivery,Completed,9000.0,198.0,440.1,150,9392.1,Cash
 82441,34020,6,,2025-11-17 17:28:00,Dine-in,Completed,6210.0,0.0,310.5,0,6520.5,Digital Wallet
@@ -83288,7 +83288,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 83287,29196,8,,2026-05-19 13:45:00,Dine-in,Completed,13280.0,0.0,664.0,0,13944.0,Card
 83288,1621,18,,2026-02-24 14:32:00,Third-Party Delivery,Completed,7610.0,0.0,380.5,250,8240.5,Card
 83289,14645,3,,2026-08-09 17:46:00,Dine-in,Cancelled,9710.0,0.0,485.5,0,0.0,Cash
-83290,22938,6,62,2026-02-17 22:35:00,Dine-in,Completed,9610.0,276.0,466.7,0,9800.7,Card
+83290,22938,6,62,2026-02-17 22:35:00,Dine-in,Completed,9610.0,10110.0,466.7,0,9800.7,Card
 83291,15672,1,,2026-07-31 18:34:00,Takeaway,Completed,4770.0,0.0,238.5,0,5008.5,Digital Wallet
 83292,9068,19,,2026-03-21 19:56:00,Takeaway,Completed,11700.0,0.0,585.0,0,12285.0,Digital Wallet
 83293,14856,8,,2026-04-23 18:14:00,Dine-in,Completed,10240.0,0.0,512.0,0,10752.0,Card
@@ -83381,7 +83381,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 83380,45217,12,,2025-10-24 18:18:00,Third-Party Delivery,Completed,8480.0,0.0,424.0,250,9154.0,Card
 83381,34401,10,47,2025-10-25 13:27:00,Takeaway,Completed,13220.0,547.5,633.62,0,13306.12,Digital Wallet
 83382,14910,5,,2026-02-02 18:18:00,Takeaway,Completed,8270.0,0.0,413.5,0,8683.5,Cash
-83383,14782,3,,2025-09-14 21:49:00,Dine-in,Completed,8060.0,0.0,403.0,0,8463.0,Card
+83383,14782,3,,2025-09-14 21:49:00,Dine-in,Completed,8060.0,8560.0,403.0,0,8463.0,Card
 83384,8809,7,,2026-05-01 12:41:00,Third-Party Delivery,Completed,8310.0,0.0,415.5,250,8975.5,Cash
 83385,29170,1,,2025-06-16 14:36:00,Website/App,Completed,10020.0,0.0,501.0,0,10521.0,Cash
 83386,44278,20,90,2026-01-08 21:47:00,Website/App,Completed,8360.0,310.0,402.5,150,8602.5,Cash
@@ -83809,7 +83809,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 83808,30455,2,69,2026-04-01 10:49:00,Third-Party Delivery,Completed,5850.0,60.0,289.5,200,6279.5,Card
 83809,18345,11,,2025-12-01 18:55:00,Takeaway,Completed,9030.0,0.0,451.5,0,9481.5,Cash
 83810,14538,20,,2025-11-09 21:52:00,Dine-in,Completed,11140.0,0.0,557.0,0,11697.0,Card
-83811,49290,4,,2026-05-01 10:50:00,Takeaway,Completed,10680.0,0.0,534.0,0,11214.0,Cash
+83811,,4,,2026-05-01 10:50:00,Takeaway,Completed,10680.0,0.0,534.0,0,11214.0,Cash
 83812,64,12,,2026-02-11 22:37:00,Website/App,Completed,8500.0,0.0,425.0,150,9075.0,Card
 83813,2123,13,88,2025-06-27 14:30:00,Dine-in,Completed,5380.0,250.0,256.5,0,5386.5,Digital Wallet
 83814,3103,18,,2025-03-02 10:40:00,Takeaway,Completed,6090.0,0.0,304.5,0,6394.5,Cash
@@ -83948,7 +83948,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 83947,5344,10,,2026-02-20 13:57:00,Dine-in,Completed,10850.0,0.0,542.5,0,11392.5,Card
 83948,44158,10,,2025-11-04 21:34:00,Website/App,Completed,8170.0,0.0,408.5,100,8678.5,Cash
 83949,39626,12,,2025-12-31 18:01:00,Dine-in,Completed,4480.0,0.0,224.0,0,4704.0,Digital Wallet
-83950,48218,3,,2026-01-08 21:18:00,Dine-in,Completed,5940.0,0.0,297.0,0,6237.0,Card
+83950,48218,3,,2026-01-08 21:18:00,Dine-in,Completed,5940.0,6440.0,297.0,0,6237.0,Card
 83951,10250,18,,2026-06-23 12:36:00,Dine-in,Completed,9400.0,0.0,470.0,0,9870.0,Card
 83952,1456,7,,2026-07-04 20:21:00,Takeaway,Completed,10660.0,0.0,533.0,0,11193.0,Cash
 83953,42121,19,,2026-08-02 18:04:00,Third-Party Delivery,Completed,7220.0,0.0,361.0,150,7731.0,Card
@@ -84345,7 +84345,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 84344,43222,20,,2026-03-06 22:55:00,Dine-in,Completed,8560.0,0.0,428.0,0,8988.0,Cash
 84345,40174,16,,2026-08-16 16:05:00,Third-Party Delivery,Completed,8620.0,0.0,431.0,100,9151.0,Card
 84346,38748,12,,2026-08-26 21:18:00,Website/App,Completed,7920.0,0.0,396.0,0,8316.0,Card
-84347,10252,16,,2025-07-02 12:37:00,Takeaway,Completed,6530.0,0.0,326.5,0,6856.5,Cash
+84347,10252,16,,2035-01-01 12:00:00,Takeaway,Completed,6530.0,0.0,326.5,0,6856.5,Cash
 84348,15546,18,,2026-03-14 19:19:00,Third-Party Delivery,Completed,10140.0,0.0,507.0,250,10897.0,Digital Wallet
 84349,5469,17,,2025-05-21 18:29:00,Dine-in,Completed,9130.0,0.0,456.5,0,9586.5,Digital Wallet
 84350,30959,16,,2026-02-06 19:00:00,Website/App,Completed,8470.0,0.0,423.5,100,8993.5,Digital Wallet
@@ -85001,7 +85001,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 85000,49876,7,46,2026-08-23 18:06:00,Dine-in,Completed,7470.0,162.5,365.38,0,7672.88,Digital Wallet
 85001,26588,5,,2026-07-01 22:45:00,Dine-in,Completed,5990.0,0.0,299.5,0,6289.5,Digital Wallet
 85002,39750,13,,2026-04-13 16:56:00,Dine-in,Completed,6940.0,0.0,347.0,0,7287.0,Digital Wallet
-85003,32542,16,71,2025-06-04 19:12:00,Dine-in,Completed,10850.0,26.5,541.18,0,11364.68,Cash
+85003,32542,16,71,2025-06-04 19:12:00,Dine-in,Completed,10850.0,11350.0,541.18,0,11364.68,Cash
 85004,15290,13,,2026-06-29 22:11:00,Takeaway,Completed,11880.0,0.0,594.0,0,12474.0,Cash
 85005,24341,1,,2025-11-05 17:17:00,Takeaway,Completed,8360.0,0.0,418.0,0,8778.0,Card
 85006,28335,12,,2026-07-09 14:16:00,Dine-in,Completed,7930.0,0.0,396.5,0,8326.5,Card
@@ -85180,7 +85180,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 85179,26066,6,,2025-10-27 15:53:00,Dine-in,Completed,7220.0,0.0,361.0,0,7581.0,Digital Wallet
 85180,44380,16,,2025-11-27 13:12:00,Website/App,Completed,9380.0,0.0,469.0,100,9949.0,Digital Wallet
 85181,30,7,,2026-06-23 12:39:00,Third-Party Delivery,Completed,6250.0,0.0,312.5,250,6812.5,Cash
-85182,20801,14,11,2026-08-19 22:13:00,Website/App,Completed,7980.0,465.0,375.75,100,7990.75,Digital Wallet
+85182,,14,11,2026-08-19 22:13:00,Website/App,Completed,7980.0,465.0,375.75,100,7990.75,Digital Wallet
 85183,22916,19,,2026-06-19 16:26:00,Dine-in,Completed,9260.0,0.0,463.0,0,9723.0,Cash
 85184,26694,8,,2025-05-11 22:33:00,Third-Party Delivery,Completed,6900.0,0.0,345.0,200,7445.0,Card
 85185,1507,17,85,2025-09-01 18:06:00,Website/App,Completed,7290.0,500.0,339.5,0,7129.5,Cash
@@ -85997,7 +85997,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 85996,15041,12,,2025-11-01 20:52:00,Dine-in,Completed,15120.0,0.0,756.0,0,15876.0,Cash
 85997,30190,1,,2026-07-16 19:23:00,Third-Party Delivery,Completed,14310.0,0.0,715.5,100,15125.5,Digital Wallet
 85998,1655,18,,2026-02-23 13:43:00,Dine-in,Completed,7890.0,0.0,394.5,0,8284.5,Cash
-85999,12310,6,,2026-06-11 13:57:00,Takeaway,Completed,7450.0,0.0,372.5,0,7822.5,Cash
+85999,12310,6,,2035-01-01 12:00:00,Takeaway,Completed,7450.0,0.0,372.5,0,7822.5,Cash
 86000,33414,17,,2026-08-20 21:06:00,Dine-in,Completed,8540.0,0.0,427.0,0,8967.0,Digital Wallet
 86001,30728,14,,2025-09-25 22:12:00,Third-Party Delivery,Completed,5400.0,0.0,270.0,100,5770.0,Cash
 86002,9613,12,,2026-02-25 20:06:00,Website/App,Completed,3440.0,0.0,172.0,0,3612.0,Card
@@ -86714,7 +86714,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 86713,17153,12,,2026-02-18 22:37:00,Dine-in,Completed,9140.0,0.0,457.0,0,9597.0,Card
 86714,14441,11,,2026-08-04 19:51:00,Website/App,Completed,10010.0,0.0,500.5,100,10610.5,Card
 86715,44459,19,,2026-08-29 22:17:00,Takeaway,Completed,9100.0,0.0,455.0,0,9555.0,Card
-86716,47911,9,,2026-08-19 23:29:00,Third-Party Delivery,Completed,8610.0,0.0,430.5,200,9240.5,Digital Wallet
+86716,47911,9999,,2026-08-19 23:29:00,Third-Party Delivery,Completed,8610.0,0.0,430.5,200,9240.5,Digital Wallet
 86717,39482,20,,2025-10-19 18:16:00,Website/App,Completed,11200.0,0.0,560.0,150,11910.0,Cash
 86718,47916,1,,2025-10-25 22:58:00,Takeaway,Completed,6040.0,0.0,302.0,0,6342.0,Cash
 86719,41129,14,,2026-02-11 22:42:00,Takeaway,Completed,7660.0,0.0,383.0,0,8043.0,Card
@@ -87905,7 +87905,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 87904,33163,12,,2026-05-30 20:33:00,Dine-in,Completed,6400.0,0.0,320.0,0,6720.0,Cash
 87905,24554,19,,2026-06-04 21:39:00,Takeaway,Completed,11890.0,0.0,594.5,0,12484.5,Cash
 87906,32367,20,66,2026-03-19 23:41:00,Dine-in,Completed,9340.0,300.0,452.0,0,9492.0,Card
-87907,28166,16,,2025-11-27 14:14:00,Takeaway,Completed,5600.0,0.0,280.0,0,5880.0,Digital Wallet
+87907,28166,16,,2025-11-27 14:14:00,Takeaway,Completed,5600.0,6100.0,280.0,0,5880.0,Digital Wallet
 87908,18796,10,,2025-07-20 21:48:00,Dine-in,Completed,7970.0,0.0,398.5,0,8368.5,Cash
 87909,24438,9,,2026-07-31 14:32:00,Website/App,Completed,8430.0,0.0,421.5,0,8851.5,Cash
 87910,9897,18,,2025-06-22 18:44:00,Website/App,Completed,4940.0,0.0,247.0,150,5337.0,Card
@@ -88695,7 +88695,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 88694,26031,10,,2025-08-29 14:56:00,Third-Party Delivery,Completed,11060.0,0.0,553.0,150,11763.0,Card
 88695,46457,12,,2026-02-03 15:05:00,Takeaway,Completed,8710.0,0.0,435.5,0,9145.5,Digital Wallet
 88696,5629,12,,2026-08-26 13:40:00,Website/App,Completed,6950.0,0.0,347.5,0,7297.5,Cash
-88697,2202,18,4,2026-08-16 18:22:00,Dine-in,Completed,8470.0,38.0,421.6,0,8853.6,Cash
+88697,,18,4,2026-08-16 18:22:00,Dine-in,Completed,8470.0,38.0,421.6,0,8853.6,Cash
 88698,22186,5,,2025-09-06 19:35:00,Website/App,Completed,9180.0,0.0,459.0,100,9739.0,Digital Wallet
 88699,16896,19,,2026-03-17 13:42:00,Dine-in,Completed,10800.0,0.0,540.0,0,11340.0,Digital Wallet
 88700,23779,12,,2025-11-01 13:49:00,Website/App,Completed,6190.0,0.0,309.5,0,6499.5,Cash
@@ -89658,7 +89658,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 89657,9140,12,,2026-07-16 18:32:00,Third-Party Delivery,Completed,10850.0,0.0,542.5,100,11492.5,Card
 89658,26810,15,,2026-01-05 13:04:00,Dine-in,Completed,6040.0,0.0,302.0,0,6342.0,Digital Wallet
 89659,39941,20,,2025-10-23 17:27:00,Takeaway,Completed,6050.0,0.0,302.5,0,6352.5,Cash
-89660,30028,3,,2026-07-19 14:05:00,Dine-in,Completed,7190.0,0.0,359.5,0,7549.5,Digital Wallet
+89660,30028,3,,2026-07-19 14:05:00,Dine-in,Completed,7190.0,7690.0,359.5,0,7549.5,Digital Wallet
 89661,20114,10,,2025-04-21 18:54:00,Dine-in,Completed,5860.0,0.0,293.0,0,6153.0,Card
 89662,8290,12,,2026-07-31 13:51:00,Dine-in,Completed,8700.0,0.0,435.0,0,9135.0,Card
 89663,25267,12,,2025-09-16 20:17:00,Third-Party Delivery,Completed,13060.0,0.0,653.0,200,13913.0,Digital Wallet
@@ -89825,7 +89825,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 89824,20324,4,,2026-03-06 14:19:00,Dine-in,Completed,8640.0,0.0,432.0,0,9072.0,Digital Wallet
 89825,15544,5,,2026-01-06 19:01:00,Dine-in,Completed,10060.0,0.0,503.0,0,10563.0,Cash
 89826,23488,6,44,2025-03-22 21:12:00,Takeaway,Completed,12560.0,500.0,603.0,0,12663.0,Cash
-89827,33361,12,,2025-06-19 20:30:00,Takeaway,Completed,12530.0,0.0,626.5,0,13156.5,Digital Wallet
+89827,33361,12,,2035-01-01 12:00:00,Takeaway,Completed,12530.0,0.0,626.5,0,13156.5,Digital Wallet
 89828,41719,8,,2026-07-09 21:04:00,Takeaway,Completed,8450.0,0.0,422.5,0,8872.5,Cash
 89829,17513,19,,2026-02-10 13:26:00,Dine-in,Completed,7820.0,0.0,391.0,0,8211.0,Cash
 89830,48087,15,,2026-02-04 21:23:00,Dine-in,Completed,5130.0,0.0,256.5,0,5386.5,Cash
@@ -90263,7 +90263,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 90262,6785,10,,2026-07-23 14:09:00,Takeaway,Completed,11710.0,0.0,585.5,0,12295.5,Card
 90263,2731,19,,2025-04-22 13:31:00,Dine-in,Completed,6740.0,0.0,337.0,0,7077.0,Card
 90264,28377,8,,2026-04-28 17:39:00,Website/App,Completed,10640.0,0.0,532.0,0,11172.0,Card
-90265,42452,20,,2025-11-17 20:10:00,Website/App,Completed,6260.0,0.0,313.0,0,6573.0,Digital Wallet
+90265,42452,20,,2025-11-17 20:10:00,Website/App,Completed,6260.0,6760.0,313.0,0,6573.0,Digital Wallet
 90266,1495,7,32,2026-04-15 18:06:00,Dine-in,Completed,7370.0,150.0,361.0,0,7581.0,Card
 90267,3069,3,,2025-12-16 21:59:00,Dine-in,Completed,6110.0,0.0,305.5,0,6415.5,Card
 90268,37626,20,45,2025-08-29 22:52:00,Takeaway,Completed,5530.0,16.5,275.68,0,5789.18,Digital Wallet
@@ -91505,7 +91505,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 91504,11390,12,,2025-03-27 21:22:00,Website/App,Completed,7240.0,0.0,362.0,150,7752.0,Digital Wallet
 91505,37041,7,,2026-06-23 10:49:00,Takeaway,Completed,6360.0,0.0,318.0,0,6678.0,Card
 91506,21551,12,,2025-06-12 15:33:00,Website/App,Completed,3740.0,0.0,187.0,100,4027.0,Digital Wallet
-91507,47976,2,,2026-08-10 15:21:00,Third-Party Delivery,Completed,4990.0,0.0,249.5,250,5489.5,Cash
+91507,,2,,2026-08-10 15:21:00,Third-Party Delivery,Completed,4990.0,0.0,249.5,250,5489.5,Cash
 91508,35398,12,,2026-04-28 12:56:00,Third-Party Delivery,Completed,7860.0,0.0,393.0,200,8453.0,Digital Wallet
 91509,8173,15,41,2026-03-03 13:15:00,Third-Party Delivery,Completed,9140.0,250.0,444.5,100,9434.5,Cash
 91510,45034,5,,2026-03-30 19:21:00,Takeaway,Completed,7290.0,0.0,364.5,0,7654.5,Digital Wallet
@@ -91923,7 +91923,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 91922,26394,12,,2026-08-18 21:29:00,Website/App,Completed,8800.0,0.0,440.0,100,9340.0,Digital Wallet
 91923,34059,10,,2026-07-15 17:00:00,Dine-in,Completed,8360.0,0.0,418.0,0,8778.0,Cash
 91924,3175,20,,2025-04-14 21:14:00,Takeaway,Completed,6740.0,0.0,337.0,0,7077.0,Card
-91925,20323,3,,2026-01-28 18:58:00,Dine-in,Completed,9020.0,0.0,451.0,0,9471.0,Digital Wallet
+91925,,3,,2026-01-28 18:58:00,Dine-in,Completed,9020.0,0.0,451.0,0,9471.0,Digital Wallet
 91926,16431,12,,2026-04-26 12:36:00,Website/App,Completed,7240.0,0.0,362.0,0,7602.0,Digital Wallet
 91927,15529,7,,2026-06-16 14:09:00,Dine-in,Completed,11300.0,0.0,565.0,0,11865.0,Cash
 91928,15108,12,,2026-08-16 10:05:00,Takeaway,Completed,4490.0,0.0,224.5,0,4714.5,Cash
@@ -92055,7 +92055,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 92054,45606,19,,2025-06-10 18:42:00,Dine-in,Completed,7500.0,0.0,375.0,0,7875.0,Digital Wallet
 92055,35629,15,,2025-07-23 10:30:00,Dine-in,Cancelled,4970.0,0.0,248.5,0,0.0,Digital Wallet
 92056,32899,15,,2026-08-08 12:05:00,Website/App,Completed,12660.0,0.0,633.0,0,13293.0,Cash
-92057,21780,12,,2026-04-03 21:03:00,Dine-in,Completed,13220.0,0.0,661.0,0,13881.0,Cash
+92057,21780,12,,2026-04-03 21:03:00,Dine-in,Completed,13220.0,13720.0,661.0,0,13881.0,Cash
 92058,8906,11,,2026-03-22 11:03:00,Dine-in,Completed,13820.0,0.0,691.0,0,14511.0,Digital Wallet
 92059,14280,9,,2026-04-03 17:40:00,Dine-in,Completed,6890.0,0.0,344.5,0,7234.5,Digital Wallet
 92060,37298,20,90,2026-01-15 13:01:00,Third-Party Delivery,Completed,18900.0,930.0,898.5,100,18968.5,Digital Wallet
@@ -92393,7 +92393,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 92392,34412,18,,2025-04-28 21:41:00,Third-Party Delivery,Completed,10240.0,0.0,512.0,100,10852.0,Cash
 92393,37525,7,,2026-07-01 15:33:00,Takeaway,Completed,9440.0,0.0,472.0,0,9912.0,Cash
 92394,23104,2,,2025-04-14 19:58:00,Takeaway,Completed,6430.0,0.0,321.5,0,6751.5,Digital Wallet
-92395,24684,10,,2025-08-09 18:46:00,Website/App,Completed,9540.0,0.0,477.0,100,10117.0,Card
+92395,24684,9999,,2025-08-09 18:46:00,Website/App,Completed,9540.0,0.0,477.0,100,10117.0,Card
 92396,42051,2,98,2026-02-27 12:05:00,Dine-in,Completed,9570.0,300.0,463.5,0,9733.5,Digital Wallet
 92397,3981,8,,2025-10-07 22:50:00,Takeaway,Completed,8850.0,0.0,442.5,0,9292.5,Cash
 92398,48441,12,,2025-12-14 12:30:00,Third-Party Delivery,Completed,8290.0,0.0,414.5,150,8854.5,Digital Wallet
@@ -93849,7 +93849,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 93848,7602,2,,2026-07-29 16:31:00,Dine-in,Completed,9290.0,0.0,464.5,0,9754.5,Card
 93849,13980,14,,2026-03-15 20:51:00,Website/App,Completed,6620.0,0.0,331.0,150,7101.0,Cash
 93850,20472,4,,2025-06-15 17:53:00,Dine-in,Completed,7390.0,0.0,369.5,0,7759.5,Digital Wallet
-93851,24513,10,,2025-05-26 18:34:00,Website/App,Completed,8800.0,0.0,440.0,150,9390.0,Digital Wallet
+93851,,10,,2025-05-26 18:34:00,Website/App,Completed,8800.0,0.0,440.0,150,9390.0,Digital Wallet
 93852,45130,1,,2025-11-18 13:03:00,Third-Party Delivery,Completed,11310.0,0.0,565.5,150,12025.5,Digital Wallet
 93853,2485,8,,2025-11-08 23:18:00,Dine-in,Completed,14320.0,0.0,716.0,0,15036.0,Digital Wallet
 93854,44752,6,,2026-07-19 19:52:00,Dine-in,Completed,11530.0,0.0,576.5,0,12106.5,Card
@@ -94196,7 +94196,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 94195,34467,1,,2026-05-13 10:08:00,Third-Party Delivery,Completed,6730.0,0.0,336.5,100,7166.5,Card
 94196,44876,13,,2025-03-03 18:27:00,Website/App,Completed,9220.0,0.0,461.0,100,9781.0,Digital Wallet
 94197,38108,12,,2026-07-06 10:57:00,Third-Party Delivery,Completed,10320.0,0.0,516.0,150,10986.0,Digital Wallet
-94198,37918,1,,2026-03-13 22:36:00,Third-Party Delivery,Completed,9610.0,0.0,480.5,100,10190.5,Card
+94198,37918,1,,2035-01-01 12:00:00,Third-Party Delivery,Completed,9610.0,0.0,480.5,100,10190.5,Card
 94199,22439,18,4,2026-08-17 13:54:00,Dine-in,Completed,7820.0,38.0,389.1,0,8171.1,Digital Wallet
 94200,33473,8,,2025-12-16 19:21:00,Third-Party Delivery,Completed,5480.0,0.0,274.0,100,5854.0,Digital Wallet
 94201,13224,19,,2025-05-01 11:26:00,Website/App,Completed,5800.0,0.0,290.0,150,6240.0,Cash
@@ -95637,7 +95637,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 95636,32876,2,,2026-05-26 18:51:00,Website/App,Completed,7100.0,0.0,355.0,150,7605.0,Card
 95637,16020,2,,2025-08-27 22:27:00,Dine-in,Completed,9170.0,0.0,458.5,0,9628.5,Cash
 95638,8876,1,,2026-04-29 12:05:00,Website/App,Completed,7770.0,0.0,388.5,0,8158.5,Cash
-95639,15130,12,,2025-03-12 21:03:00,Website/App,Completed,7560.0,0.0,378.0,0,7938.0,Card
+95639,15130,12,,2025-03-12 21:03:00,Website/App,Completed,7560.0,8060.0,378.0,0,7938.0,Card
 95640,42158,14,,2025-12-22 19:00:00,Third-Party Delivery,Completed,5860.0,0.0,293.0,100,6253.0,Card
 95641,1722,10,2,2026-05-02 23:49:00,Third-Party Delivery,Completed,12020.0,88.0,596.6,100,12628.6,Digital Wallet
 95642,28208,4,,2025-12-14 14:50:00,Website/App,Completed,7470.0,0.0,373.5,150,7993.5,Cash
@@ -95692,7 +95692,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 95691,4909,12,,2026-07-31 14:29:00,Website/App,Completed,11570.0,0.0,578.5,150,12298.5,Card
 95692,25995,20,,2026-08-23 12:04:00,Dine-in,Completed,8440.0,0.0,422.0,0,8862.0,Digital Wallet
 95693,46760,20,,2025-11-24 22:49:00,Dine-in,Completed,5670.0,0.0,283.5,0,5953.5,Digital Wallet
-95694,1104,3,,2026-02-07 21:32:00,Third-Party Delivery,Completed,12120.0,0.0,606.0,150,12876.0,Cash
+95694,1104,9999,,2026-02-07 21:32:00,Third-Party Delivery,Completed,12120.0,0.0,606.0,150,12876.0,Cash
 95695,2054,2,,2026-07-04 20:02:00,Takeaway,Completed,5210.0,0.0,260.5,0,5470.5,Digital Wallet
 95696,3972,8,,2026-04-10 19:21:00,Website/App,Completed,8420.0,0.0,421.0,0,8841.0,Digital Wallet
 95697,13654,1,,2026-05-30 21:01:00,Dine-in,Completed,7420.0,0.0,371.0,0,7791.0,Card
@@ -96529,7 +96529,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 96528,29414,12,,2026-07-23 21:19:00,Takeaway,Completed,10070.0,0.0,503.5,0,10573.5,Card
 96529,22299,1,,2025-12-03 22:37:00,Third-Party Delivery,Completed,9440.0,0.0,472.0,100,10012.0,Cash
 96530,874,2,,2025-06-06 20:27:00,Third-Party Delivery,Completed,5230.0,0.0,261.5,100,5591.5,Card
-96531,10162,15,73,2025-11-05 20:59:00,Third-Party Delivery,Completed,8470.0,200.0,413.5,250,8933.5,Digital Wallet
+96531,,15,73,2025-11-05 20:59:00,Third-Party Delivery,Completed,8470.0,200.0,413.5,250,8933.5,Digital Wallet
 96532,15383,8,,2026-07-31 12:29:00,Dine-in,Completed,7270.0,0.0,363.5,0,7633.5,Cash
 96533,3778,18,,2026-08-29 18:56:00,Website/App,Completed,6910.0,0.0,345.5,0,7255.5,Card
 96534,1223,16,,2026-08-23 16:48:00,Website/App,Completed,8350.0,0.0,417.5,0,8767.5,Cash
@@ -97079,7 +97079,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 97078,521,3,,2026-05-05 14:05:00,Takeaway,Completed,6660.0,0.0,333.0,0,6993.0,Card
 97079,7302,18,,2025-05-21 22:07:00,Website/App,Completed,9220.0,0.0,461.0,0,9681.0,Digital Wallet
 97080,21098,10,,2025-08-12 20:15:00,Dine-in,Completed,12000.0,0.0,600.0,0,12600.0,Digital Wallet
-97081,22629,5,,2026-05-12 22:05:00,Third-Party Delivery,Completed,8540.0,0.0,427.0,200,9167.0,Digital Wallet
+97081,,5,,2026-05-12 22:05:00,Third-Party Delivery,Completed,8540.0,0.0,427.0,200,9167.0,Digital Wallet
 97082,35470,10,,2026-04-22 14:43:00,Takeaway,Completed,7710.0,0.0,385.5,0,8095.5,Digital Wallet
 97083,29008,2,,2025-09-25 14:43:00,Dine-in,Completed,9410.0,0.0,470.5,0,9880.5,Digital Wallet
 97084,22816,12,,2026-05-15 12:02:00,Third-Party Delivery,Completed,9000.0,0.0,450.0,250,9700.0,Card
@@ -97195,7 +97195,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 97194,36673,5,,2026-08-11 19:53:00,Takeaway,Completed,7790.0,0.0,389.5,0,8179.5,Card
 97195,566,14,,2026-01-26 22:49:00,Dine-in,Cancelled,7600.0,0.0,380.0,0,0.0,Digital Wallet
 97196,8960,13,,2025-10-10 15:41:00,Website/App,Completed,12130.0,0.0,606.5,150,12886.5,Cash
-97197,17021,12,,2025-07-14 19:15:00,Dine-in,Completed,3300.0,0.0,165.0,0,3465.0,Cash
+97197,,12,,2025-07-14 19:15:00,Dine-in,Completed,3300.0,0.0,165.0,0,3465.0,Cash
 97198,23178,16,92,2026-06-03 20:42:00,Third-Party Delivery,Completed,13090.0,246.0,642.2,250,13736.2,Cash
 97199,8888,15,,2025-10-26 18:58:00,Dine-in,Completed,7510.0,0.0,375.5,0,7885.5,Digital Wallet
 97200,13698,1,,2025-06-10 20:49:00,Takeaway,Completed,9740.0,0.0,487.0,0,10227.0,Cash
@@ -99457,7 +99457,7 @@ order_id,customer_id,restaurant_id,promotion_id,order_datetime,ordering_channel,
 99456,19487,12,,2026-07-12 22:41:00,Dine-in,Completed,4530.0,0.0,226.5,0,4756.5,Cash
 99457,32263,12,,2025-12-17 17:33:00,Dine-in,Completed,9700.0,0.0,485.0,0,10185.0,Card
 99458,21976,3,,2025-11-28 19:49:00,Dine-in,Completed,7350.0,0.0,367.5,0,7717.5,Digital Wallet
-99459,21603,12,,2025-07-21 12:45:00,Dine-in,Completed,6710.0,0.0,335.5,0,7045.5,Cash
+99459,,12,,2025-07-21 12:45:00,Dine-in,Completed,6710.0,0.0,335.5,0,7045.5,Cash
 99460,42452,8,,2025-05-05 22:33:00,Takeaway,Completed,8090.0,0.0,404.5,0,8494.5,Digital Wallet
 99461,42136,1,,2026-06-21 22:33:00,Dine-in,Completed,7040.0,0.0,352.0,0,7392.0,Cash
 99462,10835,15,,2025-09-18 19:40:00,Third-Party Delivery,Completed,6760.0,0.0,338.0,250,7348.0,Card

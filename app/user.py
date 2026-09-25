@@ -136,3 +136,47 @@ def delete_user(
     db.commit()
 
     return {"success": True}
+
+
+@router.patch("/{user_id}/disable", response_model=UserRead)
+def disable_user(
+    user_id: int,
+    db: Session = Depends(get_session),
+):
+    user = db.get(User, user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found",
+        )
+
+    user.is_active = False
+
+    db.add(user)
+    db.commit()
+    db.refresh(user)
+
+    return user
+
+
+@router.patch("/{user_id}/enable", response_model=UserRead)
+def enable_user(
+    user_id: int,
+    db: Session = Depends(get_session),
+):
+    user = db.get(User, user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found",
+        )
+
+    user.is_active = True
+
+    db.add(user)
+    db.commit()
+    db.refresh(user)
+
+    return user

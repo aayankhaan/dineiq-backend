@@ -1,20 +1,16 @@
-import os
-from fastapi import Cookie, FastAPI, Depends, HTTPException, Response, status
+from fastapi import FastAPI, Depends, HTTPException, Response, status
 from app.database import create_db_and_tables, get_session, Session
 from sqlmodel import select
 from app.models import User, UserRead
 from pydantic import BaseModel
-from pwdlib import PasswordHash
 from datetime import datetime, timedelta, timezone
+from utils import pwd_context, get_current_user, SECRET_KEY, ALGORITHM, ONE_MONTH
+from user import router as user_router
 import jwt
 
 app = FastAPI(title="DineIQ API", version="1.0.0")
 
-pwd_context = PasswordHash.recommended()
-
-SECRET_KEY = os.environ["SECRET_KEY"]
-ALGORITHM = "HS256"
-ONE_MONTH = 60 * 60 * 24 * 30
+app.include_router(user_router)
 
 create_db_and_tables()
 
@@ -38,7 +34,11 @@ def check_health():
 def login(data: LoginData, response: Response, db: Session = Depends(get_session)):
     user = db.exec(select(User).where(User.email == data.email)).first()
 
-    if not user or not user.is_active or not pwd_context.verify(data.password, user.password_hash):
+    if (
+        not user
+        or not user.is_active
+        or not pwd_context.verify(data.password, user.password_hash)
+    ):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password",
@@ -64,36 +64,8 @@ def login(data: LoginData, response: Response, db: Session = Depends(get_session
 
 @app.get("/auth/me", response_model=UserRead)
 def me(
-    access_token: str | None = Cookie(default=None), db: Session = Depends(get_session)
+    user: User = Depends(get_current_user),
 ):
-    if not access_token:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Access token cookie is not set.",
-        )
-
-    try:
-        decoded_data = jwt.decode(access_token, SECRET_KEY, algorithms=[ALGORITHM])
-        user_id = int(decoded_data["sub"])
-    except jwt.ExpiredSignatureError:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Access token has expired, please login again.",
-        )
-    except Exception:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Access token is invalid.",
-        )
-
-    user = db.exec(select(User).where(User.id == user_id)).first()
-
-    if not user:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="User ID not found in database",
-        )
-
     return user
 
 

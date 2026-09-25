@@ -547,7 +547,7 @@ def generate_restaurant(n=20):
         city = random.choice(list(city_areas.keys()))
         area = random.choice(city_areas[city])
         restaurants.append({
-            "restaurants_id": i,
+            "restaurant_id": i,
             "name": generate_restaurant_name(city, area),
             "city": city,
             "area": area,
@@ -730,7 +730,7 @@ def generate_restaurant_menu_items(restaurants, menu_items):
 
                 restaurant_menu.append({
                     "restaurant_menu_id": restaurant_menu_id,
-                    "restaurant_id": restaurant["restaurants_id"],
+                    "restaurant_id": restaurant["restaurant_id"],
                     "item_id": item["menu_items_id"],
                     "price": restaurant_price,
                     "is_available": True
@@ -744,7 +744,7 @@ def generate_pricing_history(restaurant_menu_items, menu_items, restaurants):
     pricing_history = []
     price_history_id = 1
     item_lookup = {item["menu_items_id"]: item for item in menu_items}
-    restaurant_lookup = {restaurant["restaurants_id"]: restaurant for restaurant in restaurants}
+    restaurant_lookup = {restaurant["restaurant_id"]: restaurant for restaurant in restaurants}
 
     for restaurant_item in restaurant_menu_items:
 
@@ -873,7 +873,7 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_
 
         if not inventory_driven:
             restaurant = random.choice(restaurants)
-            restaurant_id = restaurant["restaurants_id"]
+            restaurant_id = restaurant["restaurant_id"]
             available_items = [item for item in restaurant_menu_items if item["restaurant_id"] == restaurant_id and item["is_available"]]
 
             if not available_items:
@@ -1009,7 +1009,7 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
 
         same_city = restaurants_by_city.get(customer["city"], [])
         restaurant = random.choice(same_city if same_city and random.random() < 0.97 else restaurants)
-        restaurant_id = restaurant["restaurants_id"]
+        restaurant_id = restaurant["restaurant_id"]
 
         earliest_date = max(DATASET_START, customer["signup_date"], restaurant["opening_date"])
         if earliest_date >= DATASET_END:

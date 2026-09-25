@@ -1,4 +1,4 @@
-restaurants_id,name,city,area,opening_date,status
+restaurant_id,name,city,area,opening_date,status
 1,Hot Kitchen - Saddar,Rawalpindi,Saddar,2024-03-31,Active
 2,Clifton Dhaba - Clifton,Karachi,Clifton,2021-03-02,Active
 3,The Lahore Lounge - Johar Town,Lahore,Johar Town,2021-06-19,Active

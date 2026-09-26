@@ -172,4 +172,4 @@ Wastage,Invalid Foreign Key,inventory_id,0,PASS
 Wastage,Impossible Wastage,quantity,30,ISSUES FOUND
 Ingredients,Invalid Units,unit,0,PASS
 Inventory,Inconsistent Units,unit,30,ISSUES FOUND
-Wastage,Inconsistent Units,unit,97,ISSUES FOUND
+Wastage,Inconsistent Units,unit,95,ISSUES FOUND

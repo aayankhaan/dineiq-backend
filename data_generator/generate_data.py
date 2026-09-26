@@ -1157,18 +1157,45 @@ def generate_wastage(inventories, n=50000):
         if available_quantity <= 0:
             continue
 
+        reason = random.choices(
+            ["Expired", "Spoiled", "Overproduction", "Damaged"],
+            weights=[60, 20, 15, 5]
+        )[0]
+
         if inventory["unit"] == "pieces":
             if available_quantity < 1:
                 continue
-            quantity = random.randint(1, min(int(available_quantity), 5))
+
+            if reason == "Expired":
+                quantity = random.choices([1, 2, 3], weights=[65, 25, 10])[0]
+            else:
+                quantity = random.choices([1, 2], weights=[85, 15])[0]
+
+            quantity = min(quantity, int(available_quantity))
         else:
-            quantity = round(random.uniform(0.1, min(available_quantity, 5)), 2)
-        reason = random.choices(["Expired", "Spoiled", "Overproduction", "Damaged"],weights=[60, 20, 15, 5])[0]
+            if reason == "Expired":
+                max_wastage = 1.00
+            elif reason == "Spoiled":
+                max_wastage = 0.75
+            elif reason == "Overproduction":
+                max_wastage = 0.50
+            else:
+                max_wastage = 0.30
+
+            max_quantity = min(available_quantity, max_wastage)
+
+            if max_quantity < 0.01:
+                continue
+
+            quantity = round(random.uniform(0.01, max_quantity), 2)
 
         if reason == "Expired":
             wastage_date = inventory["expiry_date"]
         else:
-            wastage_date = fake.date_between(start_date=inventory["received_date"], end_date=min(inventory["expiry_date"], DATASET_END))
+            wastage_date = fake.date_between(
+                start_date=inventory["received_date"],
+                end_date=min(inventory["expiry_date"], DATASET_END)
+            )
 
         unit_cost = inventory["unit_cost"]
         cost = round(quantity * unit_cost, 2)

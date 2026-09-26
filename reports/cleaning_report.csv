@@ -13,8 +13,8 @@ Menu Items,Invalid base price,Corrected,10,"Price reconstructed using restaurant
 Inventory,Inconsistent unit,Corrected,30,Unit standardized using ingredient master data
 Inventory,Impossible quantity,Removed,25,Inventory quantities and unit cost must represent a valid inventory batch
 Ratings,Invalid rating,Removed,50,Rating must be between 1 and 5
-Ratings,Invalid order dependency,Removed,143,Referenced order did not survive order cleaning
+Ratings,Invalid order dependency,Removed,144,Referenced order did not survive order cleaning
 Wastage,Invalid ingredient reference,Removed,20,Ingredient ID did not exist in cleaned ingredient data
-Wastage,Invalid inventory dependency,Removed,63,Referenced inventory batch did not survive inventory cleaning
+Wastage,Invalid inventory dependency,Removed,62,Referenced inventory batch did not survive inventory cleaning
 Wastage,Inconsistent unit,Corrected,25,Unit standardized using ingredient master data
-Wastage,Invalid cost,Corrected,494,Cost recalculated as quantity multiplied by unit cost
+Wastage,Invalid cost,Corrected,468,Cost recalculated as quantity multiplied by unit cost

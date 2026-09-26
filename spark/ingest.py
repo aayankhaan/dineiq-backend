@@ -40,4 +40,22 @@ datasets = {
 for name, df in datasets.items():
     print(f"{name}: {df.count():,}")
 
+print("\n========SCHEMA INFERENCE========\n")
+
+inferred_orders = spark.read.option(
+    "header", True
+).option(
+    "inferSchema", True
+).csv("raw_data/orders.csv")
+
+inferred_orders.printSchema()
+
+print("\n========PARTITION HANDLING========\n")
+
+order_items = spark.read.option("header", True).schema(order_item_schema).csv("raw_data/order_items.csv")
+
+print("Order Items partitions before:", order_items.rdd.getNumPartitions())
+order_items = order_items.repartition(8)
+print("Order Items partitions after:", order_items.rdd.getNumPartitions())
+
 # spark.stop()

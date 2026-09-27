@@ -1,0 +1,46 @@
+{
+    "model_version": "python_menu_classification_v1",
+    "selected_model": "Random Forest",
+    "feature_columns": [
+        "quantity_sold",
+        "item_revenue",
+        "cost",
+        "contribution_margin",
+        "profit_percentage",
+        "average_rating",
+        "repeat_purchase_rate",
+        "wastage_percentage",
+        "promotion_dependency",
+        "sales_trend"
+    ],
+    "target_column": "performance_class",
+    "random_state": 42,
+    "training_records": 105,
+    "validation_records": 22,
+    "testing_records": 23,
+    "algorithms_tested": [
+        "Logistic Regression",
+        "Decision Tree",
+        "Random Forest"
+    ],
+    "hyperparameters": {
+        "Logistic Regression": {
+            "max_iter": 100,
+            "C": 10.0,
+            "solver": "lbfgs"
+        },
+        "Decision Tree": {
+            "max_depth": 5
+        },
+        "Random Forest": {
+            "n_estimators": 100,
+            "max_depth": 6
+        }
+    },
+    "test_metrics": {
+        "accuracy": 0.6956521739130435,
+        "weighted_precision": 0.6973775017253278,
+        "weighted_recall": 0.6956521739130435,
+        "f1": 0.6827400860009556
+    }
+}

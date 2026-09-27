@@ -4,7 +4,7 @@ from faker import Faker
 from datetime import date, timedelta
 from faker_pk import FakerPKProvider
 import random
-from config.settings import RAW_DATA_FOLDER, DATASET_START, DATASET_END
+from config.settings import RAW_DATA_FOLDER, DATASET_END, DATASET_START
 
 random.seed(42)
 Faker.seed(42)
@@ -984,14 +984,19 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
     promotions_by_restaurant = {}
     price_lookup = {}
     pricing_lookup = {}
+    customer_profiles = {}
+    restaurant_demand_weights = {}
+    item_popularity = {}
 
     for restaurant in restaurants:
         restaurants_by_city.setdefault(restaurant["city"], []).append(restaurant)
+        restaurant_demand_weights[restaurant["restaurant_id"]] = random.uniform(0.75, 1.35)
 
     for item in restaurant_menu_items:
         if item["is_available"]:
             menu_by_restaurant.setdefault(item["restaurant_id"], []).append(item)
         price_lookup[(item["restaurant_id"], item["item_id"])] = item["price"]
+        item_popularity[(item["restaurant_id"], item["item_id"])] = random.uniform(0.55, 1.45)
 
     for promotion in promotions:
         promotions_by_restaurant.setdefault(promotion["restaurant_id"], []).append(promotion)
@@ -1002,24 +1007,190 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
     for changes in pricing_lookup.values():
         changes.sort(key=lambda x: x["effective_date"])
 
+    for customer in customers:
+        customer_profiles[customer["customer_id"]] = {
+            "frequency_weight": random.choices([0.40, 0.80, 1.20, 2.00, 3.00], weights=[12, 28, 32, 20, 8])[0],
+            "promotion_sensitivity": random.uniform(0.05, 0.90),
+            "preferred_channel": random.choices(
+                ["Dine-in", "Takeaway", "Website/App", "Third-Party Delivery"],
+                weights=[38, 18, 24, 20]
+            )[0],
+            "preferred_categories": random.sample(range(1, 13), random.choice([2, 3, 3, 4])),
+            "preferred_period": random.choices(["Lunch", "Dinner", "Late Night"], weights=[35, 55, 10])[0]
+        }
+
+    eligible_customers = [
+        customer for customer in customers
+        if max(DATASET_START, customer["signup_date"]) < DATASET_END
+    ]
+    customer_weights = [
+        customer_profiles[customer["customer_id"]]["frequency_weight"]
+        for customer in eligible_customers
+    ]
+
+    category_affinities = {
+        1: [3, 7, 10],
+        2: [5, 10, 12],
+        3: [1, 10],
+        4: [10, 12],
+        5: [10, 12],
+        6: [1, 10],
+        7: [1, 10],
+        8: [9, 10],
+        9: [1, 8],
+        10: [1, 2, 3, 4, 5, 6, 7, 11],
+        11: [1, 10, 12],
+        12: [2, 4, 5, 11]
+    }
+
+    def date_demand_weight(order_date):
+        weight = 1.0
+        weekday = order_date.weekday()
+        month = order_date.month
+
+        if weekday == 4:
+            weight *= 1.18
+        elif weekday == 5:
+            weight *= 1.30
+        elif weekday == 6:
+            weight *= 1.22
+        elif weekday == 0:
+            weight *= 0.88
+
+        if month in [6, 7, 8]:
+            weight *= 1.08
+        elif month in [11, 12, 1]:
+            weight *= 1.12
+        elif month in [2, 3]:
+            weight *= 0.94
+
+        dataset_days = max(1, (DATASET_END - DATASET_START).days)
+        progress = max(0, (order_date - DATASET_START).days) / dataset_days
+        return weight * (0.92 + 0.16 * progress)
+
+    def choose_order_date(earliest_date):
+        available_days = (DATASET_END - earliest_date).days
+
+        for _ in range(20):
+            candidate = earliest_date + timedelta(days=random.randint(0, available_days))
+            if random.random() < min(1.0, date_demand_weight(candidate) / 1.45):
+                return candidate
+
+        return earliest_date + timedelta(days=random.randint(0, available_days))
+
+    def choose_hour(preferred_period, order_date):
+        if preferred_period == "Lunch":
+            periods, weights = ["Lunch", "Dinner", "Late Night"], [65, 30, 5]
+        elif preferred_period == "Dinner":
+            periods, weights = ["Lunch", "Dinner", "Late Night"], [20, 70, 10]
+        else:
+            periods, weights = ["Lunch", "Dinner", "Late Night"], [15, 50, 35]
+
+        if order_date.weekday() in [4, 5, 6]:
+            weights[1] += 8
+            weights[2] += 7
+
+        period = random.choices(periods, weights=weights)[0]
+
+        if period == "Lunch":
+            return random.choices([11, 12, 13, 14, 15], weights=[8, 24, 32, 25, 11])[0]
+        if period == "Dinner":
+            return random.choices([17, 18, 19, 20, 21, 22], weights=[5, 12, 23, 27, 22, 11])[0]
+        return random.choices([22, 23], weights=[55, 45])[0]
+
+    def choose_channel(preferred_channel, hour, order_date):
+        if 12 <= hour <= 15:
+            weights = {"Dine-in": 42, "Takeaway": 27, "Website/App": 17, "Third-Party Delivery": 14}
+        elif 18 <= hour <= 22:
+            weights = {"Dine-in": 36, "Takeaway": 14, "Website/App": 24, "Third-Party Delivery": 26}
+        else:
+            weights = {"Dine-in": 18, "Takeaway": 15, "Website/App": 28, "Third-Party Delivery": 39}
+
+        if order_date.weekday() in [4, 5, 6]:
+            weights["Dine-in"] += 5
+            weights["Third-Party Delivery"] += 5
+
+        weights[preferred_channel] += 20
+        channels = list(weights.keys())
+        return random.choices(channels, weights=list(weights.values()))[0]
+
+    def current_price(restaurant_id, item_id, order_date):
+        unit_price = price_lookup[(restaurant_id, item_id)]
+        changes = pricing_lookup.get((restaurant_id, item_id), [])
+
+        for change in changes:
+            if order_date < change["effective_date"]:
+                return change["old_price"]
+            unit_price = change["new_price"]
+
+        return unit_price
+
+    def weighted_item(candidates, restaurant_id, order_date, preferred_categories):
+        weights = []
+
+        for candidate in candidates:
+            item_id = candidate["item_id"]
+            menu_item = item_lookup[item_id]
+            category_id = menu_item["cat_id"]
+            weight = item_popularity[(restaurant_id, item_id)]
+
+            if category_id in preferred_categories:
+                weight *= 1.65
+
+            price = current_price(restaurant_id, item_id, order_date)
+            price_ratio = price / max(1, menu_item["base_price"])
+            if price_ratio > 1.0:
+                weight *= max(0.45, 1.0 - ((price_ratio - 1.0) * 1.8))
+
+            if category_id == 10 and order_date.month in [5, 6, 7, 8, 9]:
+                weight *= 1.35
+            elif category_id == 9 and order_date.month in [11, 12, 1, 2]:
+                weight *= 1.45
+            elif category_id in [4, 5, 7] and order_date.month in [11, 12, 1]:
+                weight *= 1.12
+
+            weights.append(max(weight, 0.05))
+
+        return random.choices(candidates, weights=weights)[0]
+
+    def affinity_item(selected_items, available_items, restaurant_id, order_date, preferred_categories):
+        selected_ids = {item["item_id"] for item in selected_items}
+        affinity_categories = []
+
+        for selected_item in selected_items:
+            category_id = item_lookup[selected_item["item_id"]]["cat_id"]
+            affinity_categories.extend(category_affinities.get(category_id, []))
+
+        candidates = [
+            item for item in available_items
+            if item["item_id"] not in selected_ids
+            and item_lookup[item["item_id"]]["cat_id"] in affinity_categories
+        ]
+
+        if not candidates:
+            return None
+
+        return weighted_item(candidates, restaurant_id, order_date, preferred_categories)
+
     for order_id in range(1, n + 1):
-        customer = random.choice(customers)
+        customer = random.choices(eligible_customers, weights=customer_weights)[0]
         customer_id = customer["customer_id"]
+        customer_profile = customer_profiles[customer_id]
 
         same_city = restaurants_by_city.get(customer["city"], [])
-        restaurant = random.choice(same_city if same_city and random.random() < 0.97 else restaurants)
+        restaurant_pool = same_city if same_city and random.random() < 0.97 else restaurants
+        restaurant = random.choices(
+            restaurant_pool,
+            weights=[restaurant_demand_weights[x["restaurant_id"]] for x in restaurant_pool]
+        )[0]
         restaurant_id = restaurant["restaurant_id"]
 
         earliest_date = max(DATASET_START, customer["signup_date"], restaurant["opening_date"])
         if earliest_date >= DATASET_END:
             continue
 
-        order_date = fake.date_between(start_date=earliest_date, end_date=DATASET_END)
-
-        if random.random() < 0.55:
-            hour = random.choice([12, 13, 14, 18, 19, 20, 21, 22])
-        else:
-            hour = random.randint(10, 23)
+        order_date = choose_order_date(earliest_date)
+        hour = choose_hour(customer_profile["preferred_period"], order_date)
 
         minute = random.randint(0, 59)
         order_datetime = pd.Timestamp(order_date.year, order_date.month, order_date.day, hour, minute)
@@ -1040,10 +1211,11 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             and x["item_id"] in available_item_ids
         ]
 
-        promotion = random.choice(active_promotions) if active_promotions and random.random() < 0.85 else None
+        promotion_chance = 0.08 + (customer_profile["promotion_sensitivity"] * 0.42)
+        promotion = random.choice(active_promotions) if active_promotions and random.random() < promotion_chance else None
         promotion_id = promotion["promotion_id"] if promotion else None
 
-        channel = random.choices(["Dine-in", "Takeaway", "Website/App", "Third-Party Delivery"],weights=[40, 20, 20, 20])[0]
+        channel = choose_channel(customer_profile["preferred_channel"], hour, order_date)
 
         order_status = random.choices(["Completed", "Cancelled"], weights=[97, 3])[0]
 
@@ -1051,12 +1223,44 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             promoted_item = next(x for x in available_items if x["item_id"] == promotion["item_id"])
             selected_items = [promoted_item]
         else:
-            selected_items = []
+            selected_items = [
+                weighted_item(
+                    available_items,
+                    restaurant_id,
+                    order_date,
+                    customer_profile["preferred_categories"]
+                )
+            ]
 
-        target_lines = random.randint(8, 12)
+        target_lines = random.choices([1, 2, 3, 4, 5, 6], weights=[13, 28, 30, 18, 8, 3])[0]
 
         while len(selected_items) < target_lines:
-            selected_items.append(random.choice(available_items))
+            next_item = None
+
+            if random.random() < 0.68:
+                next_item = affinity_item(
+                    selected_items,
+                    available_items,
+                    restaurant_id,
+                    order_date,
+                    customer_profile["preferred_categories"]
+                )
+
+            if next_item is None:
+                selected_ids = {item["item_id"] for item in selected_items}
+                remaining_items = [item for item in available_items if item["item_id"] not in selected_ids]
+
+                if not remaining_items:
+                    break
+
+                next_item = weighted_item(
+                    remaining_items,
+                    restaurant_id,
+                    order_date,
+                    customer_profile["preferred_categories"]
+                )
+
+            selected_items.append(next_item)
 
         subtotal = 0
         discount_amount = 0
@@ -1064,16 +1268,9 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
 
         for selected_item in selected_items:
             item_id = selected_item["item_id"]
-            quantity = random.choices([1, 2, 3], weights=[75, 20, 5])[0]
+            quantity = random.choices([1, 2, 3, 4], weights=[78, 16, 5, 1])[0]
 
-            unit_price = price_lookup[(restaurant_id, item_id)]
-            changes = pricing_lookup.get((restaurant_id, item_id), [])
-
-            for change in changes:
-                if order_date < change["effective_date"]:
-                    unit_price = change["old_price"]
-                    break
-                unit_price = change["new_price"]
+            unit_price = current_price(restaurant_id, item_id, order_date)
 
             line_subtotal = unit_price * quantity
             line_discount = 0
@@ -1150,46 +1347,78 @@ def generate_wastage(inventories, n=50000):
     remaining_stock = {inventory["inventory_id"]: inventory["quantity_remaining"] for inventory in inventories}
     valid_inventories = [inventory for inventory in inventories if inventory["quantity_remaining"] > 0]
 
-    while len(wastage) < n:
-        inventory = random.choice(valid_inventories)
+    inventory_weights = []
+    for inventory in valid_inventories:
+        received = max(float(inventory["quantity_received"]), 0.01)
+        remaining_ratio = float(inventory["quantity_remaining"]) / received
+        shelf_life = max(1, (inventory["expiry_date"] - inventory["received_date"]).days)
+        weight = 0.25 + (remaining_ratio * 2.20)
+        if shelf_life <= 7:
+            weight *= 1.45
+        elif shelf_life <= 14:
+            weight *= 1.20
+        inventory_weights.append(max(weight, 0.05))
+
+    attempts = 0
+    max_attempts = n * 20
+
+    while len(wastage) < n and attempts < max_attempts:
+        attempts += 1
+        inventory = random.choices(valid_inventories, weights=inventory_weights)[0]
         available_quantity = remaining_stock[inventory["inventory_id"]]
         if available_quantity <= 0:
             continue
 
+        received = max(float(inventory["quantity_received"]), 0.01)
+        remaining_ratio = available_quantity / received
+        shelf_life = max(1, (inventory["expiry_date"] - inventory["received_date"]).days)
+
+        if remaining_ratio >= 0.60:
+            reason_weights = [52, 18, 25, 5]
+        elif remaining_ratio >= 0.30:
+            reason_weights = [45, 25, 23, 7]
+        else:
+            reason_weights = [30, 38, 22, 10]
+
+        if shelf_life <= 7:
+            reason_weights[0] += 15
+
         reason = random.choices(
             ["Expired", "Spoiled", "Overproduction", "Damaged"],
-            weights=[60, 20, 15, 5]
+            weights=reason_weights
         )[0]
 
         if inventory["unit"] == "pieces":
             if available_quantity < 1:
                 continue
-
             if reason == "Expired":
-                quantity = random.choices([1, 2, 3], weights=[65, 25, 10])[0]
+                quantity = random.choices([1, 2, 3, 4], weights=[55, 27, 13, 5])[0]
+            elif reason == "Overproduction":
+                quantity = random.choices([1, 2, 3], weights=[60, 30, 10])[0]
             else:
                 quantity = random.choices([1, 2], weights=[85, 15])[0]
-
             quantity = min(quantity, int(available_quantity))
         else:
             if reason == "Expired":
-                max_wastage = 1.00
+                max_wastage = min(available_quantity, max(0.10, received * 0.08))
             elif reason == "Spoiled":
-                max_wastage = 0.75
+                max_wastage = min(available_quantity, max(0.08, received * 0.05))
             elif reason == "Overproduction":
-                max_wastage = 0.50
+                max_wastage = min(available_quantity, max(0.05, received * 0.04))
             else:
-                max_wastage = 0.30
-
-            max_quantity = min(available_quantity, max_wastage)
-
-            if max_quantity < 0.01:
+                max_wastage = min(available_quantity, max(0.03, received * 0.02))
+            if max_wastage < 0.01:
                 continue
-
-            quantity = round(random.uniform(0.01, max_quantity), 2)
+            quantity = round(random.uniform(0.01, max_wastage), 2)
 
         if reason == "Expired":
             wastage_date = inventory["expiry_date"]
+        elif reason == "Overproduction":
+            start_date = inventory["received_date"] + timedelta(days=max(0, shelf_life // 2))
+            wastage_date = fake.date_between(
+                start_date=min(start_date, inventory["expiry_date"]),
+                end_date=min(inventory["expiry_date"], DATASET_END)
+            )
         else:
             wastage_date = fake.date_between(
                 start_date=inventory["received_date"],
@@ -1213,6 +1442,9 @@ def generate_wastage(inventories, n=50000):
         remaining_stock[inventory["inventory_id"]] = round(remaining_stock[inventory["inventory_id"]] - quantity, 2)
         wastage_id += 1
 
+    if len(wastage) < n:
+        print(f"WARNING: generated {len(wastage):,} wastage rows instead of requested {n:,}")
+
     return wastage
 
 def generate_ratings(n, orders, order_items):
@@ -1225,13 +1457,45 @@ def generate_ratings(n, orders, order_items):
         if item["order_id"] in order_lookup:
             items_by_order.setdefault(item["order_id"], []).append(item)
 
+    restaurant_quality = {}
+    item_quality = {}
+
+    for order in completed_orders:
+        restaurant_id = order["restaurant_id"]
+        if restaurant_id not in restaurant_quality:
+            restaurant_quality[restaurant_id] = random.uniform(-0.35, 0.35)
+
+    for item in order_items:
+        item_id = item["item_id"]
+        if item_id not in item_quality:
+            item_quality[item_id] = random.uniform(-0.30, 0.30)
+
+    rating_candidates = [order for order in completed_orders if order["order_id"] in items_by_order]
+
     for i in range(1, n + 1):
-        order = random.choice(completed_orders)
+        order = random.choice(rating_candidates)
         item = random.choice(items_by_order[order["order_id"]])
 
-        rating = random.choices([1, 2, 3, 4, 5],weights=[4, 6, 15, 35, 40])[0]
+        score = 4.05
+        score += restaurant_quality[order["restaurant_id"]]
+        score += item_quality[item["item_id"]]
 
-        days_after = random.randint(0, 7)
+        if order["discount_amount"] > 0:
+            score += 0.08
+        if order["ordering_channel"] == "Third-Party Delivery":
+            score -= 0.10
+        elif order["ordering_channel"] == "Dine-in":
+            score += 0.05
+        if order["delivery_fee"] >= 200:
+            score -= 0.08
+
+        score += random.gauss(0, 0.72)
+        if random.random() < 0.025:
+            score -= random.uniform(1.0, 2.0)
+
+        rating = max(1, min(5, int(round(score))))
+
+        days_after = random.choices([0, 1, 2, 3, 4, 5, 6, 7], weights=[24, 28, 18, 11, 7, 5, 4, 3])[0]
         rating_date = order["order_datetime"].date() + timedelta(days=days_after)
         rating_date = min(rating_date, DATASET_END)
 
@@ -1281,7 +1545,7 @@ promotions = generate_promotion(100, restaurants, restaurant_menu_items, invento
 
 print("generating orders and order items...")
 orders, order_items = generate_orders(
-    100000,
+    400000,
     customers,
     restaurants,
     restaurant_menu_items,

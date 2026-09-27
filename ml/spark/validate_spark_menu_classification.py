@@ -1,4 +1,5 @@
 from pathlib import Path
+from config.settings import ML_DATA_FOLDER, MODEL_FOLDER
 
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
@@ -9,8 +10,8 @@ spark = SparkSession.builder \
     .appName("DineIQ Validate Spark MLlib Menu Classification") \
     .getOrCreate()
 
-output_folder = "ml_data"
-model_folder = "models"
+output_folder = ML_DATA_FOLDER
+model_folder = MODEL_FOLDER
 
 MODEL_VERSION = "spark_menu_classification_v1"
 

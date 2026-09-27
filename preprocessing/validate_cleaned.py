@@ -1,7 +1,8 @@
 from pyspark.sql import functions as F
 from spark.ingest import spark
+from config.settings import PROCESSED_DATA_FOLDER
 
-input_folder = "processed_data"
+input_folder = PROCESSED_DATA_FOLDER
 
 customers = spark.read.parquet(f"{input_folder}/customers")
 restaurants = spark.read.parquet(f"{input_folder}/restaurants")

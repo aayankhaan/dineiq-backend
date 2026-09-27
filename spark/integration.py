@@ -1,12 +1,13 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import PROCESSED_DATA_FOLDER, INTEGRATED_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Data Integration") \
     .getOrCreate()
 
-processed_folder = "processed_data"
-integrated_folder = "integrated_data"
+processed_folder = PROCESSED_DATA_FOLDER
+integrated_folder = INTEGRATED_DATA_FOLDER
 
 customers = spark.read.parquet(f"{processed_folder}/customers")
 restaurants = spark.read.parquet(f"{processed_folder}/restaurants")
@@ -260,4 +261,4 @@ restaurant_menu_data.write.mode("overwrite").parquet(f"{integrated_folder}/resta
 menu_inventory_data.write.mode("overwrite").parquet(f"{integrated_folder}/menu_inventory")
 menu_wastage_data.write.mode("overwrite").parquet(f"{integrated_folder}/menu_wastage")
 
-print("\nIntegrated analytical datasets saved to integrated_data/")
+print("\nIntegrated analytical datasets saved to data/integrated/")

@@ -2,10 +2,11 @@ import os
 import json
 import joblib
 import pandas as pd
+from config.settings import ANALYTICS_DATA_FOLDER, ML_DATA_FOLDER, MODEL_FOLDER
 
-input_folder = "analytics_data"
-output_folder = "ml_data/python"
-model_folder = "models"
+input_folder = ANALYTICS_DATA_FOLDER
+output_folder = f"{ML_DATA_FOLDER}/python"
+model_folder = MODEL_FOLDER
 
 MODEL_VERSION = "python_menu_classification_v1"
 

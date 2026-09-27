@@ -1,13 +1,14 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
+from config.settings import INTEGRATED_DATA_FOLDER, FEATURE_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Feature Engineering") \
     .getOrCreate()
 
-integrated_folder = "integrated_data"
-feature_folder = "feature_data"
+integrated_folder = INTEGRATED_DATA_FOLDER
+feature_folder = FEATURE_DATA_FOLDER
 
 transactions = spark.read.parquet(f"{integrated_folder}/transactions")
 ratings = spark.read.parquet(f"{integrated_folder}/ratings")

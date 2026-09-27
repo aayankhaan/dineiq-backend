@@ -1,11 +1,12 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import ANALYTICS_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Tricky Menu Cases Validation") \
     .getOrCreate()
 
-analytics_folder = "analytics_data"
+analytics_folder = ANALYTICS_DATA_FOLDER
 
 tricky_cases = spark.read.parquet(
     f"{analytics_folder}/tricky_menu_cases"

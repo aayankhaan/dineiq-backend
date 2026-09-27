@@ -1,16 +1,17 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import ANALYTICS_DATA_FOLDER, PROCESSED_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Menu Profitability Validation") \
     .getOrCreate()
 
 profitability = spark.read.parquet(
-    "analytics_data/menu_profitability"
+    f"{ANALYTICS_DATA_FOLDER}/menu_profitability"
 )
 
 menu_items = spark.read.parquet(
-    "processed_data/menu_items"
+    f"{PROCESSED_DATA_FOLDER}/menu_items"
 )
 
 required_columns = [

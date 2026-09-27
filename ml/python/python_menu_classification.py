@@ -9,10 +9,11 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+from config.settings import ANALYTICS_DATA_FOLDER, ML_DATA_FOLDER, MODEL_FOLDER
 
-input_folder = "analytics_data"
-output_folder = "ml_data/python"
-model_folder = "models"
+input_folder = ANALYTICS_DATA_FOLDER
+output_folder = f"{ML_DATA_FOLDER}/python"
+model_folder = MODEL_FOLDER
 
 MODEL_VERSION = "python_menu_classification_v1"
 RANDOM_STATE = 42

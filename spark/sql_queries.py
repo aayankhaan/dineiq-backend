@@ -1,11 +1,12 @@
 from pyspark.sql import SparkSession
+from config.settings import INTEGRATED_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Spark SQL") \
     .getOrCreate()
 
-integrated_folder = "integrated_data"
-sql_output_folder = "integrated_data/sql_results"
+integrated_folder = INTEGRATED_DATA_FOLDER
+sql_output_folder = f"{INTEGRATED_DATA_FOLDER}/sql_results"
 
 transactions = spark.read.parquet(f"{integrated_folder}/transactions")
 ratings = spark.read.parquet(f"{integrated_folder}/ratings")
@@ -108,5 +109,5 @@ category_performance.write.mode("overwrite").parquet(f"{sql_output_folder}/categ
 rating_performance.write.mode("overwrite").parquet(f"{sql_output_folder}/rating_performance")
 wastage_performance.write.mode("overwrite").parquet(f"{sql_output_folder}/wastage_performance")
 
-print("\nspark SQL analytical results saved to integrated_data/sql_results/")
+print("\nspark SQL analytical results saved to data/integrated/sql_results/")
 print("Spark SQL analytical queries completed successfully.")

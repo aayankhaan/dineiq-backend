@@ -1,12 +1,13 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import ANALYTICS_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Menu Performance Classification") \
     .getOrCreate()
 
-input_folder = "analytics_data"
-output_folder = "analytics_data"
+input_folder = ANALYTICS_DATA_FOLDER
+output_folder = ANALYTICS_DATA_FOLDER
 
 menu_profitability = spark.read.parquet(
     f"{input_folder}/menu_profitability"

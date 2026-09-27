@@ -1,12 +1,13 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import PROCESSED_DATA_FOLDER, INTEGRATED_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Integration Validation") \
     .getOrCreate()
 
-processed_folder = "processed_data"
-integrated_folder = "integrated_data"
+processed_folder = PROCESSED_DATA_FOLDER
+integrated_folder = INTEGRATED_DATA_FOLDER
 
 orders = spark.read.parquet(f"{processed_folder}/orders")
 order_items = spark.read.parquet(f"{processed_folder}/order_items")

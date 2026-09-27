@@ -1,7 +1,8 @@
 from pathlib import Path
 import pandas as pd
+from config.settings import ML_DATA_FOLDER
 
-output_folder = Path("ml_data/comparison")
+output_folder = Path(f"{ML_DATA_FOLDER}/comparison")
 comparison_path = output_folder / "dual_pipeline_menu_comparison.parquet"
 summary_path = output_folder / "dual_pipeline_comparison_summary.parquet"
 folds_path = output_folder / "dual_pipeline_fold_assignments.parquet"

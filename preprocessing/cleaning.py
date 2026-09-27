@@ -2,9 +2,10 @@ import os
 import csv
 from pyspark.sql import functions as F
 from spark.ingest import *
+from config.settings import PROCESSED_DATA_FOLDER, REPORTS_FOLDER
 
-output_folder = "processed_data"
-report_folder = "reports"
+output_folder = PROCESSED_DATA_FOLDER
+report_folder = REPORTS_FOLDER
 
 os.makedirs(output_folder, exist_ok=True)
 os.makedirs(report_folder, exist_ok=True)
@@ -413,5 +414,5 @@ print("Invalid menu prices after:", clean_menu_items.filter(F.col("base_price") 
 save_cleaning_report()
 save_processed_data()
 
-print("\nCleaning report saved to reports/cleaning_report.csv")
-print("Processed Parquet datasets saved to processed_data/")
+print("\nCleaning report saved to data/reports/cleaning_report.csv")
+print("Processed Parquet datasets saved to data/processed/")

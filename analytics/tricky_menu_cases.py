@@ -1,14 +1,15 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
+from config.settings import INTEGRATED_DATA_FOLDER, ANALYTICS_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Tricky Menu Performance Cases") \
     .getOrCreate()
 
-integrated_folder = "integrated_data"
-analytics_folder = "analytics_data"
-output_folder = "analytics_data/tricky_menu_cases"
+integrated_folder = INTEGRATED_DATA_FOLDER
+analytics_folder = ANALYTICS_DATA_FOLDER
+output_folder = f"{ANALYTICS_DATA_FOLDER}/tricky_menu_cases"
 
 transactions = spark.read.parquet(
     f"{integrated_folder}/transactions"

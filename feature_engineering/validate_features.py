@@ -1,12 +1,13 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import FEATURE_DATA_FOLDER, PROCESSED_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Feature Validation") \
     .getOrCreate()
 
-feature_folder = "feature_data"
-processed_folder = "processed_data"
+feature_folder = FEATURE_DATA_FOLDER
+processed_folder = PROCESSED_DATA_FOLDER
 
 item_features = spark.read.parquet(f"{feature_folder}/item_features")
 customer_features = spark.read.parquet(f"{feature_folder}/customer_features")

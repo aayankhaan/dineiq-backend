@@ -1,11 +1,12 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import EDA_OUTPUT_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ EDA Validation") \
     .getOrCreate()
 
-output_folder = "eda_outputs"
+output_folder = EDA_OUTPUT_FOLDER
 
 output_names = [
     "top_selling_dishes",

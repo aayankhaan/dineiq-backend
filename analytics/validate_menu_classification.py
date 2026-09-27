@@ -1,16 +1,17 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import ANALYTICS_DATA_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Menu Classification Validation") \
     .getOrCreate()
 
 classification = spark.read.parquet(
-    "analytics_data/menu_classification"
+    f"{ANALYTICS_DATA_FOLDER}/menu_classification"
 )
 
 menu_profitability = spark.read.parquet(
-    "analytics_data/menu_profitability"
+    f"{ANALYTICS_DATA_FOLDER}/menu_profitability"
 )
 
 valid_classes = [

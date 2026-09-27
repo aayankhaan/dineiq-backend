@@ -1,13 +1,14 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
+from config.settings import INTEGRATED_DATA_FOLDER, FEATURE_DATA_FOLDER, EDA_OUTPUT_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Exploratory Data Analysis") \
     .getOrCreate()
 
-integrated_folder = "integrated_data"
-feature_folder = "feature_data"
-output_folder = "eda_outputs"
+integrated_folder = INTEGRATED_DATA_FOLDER
+feature_folder = FEATURE_DATA_FOLDER
+output_folder = EDA_OUTPUT_FOLDER
 
 transactions = spark.read.parquet(
     f"{integrated_folder}/transactions"

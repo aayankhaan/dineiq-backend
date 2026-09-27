@@ -2,6 +2,7 @@ import os
 import csv
 from pyspark.sql import functions as F
 from spark.ingest import *
+from config.settings import REPORTS_FOLDER
 
 quality_report = []
 
@@ -191,9 +192,8 @@ def check_inconsistent_units(ingredients, inventory, wastage):
 
 
 def save_quality_report():
-    os.makedirs("reports", exist_ok=True)
-
-    with open("reports/data_quality_report.csv", "w", newline="") as file:
+    os.makedirs(REPORTS_FOLDER, exist_ok=True)
+    with open(f"{REPORTS_FOLDER}/data_quality_report.csv", "w", newline="") as file:
         writer = csv.DictWriter(
             file,
             fieldnames=["dataset", "check", "column", "issue_count", "status"]
@@ -203,7 +203,7 @@ def save_quality_report():
         writer.writeheader()
         writer.writerows(quality_report)
 
-    print("\nData quality report saved to reports/data_quality_report.csv")
+    print("\nData quality report saved to data/reports/data_quality_report.csv")
 
 
 print("\n===== ORDERS =====")

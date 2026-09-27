@@ -8,9 +8,10 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.pipeline import Pipeline as SklearnPipeline
 from sklearn.preprocessing import StandardScaler as SklearnStandardScaler
 from sklearn.ensemble import RandomForestClassifier
+from config.settings import ANALYTICS_DATA_FOLDER, ML_DATA_FOLDER
 
-input_folder = "analytics_data"
-output_folder = "ml_data/comparison"
+input_folder = ANALYTICS_DATA_FOLDER
+output_folder = f"{ML_DATA_FOLDER}/comparison"
 
 SPARK_MODEL_VERSION = "spark_menu_classification_v1"
 PYTHON_MODEL_VERSION = "python_menu_classification_v1"

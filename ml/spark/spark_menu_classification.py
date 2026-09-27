@@ -5,14 +5,15 @@ from pyspark.ml.feature import StringIndexer, VectorAssembler, StandardScaler
 from pyspark.ml.classification import LogisticRegression, DecisionTreeClassifier, RandomForestClassifier
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 from pyspark.ml import Pipeline
+from config.settings import ANALYTICS_DATA_FOLDER, ML_DATA_FOLDER, MODEL_FOLDER
 
 spark = SparkSession.builder \
     .appName("DineIQ Spark MLlib Menu Classification") \
     .getOrCreate()
 
-input_folder = "analytics_data"
-output_folder = "ml_data"
-model_folder = "models"
+input_folder = ANALYTICS_DATA_FOLDER
+output_folder = ML_DATA_FOLDER
+model_folder = MODEL_FOLDER
 
 MODEL_VERSION = "spark_menu_classification_v1"
 

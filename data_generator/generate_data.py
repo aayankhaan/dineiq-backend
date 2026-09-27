@@ -4,6 +4,7 @@ from faker import Faker
 from datetime import date, timedelta
 from faker_pk import FakerPKProvider
 import random
+from config.settings import RAW_DATA_FOLDER, DATASET_START, DATASET_END
 
 random.seed(42)
 Faker.seed(42)
@@ -11,10 +12,8 @@ Faker.seed(42)
 fake = Faker()
 fake.add_provider(FakerPKProvider)
 
-output_folder = "raw_data"
+output_folder = RAW_DATA_FOLDER
 
-DATASET_START = date(2025, 3, 1)
-DATASET_END = date(2026, 8, 31)
 
 city_areas = {
     "Karachi": [

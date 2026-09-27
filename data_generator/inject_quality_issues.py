@@ -1,9 +1,10 @@
 import pandas as pd
 import random
+from config.settings import RAW_DATA_FOLDER
 
 random.seed(42)
 
-raw_data_folder = "raw_data"
+raw_data_folder = RAW_DATA_FOLDER
 
 print("loading raw datasets...")
 

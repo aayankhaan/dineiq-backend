@@ -1,0 +1,2 @@
+comparison_version,total_unseen_cases,matches,mismatches,agreement_percentage,spark_oof_accuracy,python_oof_accuracy,average_probability_difference,spark_model_version,python_model_version
+dual_pipeline_menu_classification_v1,150,130,20,86.66666666666667,86.66666666666667,90.0,0.2951670651421778,spark_menu_classification_v1,python_menu_classification_v1

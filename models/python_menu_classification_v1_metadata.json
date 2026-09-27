@@ -1,6 +1,6 @@
 {
     "model_version": "python_menu_classification_v1",
-    "selected_model": "Random Forest",
+    "selected_model": "Decision Tree",
     "feature_columns": [
         "quantity_sold",
         "item_revenue",
@@ -38,9 +38,9 @@
         }
     },
     "test_metrics": {
-        "accuracy": 0.6956521739130435,
-        "weighted_precision": 0.6973775017253278,
-        "weighted_recall": 0.6956521739130435,
-        "f1": 0.6827400860009556
+        "accuracy": 0.9565217391304348,
+        "weighted_precision": 0.963768115942029,
+        "weighted_recall": 0.9565217391304348,
+        "f1": 0.9570487483530962
     }
 }

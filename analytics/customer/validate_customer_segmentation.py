@@ -278,9 +278,9 @@ occasional_customers = segments.filter(
 
 
 check(
-    "Occasional customers are not repeat customers",
+    "Occasional customers have lower-than-median frequency",
     occasional_customers.filter(
-        F.col("repeat_customer") == True
+        F.col("customer_frequency") >= 7
     ).count() == 0
 )
 

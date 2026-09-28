@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
 from sqlmodel import Session, select
 from app.models import User, UserRead, UserRole
-from utils import (
+from app.utils import (
     require_admin,
     pwd_context,
 )

@@ -1,5 +1,5 @@
 import os
-from fastapi import Cookie, Depends, HTTPException, status
+from fastapi import Cookie, Header, Depends, HTTPException, status
 from pwdlib import PasswordHash
 from sqlmodel import select
 from app.database import Session, get_session
@@ -49,8 +49,14 @@ def get_user_with_raise(id: int, db: Session):
 
 def get_current_user(
     access_token: str | None = Cookie(default=None),
+    authorization: str | None = Header(default=None),
     db: Session = Depends(get_session),
 ) -> User:
+    if authorization:
+        scheme, _, token = authorization.partition(" ")
+        if scheme.lower() != "bearer" or not token:
+            raise HTTPException(status_code=401, detail="Invalid authorization header")
+        access_token = token
     if not access_token:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,

@@ -27,3 +27,11 @@ class UserRead(SQLModel):
     role: UserRole
     is_active: bool
     created_at: datetime
+
+
+class AuditEvent(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    time: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    user: str
+    area: str
+    action: str

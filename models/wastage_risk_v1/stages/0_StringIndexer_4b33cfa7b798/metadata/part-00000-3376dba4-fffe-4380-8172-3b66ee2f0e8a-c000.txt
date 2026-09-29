@@ -1,1 +1,0 @@
-{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1790552469584,"sparkVersion":"4.2.0","uid":"StringIndexer_4b33cfa7b798","paramMap":{"handleInvalid":"keep","inputCol":"restaurant_id_string","outputCol":"restaurant_index"},"defaultParamMap":{"handleInvalid":"error","outputCol":"StringIndexer_4b33cfa7b798__output","stringOrderType":"frequencyDesc"}}

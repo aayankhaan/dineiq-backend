@@ -301,7 +301,6 @@ def peak(params):
         .reindex(index=range(7), columns=range(24), fill_value=0)
         .values.tolist()
     )
-    counts = df.groupby("ordering_channel").size()
     hour_channel = pd.crosstab(df.hour, df.ordering_channel).reindex(
         range(24), fill_value=0
     )
@@ -688,6 +687,11 @@ def wastage(params):
         else 0
     )
     reasons = reasons.sort_values("allocated_wastage_cost", ascending=False)
+    locations_by_id = read("processed/restaurants")[
+        ["restaurant_id", "name"]
+    ].rename(columns={"name": "restaurant_name"})
+    detail = allocation.merge(locations_by_id, on="restaurant_id", how="left")
+    detail = detail.sort_values("wastage_date", ascending=False).head(500)
     risk_params = {k: v for k, v in params.items() if k not in ("dateFrom", "dateTo")}
     risk = filtered(
         read("ml/wastage_risk/high_risk_predictions"), risk_params, LOCATION_FILTERS
@@ -742,6 +746,20 @@ def wastage(params):
                 "lag_1_preparation_quantity": "prepQty",
                 "forecast_demand_proxy": "forecastDemand",
                 "historical_average_wastage_cost": "expectedCost",
+            },
+        ),
+        "records": mapped(
+            detail,
+            {
+                "wastage_id": "id",
+                "wastage_date": "date",
+                "item_name": "item",
+                "ingredient_name": "ingredient",
+                "restaurant_name": "location",
+                "allocated_wastage_quantity": "quantity",
+                "ingredient_unit": "unit",
+                "allocated_wastage_cost": "cost",
+                "reason": "reason",
             },
         ),
     }
@@ -973,6 +991,10 @@ def comparison(params):
 
     candidates = read("ml/menu_classification_model_metrics")
     return {
+        "models": {
+            "spark": "Decision Tree",
+            "python": "Random Forest",
+        },
         "versions": {
             "spark": summary.spark_model_version,
             "python": summary.python_model_version,

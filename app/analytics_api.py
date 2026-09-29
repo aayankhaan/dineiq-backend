@@ -11,7 +11,7 @@ from sqlmodel import Session, select
 
 from app import analytics_service as service
 from app.database import get_session
-from app.models import User, UserRole, AuditEvent
+from app.models import User, UserRole, AuditEvent, ManagedLocation
 from app.user import UserCreate, create_user
 from app.utils import get_current_user, require_admin
 from app.results import DATA, read, analytics, mapped, records, ratio
@@ -247,6 +247,20 @@ def what_if(
     }
 
 
+def model_comparison_report(params):
+    result = service.comparison(params)
+    return [
+        {
+            **row,
+            "sparkModel": result["models"]["spark"],
+            "pythonModel": result["models"]["python"],
+            "sparkVersion": result["versions"]["spark"],
+            "pythonVersion": result["versions"]["python"],
+        }
+        for row in result["rows"]
+    ]
+
+
 REPORTS = {
     "menu-performance": service.menu,
     "profitability": service.menu,
@@ -259,7 +273,26 @@ REPORTS = {
     "location-performance": service.locations,
     "anomalies": lambda p: sum(service.anomalies(p).values(), []),
     "recommendations": service.recommendations,
-    "model-comparison": lambda p: service.comparison(p)["rows"],
+    "model-comparison": model_comparison_report,
+    "peak-period": lambda p: [
+        *[
+            {"view": "hour", "period": f"{row['hour']}:00", "orders": row["orders"]}
+            for row in service.peak(p)["byHour"]
+        ],
+        *[
+            {"view": "weekday", "period": row["day"], "orders": row["orders"]}
+            for row in service.peak(p)["byDay"]
+        ],
+        *[
+            {
+                "view": "location",
+                "period": row["location"],
+                "peak_hour": row["peakHour"],
+                "peak_day": row["peakDay"],
+            }
+            for row in service.peak(p)["byLocation"]
+        ],
+    ],
 }
 
 
@@ -402,9 +435,96 @@ def add_user(
     return {"id": user.id, "name": user.name, "username": user.email, "role": data.role}
 
 
-@router.get("/admin/locations", dependencies=[Depends(require_admin)])
-def admin_locations():
-    return mapped(
-        read("processed/restaurants"),
-        {"restaurant_id": "id", "name": "name", "status": "status"},
+def location_rows(db: Session):
+    base = records(read("processed/restaurants"))
+    managed = {row.id: row for row in db.exec(select(ManagedLocation)).all()}
+    rows = []
+    for row in base:
+        override = managed.pop(int(row["restaurant_id"]), None)
+        rows.append(
+            {
+                "id": int(row["restaurant_id"]),
+                "name": override.name if override else row["name"],
+                "city": override.city if override else row["city"],
+                "area": override.area if override else row["area"],
+                "status": override.status if override else row["status"],
+                "opening_date": override.opening_date if override else str(row["opening_date"]),
+                "source": "Managed" if override else "Pipeline",
+            }
+        )
+    rows.extend(
+        {
+            "id": row.id,
+            "name": row.name,
+            "city": row.city,
+            "area": row.area,
+            "status": row.status,
+            "opening_date": row.opening_date,
+            "source": "Managed",
+        }
+        for row in managed.values()
     )
+    return sorted(rows, key=lambda row: int(row["id"]))
+
+
+class LocationInput(BaseModel):
+    name: str = Field(min_length=2, max_length=120)
+    city: str = Field(min_length=2, max_length=80)
+    area: str = Field(min_length=1, max_length=80)
+    status: Literal["Active", "Inactive"] = "Active"
+    opening_date: str | None = None
+
+
+@router.get("/admin/locations", dependencies=[Depends(require_admin)])
+def admin_locations(db: Session = Depends(get_session)):
+    return location_rows(db)
+
+
+@router.post("/admin/locations")
+def add_location(
+    data: LocationInput,
+    admin: User = Depends(require_admin),
+    db: Session = Depends(get_session),
+):
+    rows = location_rows(db)
+    if any(row["name"].strip().lower() == data.name.strip().lower() for row in rows):
+        raise HTTPException(400, "A restaurant location with this name already exists")
+    location = ManagedLocation(
+        id=max((int(row["id"]) for row in rows), default=0) + 1,
+        **data.model_dump(),
+    )
+    db.add(location)
+    db.commit()
+    db.refresh(location)
+    log(db, admin, "Admin", f"Created restaurant location {location.id}")
+    return next(row for row in location_rows(db) if row["id"] == location.id)
+
+
+@router.patch("/admin/locations/{location_id}")
+def update_location(
+    location_id: int,
+    data: LocationInput,
+    admin: User = Depends(require_admin),
+    db: Session = Depends(get_session),
+):
+    rows = location_rows(db)
+    current = next((row for row in rows if int(row["id"]) == location_id), None)
+    if not current:
+        raise HTTPException(404, "Restaurant location not found")
+    duplicate = next(
+        (
+            row for row in rows
+            if int(row["id"]) != location_id
+            and row["name"].strip().lower() == data.name.strip().lower()
+        ),
+        None,
+    )
+    if duplicate:
+        raise HTTPException(400, "A restaurant location with this name already exists")
+    location = db.get(ManagedLocation, location_id) or ManagedLocation(id=location_id, **data.model_dump())
+    location.sqlmodel_update(data.model_dump())
+    location.updated_at = datetime.now(timezone.utc)
+    db.add(location)
+    db.commit()
+    log(db, admin, "Admin", f"Updated restaurant location {location_id}")
+    return next(row for row in location_rows(db) if int(row["id"]) == location_id)

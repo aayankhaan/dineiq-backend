@@ -86,6 +86,7 @@ def login(data: LoginData, response: Response, db: Session = Depends(get_session
     return {
         "success": True,
         "token": token,
+        "must_change_password": user.must_change_password,
         "user": {
             "id": user.id,
             "name": user.name,
@@ -109,4 +110,27 @@ def me(
 @app.post("/api/auth/logout")
 def logout(response: Response):
     response.delete_cookie("access_token")
+    return {"success": True}
+
+class ChangePasswordData(BaseModel):
+    current_password: str
+    new_password: str
+
+@app.post("/auth/change-password")
+@app.post("/api/auth/change-password")
+def change_password(
+    data: ChangePasswordData,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_session)
+):
+    if not pwd_context.verify(data.current_password, user.password_hash):
+        raise HTTPException(status_code=400, detail="Current password is incorrect")
+    if len(data.new_password) < 8:
+        raise HTTPException(status_code=400, detail="Password must be at least 8 characters")
+
+    user.password_hash = pwd_context.hash(data.new_password)
+    user.must_change_password = False
+    db.add(user)
+    db.commit()
+    log(db, user, "Authentication", "Changed password")
     return {"success": True}

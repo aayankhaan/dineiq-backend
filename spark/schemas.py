@@ -36,10 +36,12 @@ menu_items_schema = StructType([
     StructField("menu_items_id", IntegerType(), True),
     StructField("cat_id", IntegerType(), True),
     StructField("name", StringType(), True),
+    StructField("description", StringType(), True),
     StructField("base_price", IntegerType(), True),
     StructField("prep_time_minutes", IntegerType(), True),
     StructField("introduced_date", DateType(), True),
-    StructField("discontinued_date", DateType(), True)
+    StructField("discontinued_date", DateType(), True),
+    StructField("is_available", BooleanType(), True)
 ])
 
 menu_item_ingredients_schema = StructType([

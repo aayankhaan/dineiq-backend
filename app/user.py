@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks
 from pydantic import BaseModel
 from sqlmodel import Session, select
 from app.models import User, UserRead, UserRole
@@ -6,6 +6,8 @@ from app.utils import (
     require_admin,
     pwd_context,
 )
+from app.email import send_onboarding_email
+import secrets
 from app.database import get_session
 
 router = APIRouter(
@@ -24,7 +26,7 @@ class UserUpdate(BaseModel):
 class UserCreate(BaseModel):
     name: str
     email: str
-    password: str
+    password: str | None = None
     role: UserRole
 
 
@@ -54,30 +56,33 @@ def get_user(
 @router.post("/", response_model=UserRead)
 def create_user(
     data: UserCreate,
+    background_tasks: BackgroundTasks,
     db: Session = Depends(get_session),
 ):
     existing_user = db.exec(select(User).where(User.email == data.email)).first()
-
     if existing_user:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Email already registered",
         )
 
-    hashed_password = pwd_context.hash(data.password)
+    temp_password = data.password or secrets.token_urlsafe(9)  # ~12 chars
 
     new_user = User(
         name=data.name,
         email=data.email,
-        password_hash=hashed_password,
+        password_hash=pwd_context.hash(temp_password),
         role=data.role,
         is_active=True,
+        must_change_password=True,
     )
-
     db.add(new_user)
     db.commit()
-
     db.refresh(new_user)
+
+    background_tasks.add_task(
+        send_onboarding_email, new_user.name, new_user.email, temp_password
+    )
 
     return new_user
 

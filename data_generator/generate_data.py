@@ -465,6 +465,9 @@ ending_ingredient_map = {
     },
 }
 
+def generate_description(item_name, category_name):
+    return f"{item_name}, freshly prepared from our {category_name.lower()} section."
+
 def generate_prep_time(cat_id):
     low, high = category_prep_time.get(cat_id, (5, 20))
     return random.randint(low, high)
@@ -589,20 +592,30 @@ def generate_menu_items(n=150):
     components_list = []
     categories = generate_menu_categories()
     cat_ids = [c["category_id"] for c in categories]
+    cat_names = {c["category_id"]: c["name"] for c in categories}
 
     for i in range(1, n + 1):
         cat_id = cat_ids[(i - 1) % len(cat_ids)]
+        cat_name = cat_names[cat_id]
         base_price = generate_price(cat_id)
         name, style, item_type, ending = generate_menu_item_name(cat_id)
+
+        introduced_data = fake.date_between(start_date=DATASET_END - timedelta(days=1460), end_date=DATASET_END)
+        discontinued_date = None
+        min_discontinued = introduced_data + timedelta(days=15)
+        if min_discontinued <= DATASET_END and random.random() < 0.03:
+            discontinued_date = fake.date_between(start_date=min_discontinued, end_date=DATASET_END)
 
         items.append({
             "menu_items_id": i,
             "cat_id": cat_id,
             "name": name,
+            "description": generate_description(name, cat_name),
             "base_price": base_price,
             "prep_time_minutes": generate_prep_time(cat_id),
-            "introduced_date": fake.date_between(start_date=DATASET_END - timedelta(days=1460), end_date=DATASET_END),
-            "discontinued_date": None
+            "introduced_date": introduced_data,
+            "discontinued_date": discontinued_date,
+            "is_available": discontinued_date is None
         })
 
         components_list.append({
@@ -676,8 +689,6 @@ def random_quantity(ingredient_name, unit):
         return 1.0
     
 def generate_menu_item_ingredients(components_list, ingredient_pool):
-    """Builds the menu_item -> ingredient BOM table using the
-    common/type/style/ending ingredient maps above."""
     ingredient_lookup = {name: idx for idx, name in enumerate(ingredient_pool.keys(), start=1)}
     menu_item_ingredients = []
     row_id = 1
@@ -732,7 +743,7 @@ def generate_restaurant_menu_items(restaurants, menu_items):
                     "restaurant_id": restaurant["restaurant_id"],
                     "item_id": item["menu_items_id"],
                     "price": restaurant_price,
-                    "is_available": True
+                    "is_available": item["is_available"]
                 })
 
                 restaurant_menu_id += 1
@@ -993,8 +1004,7 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
         restaurant_demand_weights[restaurant["restaurant_id"]] = random.uniform(0.75, 1.35)
 
     for item in restaurant_menu_items:
-        if item["is_available"]:
-            menu_by_restaurant.setdefault(item["restaurant_id"], []).append(item)
+        menu_by_restaurant.setdefault(item["restaurant_id"], []).append(item)
         price_lookup[(item["restaurant_id"], item["item_id"])] = item["price"]
         item_popularity[(item["restaurant_id"], item["item_id"])] = random.uniform(0.55, 1.45)
 

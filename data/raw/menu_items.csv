@@ -1,151 +1,151 @@
-menu_items_id,cat_id,name,base_price,prep_time_minutes,introduced_date,discontinued_date
-1,1,Garlic Samosa Bites,630,11,2024-06-20,
-2,2,Malai Chicken Seekh,920,17,2023-04-23,
-3,3,Classic Zinger Burger,520,12,2022-12-14,
-4,4,Kala Namak Paneer Karahi,990,32,2025-08-06,
-5,5,Dum Prawn Rice,1310,29,2023-10-01,
-6,6,Creamy Alfredo Chicken Noodles,520,17,2026-06-02,
-7,7,Achari Chicken Special Pizza,1140,18,2023-03-07,
-8,8,Kesar Pista Kulfi,330,9,2024-05-27,
-9,9,Peshawari Qehwa Chai,220,5,2023-08-06,
-10,10,Classic Soda,490,6,2026-05-06,
-11,11,Chicken Paratha,0,7,2023-12-31,
-12,12,Aloo Chutney,340,16,2022-11-25,
-13,1,Masala Nuggets,330,9,2025-07-20,
-14,2,Behari Chicken Chargha,650,20,2023-04-05,
-15,3,Smoky Zinger Cheese Burger,520,11,2022-12-09,
-16,4,Achari Mutton Karahi,790,32,2023-11-15,
-17,5,Sindhi Chicken Pulao,1340,27,2023-06-18,
-18,6,Cheesy Baked Chicken Noodles,1010,13,2023-01-07,
-19,7,Mughlai Supreme Pizza,1250,16,2026-07-10,
-20,8,Chocolate Kulfi,680,5,2022-10-06,
-21,9,Kashmiri Tea,0,6,2024-04-09,
-22,10,Mint Lassi,180,3,2025-06-08,
-23,11,Keema Frankie,510,8,2023-03-06,
-24,12,Chana Daal Mash,280,19,2023-03-09,
-25,1,Honey Mustard Chicken Rolls,350,5,2026-04-16,
-26,2,Achari Kebab,1470,29,2023-10-15,
-27,3,Loaded Steak Wrap,840,9,2026-05-23,
-28,4,Desi White Beef Handi,1030,25,2022-12-17,
-29,5,Nawabi Mutton Tehari,1090,30,2022-11-12,
-30,6,Chilli Garlic Prawn Spaghetti,500,10,2025-11-05,
-31,7,Hawaiian Supreme Pizza,1250,17,2024-04-28,
-32,8,Kesar Pista Molten Lava Cake,420,6,2023-11-14,
-33,9,Adrak Tea,350,3,2024-01-13,
-34,10,Chocolate Shake,430,2,2024-02-07,
-35,11,Seekh Kebab Roll,550,13,2024-10-21,
-36,12,Daal Salad,320,20,2023-06-17,
-37,1,Peri Peri Nuggets,530,11,2022-09-11,
-38,2,Peshawari Chicken Seekh,750,22,2022-10-09,
-39,3,Classic Beef Sandwich,780,14,2025-07-27,
-40,4,Achari Mutton Balti,1180,32,2025-02-06,
-41,5,Special VIP Prawn Biryani,930,29,2023-10-01,
-42,6,Chilli Garlic Vegetable Spaghetti,770,18,2025-11-19,
-43,7,Tandoori Special Pizza,1040,18,2022-12-09,
-44,8,Chilled Kheer,480,6,2025-08-11,
-45,9,Cappuccino Qehwa,240,6,2023-03-17,
-46,10,Blueberry Shake,250,3,2026-01-05,
-47,11,Malai Boti Roll,350,14,2023-10-26,
-48,12,Raita Raita,200,15,2023-09-29,
-49,1,Loaded Samosa Bites,600,8,2024-03-12,
-50,2,Kasturi Chicken Chargha,1470,25,2023-03-13,
-51,3,Smoky Beef Sandwich,720,10,2024-04-06,
-52,4,Lahori Chicken Balti,1420,25,2023-01-29,
-53,5,Sindhi Chicken Rice,960,28,2025-03-15,
-54,6,Peri Peri Beef Spaghetti,690,13,2023-12-22,
-55,7,Loaded Meat Special Pizza,1800,20,2026-02-16,
-56,8,Kesar Pista Brownie,270,8,2024-05-26,
-57,9,Karak Chai,180,5,2024-01-30,
-58,10,Strawberry Sharbat,430,4,2023-09-20,
-59,11,Chicken Roll,460,12,2025-12-30,
-60,12,Raita Chutney,390,14,2024-08-22,
-61,1,Honey Mustard Cheese Sticks,610,8,2022-09-04,
-62,2,Angara Kebab,680,25,2025-04-28,
-63,3,Double Club Sandwich,400,8,2023-04-25,
-64,4,Koyla Beef Handi,0,33,2023-08-05,
-65,5,Dum Prawn Tehari,1040,19,2025-11-02,
-66,6,White Sauce Prawn Spaghetti,880,15,2024-11-03,
-67,7,Pepperoni Special Pizza,1760,16,2025-07-05,
-68,8,Warm Ras Malai,220,4,2024-09-01,
-69,9,Elaichi Qehwa,170,3,2025-04-02,
-70,10,Blueberry Soda,270,4,2026-02-10,
-71,11,Aloo Paratha,520,9,2024-11-14,
-72,12,Daal Raita,360,10,2026-02-28,
-73,1,Loaded Spring Rolls,470,7,2023-08-31,
-74,2,Achari Sajji,1200,23,2026-01-31,
-75,3,Desi Style Zinger Sandwich,460,14,2023-06-12,
-76,4,Desi White Chicken Karahi,780,30,2025-04-29,
-77,5,Dum Mutton Pulao,900,23,2023-08-13,
-78,6,Spicy Arrabbiata Vegetable Chowmein,1090,17,2023-05-22,
-79,7,Tandoori Pizza,850,18,2025-11-13,
-80,8,Kesar Pista Gulab Jamun,350,6,2025-10-17,
-81,9,Kashmiri Chai,-100,4,2026-03-28,
-82,10,Chocolate Sharbat,260,5,2023-09-14,
-83,11,Keema Wrap,500,11,2025-09-10,
-84,12,Mix Veg Daal Chana,440,10,2024-04-14,
-85,1,Honey Mustard Fries,250,12,2024-07-17,
-86,2,Chargha Style Chicken Chargha,1420,19,2024-07-14,
-87,3,Classic Chicken Sandwich,380,12,2026-03-28,
-88,4,Makhni Paneer Karahi,580,23,2022-10-09,
-89,5,Kachay Gosht Ki Mutton Biryani,810,23,2025-03-17,
-90,6,Creamy Alfredo Beef Chowmein,550,12,2025-01-04,
-91,7,Chicken Tikka Pizza,1290,17,2025-01-30,
-92,8,Lotus Biscoff Ice Cream,550,10,2026-02-25,
-93,9,Peshawari Qehwa Coffee,320,8,2024-03-29,
-94,10,Rose Soda,380,2,2023-07-14,
-95,11,Aloo Frankie,490,9,2026-05-09,
-96,12,Daal Daal Mash,240,11,2023-12-08,
-97,1,Crispy Nuggets,570,5,2023-04-16,
-98,2,Tikka Malai Boti,1060,29,2024-03-04,
-99,3,Zafrani Beef Wrap,770,11,2025-08-12,
-100,4,Kala Namak Paneer Handi,790,33,2025-12-16,
-101,5,Kachay Gosht Ki Prawn Pulao,740,18,2022-12-13,
-102,6,Schezwan Vegetable Noodles,1050,16,2024-10-10,
-103,7,Tandoori Supreme Pizza,1010,13,2022-12-03,
-104,8,Rabri Gulab Jamun,520,5,2023-03-09,
-105,9,Green Coffee,240,7,2023-06-26,
-106,10,Strawberry Soda,360,6,2026-02-10,
-107,11,Malai Boti Frankie,460,14,2025-09-04,
-108,12,Bhindi Chutney,-100,14,2024-01-06,
-109,1,Chatpata Nuggets,550,9,2024-10-17,
-110,2,Behari Beef Boti,520,23,2024-12-07,
-111,3,Grilled Bihari Boti Wrap,780,9,2026-04-19,
-112,4,Koyla Mutton Balti,960,35,2023-01-20,
-113,5,Special VIP Mutton Pulao,830,20,2025-07-20,
-114,6,Peri Peri Prawn Noodles,640,12,2023-05-02,
-115,7,Loaded Meat Pizza,2120,13,2023-03-07,
-116,8,Chilled Gulab Jamun,360,10,2024-04-03,
-117,9,Doodh Patti Chai,230,7,2024-04-04,
-118,10,Mango Lemonade,180,4,2026-08-02,
-119,11,Achari Wrap,590,6,2025-11-24,
-120,12,Palak Salad,280,15,2026-08-08,
-121,1,Loaded Fries,460,5,2024-02-26,
-122,2,Kasturi Tikka Leg Piece,540,20,2023-03-29,
-123,3,Spicy Club Sandwich,730,12,2023-10-16,
-124,4,Peshawari Beef Handi,1250,23,2025-01-16,
-125,5,Nawabi Beef Rice,820,26,2025-02-12,
-126,6,Chilli Garlic Chicken Spaghetti,990,16,2025-04-19,
-127,7,Malai Boti Pizza,1670,22,2023-09-23,
-128,8,Rabri Kulfi,300,7,2026-04-30,
-129,9,Elaichi Tea,290,4,2022-09-03,
-130,10,Mint Lemonade,460,4,2026-05-22,
-131,11,Beef Wrap,420,6,2025-11-11,
-132,12,Palak Chutney,360,15,2024-10-24,
-133,1,Masala Spring Rolls,510,11,2024-09-04,
-134,2,Bihari Malai Boti,-100,16,2023-03-11,
-135,3,Smoky Club Wrap,730,15,2023-07-15,
-136,4,Koyla Chicken Handi,520,21,2022-09-21,
-137,5,Karachi Style Chicken Pulao,410,25,2025-11-23,
-138,6,Creamy Alfredo Beef Pasta,600,15,2023-02-06,
-139,7,Achari Chicken Supreme Pizza,1620,13,2024-05-20,
-140,8,Kesar Pista Kheer,690,8,2023-01-21,
-141,9,Karak Qehwa,310,3,2026-05-21,
-142,10,Blueberry Lassi,400,2,2025-01-11,
-143,11,Seekh Kebab Wrap,590,7,2024-11-21,
-144,12,Mix Veg Chutney,240,12,2022-10-12,
-145,1,Garlic Chicken Rolls,-100,9,2023-12-24,
-146,2,Peshawari Chops,0,18,2025-12-10,
-147,3,Double Bihari Boti Cheese Burger,640,9,2025-11-15,
-148,4,Peshawari Mutton Karahi,1040,23,2026-03-12,
-149,5,Sindhi Beef Pulao,0,23,2022-12-16,
-150,6,Chinese Style Beef Chowmein,-100,15,2023-02-08,
+menu_items_id,cat_id,name,description,base_price,prep_time_minutes,introduced_date,discontinued_date,is_available
+1,1,Garlic Samosa Bites,"Garlic Samosa Bites, freshly prepared from our appetizers section.",630,8,2024-06-20,,True
+2,2,Tikka Beef Boti,"Tikka Beef Boti, freshly prepared from our bbq & grills section.",520,25,2023-04-23,,True
+3,3,Double Zinger Sandwich,"Double Zinger Sandwich, freshly prepared from our burgers & sandwiches section.",480,15,2022-12-14,,True
+4,4,Dhaba Style Paneer Handi,"Dhaba Style Paneer Handi, freshly prepared from our karahi & handi section.",1580,21,2025-08-06,,True
+5,5,Dum Beef Tehari,"Dum Beef Tehari, freshly prepared from our rice & biryani section.",530,28,2023-10-01,,True
+6,6,Chinese Style Chicken Chowmein,"Chinese Style Chicken Chowmein, freshly prepared from our pasta & noodles section.",720,18,2026-06-02,,True
+7,7,Malai Boti Supreme Pizza,"Malai Boti Supreme Pizza, freshly prepared from our pizza section.",1770,13,2023-03-07,,True
+8,8,Shahi Kulfi,"Shahi Kulfi, freshly prepared from our desserts section.",470,6,2024-05-27,,True
+9,9,Doodh Patti Chai,"Doodh Patti Chai, freshly prepared from our hot beverages section.",260,8,2023-08-06,,True
+10,10,Rose Margarita,"Rose Margarita, freshly prepared from our cold beverages section.",170,6,2026-05-06,,True
+11,11,Keema Paratha,"Keema Paratha, freshly prepared from our rolls & parathas section.",0,14,2023-12-31,,True
+12,12,Chana Daal Mash,"Chana Daal Mash, freshly prepared from our salan & sides section.",230,12,2022-11-25,,True
+13,1,Crispy Nuggets,"Crispy Nuggets, freshly prepared from our appetizers section.",370,12,2025-07-20,,True
+14,2,Reshmi Beef Boti,"Reshmi Beef Boti, freshly prepared from our bbq & grills section.",1800,19,2023-04-05,,True
+15,3,Smoky Chicken Sandwich,"Smoky Chicken Sandwich, freshly prepared from our burgers & sandwiches section.",450,11,2022-12-09,,True
+16,4,Koyla Mutton Handi,"Koyla Mutton Handi, freshly prepared from our karahi & handi section.",1380,22,2023-11-15,,True
+17,5,Special VIP Beef Pulao,"Special VIP Beef Pulao, freshly prepared from our rice & biryani section.",1250,15,2023-06-18,,True
+18,6,White Sauce Prawn Spaghetti,"White Sauce Prawn Spaghetti, freshly prepared from our pasta & noodles section.",840,19,2023-01-07,,True
+19,7,Behari Boti Supreme Pizza,"Behari Boti Supreme Pizza, freshly prepared from our pizza section.",1690,19,2026-07-10,,True
+20,8,Chocolate Brownie,"Chocolate Brownie, freshly prepared from our desserts section.",490,3,2022-10-06,,True
+21,9,Cappuccino Tea,"Cappuccino Tea, freshly prepared from our hot beverages section.",0,5,2024-04-09,,True
+22,10,Strawberry Lemonade,"Strawberry Lemonade, freshly prepared from our cold beverages section.",420,5,2025-06-08,,True
+23,11,Aloo Wrap,"Aloo Wrap, freshly prepared from our rolls & parathas section.",370,13,2023-03-06,,True
+24,12,Palak Chana Masala,"Palak Chana Masala, freshly prepared from our salan & sides section.",180,16,2023-03-09,,True
+25,1,Chatpata Pakora,"Chatpata Pakora, freshly prepared from our appetizers section.",430,8,2026-04-16,,True
+26,2,Peshawari Kebab,"Peshawari Kebab, freshly prepared from our bbq & grills section.",1300,24,2023-10-15,,True
+27,3,Grilled Beef Cheese Burger,"Grilled Beef Cheese Burger, freshly prepared from our burgers & sandwiches section.",720,8,2026-05-23,,True
+28,4,Shinwari Beef Balti,"Shinwari Beef Balti, freshly prepared from our karahi & handi section.",1420,35,2022-12-17,,True
+29,5,Special VIP Egg Fried Tehari,"Special VIP Egg Fried Tehari, freshly prepared from our rice & biryani section.",950,30,2022-11-12,,True
+30,6,Spicy Arrabbiata Prawn Chowmein,"Spicy Arrabbiata Prawn Chowmein, freshly prepared from our pasta & noodles section.",510,15,2025-11-05,,True
+31,7,Chicken Tikka Supreme Pizza,"Chicken Tikka Supreme Pizza, freshly prepared from our pizza section.",1160,18,2024-04-28,,True
+32,8,Chilled Gulab Jamun,"Chilled Gulab Jamun, freshly prepared from our desserts section.",380,3,2023-11-14,,True
+33,9,Cappuccino Coffee,"Cappuccino Coffee, freshly prepared from our hot beverages section.",220,8,2024-01-13,,True
+34,10,Chocolate Soda,"Chocolate Soda, freshly prepared from our cold beverages section.",460,2,2024-02-07,,True
+35,11,Spicy Chicken Roll,"Spicy Chicken Roll, freshly prepared from our rolls & parathas section.",590,14,2024-10-21,,True
+36,12,Aloo Raita,"Aloo Raita, freshly prepared from our salan & sides section.",330,11,2023-06-17,,True
+37,1,Honey Mustard Cheese Sticks,"Honey Mustard Cheese Sticks, freshly prepared from our appetizers section.",510,9,2022-09-11,,True
+38,2,Peshawari Chicken Seekh,"Peshawari Chicken Seekh, freshly prepared from our bbq & grills section.",1260,30,2022-10-09,,True
+39,3,Smoky Zinger Cheese Burger,"Smoky Zinger Cheese Burger, freshly prepared from our burgers & sandwiches section.",670,12,2025-07-27,,True
+40,4,Kala Namak Paneer Handi,"Kala Namak Paneer Handi, freshly prepared from our karahi & handi section.",1420,25,2025-02-06,,True
+41,5,Hyderabadi Beef Tehari,"Hyderabadi Beef Tehari, freshly prepared from our rice & biryani section.",430,22,2023-10-01,,True
+42,6,Creamy Alfredo Chicken Spaghetti,"Creamy Alfredo Chicken Spaghetti, freshly prepared from our pasta & noodles section.",1010,14,2025-11-19,,True
+43,7,Veggie Special Pizza,"Veggie Special Pizza, freshly prepared from our pizza section.",1630,14,2022-12-09,,True
+44,8,Chilled Brownie,"Chilled Brownie, freshly prepared from our desserts section.",480,7,2025-08-11,,True
+45,9,Cappuccino Chai,"Cappuccino Chai, freshly prepared from our hot beverages section.",190,3,2023-03-17,,True
+46,10,Strawberry Sharbat,"Strawberry Sharbat, freshly prepared from our cold beverages section.",310,6,2026-01-05,,True
+47,11,Spicy Chicken Frankie,"Spicy Chicken Frankie, freshly prepared from our rolls & parathas section.",230,15,2023-10-26,,True
+48,12,Mix Veg Chutney,"Mix Veg Chutney, freshly prepared from our salan & sides section.",240,13,2023-09-29,,True
+49,1,Crispy Cheese Sticks,"Crispy Cheese Sticks, freshly prepared from our appetizers section.",560,5,2024-03-12,,True
+50,2,Bihari Chicken Seekh,"Bihari Chicken Seekh, freshly prepared from our bbq & grills section.",1170,24,2023-03-13,,True
+51,3,Desi Style Bihari Boti Sandwich,"Desi Style Bihari Boti Sandwich, freshly prepared from our burgers & sandwiches section.",400,12,2024-04-06,,True
+52,4,Koyla Beef Handi,"Koyla Beef Handi, freshly prepared from our karahi & handi section.",850,33,2023-01-29,,True
+53,5,Dum Prawn Tehari,"Dum Prawn Tehari, freshly prepared from our rice & biryani section.",1040,28,2025-03-15,,True
+54,6,Chinese Style Prawn Pasta,"Chinese Style Prawn Pasta, freshly prepared from our pasta & noodles section.",970,10,2023-12-22,,True
+55,7,Fajita Pizza,"Fajita Pizza, freshly prepared from our pizza section.",1880,14,2026-02-16,,True
+56,8,Shahi Gulab Jamun,"Shahi Gulab Jamun, freshly prepared from our desserts section.",420,7,2024-05-26,,True
+57,9,Peshawari Qehwa Coffee,"Peshawari Qehwa Coffee, freshly prepared from our hot beverages section.",340,6,2024-01-30,,True
+58,10,Mango Soda,"Mango Soda, freshly prepared from our cold beverages section.",220,4,2023-09-20,,True
+59,11,Malai Boti Roll,"Malai Boti Roll, freshly prepared from our rolls & parathas section.",230,7,2025-12-30,,True
+60,12,Mix Veg Daal Chana,"Mix Veg Daal Chana, freshly prepared from our salan & sides section.",430,19,2024-08-22,,True
+61,1,Loaded Chicken Rolls,"Loaded Chicken Rolls, freshly prepared from our appetizers section.",290,8,2022-09-04,,True
+62,2,Tikka Sajji,"Tikka Sajji, freshly prepared from our bbq & grills section.",1020,17,2025-04-28,,True
+63,3,Classic Beef Wrap,"Classic Beef Wrap, freshly prepared from our burgers & sandwiches section.",860,10,2023-04-25,,True
+64,4,Desi White Paneer Karahi,"Desi White Paneer Karahi, freshly prepared from our karahi & handi section.",0,18,2023-08-05,,True
+65,5,Nawabi Beef Rice,"Nawabi Beef Rice, freshly prepared from our rice & biryani section.",470,22,2025-11-02,,True
+66,6,Peri Peri Beef Spaghetti,"Peri Peri Beef Spaghetti, freshly prepared from our pasta & noodles section.",840,14,2024-11-03,,True
+67,7,Malai Boti Pizza,"Malai Boti Pizza, freshly prepared from our pizza section.",1230,13,2025-07-05,,True
+68,8,Rabri Kulfi,"Rabri Kulfi, freshly prepared from our desserts section.",430,8,2024-09-01,,True
+69,9,Karak Tea,"Karak Tea, freshly prepared from our hot beverages section.",140,7,2025-04-02,,True
+70,10,Classic Lemonade,"Classic Lemonade, freshly prepared from our cold beverages section.",280,6,2026-02-10,,True
+71,11,Spicy Chicken Wrap,"Spicy Chicken Wrap, freshly prepared from our rolls & parathas section.",280,10,2024-11-14,,True
+72,12,Aloo Chutney,"Aloo Chutney, freshly prepared from our salan & sides section.",200,12,2026-02-28,,True
+73,1,Garlic Cheese Sticks,"Garlic Cheese Sticks, freshly prepared from our appetizers section.",400,9,2023-08-31,,True
+74,2,Achari Chicken Chargha,"Achari Chicken Chargha, freshly prepared from our bbq & grills section.",1380,29,2026-01-31,,True
+75,3,Desi Style Zinger Burger,"Desi Style Zinger Burger, freshly prepared from our burgers & sandwiches section.",790,10,2023-06-12,,True
+76,4,Lahori Mutton Karahi,"Lahori Mutton Karahi, freshly prepared from our karahi & handi section.",1580,20,2025-04-29,,True
+77,5,Bombay Beef Pulao,"Bombay Beef Pulao, freshly prepared from our rice & biryani section.",1290,22,2023-08-13,,True
+78,6,Creamy Alfredo Vegetable Pasta,"Creamy Alfredo Vegetable Pasta, freshly prepared from our pasta & noodles section.",970,19,2023-05-22,,True
+79,7,Tandoori Special Pizza,"Tandoori Special Pizza, freshly prepared from our pizza section.",1120,12,2025-11-13,,True
+80,8,Caramel Gulab Jamun,"Caramel Gulab Jamun, freshly prepared from our desserts section.",460,9,2025-10-17,,True
+81,9,Elaichi Coffee,"Elaichi Coffee, freshly prepared from our hot beverages section.",-100,3,2026-03-28,,True
+82,10,Blueberry Lassi,"Blueberry Lassi, freshly prepared from our cold beverages section.",450,2,2023-09-14,,True
+83,11,Beef Paratha,"Beef Paratha, freshly prepared from our rolls & parathas section.",330,8,2025-09-10,,True
+84,12,Chana Chana Masala,"Chana Chana Masala, freshly prepared from our salan & sides section.",430,16,2024-04-14,,True
+85,1,Peri Peri Nuggets,"Peri Peri Nuggets, freshly prepared from our appetizers section.",480,8,2024-07-17,,True
+86,2,Behari Chops,"Behari Chops, freshly prepared from our bbq & grills section.",1580,15,2024-07-14,,True
+87,3,Crispy Club Sandwich,"Crispy Club Sandwich, freshly prepared from our burgers & sandwiches section.",510,14,2026-03-28,,True
+88,4,Makhni Mutton Handi,"Makhni Mutton Handi, freshly prepared from our karahi & handi section.",1370,22,2022-10-09,,True
+89,5,Karachi Style Beef Rice,"Karachi Style Beef Rice, freshly prepared from our rice & biryani section.",1020,19,2025-03-17,,True
+90,6,Cheesy Baked Prawn Spaghetti,"Cheesy Baked Prawn Spaghetti, freshly prepared from our pasta & noodles section.",1090,12,2025-01-04,,True
+91,7,Loaded Meat Pizza,"Loaded Meat Pizza, freshly prepared from our pizza section.",2120,13,2025-01-30,,True
+92,8,Rabri Molten Lava Cake,"Rabri Molten Lava Cake, freshly prepared from our desserts section.",360,4,2026-02-25,,True
+93,9,Peshawari Qehwa Tea,"Peshawari Qehwa Tea, freshly prepared from our hot beverages section.",320,5,2024-03-29,,True
+94,10,Mint Shake,"Mint Shake, freshly prepared from our cold beverages section.",290,6,2023-07-14,,True
+95,11,Beef Roll,"Beef Roll, freshly prepared from our rolls & parathas section.",520,7,2026-05-09,,True
+96,12,Palak Raita,"Palak Raita, freshly prepared from our salan & sides section.",430,13,2023-12-08,,True
+97,1,Cheesy Nuggets,"Cheesy Nuggets, freshly prepared from our appetizers section.",510,11,2023-04-16,,True
+98,2,Kasturi Malai Boti,"Kasturi Malai Boti, freshly prepared from our bbq & grills section.",1140,20,2024-03-04,,True
+99,3,Desi Style Steak Cheese Burger,"Desi Style Steak Cheese Burger, freshly prepared from our burgers & sandwiches section.",770,13,2025-08-12,,True
+100,4,Peshawari Beef Balti,"Peshawari Beef Balti, freshly prepared from our karahi & handi section.",1530,25,2025-12-16,,True
+101,5,Hyderabadi Egg Fried Tehari,"Hyderabadi Egg Fried Tehari, freshly prepared from our rice & biryani section.",400,16,2022-12-13,,True
+102,6,Schezwan Beef Spaghetti,"Schezwan Beef Spaghetti, freshly prepared from our pasta & noodles section.",660,17,2024-10-10,,True
+103,7,Achari Chicken Pizza,"Achari Chicken Pizza, freshly prepared from our pizza section.",1750,21,2022-12-03,,True
+104,8,Shahi Ice Cream,"Shahi Ice Cream, freshly prepared from our desserts section.",210,9,2023-03-09,,True
+105,9,Cappuccino Qehwa,"Cappuccino Qehwa, freshly prepared from our hot beverages section.",250,8,2023-06-26,,True
+106,10,Blueberry Shake,"Blueberry Shake, freshly prepared from our cold beverages section.",420,5,2026-02-10,,True
+107,11,Malai Boti Frankie,"Malai Boti Frankie, freshly prepared from our rolls & parathas section.",300,6,2025-09-04,,True
+108,12,Aloo Daal Chana,"Aloo Daal Chana, freshly prepared from our salan & sides section.",-100,11,2024-01-06,2026-03-08,False
+109,1,Chatpata Fries,"Chatpata Fries, freshly prepared from our appetizers section.",340,8,2024-12-07,,True
+110,2,Tikka Kebab,"Tikka Kebab, freshly prepared from our bbq & grills section.",1050,24,2026-04-19,,True
+111,3,Double Zinger Wrap,"Double Zinger Wrap, freshly prepared from our burgers & sandwiches section.",860,13,2023-01-20,,True
+112,4,Peshawari Paneer Handi,"Peshawari Paneer Handi, freshly prepared from our karahi & handi section.",1270,33,2025-07-20,,True
+113,5,Dum Egg Fried Biryani,"Dum Egg Fried Biryani, freshly prepared from our rice & biryani section.",650,20,2023-05-02,,True
+114,6,Cheesy Baked Chicken Spaghetti,"Cheesy Baked Chicken Spaghetti, freshly prepared from our pasta & noodles section.",710,11,2023-03-07,,True
+115,7,Mughlai Supreme Pizza,"Mughlai Supreme Pizza, freshly prepared from our pizza section.",1070,21,2024-04-03,,True
+116,8,Warm Ice Cream,"Warm Ice Cream, freshly prepared from our desserts section.",330,4,2024-04-04,,True
+117,9,Espresso Tea,"Espresso Tea, freshly prepared from our hot beverages section.",330,5,2026-08-02,,True
+118,10,Mango Lemonade,"Mango Lemonade, freshly prepared from our cold beverages section.",160,2,2025-11-24,,True
+119,11,Seekh Kebab Wrap,"Seekh Kebab Wrap, freshly prepared from our rolls & parathas section.",570,12,2026-08-08,,True
+120,12,Palak Chutney,"Palak Chutney, freshly prepared from our salan & sides section.",250,17,2024-02-26,,True
+121,1,Masala Pakora,"Masala Pakora, freshly prepared from our appetizers section.",600,12,2023-03-29,,True
+122,2,Bihari Tikka Leg Piece,"Bihari Tikka Leg Piece, freshly prepared from our bbq & grills section.",870,20,2023-10-16,,True
+123,3,Spicy Beef Burger,"Spicy Beef Burger, freshly prepared from our burgers & sandwiches section.",680,9,2025-01-16,,True
+124,4,Kala Namak Beef Balti,"Kala Namak Beef Balti, freshly prepared from our karahi & handi section.",1260,30,2025-02-12,,True
+125,5,Hyderabadi Mutton Biryani,"Hyderabadi Mutton Biryani, freshly prepared from our rice & biryani section.",810,16,2025-04-19,,True
+126,6,Peri Peri Prawn Chowmein,"Peri Peri Prawn Chowmein, freshly prepared from our pasta & noodles section.",490,12,2023-09-23,,True
+127,7,Cheese Special Pizza,"Cheese Special Pizza, freshly prepared from our pizza section.",1530,17,2026-04-30,,True
+128,8,Lotus Biscoff Molten Lava Cake,"Lotus Biscoff Molten Lava Cake, freshly prepared from our desserts section.",300,8,2022-09-03,,True
+129,9,Adrak Qehwa,"Adrak Qehwa, freshly prepared from our hot beverages section.",210,3,2026-05-22,,True
+130,10,Mint Margarita,"Mint Margarita, freshly prepared from our cold beverages section.",430,5,2025-11-11,,True
+131,11,Beef Frankie,"Beef Frankie, freshly prepared from our rolls & parathas section.",310,14,2024-10-24,,True
+132,12,Mix Veg Chana Masala,"Mix Veg Chana Masala, freshly prepared from our salan & sides section.",390,14,2024-09-04,,True
+133,1,Garlic Chicken Rolls,"Garlic Chicken Rolls, freshly prepared from our appetizers section.",450,6,2023-03-11,,True
+134,2,Kasturi Kebab,"Kasturi Kebab, freshly prepared from our bbq & grills section.",-100,29,2023-07-15,,True
+135,3,Loaded Zinger Wrap,"Loaded Zinger Wrap, freshly prepared from our burgers & sandwiches section.",640,14,2022-09-21,,True
+136,4,Lahori Paneer Balti,"Lahori Paneer Balti, freshly prepared from our karahi & handi section.",820,33,2025-11-23,,True
+137,5,Sindhi Chicken Pulao,"Sindhi Chicken Pulao, freshly prepared from our rice & biryani section.",600,17,2023-02-06,,True
+138,6,Chinese Style Beef Chowmein,"Chinese Style Beef Chowmein, freshly prepared from our pasta & noodles section.",1080,19,2024-05-20,,True
+139,7,Achari Chicken Supreme Pizza,"Achari Chicken Supreme Pizza, freshly prepared from our pizza section.",1670,18,2023-01-21,,True
+140,8,Caramel Ras Malai,"Caramel Ras Malai, freshly prepared from our desserts section.",590,10,2026-05-21,,True
+141,9,Green Qehwa,"Green Qehwa, freshly prepared from our hot beverages section.",210,6,2025-01-11,,True
+142,10,Chocolate Lemonade,"Chocolate Lemonade, freshly prepared from our cold beverages section.",180,6,2024-11-21,,True
+143,11,Chicken Roll,"Chicken Roll, freshly prepared from our rolls & parathas section.",360,13,2022-10-12,,True
+144,12,Raita Raita,"Raita Raita, freshly prepared from our salan & sides section.",250,11,2023-12-24,,True
+145,1,Peri Peri Cheese Sticks,"Peri Peri Cheese Sticks, freshly prepared from our appetizers section.",-100,11,2025-12-10,2026-01-20,False
+146,2,Angara Chicken Seekh,"Angara Chicken Seekh, freshly prepared from our bbq & grills section.",0,17,2023-02-08,,True
+147,3,Zafrani Zinger Cheese Burger,"Zafrani Zinger Cheese Burger, freshly prepared from our burgers & sandwiches section.",590,10,2025-08-27,,True
+148,4,Koyla Chicken Handi,"Koyla Chicken Handi, freshly prepared from our karahi & handi section.",1320,35,2023-06-09,,True
+149,5,Sindhi Egg Fried Pulao,"Sindhi Egg Fried Pulao, freshly prepared from our rice & biryani section.",0,18,2026-06-10,,True
+150,6,Creamy Alfredo Beef Chowmein,"Creamy Alfredo Beef Chowmein, freshly prepared from our pasta & noodles section.",-100,16,2026-05-07,,True

@@ -137,6 +137,8 @@ python-multipart==0.0.32
     # via fastapi
 pyyaml==6.0.3
     # via uvicorn
+resend>=2.48.0
+    # via dine-iq
 rich==15.0.0
     # via
     #   rich-toolkit

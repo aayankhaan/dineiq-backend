@@ -99,6 +99,8 @@ psycopg==3.3.6
     # via dine-iq
 psycopg-binary==3.3.6 ; implementation_name != 'pypy'
     # via psycopg
+psycopg2-binary>=2.9.0
+    # via dine-iq
 pwdlib==0.3.1
     # via dine-iq
 py4j==0.10.9.9

@@ -3,6 +3,7 @@ from pyspark.sql import functions as F
 from pyspark.sql.window import Window
 
 from config.settings import ANALYTICS_DATA_FOLDER
+from data_generator.generate_data import bundle_compatible
 
 
 spark = SparkSession.builder \
@@ -21,6 +22,10 @@ rules = spark.read.parquet(
 
 recommendation_base = rules.filter(
     F.col("lift") > 1.0
+).filter(
+    F.udf(bundle_compatible, "boolean")(
+        F.col("antecedent_item_name"), F.col("consequent_item_name")
+    )
 ).withColumn(
     "recommendation_type",
     F.when(

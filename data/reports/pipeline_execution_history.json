@@ -992,7 +992,35 @@
           "error": null
         }
       ]
+    },
+    {
+      "run_id": "5c68d0c00b264574979fa8ed11371dca",
+      "command": "run_pipeline.py",
+      "python_executable": "C:\\Coding\\Dine IQ\\dineiq-backend\\.venv\\Scripts\\python.exe",
+      "working_directory": "C:\\Coding\\Dine IQ\\dineiq-backend",
+      "started_at": "2026-10-14T17:39:47+05:00",
+      "finished_at": "2026-10-14T17:41:50+05:00",
+      "duration_seconds": 123.162,
+      "status": "cancelled",
+      "start_step": "generate_data",
+      "total_steps": 79,
+      "completed_steps": 0,
+      "failed_step": "generate_data",
+      "steps": [
+        {
+          "position": 1,
+          "name": "generate_data",
+          "group": "Data",
+          "script": "data_generator/generate_data.py",
+          "started_at": "2026-10-14T17:39:47+05:00",
+          "finished_at": "2026-10-14T17:41:50+05:00",
+          "duration_seconds": 123.157,
+          "status": "cancelled",
+          "exit_code": null,
+          "error": null
+        }
+      ]
     }
   ],
-  "updated_at": "2026-09-29T05:31:17+05:00"
+  "updated_at": "2026-10-14T17:41:50+05:00"
 }

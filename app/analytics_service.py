@@ -1,6 +1,5 @@
-"""Small adapters from pipeline column names to the React API contract."""
-
 import pandas as pd
+from data_generator.generate_data import bundle_compatible
 from fastapi import HTTPException
 from app.results import (
     analytics as a,
@@ -262,6 +261,11 @@ def basket(params):
     df = df[(df.support >= support) & (df.lift >= lift)].sort_values(
         "lift", ascending=False
     )
+    
+    df["bundle_eligible"] = [
+        bundle_compatible(first, second)
+        for first, second in zip(df.antecedent_item_name, df.consequent_item_name)
+    ]
     return mapped(
         df,
         {
@@ -272,6 +276,7 @@ def basket(params):
             "support": "support",
             "confidence": "confidence",
             "lift": "lift",
+            "bundle_eligible": "bundleEligible",
         },
     )
 

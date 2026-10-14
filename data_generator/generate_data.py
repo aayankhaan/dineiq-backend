@@ -5,6 +5,53 @@ from datetime import date, timedelta
 from faker_pk import FakerPKProvider
 import random
 from config.settings import RAW_DATA_FOLDER, DATASET_END, DATASET_START
+import re
+
+DESSERT_STYLES = {
+    "Kheer": ("Shahi", "Chilled", "Kesar Pista", "Rabri"),
+    "Gulab Jamun": ("Warm", "Shahi", "Rabri"),
+    "Brownie": ("Warm", "Chocolate", "Lotus Biscoff", "Caramel"),
+    "Ice Cream": ("Chocolate", "Lotus Biscoff", "Kesar Pista", "Caramel"),
+    "Molten Lava Cake": ("Warm", "Chocolate", "Lotus Biscoff", "Caramel"),
+    "Ras Malai": ("Shahi", "Chilled", "Kesar Pista"),
+    "Kulfi": ("Shahi", "Kesar Pista", "Rabri"),
+}
+
+HOT_DRINK_COMPONENTS = (
+    ("Karak", "", "Chai"),
+    ("Doodh Patti", "", "Chai"),
+    ("Kashmiri", "", "Chai"),
+    ("Green", "", "Tea"),
+    ("Espresso", "", "Coffee"),
+    ("Cappuccino", "", "Coffee"),
+    ("Adrak", "", "Chai"),
+    ("Elaichi", "", "Chai"),
+    ("Peshawari Qehwa", "", ""),
+    ("Karak", "", "Tea"),
+    ("Kashmiri", "", "Tea"),
+    ("Adrak", "", "Tea"),
+    ("Elaichi", "", "Tea"),
+    ("Doodh Patti", "", "Tea"),
+)
+
+COLD_DESSERT = re.compile(r"\b(?:ice\s+cream|kulfi|sorbet|gelato|frozen\s+yo(?:g|gh)urt)\b", re.I)
+HOT_DRINK = re.compile(r"\b(?:chai|tea|coffee|qehwa|cappuccino|espresso)\b", re.I)
+
+
+def menu_components(category_id):
+    if category_id == 8:
+        return [(style, kind, "") for kind, styles in DESSERT_STYLES.items() for style in styles]
+    if category_id == 9:
+        return list(HOT_DRINK_COMPONENTS)
+    return None
+
+
+def bundle_compatible(first_name, second_name):
+    first, second = str(first_name or ""), str(second_name or "")
+    return not (
+        (COLD_DESSERT.search(first) and HOT_DRINK.search(second))
+        or (HOT_DRINK.search(first) and COLD_DESSERT.search(second))
+    )
 
 random.seed(42)
 Faker.seed(42)
@@ -516,6 +563,19 @@ def generate_restaurant_name(city, area, max_attempts=50):
 
 used_menu_item_names = set()
 def generate_menu_item_name(cat_id, max_attempts=50):
+    curated = menu_components(cat_id)
+    if curated is not None:
+        available = [
+            parts for parts in curated
+            if " ".join(part for part in parts if part) not in used_menu_item_names
+        ]
+        if not available:
+            raise RuntimeError(f"No unused valid menu names remain for category {cat_id}")
+        style, item_type, ending = random.choice(available)
+        item_name = " ".join(part for part in (style, item_type, ending) if part)
+        used_menu_item_names.add(item_name)
+        return item_name, style, item_type, ending
+
     components = category_pools.get(cat_id, {"styles": ["Generic"], "types": ["Dish"]})
 
     for _ in range(max_attempts):
@@ -1175,6 +1235,15 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             item for item in available_items
             if item["item_id"] not in selected_ids
             and item_lookup[item["item_id"]]["cat_id"] in affinity_categories
+            # Boost compatible individual dishes rather than every dessert/drink.
+            # The ordinary random branch still allows unusual real-world baskets.
+            and all(
+                bundle_compatible(
+                    item_lookup[item["item_id"]]["name"],
+                    item_lookup[selected["item_id"]]["name"],
+                )
+                for selected in selected_items
+            )
         ]
 
         if not candidates:
@@ -1521,91 +1590,96 @@ def generate_ratings(n, orders, order_items):
 
     return ratings
 
-os.makedirs(output_folder, exist_ok=True)
+def main():
+    os.makedirs(output_folder, exist_ok=True)
 
-print("generating customers...")
-customers = generate_customers(50000)
+    print("generating customers...")
+    customers = generate_customers(50000)
 
-print("generating restaurants...")
-restaurants = generate_restaurant(20)
+    print("generating restaurants...")
+    restaurants = generate_restaurant(20)
 
-print("generating menu categories...")
-menu_categories = generate_menu_categories()
+    print("generating menu categories...")
+    menu_categories = generate_menu_categories()
 
-print("generating ingredients...")
-ingredients = generate_ingredient()
+    print("generating ingredients...")
+    ingredients = generate_ingredient()
 
-print("generating menu items...")
-menu_items, menu_item_components = generate_menu_items(150)
+    print("generating menu items...")
+    menu_items, menu_item_components = generate_menu_items(150)
 
-print("generating menu item ingredients (BOM)...")
-menu_item_ingredients = generate_menu_item_ingredients(menu_item_components, ingredient_pool)
+    print("generating menu item ingredients (BOM)...")
+    menu_item_ingredients = generate_menu_item_ingredients(menu_item_components, ingredient_pool)
 
-print("generating restaurant menu items...")
-restaurant_menu_items = generate_restaurant_menu_items(restaurants, menu_items)
+    print("generating restaurant menu items...")
+    restaurant_menu_items = generate_restaurant_menu_items(restaurants, menu_items)
 
-print("generating pricing history...")
-pricing_history = generate_pricing_history(restaurant_menu_items, menu_items, restaurants)
+    print("generating pricing history...")
+    pricing_history = generate_pricing_history(restaurant_menu_items, menu_items, restaurants)
 
-print("generating inventory...")
-inventories = generate_inventory(restaurant_menu_items, menu_item_ingredients, ingredients, menu_items)
+    print("generating inventory...")
+    inventories = generate_inventory(restaurant_menu_items, menu_item_ingredients, ingredients, menu_items)
 
-print("generating promotions...")
-promotions = generate_promotion(100, restaurants, restaurant_menu_items, inventories, menu_item_ingredients)
+    print("generating promotions...")
+    promotions = generate_promotion(100, restaurants, restaurant_menu_items, inventories, menu_item_ingredients)
 
-print("generating orders and order items...")
-orders, order_items = generate_orders(
-    400000,
-    customers,
-    restaurants,
-    restaurant_menu_items,
-    menu_items,
-    pricing_history,
-    promotions
-)
+    print("generating orders and order items...")
+    orders, order_items = generate_orders(
+        400000,
+        customers,
+        restaurants,
+        restaurant_menu_items,
+        menu_items,
+        pricing_history,
+        promotions
+    )
 
-print("generating wastage...")
-wastage = generate_wastage(inventories)
+    print("generating wastage...")
+    wastage = generate_wastage(inventories)
 
-print("generating ratings...")
-ratings = generate_ratings(100000, orders, order_items)
+    print("generating ratings...")
+    ratings = generate_ratings(100000, orders, order_items)
 
-print("Saving csv files")
+    print("Saving csv files")
 
-pd.DataFrame(customers).to_csv(f"{output_folder}/customers.csv", index=False)
-pd.DataFrame(restaurants).to_csv(f"{output_folder}/restaurants.csv", index=False)
-pd.DataFrame(menu_categories).to_csv(f"{output_folder}/menu_categories.csv", index=False)
-pd.DataFrame(ingredients).to_csv(f"{output_folder}/ingredients.csv", index=False)
-pd.DataFrame(menu_items).to_csv(f"{output_folder}/menu_items.csv", index=False)
-pd.DataFrame(menu_item_ingredients).to_csv(f"{output_folder}/menu_item_ingredients.csv", index=False)
-pd.DataFrame(restaurant_menu_items).to_csv(f"{output_folder}/restaurant_menu_items.csv", index=False)
-pd.DataFrame(pricing_history).to_csv(f"{output_folder}/pricing_history.csv", index=False)
-pd.DataFrame(inventories).to_csv(f"{output_folder}/inventory.csv", index=False)
-pd.DataFrame(promotions).to_csv(f"{output_folder}/promotions.csv", index=False)
+    pd.DataFrame(customers).to_csv(f"{output_folder}/customers.csv", index=False)
+    pd.DataFrame(restaurants).to_csv(f"{output_folder}/restaurants.csv", index=False)
+    pd.DataFrame(menu_categories).to_csv(f"{output_folder}/menu_categories.csv", index=False)
+    pd.DataFrame(ingredients).to_csv(f"{output_folder}/ingredients.csv", index=False)
+    pd.DataFrame(menu_items).to_csv(f"{output_folder}/menu_items.csv", index=False)
+    pd.DataFrame(menu_item_ingredients).to_csv(f"{output_folder}/menu_item_ingredients.csv", index=False)
+    pd.DataFrame(restaurant_menu_items).to_csv(f"{output_folder}/restaurant_menu_items.csv", index=False)
+    pd.DataFrame(pricing_history).to_csv(f"{output_folder}/pricing_history.csv", index=False)
+    pd.DataFrame(inventories).to_csv(f"{output_folder}/inventory.csv", index=False)
+    pd.DataFrame(promotions).to_csv(f"{output_folder}/promotions.csv", index=False)
 
-orders_df = pd.DataFrame(orders)
-orders_df["promotion_id"] = orders_df["promotion_id"].astype("Int64")
-orders_df.to_csv(f"{output_folder}/orders.csv", index=False)
+    orders_df = pd.DataFrame(orders)
+    orders_df["promotion_id"] = orders_df["promotion_id"].astype("Int64")
+    orders_df.to_csv(f"{output_folder}/orders.csv", index=False)
 
-pd.DataFrame(order_items).to_csv(f"{output_folder}/order_items.csv", index=False)
-pd.DataFrame(wastage).to_csv(f"{output_folder}/wastage.csv", index=False)
-pd.DataFrame(ratings).to_csv(f"{output_folder}/ratings.csv", index=False)
+    pd.DataFrame(order_items).to_csv(f"{output_folder}/order_items.csv", index=False)
+    pd.DataFrame(wastage).to_csv(f"{output_folder}/wastage.csv", index=False)
+    pd.DataFrame(ratings).to_csv(f"{output_folder}/ratings.csv", index=False)
 
-print("\nDATA GENERATION COMPLETE")
-print("------------------------")
-print(f"Customers:             {len(customers):,}")
-print(f"Restaurants:           {len(restaurants):,}")
-print(f"Menu Categories:       {len(menu_categories):,}")
-print(f"Ingredients:           {len(ingredients):,}")
-print(f"Menu Items:            {len(menu_items):,}")
-print(f"Recipe Rows:           {len(menu_item_ingredients):,}")
-print(f"Restaurant Menu Items: {len(restaurant_menu_items):,}")
-print(f"Pricing History:       {len(pricing_history):,}")
-print(f"Inventory:             {len(inventories):,}")
-print(f"Promotions:            {len(promotions):,}")
-print(f"Orders:                {len(orders):,}")
-print(f"Order Items:           {len(order_items):,}")
-print(f"Wastage:               {len(wastage):,}")
-print(f"Ratings:               {len(ratings):,}")
-print("------------------------")
-print(f"Saved to: {output_folder}/")
+    print("\nDATA GENERATION COMPLETE")
+    print("------------------------")
+    print(f"Customers:             {len(customers):,}")
+    print(f"Restaurants:           {len(restaurants):,}")
+    print(f"Menu Categories:       {len(menu_categories):,}")
+    print(f"Ingredients:           {len(ingredients):,}")
+    print(f"Menu Items:            {len(menu_items):,}")
+    print(f"Recipe Rows:           {len(menu_item_ingredients):,}")
+    print(f"Restaurant Menu Items: {len(restaurant_menu_items):,}")
+    print(f"Pricing History:       {len(pricing_history):,}")
+    print(f"Inventory:             {len(inventories):,}")
+    print(f"Promotions:            {len(promotions):,}")
+    print(f"Orders:                {len(orders):,}")
+    print(f"Order Items:           {len(order_items):,}")
+    print(f"Wastage:               {len(wastage):,}")
+    print(f"Ratings:               {len(ratings):,}")
+    print("------------------------")
+    print(f"Saved to: {output_folder}/")
+
+
+if __name__ == "__main__":
+    main()

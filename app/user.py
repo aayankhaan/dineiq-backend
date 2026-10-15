@@ -21,6 +21,7 @@ class UserUpdate(BaseModel):
     role: UserRole | None = None
     is_active: bool | None = None
     password: str | None = None
+    restaurant_id: int | None = None
 
 
 class UserCreate(BaseModel):
@@ -28,6 +29,19 @@ class UserCreate(BaseModel):
     email: str
     password: str | None = None
     role: UserRole
+    restaurant_id: int | None = None
+
+
+def validate_restaurant(role, restaurant_id):
+    if role != UserRole.restaurant_manager:
+        return None
+    if restaurant_id is None:
+        raise HTTPException(422, "Select a restaurant for this manager")
+    from app.results import read
+    restaurants = read("processed/restaurants", columns=["restaurant_id"])
+    if restaurant_id not in restaurants.restaurant_id.values:
+        raise HTTPException(422, "Selected restaurant does not exist in the dataset")
+    return restaurant_id
 
 
 @router.get("/", response_model=list[UserRead])
@@ -73,6 +87,7 @@ def create_user(
         email=data.email,
         password_hash=pwd_context.hash(temp_password),
         role=data.role,
+        restaurant_id=validate_restaurant(data.role, data.restaurant_id),
         is_active=True,
         must_change_password=True,
     )
@@ -100,6 +115,10 @@ def edit_user(
         )
 
     update_data = data.model_dump(exclude_unset=True)
+    update_data["restaurant_id"] = validate_restaurant(
+        update_data.get("role", user.role),
+        update_data.get("restaurant_id", user.restaurant_id),
+    )
 
     if "password" in update_data and update_data["password"]:
         raw_password = str(update_data.pop("password"))

@@ -16,9 +16,10 @@ ITEM_FILTERS = {"item": "item_id", "category": "category_name"}
 LOCATION_FILTERS = {**ITEM_FILTERS, "location": "restaurant_id"}
 
 
-def metadata():
+def metadata(params=None):
+    params = params or {}
     categories = read("processed/menu_categories")
-    return {
+    result = {
         "locations": mapped(
             read("processed/restaurants"), {"restaurant_id": "id", "name": "name"}
         ),
@@ -37,6 +38,23 @@ def metadata():
         ),
         "classes": sorted(a("menu_classification").performance_class.unique().tolist()),
     }
+    if params.get("location"):
+        location = int(params["location"])
+        result["locations"] = [row for row in result["locations"] if row["id"] == location]
+        menu_items = read("processed/restaurant_menu_items")
+        ids = set(menu_items.loc[menu_items.restaurant_id == location, "item_id"])
+        result["items"] = [row for row in result["items"] if row["id"] in ids]
+        promotions = read("processed/promotions")
+        ids = set(promotions.loc[promotions.restaurant_id == location, "promotion_id"])
+        result["promotions"] = [row for row in result["promotions"] if row["id"] in ids]
+    return result
+
+
+def restaurant_transactions(params):
+    return filtered(
+        read("integrated/transactions", restaurant_id=int(params["location"]) if params.get("location") else None), params,
+        {**LOCATION_FILTERS, "dateFrom": "order_datetime", "dateTo": "order_datetime", "channel": "ordering_channel"},
+    )
 
 
 def menu(params):
@@ -165,6 +183,8 @@ def item_locations(item_id, params):
 
 
 def customers(kind, params):
+    if params.get("location"):
+        return restaurant_customers(kind, params)
     columns = {"segment": "customer_segment"}
     if kind == "segments":
         df = a("customer_segmentation/segment_summary").merge(
@@ -239,9 +259,106 @@ def customers(kind, params):
     )
 
 
+def restaurant_customers(kind, params):
+    allow(params, {"location", "segment", "channel"})
+    sales = restaurant_transactions({"location": params["location"]})
+    sales = sales[sales.order_status == "Completed"].copy()
+    order_rows = sales.drop_duplicates("order_id").copy()
+    if order_rows.empty:
+        return {"bands": [], "top": []} if kind == "rfm" else []
+    order_rows["date"] = pd.to_datetime(order_rows.order_datetime).dt.normalize()
+    end = order_rows.date.max()
+    profile = order_rows.groupby("customer_id").agg(
+        frequency=("order_id", "size"), monetary=("total_amount", "sum"),
+        last=("date", "max"), avgOrder=("total_amount", "mean"),
+    )
+    profile["recency"] = (end - profile["last"]).dt.days
+    favorites = sales.groupby(["customer_id", "category_name"]).order_id.nunique().reset_index(name="count").sort_values(["count", "category_name"], ascending=[False, True]).drop_duplicates("customer_id").set_index("customer_id")
+    channels = order_rows.groupby(["customer_id", "ordering_channel"]).size().reset_index(name="count").sort_values(["count", "ordering_channel"], ascending=[False, True]).drop_duplicates("customer_id").set_index("customer_id")
+    profile["favCategory"] = favorites.category_name
+    profile["channel"] = channels.ordering_channel
+    promoted = sales.groupby(["customer_id", "order_id"]).item_discount_amount.sum().gt(0).groupby("customer_id").mean()
+    f50, f75 = profile.frequency.quantile([0.5, 0.75])
+    m50, m75 = profile.monetary.quantile([0.5, 0.75])
+    r25, r75 = profile.recency.quantile([0.25, 0.75])
+    profile["segment"] = "Occasional Customers"
+    profile.loc[profile.frequency >= f50, "segment"] = "Frequent Customers"
+    profile.loc[(promoted > 0) & (promoted >= promoted[promoted > 0].median()), "segment"] = "Promotion-Driven Customers"
+    profile.loc[(profile.recency >= r75) & ((profile.frequency >= f50) | (profile.monetary >= m50)), "segment"] = "At-Risk Customers"
+    profile.loc[(profile.frequency == 1) & (profile.recency <= r25), "segment"] = "New Customers"
+    profile.loc[(profile.frequency >= f75) & (profile.monetary >= m75) & (profile.recency <= r25), "segment"] = "High-Value Loyal Customers"
+    for column, ascending in (("recency", False), ("frequency", True), ("monetary", True)):
+        rank = profile[column].rank(method="first", ascending=ascending)
+        profile[column + "_score"] = ((rank - 1) * 5 // len(profile) + 1).clip(upper=5).astype(int)
+    selected = profile.copy()
+    if params.get("segment"):
+        selected = selected[selected.segment == params["segment"]]
+    if params.get("channel"):
+        selected = selected[selected.channel == params["channel"]]
+    if kind == "segments":
+        summary = selected.groupby("segment", as_index=False).agg(
+            count=("frequency", "size"), avgOrder=("avgOrder", "mean"),
+            recencyDays=("recency", "mean"), frequency=("frequency", "mean"), monetary=("monetary", "mean"),
+        ).rename(columns={"segment": "name"})
+        strategies = a("customer_segmentation/segment_definitions").set_index("customer_segment").recommended_strategy
+        summary["strategy"] = summary.name.map(strategies)
+        return records(summary)
+    if kind == "rfm":
+        return {
+            "bands": [{"score": i, **{col: int((selected[col + "_score"] == i).sum()) for col in ("recency", "frequency", "monetary")}} for i in range(1, 6)],
+            "top": records(selected.nlargest(20, "monetary").reset_index().rename(columns={"customer_id": "id"})[["id", "segment", "recency", "frequency", "monetary", "favCategory", "channel"]]),
+        }
+    previous = order_rows[(order_rows.date > end - pd.Timedelta(days=360)) & (order_rows.date <= end - pd.Timedelta(days=180))]
+    recent = order_rows[order_rows.date > end - pd.Timedelta(days=180)]
+    eligible = profile.frequency >= 2
+    risk = pd.DataFrame(index=profile.index)
+    risk["recency"] = profile.recency
+    dates = order_rows[["customer_id", "date"]].drop_duplicates().sort_values(["customer_id", "date"])
+    gaps = dates.groupby("customer_id").date.diff().dt.days.groupby(dates.customer_id).mean()
+    signals = {"Increasing recency": eligible & (profile.recency >= profile.recency.quantile(0.75)) & (profile.recency / gaps >= 1.5)}
+    for label, column, metric in (("Declining frequency", "frequencyChange", "frequency"), ("Declining spending", "spendChange", "spending"), ("Reduced category diversity", "categoryDiversityChange", "categories"), ("Lower visit frequency", "visitChange", "visits")):
+        if metric == "categories":
+            sale_dates = pd.to_datetime(sales.order_datetime).dt.normalize()
+            before = sales[(sale_dates > end - pd.Timedelta(days=360)) & (sale_dates <= end - pd.Timedelta(days=180))].groupby("customer_id").category_name.nunique()
+            after = sales[sale_dates > end - pd.Timedelta(days=180)].groupby("customer_id").category_name.nunique()
+        else:
+            def measure(frame):
+                group = frame.groupby("customer_id")
+                return group.total_amount.sum() if metric == "spending" else group.date.nunique() if metric == "visits" else group.size()
+            before, after = measure(previous), measure(recent)
+        before = before.reindex(profile.index, fill_value=0)
+        after = after.reindex(profile.index, fill_value=0)
+        risk[column] = (after - before).div(before.replace(0, float("nan"))) * 100
+        negatives = risk.loc[risk[column] < 0, column]
+        threshold = negatives.quantile(0.25)
+        enough_history = previous.groupby("customer_id").size().reindex(profile.index, fill_value=0) >= 2 if metric == "spending" else before >= 2
+        signals[label] = eligible & enough_history & (risk[column] < 0) & (risk[column] <= threshold)
+    signal_frame = pd.DataFrame(signals).fillna(False)
+    dormant = eligible & (profile.recency > 180)
+    flagged = (signal_frame.sum(axis=1) >= 2) | dormant
+    signal_frame["Dormant customer"] = dormant
+    risk["risk"] = signal_frame.sum(axis=1) / 6
+    risk["reasons"] = signal_frame.apply(lambda row: [name for name, flag in row.items() if flag], axis=1)
+    risk = risk.loc[risk.index.isin(selected.index) & flagged]
+    return records(risk.sort_values("risk", ascending=False).reset_index().rename(columns={"customer_id": "id"})[["id", "risk", "recency", "frequencyChange", "spendChange", "categoryDiversityChange", "reasons"]])
+
+
 def basket(params):
-    allow(params, {"item"})
-    df = a("market_basket/association_rules")
+    allow(params, {"item", "location"})
+    if params.get("location"):
+        items = restaurant_transactions({"location": params["location"]})
+        items = items[items.order_status == "Completed"][["order_id", "item_id", "item_name"]].drop_duplicates(["order_id", "item_id"])
+        total = items.order_id.nunique()
+        counts = items.groupby("item_id").size()
+        pairs = items.merge(items, on="order_id", suffixes=("_a", "_b"))
+        pairs = pairs[pairs.item_id_a != pairs.item_id_b]
+        df = pairs.groupby(["item_id_a", "item_name_a", "item_id_b", "item_name_b"]).size().reset_index(name="pair_order_count")
+        df = df.rename(columns={"item_id_a": "antecedent_item_id", "item_name_a": "antecedent_item_name", "item_id_b": "consequent_item_id", "item_name_b": "consequent_item_name"})
+        df["support"] = df.pair_order_count / max(total, 1)
+        df["confidence"] = df.pair_order_count / df.antecedent_item_id.map(counts)
+        df["lift"] = df.confidence / (df.consequent_item_id.map(counts) / max(total, 1))
+    else:
+        df = a("market_basket/association_rules")
     if params.get("item"):
         df = df[
             (df.antecedent_item_id.astype(str) == str(params["item"]))
@@ -262,9 +379,23 @@ def basket(params):
         "lift", ascending=False
     )
     
+    if params.get("location"):
+        bundles = df[(df.pair_order_count >= 20) & (df.support >= 0.0002) & (df.confidence >= 0.01) & (df.lift > 1)]
+        bundles = bundles.sort_values(["lift", "confidence", "support"], ascending=False)
+        bundles = bundles.drop_duplicates(subset=["antecedent_item_id", "consequent_item_id"])
+        eligible_pairs = set()
+        for first, second in zip(bundles.antecedent_item_id, bundles.consequent_item_id):
+            if (second, first) not in eligible_pairs:
+                eligible_pairs.add((first, second))
+    else:
+        bundles = a("bundle_recommendations/recommendations")
+        eligible_pairs = set(zip(bundles.antecedent_item_id, bundles.consequent_item_id))
     df["bundle_eligible"] = [
-        bundle_compatible(first, second)
-        for first, second in zip(df.antecedent_item_name, df.consequent_item_name)
+        (first_id, second_id) in eligible_pairs and bundle_compatible(first, second)
+        for first_id, second_id, first, second in zip(
+            df.antecedent_item_id, df.consequent_item_id,
+            df.antecedent_item_name, df.consequent_item_name,
+        )
     ]
     return mapped(
         df,
@@ -283,7 +414,7 @@ def basket(params):
 
 def orders(params):
     return filtered(
-        read("processed/orders"),
+        read("processed/orders", restaurant_id=int(params["location"]) if params.get("location") else None),
         params,
         {
             "dateFrom": "order_datetime",
@@ -435,8 +566,27 @@ def pricing(params, history=False):
                 "restaurant_name": "location",
             },
         )
-    df = a("price_sensitivity/item_price_sensitivity")
     events = a("price_intelligence/price_change_events")
+    if params.get("location"):
+        events = events[events.restaurant_id.astype(str) == str(params["location"])]
+        df = filtered(a("location_menu_performance/location_menu_performance"), params, LOCATION_FILTERS)
+        df = df[["item_id", "item_name", "category_name"]].copy()
+        eligible = events[events.evaluable_change & events.price_elasticity_proxy.notna() & events.demand_change_pct.notna()].copy()
+        eligible["elasticity"] = eligible.price_elasticity_proxy.abs().clip(upper=5)
+        eligible["expected"] = eligible.price_change_pct * eligible.demand_change_pct < 0
+        scores = eligible.groupby("item_id").agg(
+            count=("price_history_id", "size"), elasticity=("elasticity", "median"),
+            direction=("expected", "mean"), significant=("significant_demand_change", "mean"),
+        )
+        scores["score"] = (scores.elasticity * (0.5 + 0.5 * scores.direction) * (0.7 + 0.3 * scores.significant)).where(scores["count"] >= 2)
+        low, high = scores.score.quantile([0.33, 0.67])
+        df["price_sensitivity_class"] = "Insufficient Price History"
+        score = df.item_id.map(scores.score)
+        df.loc[score.notna(), "price_sensitivity_class"] = "Low Price Sensitivity"
+        df.loc[score >= low, "price_sensitivity_class"] = "Moderately Price Sensitive"
+        df.loc[score >= high, "price_sensitivity_class"] = "Highly Price Sensitive"
+    else:
+        df = a("price_sensitivity/item_price_sensitivity")
     events = (
         events[events.evaluable_change]
         .groupby("item_id")[
@@ -451,7 +601,21 @@ def pricing(params, history=False):
         .reset_index()
     )
     df = df.merge(events, on="item_id", how="left")
-    df = filtered(df, params, ITEM_FILTERS)
+    items = read("processed/menu_items").set_index("menu_items_id")
+    categories = read("processed/menu_categories").set_index("category_id")["name"]
+    df["item_name"] = df.item_id.map(items.name).fillna(df.item_name)
+    df["category_name"] = df.item_id.map(items.cat_id.map(categories)).fillna(df.category_name)
+    df["price_source"] = "Evaluated price average"
+    missing_price = df.new_price.isna()
+    df.loc[missing_price, "price_source"] = "Catalog price"
+    catalog_prices = items.base_price.where(items.base_price > 0)
+    if params.get("location"):
+        restaurant_prices = read("processed/restaurant_menu_items")
+        restaurant_prices = restaurant_prices[restaurant_prices.restaurant_id.astype(str) == str(params["location"])]
+        catalog_prices = restaurant_prices.set_index("item_id").price
+        df.loc[missing_price, "price_source"] = "Restaurant menu price"
+    df["new_price"] = df.new_price.fillna(df.item_id.map(catalog_prices))
+    df = filtered(df, {k: v for k, v in params.items() if k != "location"}, ITEM_FILTERS)
     return mapped(
         df,
         {
@@ -459,6 +623,7 @@ def pricing(params, history=False):
             "item_name": "name",
             "category_name": "category",
             "new_price": "price",
+            "price_source": "priceSource",
             "price_change_pct": "priceChangePct",
             "demand_change_pct": "demandChangePct",
             "price_elasticity_proxy": "elasticity",
@@ -485,11 +650,25 @@ def promotions(params):
     df["postPromoDrop"] = (
         1 - df.post_daily_demand.div(df.during_daily_demand.replace(0, float("nan")))
     ) * 100
+    df["comparison_status"] = "Ready"
+    missing = df[["revenue_lift_pct", "margin_lift_pct"]].replace(
+        [float("inf"), -float("inf")], float("nan")
+    ).isna().any(axis=1)
+    df.loc[missing, "comparison_status"] = "Missing comparison data"
+    df.loc[df.pre_daily_margin <= 0, "comparison_status"] = "Non-positive baseline profit"
+    df.loc[df.pre_target_orders < 10, "comparison_status"] = "Limited baseline (fewer than 10 orders)"
+    df.loc[df.pre_target_orders == 0, "comparison_status"] = "No baseline orders"
+    df.loc[df.promotion_order_count == 0, "comparison_status"] = "No usage"
+    df["chart_eligible"] = df.comparison_status.eq("Ready")
     return mapped(
         df,
         {
             "promotion_id": "id",
             "promotion_name": "name",
+            "promotion_order_count": "usageOrders",
+            "pre_target_orders": "baselineOrders",
+            "comparison_status": "comparisonStatus",
+            "chart_eligible": "chartEligible",
             "period": "period",
             "demand_lift_pct": "orderUplift",
             "revenue_lift_pct": "revenueChange",
@@ -507,12 +686,36 @@ def promotions(params):
 
 
 def ratings(params):
-    allow(params, set())
-    df = a("rating_satisfaction/item_rating_performance").sort_values(
-        "average_rating", ascending=False
-    )
+    allow(params, {"location", "item", "dateFrom", "dateTo"})
+    if any(params.get(key) for key in ("location", "item", "dateFrom", "dateTo")):
+        rating_data = filtered(read("integrated/ratings", restaurant_id=int(params["location"]) if params.get("location") else None), params, {
+            "location": "restaurant_id", "item": "item_id",
+            "dateFrom": "rating_date", "dateTo": "rating_date",
+        })
+        sales = restaurant_transactions(params)
+        sales = sales[sales.order_status == "Completed"].copy()
+        sales["cost"] = sales.quantity * sales.item_cost
+        df = sales.groupby(["item_id", "item_name"], as_index=False).agg(
+            quantity_sold=("quantity", "sum"), revenue=("line_total", "sum"), cost=("cost", "sum"),
+        )
+        df["profit_percentage"] = (df.revenue - df.cost).div(df.revenue.replace(0, float("nan"))) * 100
+        repeat = sales.groupby(["item_id", "customer_id"]).order_id.nunique().gt(1).groupby("item_id").mean() * 100
+        df["repeat_purchase_rate_pct"] = df.item_id.map(repeat).fillna(0)
+        averages = rating_data.groupby("item_id").rating.mean()
+        df["average_rating"] = df.item_id.map(averages)
+        promotion_orders = sales.groupby("order_id").item_discount_amount.sum().gt(0)
+        rating_data["promotion_status"] = rating_data.order_id.map(promotion_orders).fillna(False).map({True: "Promotion", False: "Non-promotion"})
+        rating_data["rating_month"] = pd.to_datetime(rating_data.rating_date).dt.strftime("%Y-%m")
+        trend = rating_data.groupby(["rating_month", "promotion_status"], as_index=False).agg(
+            rating_count=("rating", "size"), average_rating=("rating", "mean"),
+        )
+        by_location = rating_data.groupby("restaurant_name", as_index=False).agg(average_rating=("rating", "mean"))
+    else:
+        df = a("rating_satisfaction/item_rating_performance")
+        trend = a("rating_satisfaction/rating_time_promotion")
+        by_location = a("rating_satisfaction/location_rating_performance")
+    df = df.sort_values("average_rating", ascending=False)
     df["repeat_purchase_rate_pct"] /= 100
-    trend = a("rating_satisfaction/rating_time_promotion")
     rows = []
     for month, group in trend.groupby("rating_month"):
         total = group.rating_count.sum()
@@ -547,7 +750,7 @@ def ratings(params):
             },
         ),
         "byLocation": mapped(
-            a("rating_satisfaction/location_rating_performance"),
+            by_location,
             {"restaurant_name": "name", "average_rating": "rating"},
         ),
         "trend": rows,
@@ -625,6 +828,10 @@ def recommendations(params):
             "promotion": "promotion_id",
         },
     )
+    df = df[
+        (df.recommendation_type != "Bundle Frequently Purchased Items")
+        | df.recommended_action.fillna("").map(lambda action: bundle_compatible(action, action))
+    ]
     if params.get("priority"):
         df = df[df.priority == params["priority"]]
     evidence = a("recommendation_evidence/recommendation_evidence").sort_values(
@@ -920,6 +1127,8 @@ def forecast(params):
     metrics.update(
         baselineMAE=base["MAE"],
         baselineMAPE=base["MAPE"],
+        baselineRMSE=base["RMSE"],
+        baselineR2=base["R2"],
         baselineName=split["baseline_method"],
     )
     history = (
@@ -980,6 +1189,9 @@ def comparison(params):
         )
     df = read("ml/comparison/dual_pipeline_menu_comparison.parquet")
     summary = read("ml/comparison/dual_pipeline_comparison_summary.parquet").iloc[0]
+    confidence_method = summary.get("confidence_method")
+    df["spark_confidence"] = df.spark_probability if confidence_method == "temperature_scaling" else None
+    df["python_confidence"] = df.python_probability if confidence_method == "temperature_scaling" else None
     df["match"] = df.spark_prediction == df.python_prediction
     from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
@@ -1005,6 +1217,7 @@ def comparison(params):
             "python": summary.python_model_version,
         },
         "total": len(df),
+        "confidenceMethod": confidence_method,
         "agreement": round(float(df.match.mean() * 100), 2),
         "disagreements": int((~df.match).sum()),
         "metrics": {
@@ -1019,8 +1232,8 @@ def comparison(params):
                 "actual_class": "actual",
                 "spark_prediction": "spark",
                 "python_prediction": "python",
-                "spark_probability": "sparkConf",
-                "python_probability": "pythonConf",
+                "spark_confidence": "sparkConf",
+                "python_confidence": "pythonConf",
                 "match": "match",
                 "probability_difference": "diff",
                 "disagreement_explanation": "explanation",

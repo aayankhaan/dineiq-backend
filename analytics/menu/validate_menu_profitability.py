@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
-from config.settings import ANALYTICS_DATA_FOLDER, PROCESSED_DATA_FOLDER
+from config.settings import ANALYTICS_DATA_FOLDER, PROCESSED_DATA_FOLDER, DATASET_START, DATASET_END
 
 spark = SparkSession.builder \
     .appName("DineIQ Menu Profitability Validation") \
@@ -12,6 +12,9 @@ profitability = spark.read.parquet(
 
 menu_items = spark.read.parquet(
     f"{PROCESSED_DATA_FOLDER}/menu_items"
+).filter(
+    (F.col("introduced_date").isNull() | (F.col("introduced_date") <= F.lit(DATASET_END))) &
+    (F.col("discontinued_date").isNull() | (F.col("discontinued_date") >= F.lit(DATASET_START)))
 )
 
 required_columns = [

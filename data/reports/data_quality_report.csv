@@ -1,8 +1,8 @@
 dataset,check,column,issue_count,status
 Orders,Null Values,order_id,0,PASS
-Orders,Null Values,customer_id,50,ISSUES FOUND
+Orders,Null Values,customer_id,0,PASS
 Orders,Null Values,restaurant_id,0,PASS
-Orders,Null Values,promotion_id,393621,ISSUES FOUND
+Orders,Null Values,promotion_id,384657,ISSUES FOUND
 Orders,Null Values,order_datetime,0,PASS
 Orders,Null Values,ordering_channel,0,PASS
 Orders,Null Values,order_status,0,PASS
@@ -21,11 +21,11 @@ Orders,Negative Values,total_amount,0,PASS
 Orders,Invalid Values,order_status,0,PASS
 Orders,Invalid Values,ordering_channel,0,PASS
 Orders,Invalid Values,payment_method,0,PASS
-Orders,Incorrect Discounts,discount_amount,30,ISSUES FOUND
-Orders,Cancelled Transactions,order_status,11938,ISSUES FOUND
-Orders,Invalid Dates,order_datetime,20,ISSUES FOUND
+Orders,Incorrect Discounts,discount_amount,0,PASS
+Orders,Cancelled Transactions,order_status,11703,ISSUES FOUND
+Orders,Invalid Dates,order_datetime,0,PASS
 Orders,Invalid Foreign Key,customer_id,0,PASS
-Orders,Invalid Foreign Key,restaurant_id,25,ISSUES FOUND
+Orders,Invalid Foreign Key,restaurant_id,0,PASS
 Orders,Invalid Foreign Key,promotion_id,0,PASS
 Order Items,Null Values,order_item_id,0,PASS
 Order Items,Null Values,order_id,0,PASS
@@ -34,14 +34,14 @@ Order Items,Null Values,quantity,0,PASS
 Order Items,Null Values,unit_price,0,PASS
 Order Items,Null Values,discount_amount,0,PASS
 Order Items,Null Values,line_total,0,PASS
-Order Items,Duplicate IDs,order_item_id,100,ISSUES FOUND
-Order Items,Negative Values,quantity,50,ISSUES FOUND
+Order Items,Duplicate IDs,order_item_id,0,PASS
+Order Items,Negative Values,quantity,0,PASS
 Order Items,Negative Values,unit_price,0,PASS
 Order Items,Negative Values,discount_amount,0,PASS
 Order Items,Negative Values,line_total,0,PASS
-Order Items,Invalid Range,quantity,50,ISSUES FOUND
+Order Items,Invalid Range,quantity,0,PASS
 Order Items,Invalid Foreign Key,order_id,0,PASS
-Order Items,Invalid Foreign Key,item_id,30,ISSUES FOUND
+Order Items,Invalid Foreign Key,item_id,0,PASS
 Customers,Null Values,customer_id,0,PASS
 Customers,Null Values,signup_date,0,PASS
 Customers,Null Values,birth_year,0,PASS
@@ -65,7 +65,7 @@ Menu Items,Null Values,description,0,PASS
 Menu Items,Null Values,base_price,0,PASS
 Menu Items,Null Values,prep_time_minutes,0,PASS
 Menu Items,Null Values,introduced_date,0,PASS
-Menu Items,Null Values,discontinued_date,148,ISSUES FOUND
+Menu Items,Null Values,discontinued_date,143,ISSUES FOUND
 Menu Items,Null Values,is_available,0,PASS
 Menu Items,Duplicate IDs,menu_items_id,0,PASS
 Menu Items,Negative Values,base_price,5,ISSUES FOUND
@@ -117,8 +117,8 @@ Promotions,Null Values,start_date,0,PASS
 Promotions,Null Values,end_date,0,PASS
 Promotions,Null Values,restaurant_id,0,PASS
 Promotions,Null Values,item_id,0,PASS
-Promotions,Null Values,minimum_order_value,26,ISSUES FOUND
-Promotions,Null Values,coupon_code,67,ISSUES FOUND
+Promotions,Null Values,minimum_order_value,44,ISSUES FOUND
+Promotions,Null Values,coupon_code,58,ISSUES FOUND
 Promotions,Duplicate IDs,promotion_id,0,PASS
 Promotions,Negative Values,discount_value,0,PASS
 Promotions,Negative Values,minimum_order_value,0,PASS
@@ -132,7 +132,7 @@ Ratings,Null Values,item_id,0,PASS
 Ratings,Null Values,rating,0,PASS
 Ratings,Null Values,rating_date,0,PASS
 Ratings,Duplicate IDs,rating_id,0,PASS
-Ratings,Invalid Range,rating,50,ISSUES FOUND
+Ratings,Invalid Range,rating,0,PASS
 Ratings,Invalid Foreign Key,customer_id,0,PASS
 Ratings,Invalid Foreign Key,order_id,0,PASS
 Ratings,Invalid Foreign Key,restaurant_id,0,PASS
@@ -174,4 +174,4 @@ Wastage,Invalid Foreign Key,inventory_id,0,PASS
 Wastage,Impossible Wastage,quantity,30,ISSUES FOUND
 Ingredients,Invalid Units,unit,0,PASS
 Inventory,Inconsistent Units,unit,30,ISSUES FOUND
-Wastage,Inconsistent Units,unit,124,ISSUES FOUND
+Wastage,Inconsistent Units,unit,75,ISSUES FOUND

@@ -1,10 +1,15 @@
 import os
+import argparse
+import math
+from bisect import bisect_right
+from functools import lru_cache
+from itertools import accumulate
 import pandas as pd
 from faker import Faker
 from datetime import date, timedelta
 from faker_pk import FakerPKProvider
 import random
-from config.settings import RAW_DATA_FOLDER, DATASET_END, DATASET_START
+from config.settings import RAW_DATA_FOLDER, PROCESSED_DATA_FOLDER, DATASET_END, DATASET_START
 import re
 
 DESSERT_STYLES = {
@@ -34,23 +39,86 @@ HOT_DRINK_COMPONENTS = (
     ("Doodh Patti", "", "Tea"),
 )
 
-COLD_DESSERT = re.compile(r"\b(?:ice\s+cream|kulfi|sorbet|gelato|frozen\s+yo(?:g|gh)urt)\b", re.I)
+DESSERT = re.compile(r"\b(?:ice\s+cream|kulfi|kheer|gulab\s+jamun|ras\s+malai|brownie|cake|sorbet|gelato|frozen\s+yo(?:g|gh)urt)\b", re.I)
 HOT_DRINK = re.compile(r"\b(?:chai|tea|coffee|qehwa|cappuccino|espresso)\b", re.I)
 
 
 def menu_components(category_id):
+    if category_id == 2:
+        styles = {
+            "Chicken Seekh": ("Reshmi", "Achari", "Angara"),
+            "Beef Boti": ("Tikka", "Behari", "Achari"),
+            "Kebab": ("Reshmi", "Peshawari", "Bihari"),
+            "Chops": ("Achari", "Peshawari", "Angara"),
+            "Sajji": ("",),
+            "Tikka Leg Piece": ("",),
+            "Malai Boti": ("", "Kasturi"),
+            "Chicken Chargha": ("", "Lahori"),
+        }
+        return [(style, kind, "") for kind, options in styles.items() for style in options]
+    if category_id == 3:
+        return [
+            (style, kind, ending)
+            for style in ("Classic", "Crispy", "Spicy", "Smoky", "Double", "Grilled")
+            for kind in ("Beef", "Chicken", "Zinger", "Club", "Steak", "Bihari Boti")
+            for ending in ("Burger", "Cheese Burger", "Sandwich", "Wrap")
+            if (kind != "Club" or ending == "Sandwich")
+            and (kind != "Bihari Boti" or ending in ("Sandwich", "Wrap"))
+        ]
+    if category_id == 5:
+        return [
+            (style, kind, "Biryani")
+            for style in ("Sindhi", "Bombay", "Hyderabadi", "Karachi Style", "Dum")
+            for kind in ("Chicken", "Beef", "Mutton", "Prawn")
+        ] + [
+            (style, kind, "Pulao")
+            for style in ("Nawabi", "Dum")
+            for kind in ("Chicken", "Beef", "Mutton")
+        ] + [("", "Egg Fried", "Rice")]
+    if category_id == 6:
+        return [
+            (style, kind, ending)
+            for style in ("Creamy Alfredo", "Spicy Arrabbiata", "Cheesy Baked", "White Sauce")
+            for kind in ("Chicken", "Prawn", "Vegetable", "Beef")
+            for ending in ("Pasta", "Spaghetti")
+        ] + [
+            (style, kind, ending)
+            for style in ("Chilli Garlic", "Chinese Style", "Schezwan")
+            for kind in ("Chicken", "Prawn", "Vegetable", "Beef")
+            for ending in ("Noodles", "Chowmein")
+        ]
     if category_id == 8:
         return [(style, kind, "") for kind, styles in DESSERT_STYLES.items() for style in styles]
     if category_id == 9:
         return list(HOT_DRINK_COMPONENTS)
+    if category_id == 10:
+        styles = {
+            "Lemonade": ("Mint", "Classic", "Mango", "Blueberry", "Fresh Lime", "Strawberry"),
+            "Margarita": ("Mint", "Classic", "Mango", "Blueberry", "Fresh Lime", "Strawberry"),
+            "Shake": ("Mango", "Blueberry", "Chocolate", "Strawberry"),
+            "Lassi": ("Classic", "Mango", "Rose", "Strawberry"),
+            "Soda": ("Mint", "Classic", "Fresh Lime"),
+            "Sharbat": ("Mango", "Rose", "Strawberry"),
+        }
+        return [(style, kind, "") for kind, options in styles.items() for style in options]
+    if category_id == 12:
+        return [
+            ("", "Chana Masala", ""), ("Aloo", "Chana Masala", ""),
+            ("", "Daal Mash", ""), ("Palak", "Daal Mash", ""),
+            ("", "Daal Chana", ""), ("Palak", "Daal Chana", ""),
+            ("", "Raita", ""), ("Mix Veg", "Raita", ""),
+            ("", "Salad", ""), ("Mix Veg", "Salad", ""),
+            ("", "Chutney", ""), ("Aloo", "", "Masala"),
+            ("Bhindi", "", "Masala"), ("Palak", "", "Salan"),
+        ]
     return None
 
 
 def bundle_compatible(first_name, second_name):
     first, second = str(first_name or ""), str(second_name or "")
     return not (
-        (COLD_DESSERT.search(first) and HOT_DRINK.search(second))
-        or (HOT_DRINK.search(first) and COLD_DESSERT.search(second))
+        (DESSERT.search(first) and HOT_DRINK.search(second))
+        or (HOT_DRINK.search(first) and DESSERT.search(second))
     )
 
 random.seed(42)
@@ -890,8 +958,20 @@ def generate_pricing_history(restaurant_menu_items, menu_items, restaurants):
 
     return pricing_history
 
-def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_item_ingredients):
+def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_item_ingredients, menu_items):
     promotions = []
+    restaurant_lookup = {row["restaurant_id"]: row for row in restaurants}
+    item_lookup = {row["menu_items_id"]: row for row in menu_items}
+    eligible_menu = []
+    for row in restaurant_menu_items:
+        item = item_lookup[row["item_id"]]
+        restaurant = restaurant_lookup[row["restaurant_id"]]
+        first_day = max(DATASET_START, restaurant["opening_date"], item["introduced_date"]) + timedelta(days=14)
+        last_day = min(DATASET_END, item["discontinued_date"] or DATASET_END) - timedelta(days=14)
+        if row["price"] > 0 and row["is_available"] and (last_day - first_day).days >= 7:
+            eligible_menu.append({**row, "first_day": first_day, "last_day": last_day})
+    if not eligible_menu:
+        raise ValueError("No menu items have enough active history for promotion campaigns")
 
     ingredient_items = {}
     for recipe in menu_item_ingredients:
@@ -917,10 +997,12 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_
                 possible_item_ids = ingredient_items.get(ingredient_id, [])
 
                 available_items = [
-                    item for item in restaurant_menu_items
+                    item for item in eligible_menu
                     if item["restaurant_id"] == restaurant_id
                     and item["item_id"] in possible_item_ids
                     and item["is_available"]
+                    and max(item["first_day"], inventory["received_date"], inventory["expiry_date"] - timedelta(days=5))
+                    <= min(item["last_day"], inventory["expiry_date"])
                 ]
 
                 if available_items:
@@ -930,10 +1012,12 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_
 
                     days_before_expiry = random.randint(2, 5)
                     start_date = max(
+                        selected_item["first_day"],
                         inventory["received_date"],
                         inventory["expiry_date"] - timedelta(days=days_before_expiry)
                     )
-                    end_date = inventory["expiry_date"]
+                    end_date = min(selected_item["last_day"], inventory["expiry_date"])
+                    start_date = min(start_date, end_date)
 
                     name = random.choice(["Stock Clearance Deal","Fresh Stock Special","Limited Time Deal","Chef's Special"])
                 else:
@@ -942,19 +1026,13 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_
                 inventory_driven = False
 
         if not inventory_driven:
-            restaurant = random.choice(restaurants)
-            restaurant_id = restaurant["restaurant_id"]
-            available_items = [item for item in restaurant_menu_items if item["restaurant_id"] == restaurant_id and item["is_available"]]
-
-            if not available_items:
-                continue
-
-            selected_item = random.choice(available_items)
+            selected_item = random.choice(eligible_menu)
+            restaurant_id = selected_item["restaurant_id"]
             item_id = selected_item["item_id"]
             item_price = selected_item["price"]
-            start_date = fake.date_between(start_date=DATASET_START, end_date=DATASET_END - timedelta(days=3))
-            duration_days = random.choice([3, 5, 7, 10, 14, 21, 30])
-            end_date = min(start_date + timedelta(days=duration_days), DATASET_END)
+            start_date = fake.date_between(start_date=selected_item["first_day"], end_date=selected_item["last_day"] - timedelta(days=7))
+            duration_days = random.choice([7, 10, 14, 21, 30])
+            end_date = min(start_date + timedelta(days=duration_days), selected_item["last_day"])
             name = random.choice(promotion_names)
 
         discount_type = random.choice(["Percentage", "Flat"])
@@ -969,7 +1047,10 @@ def generate_promotion(n, restaurants, restaurant_menu_items, inventories, menu_
             else:
                 discount_value = int(max_discount // 10) * 10
 
-        minimum_order_value = random.choice([None, None, 500, 750, 1000, 1500, 2000, 2500])
+        minimum_order_value = random.choice([
+            value for value in [None, None, 500, 750, 1000, 1500, 2000, 2500]
+            if value is None or value <= item_price * 2
+        ])
         if random.random() < 0.35:
             coupon_code = "SAVE" + str(random.randint(10, 99))
         else:
@@ -1097,6 +1178,30 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
         customer_profiles[customer["customer_id"]]["frequency_weight"]
         for customer in eligible_customers
     ]
+    customer_cumulative_weights = list(accumulate(customer_weights))
+    customers_by_signup = sorted(eligible_customers, key=lambda customer: customer["signup_date"])
+    signup_dates = [customer["signup_date"] for customer in customers_by_signup]
+    signup_weights = list(accumulate(
+        customer_profiles[customer["customer_id"]]["frequency_weight"] for customer in customers_by_signup
+    ))
+    restaurant_lookup = {restaurant["restaurant_id"]: restaurant for restaurant in restaurants}
+    incompatible_items = {
+        item_id: {other_id for other_id, other in item_lookup.items() if not bundle_compatible(item["name"], other["name"])}
+        for item_id, item in item_lookup.items()
+    }
+    planned_orders = []
+    for promotion in promotions:
+        window = min(14, (promotion["end_date"] - promotion["start_date"]).days + 1)
+        for index in range(12):
+            planned_orders.append((promotion["start_date"] - timedelta(days=index % window + 1), promotion["restaurant_id"], promotion["item_id"], None))
+        for _ in range(random.randint(8, 20)):
+            order_date = promotion["start_date"] + timedelta(days=random.randint(0, (promotion["end_date"] - promotion["start_date"]).days))
+            planned_orders.append((order_date, promotion["restaurant_id"], promotion["item_id"], promotion))
+        for index in range(8):
+            planned_orders.append((promotion["end_date"] + timedelta(days=index % window + 1), promotion["restaurant_id"], promotion["item_id"], None))
+    if len(planned_orders) > n:
+        raise ValueError(f"At least {len(planned_orders)} orders are needed to cover all promotion campaigns")
+    random.shuffle(planned_orders)
 
     category_affinities = {
         1: [3, 7, 10],
@@ -1184,6 +1289,7 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
         channels = list(weights.keys())
         return random.choices(channels, weights=list(weights.values()))[0]
 
+    @lru_cache(maxsize=200000)
     def current_price(restaurant_id, item_id, order_date):
         unit_price = price_lookup[(restaurant_id, item_id)]
         changes = pricing_lookup.get((restaurant_id, item_id), [])
@@ -1195,33 +1301,36 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
 
         return unit_price
 
+    @lru_cache(maxsize=200000)
+    def item_weight(restaurant_id, item_id, order_date):
+        menu_item = item_lookup[item_id]
+        category_id = menu_item["cat_id"]
+        weight = item_popularity[(restaurant_id, item_id)]
+        price_ratio = current_price(restaurant_id, item_id, order_date) / max(1, menu_item["base_price"])
+        if price_ratio > 1.0:
+            weight *= max(0.45, 1.0 - ((price_ratio - 1.0) * 1.8))
+        if category_id == 10 and order_date.month in [5, 6, 7, 8, 9]:
+            weight *= 1.35
+        elif category_id == 9 and order_date.month in [11, 12, 1, 2]:
+            weight *= 1.45
+        elif category_id in [4, 5, 7] and order_date.month in [11, 12, 1]:
+            weight *= 1.12
+        return weight
+
     def weighted_item(candidates, restaurant_id, order_date, preferred_categories):
-        weights = []
-
-        for candidate in candidates:
-            item_id = candidate["item_id"]
-            menu_item = item_lookup[item_id]
-            category_id = menu_item["cat_id"]
-            weight = item_popularity[(restaurant_id, item_id)]
-
-            if category_id in preferred_categories:
-                weight *= 1.65
-
-            price = current_price(restaurant_id, item_id, order_date)
-            price_ratio = price / max(1, menu_item["base_price"])
-            if price_ratio > 1.0:
-                weight *= max(0.45, 1.0 - ((price_ratio - 1.0) * 1.8))
-
-            if category_id == 10 and order_date.month in [5, 6, 7, 8, 9]:
-                weight *= 1.35
-            elif category_id == 9 and order_date.month in [11, 12, 1, 2]:
-                weight *= 1.45
-            elif category_id in [4, 5, 7] and order_date.month in [11, 12, 1]:
-                weight *= 1.12
-
-            weights.append(max(weight, 0.05))
-
+        weights = [
+            max(item_weight(restaurant_id, item["item_id"], order_date) * (1.65 if item_lookup[item["item_id"]]["cat_id"] in preferred_categories else 1.0), 0.05)
+            for item in candidates
+        ]
         return random.choices(candidates, weights=weights)[0]
+
+    @lru_cache(maxsize=20000)
+    def available_menu(restaurant_id, order_date):
+        return [
+            item for item in menu_by_restaurant.get(restaurant_id, [])
+            if item_lookup[item["item_id"]]["introduced_date"] <= order_date
+            and (item_lookup[item["item_id"]]["discontinued_date"] is None or item_lookup[item["item_id"]]["discontinued_date"] >= order_date)
+        ]
 
     def affinity_item(selected_items, available_items, restaurant_id, order_date, preferred_categories):
         selected_ids = {item["item_id"] for item in selected_items}
@@ -1235,15 +1344,7 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             item for item in available_items
             if item["item_id"] not in selected_ids
             and item_lookup[item["item_id"]]["cat_id"] in affinity_categories
-            # Boost compatible individual dishes rather than every dessert/drink.
-            # The ordinary random branch still allows unusual real-world baskets.
-            and all(
-                bundle_compatible(
-                    item_lookup[item["item_id"]]["name"],
-                    item_lookup[selected["item_id"]]["name"],
-                )
-                for selected in selected_items
-            )
+            and not any(selected["item_id"] in incompatible_items[item["item_id"]] for selected in selected_items)
         ]
 
         if not candidates:
@@ -1252,33 +1353,38 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
         return weighted_item(candidates, restaurant_id, order_date, preferred_categories)
 
     for order_id in range(1, n + 1):
-        customer = random.choices(eligible_customers, weights=customer_weights)[0]
+        if order_id % 25000 == 0:
+            print(f"Generating orders: {order_id:,}/{n:,}", flush=True)
+        planned = planned_orders[order_id - 1] if order_id <= len(planned_orders) else None
+        if planned:
+            order_date, restaurant_id, target_item_id, _ = planned
+            signup_limit = bisect_right(signup_dates, order_date)
+            if not signup_limit:
+                raise ValueError("No eligible customers exist for a planned campaign order")
+            customer_index = bisect_right(signup_weights, random.random() * signup_weights[signup_limit - 1], hi=signup_limit)
+            customer = customers_by_signup[customer_index]
+            restaurant = restaurant_lookup[restaurant_id]
+        else:
+            customer = random.choices(eligible_customers, cum_weights=customer_cumulative_weights)[0]
+            same_city = restaurants_by_city.get(customer["city"], [])
+            restaurant_pool = same_city if same_city and random.random() < 0.97 else restaurants
+            restaurant = random.choices(
+                restaurant_pool,
+                weights=[restaurant_demand_weights[x["restaurant_id"]] for x in restaurant_pool]
+            )[0]
+            restaurant_id = restaurant["restaurant_id"]
+            earliest_date = max(DATASET_START, customer["signup_date"], restaurant["opening_date"])
+            if earliest_date >= DATASET_END:
+                continue
+            order_date = choose_order_date(earliest_date)
         customer_id = customer["customer_id"]
         customer_profile = customer_profiles[customer_id]
-
-        same_city = restaurants_by_city.get(customer["city"], [])
-        restaurant_pool = same_city if same_city and random.random() < 0.97 else restaurants
-        restaurant = random.choices(
-            restaurant_pool,
-            weights=[restaurant_demand_weights[x["restaurant_id"]] for x in restaurant_pool]
-        )[0]
-        restaurant_id = restaurant["restaurant_id"]
-
-        earliest_date = max(DATASET_START, customer["signup_date"], restaurant["opening_date"])
-        if earliest_date >= DATASET_END:
-            continue
-
-        order_date = choose_order_date(earliest_date)
         hour = choose_hour(customer_profile["preferred_period"], order_date)
 
         minute = random.randint(0, 59)
         order_datetime = pd.Timestamp(order_date.year, order_date.month, order_date.day, hour, minute)
 
-        available_items = [
-            x for x in menu_by_restaurant.get(restaurant_id, [])
-            if item_lookup[x["item_id"]]["introduced_date"] <= order_date
-            and (item_lookup[x["item_id"]]["discontinued_date"] is None or item_lookup[x["item_id"]]["discontinued_date"] >= order_date)
-        ]
+        available_items = available_menu(restaurant_id, order_date)
 
         if not available_items:
             continue
@@ -1291,14 +1397,16 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
         ]
 
         promotion_chance = 0.08 + (customer_profile["promotion_sensitivity"] * 0.42)
-        promotion = random.choice(active_promotions) if active_promotions and random.random() < promotion_chance else None
+        promotion = planned[3] if planned else (random.choice(active_promotions) if active_promotions and random.random() < promotion_chance else None)
         promotion_id = promotion["promotion_id"] if promotion else None
 
         channel = choose_channel(customer_profile["preferred_channel"], hour, order_date)
 
-        order_status = random.choices(["Completed", "Cancelled"], weights=[97, 3])[0]
+        order_status = "Completed" if planned else random.choices(["Completed", "Cancelled"], weights=[97, 3])[0]
 
-        if promotion:
+        if planned:
+            selected_items = [next(item for item in available_items if item["item_id"] == target_item_id)]
+        elif promotion:
             promoted_item = next(x for x in available_items if x["item_id"] == promotion["item_id"])
             selected_items = [promoted_item]
         else:
@@ -1327,7 +1435,11 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
 
             if next_item is None:
                 selected_ids = {item["item_id"] for item in selected_items}
-                remaining_items = [item for item in available_items if item["item_id"] not in selected_ids]
+                remaining_items = [
+                    item for item in available_items
+                    if item["item_id"] not in selected_ids
+                    and not any(selected["item_id"] in incompatible_items[item["item_id"]] for selected in selected_items)
+                ]
 
                 if not remaining_items:
                     break
@@ -1350,6 +1462,10 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             quantity = random.choices([1, 2, 3, 4], weights=[78, 16, 5, 1])[0]
 
             unit_price = current_price(restaurant_id, item_id, order_date)
+            if planned and promotion and item_id == promotion["item_id"]:
+                if unit_price <= 0:
+                    raise ValueError("A planned promotion order has an invalid item price")
+                quantity = max(quantity, math.ceil((promotion["minimum_order_value"] or 0) / unit_price))
 
             line_subtotal = unit_price * quantity
             line_discount = 0
@@ -1418,6 +1534,9 @@ def generate_orders(n, customers, restaurants, restaurant_menu_items, menu_items
             "payment_method": random.choice(["Cash", "Card", "Digital Wallet"])
         })
 
+    used_promotions = {order["promotion_id"] for order in orders if order["order_status"] == "Completed" and order["discount_amount"] > 0}
+    if {promotion["promotion_id"] for promotion in promotions} - used_promotions:
+        raise ValueError("Every generated promotion must have completed discounted orders")
     return orders, order_items
 
 def generate_wastage(inventories, n=50000):
@@ -1590,38 +1709,55 @@ def generate_ratings(n, orders, order_items):
 
     return ratings
 
-def main():
+def main(promotions_orders=False):
     os.makedirs(output_folder, exist_ok=True)
 
-    print("generating customers...")
-    customers = generate_customers(50000)
+    if promotions_orders:
+        print("Reusing existing cleaned menu, customer, restaurant and inventory data...", flush=True)
+        saved = {}
+        for name in ("customers", "restaurants", "menu_categories", "ingredients", "menu_items", "menu_item_ingredients", "restaurant_menu_items", "pricing_history", "inventory", "wastage"):
+            frame = pd.read_parquet(f"{PROCESSED_DATA_FOLDER}/{name}")
+            saved[name] = frame.astype(object).where(frame.notna(), None).to_dict("records")
+        customers = saved["customers"]
+        restaurants = saved["restaurants"]
+        menu_categories = saved["menu_categories"]
+        ingredients = saved["ingredients"]
+        menu_items = saved["menu_items"]
+        menu_item_ingredients = saved["menu_item_ingredients"]
+        restaurant_menu_items = saved["restaurant_menu_items"]
+        pricing_history = saved["pricing_history"]
+        inventories = saved["inventory"]
+        wastage = saved["wastage"]
+    else:
+        print("generating customers...")
+        customers = generate_customers(50000)
 
-    print("generating restaurants...")
-    restaurants = generate_restaurant(20)
+        print("generating restaurants...")
+        restaurants = generate_restaurant(20)
 
-    print("generating menu categories...")
-    menu_categories = generate_menu_categories()
+        print("generating menu categories...")
+        menu_categories = generate_menu_categories()
 
-    print("generating ingredients...")
-    ingredients = generate_ingredient()
+        print("generating ingredients...")
+        ingredients = generate_ingredient()
 
-    print("generating menu items...")
-    menu_items, menu_item_components = generate_menu_items(150)
+        print("generating menu items...")
+        menu_items, menu_item_components = generate_menu_items(150)
 
-    print("generating menu item ingredients (BOM)...")
-    menu_item_ingredients = generate_menu_item_ingredients(menu_item_components, ingredient_pool)
+        print("generating menu item ingredients (BOM)...")
+        menu_item_ingredients = generate_menu_item_ingredients(menu_item_components, ingredient_pool)
 
-    print("generating restaurant menu items...")
-    restaurant_menu_items = generate_restaurant_menu_items(restaurants, menu_items)
+        print("generating restaurant menu items...")
+        restaurant_menu_items = generate_restaurant_menu_items(restaurants, menu_items)
 
-    print("generating pricing history...")
-    pricing_history = generate_pricing_history(restaurant_menu_items, menu_items, restaurants)
+        print("generating pricing history...")
+        pricing_history = generate_pricing_history(restaurant_menu_items, menu_items, restaurants)
 
-    print("generating inventory...")
-    inventories = generate_inventory(restaurant_menu_items, menu_item_ingredients, ingredients, menu_items)
+        print("generating inventory...")
+        inventories = generate_inventory(restaurant_menu_items, menu_item_ingredients, ingredients, menu_items)
 
     print("generating promotions...")
-    promotions = generate_promotion(100, restaurants, restaurant_menu_items, inventories, menu_item_ingredients)
+    promotions = generate_promotion(100, restaurants, restaurant_menu_items, inventories, menu_item_ingredients, menu_items)
 
     print("generating orders and order items...")
     orders, order_items = generate_orders(
@@ -1634,23 +1770,25 @@ def main():
         promotions
     )
 
-    print("generating wastage...")
-    wastage = generate_wastage(inventories)
+    if not promotions_orders:
+        print("generating wastage...")
+        wastage = generate_wastage(inventories)
 
     print("generating ratings...")
     ratings = generate_ratings(100000, orders, order_items)
 
     print("Saving csv files")
 
-    pd.DataFrame(customers).to_csv(f"{output_folder}/customers.csv", index=False)
-    pd.DataFrame(restaurants).to_csv(f"{output_folder}/restaurants.csv", index=False)
-    pd.DataFrame(menu_categories).to_csv(f"{output_folder}/menu_categories.csv", index=False)
-    pd.DataFrame(ingredients).to_csv(f"{output_folder}/ingredients.csv", index=False)
-    pd.DataFrame(menu_items).to_csv(f"{output_folder}/menu_items.csv", index=False)
-    pd.DataFrame(menu_item_ingredients).to_csv(f"{output_folder}/menu_item_ingredients.csv", index=False)
-    pd.DataFrame(restaurant_menu_items).to_csv(f"{output_folder}/restaurant_menu_items.csv", index=False)
-    pd.DataFrame(pricing_history).to_csv(f"{output_folder}/pricing_history.csv", index=False)
-    pd.DataFrame(inventories).to_csv(f"{output_folder}/inventory.csv", index=False)
+    if not promotions_orders:
+        pd.DataFrame(customers).to_csv(f"{output_folder}/customers.csv", index=False)
+        pd.DataFrame(restaurants).to_csv(f"{output_folder}/restaurants.csv", index=False)
+        pd.DataFrame(menu_categories).to_csv(f"{output_folder}/menu_categories.csv", index=False)
+        pd.DataFrame(ingredients).to_csv(f"{output_folder}/ingredients.csv", index=False)
+        pd.DataFrame(menu_items).to_csv(f"{output_folder}/menu_items.csv", index=False)
+        pd.DataFrame(menu_item_ingredients).to_csv(f"{output_folder}/menu_item_ingredients.csv", index=False)
+        pd.DataFrame(restaurant_menu_items).to_csv(f"{output_folder}/restaurant_menu_items.csv", index=False)
+        pd.DataFrame(pricing_history).to_csv(f"{output_folder}/pricing_history.csv", index=False)
+        pd.DataFrame(inventories).to_csv(f"{output_folder}/inventory.csv", index=False)
     pd.DataFrame(promotions).to_csv(f"{output_folder}/promotions.csv", index=False)
 
     orders_df = pd.DataFrame(orders)
@@ -1658,7 +1796,8 @@ def main():
     orders_df.to_csv(f"{output_folder}/orders.csv", index=False)
 
     pd.DataFrame(order_items).to_csv(f"{output_folder}/order_items.csv", index=False)
-    pd.DataFrame(wastage).to_csv(f"{output_folder}/wastage.csv", index=False)
+    if not promotions_orders:
+        pd.DataFrame(wastage).to_csv(f"{output_folder}/wastage.csv", index=False)
     pd.DataFrame(ratings).to_csv(f"{output_folder}/ratings.csv", index=False)
 
     print("\nDATA GENERATION COMPLETE")
@@ -1682,4 +1821,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--promotions-orders", action="store_true")
+    main(promotions_orders=parser.parse_args().promotions_orders)

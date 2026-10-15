@@ -4,9 +4,13 @@ from pyspark.sql import functions as F
 from config.settings import INTEGRATED_DATA_FOLDER, ANALYTICS_DATA_FOLDER
 
 
-spark = SparkSession.builder \
-    .appName("DineIQ Market Basket Analysis") \
+spark = (
+    SparkSession.builder
+    .appName("DineIQ Market Basket Analysis")
+    .config("spark.sql.autoBroadcastJoinThreshold", "-1")
+    .config("spark.sql.adaptive.autoBroadcastJoinThreshold", "-1")
     .getOrCreate()
+)
 
 
 output_folder = f"{ANALYTICS_DATA_FOLDER}/market_basket"
@@ -18,7 +22,9 @@ transactions = spark.read.parquet(
 
 
 
-order_items = transactions.select(
+order_items = transactions.filter(
+    F.col("order_status") == "Completed"
+).select(
     "order_id",
     "item_id",
     "item_name"

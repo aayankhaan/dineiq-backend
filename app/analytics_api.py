@@ -3,9 +3,11 @@
 from io import BytesIO
 from typing import Literal
 from datetime import datetime, timezone
+import json
 
 import pandas as pd
-from fastapi import APIRouter, Depends, HTTPException, Request, Response
+import pyarrow.parquet as pq
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Request, Response
 from pydantic import BaseModel, Field
 from sqlmodel import Session, select
 
@@ -16,7 +18,28 @@ from app.user import UserCreate, create_user
 from app.utils import get_current_user, require_admin
 from app.results import DATA, read, analytics, mapped, records, ratio
 
-router = APIRouter(dependencies=[Depends(get_current_user)])
+def restrict_restaurant(request: Request, user: User = Depends(get_current_user)):
+    params = dict(request.query_params)
+    if user.role == UserRole.restaurant_manager:
+        if user.restaurant_id is None:
+            raise HTTPException(403, "Ask an administrator to assign your restaurant")
+        if params.get("location") not in (None, "", str(user.restaurant_id)):
+            raise HTTPException(403, "You can only access your assigned restaurant")
+        params["location"] = str(user.restaurant_id)
+        if request.url.path.endswith("/forecast"):
+            if params.get("item") or params.get("category"):
+                raise HTTPException(422, "Use your restaurant's location forecast")
+            params["level"] = "location"
+    if params.get("location"):
+        try:
+            if int(params["location"]) <= 0:
+                raise ValueError()
+        except ValueError:
+            raise HTTPException(422, "Restaurant ID must be a positive integer")
+    request.state.analytics_params = params
+
+
+router = APIRouter(dependencies=[Depends(restrict_restaurant)])
 
 
 def log(db, user, area, action):
@@ -33,93 +56,93 @@ def require_team(user: User = Depends(get_current_user)):
 
 
 @router.get("/meta/filters")
-def meta():
-    return service.metadata()
+def meta(request: Request):
+    return service.metadata(request.state.analytics_params)
 
 
 @router.get("/kpis/executive")
 def executive(request: Request):
-    return service.executive(dict(request.query_params))
+    return service.executive(request.state.analytics_params)
 
 
 @router.get("/menu/items")
 def menu(request: Request):
-    return service.menu(dict(request.query_params))
+    return service.menu(request.state.analytics_params)
 
 
 @router.get("/menu/slow-moving")
 def slow(request: Request):
-    return service.slow(dict(request.query_params))
+    return service.slow(request.state.analytics_params)
 
 
 @router.get("/menu/items/{item_id}/locations")
 def item_locations(item_id: int, request: Request):
-    return service.item_locations(item_id, dict(request.query_params))
+    return service.item_locations(item_id, request.state.analytics_params)
 
 
 @router.get("/customers/{kind}")
 def customers(kind: Literal["segments", "rfm", "churn"], request: Request):
-    return service.customers(kind, dict(request.query_params))
+    return service.customers(kind, request.state.analytics_params)
 
 
 @router.get("/basket/rules")
 def basket(request: Request):
-    return service.basket(dict(request.query_params))
+    return service.basket(request.state.analytics_params)
 
 
 @router.get("/peak")
 def peak(request: Request):
-    return service.peak(dict(request.query_params))
+    return service.peak(request.state.analytics_params)
 
 
 @router.get("/forecast")
 def forecast(request: Request):
-    return service.forecast(dict(request.query_params))
+    return service.forecast(request.state.analytics_params)
 
 
 @router.get("/wastage")
 def wastage(request: Request):
-    return service.wastage(dict(request.query_params))
+    return service.wastage(request.state.analytics_params)
 
 
 @router.get("/pricing/{kind}")
 def pricing(kind: Literal["sensitivity", "history"], request: Request):
-    return service.pricing(dict(request.query_params), history=kind == "history")
+    return service.pricing(request.state.analytics_params, history=kind == "history")
 
 
 @router.get("/promotions")
 def promotions(request: Request):
-    return service.promotions(dict(request.query_params))
+    return service.promotions(request.state.analytics_params)
 
 
 @router.get("/ratings")
 def ratings(request: Request):
-    return service.ratings(dict(request.query_params))
+    return service.ratings(request.state.analytics_params)
 
 
 @router.get("/anomalies")
 def anomalies(request: Request):
-    return service.anomalies(dict(request.query_params))
+    return service.anomalies(request.state.analytics_params)
 
 
 @router.get("/locations", dependencies=[Depends(require_team)])
 def locations(request: Request):
-    return service.locations(dict(request.query_params))
+    return service.locations(request.state.analytics_params)
 
 
 @router.get("/channels", dependencies=[Depends(require_team)])
 def channels(request: Request):
-    return service.channels(dict(request.query_params))
+    return service.channels(request.state.analytics_params)
 
 
 @router.get("/models/comparison", dependencies=[Depends(require_team)])
 def comparison(request: Request):
-    return service.comparison(dict(request.query_params))
+    return service.comparison(request.state.analytics_params)
 
 
 @router.get("/recommendations")
 def recommendations(request: Request):
-    return service.recommendations(dict(request.query_params))
+    return service.recommendations(request.state.analytics_params)
 
 
 class Scenario(BaseModel):
@@ -148,18 +171,29 @@ def what_if(
     lower, upper = bounds[data.scenario]
     if not lower <= data.value <= upper:
         raise HTTPException(422, f"{data.scenario} must be between {lower} and {upper}")
-    rows = service.menu({"item": str(data.itemId)})
+    params = {"item": str(data.itemId)}
+    if user.role == UserRole.restaurant_manager:
+        params["location"] = str(user.restaurant_id)
+    rows = service.menu(params)
     if not rows:
         raise HTTPException(404, "Menu item not found")
     item = rows[0]
-    history = read("ml/forecasting/historical_menu_item_demand")
-    history = history[history.item_id == data.itemId]
+    if params.get("location"):
+        history = service.restaurant_transactions(params).rename(columns={"order_datetime": "order_date"})
+    else:
+        history = read("ml/forecasting/historical_menu_item_demand")
+        history = history[history.item_id == data.itemId]
     months = max(pd.to_datetime(history.order_date).dt.to_period("M").nunique(), 1)
     demand0 = item["qty"] / months
     price0, unit_cost = item["price"], item["unitCost"]
     # Use the same observed elasticity source as the batch scenario pipeline.
-    sensitivity = analytics("price_sensitivity/item_price_sensitivity")
-    sensitivity = sensitivity[sensitivity.item_id == data.itemId]
+    if params.get("location"):
+        events = analytics("price_intelligence/price_change_events")
+        events = events[(events.restaurant_id == user.restaurant_id) & (events.item_id == data.itemId) & events.evaluable_change]
+        sensitivity = pd.DataFrame({"median_capped_absolute_elasticity": [events.price_elasticity_proxy.abs().clip(upper=5).median()]})
+    else:
+        sensitivity = analytics("price_sensitivity/item_price_sensitivity")
+        sensitivity = sensitivity[sensitivity.item_id == data.itemId]
     elasticity = (
         float(sensitivity.iloc[0].median_capped_absolute_elasticity)
         if len(sensitivity)
@@ -306,7 +340,7 @@ def report(
 ):
     if kind not in REPORTS:
         raise HTTPException(404, "Unknown report")
-    frame = pd.DataFrame(REPORTS[kind](dict(request.query_params)))
+    frame = pd.DataFrame(REPORTS[kind](request.state.analytics_params))
     for column in frame:
         frame[column] = frame[column].map(
             lambda v: "; ".join(map(str, v)) if isinstance(v, list) else v
@@ -337,24 +371,52 @@ def report(
 
 @router.get("/jobs", dependencies=[Depends(require_team)])
 def jobs():
-    # Existing scripts do not store execution events. Show output evidence only.
+    history_path = DATA / "reports/pipeline_execution_history.json"
+    try:
+        history = json.loads(history_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        history = {}
+    latest_steps = {}
+    for run in history.get("runs", []):
+        for step in run.get("steps", []):
+            latest_steps[step["name"]] = step
+    prefixes = {
+        "processed": ("preprocessing/",),
+        "integrated": ("spark/integration.py", "spark/validate_integration.py"),
+        "features": ("feature_engineering/",),
+        "analytics": ("analytics/",),
+        "ml": ("ml/",),
+    }
     entries = []
-    for folder in ("processed", "integrated", "features", "analytics", "ml"):
+    for folder, scripts in prefixes.items():
         markers = list((DATA / folder).rglob("_SUCCESS"))
-        if markers:
-            modified = max(p.stat().st_mtime for p in markers)
+        steps = [step for step in latest_steps.values() if step.get("script", "").startswith(scripts)]
+        if markers or steps:
+            modified = max((p.stat().st_mtime for p in markers), default=None)
+            durations = [step["duration_seconds"] for step in steps if step.get("duration_seconds") is not None]
+            seconds = round(sum(durations))
+            statuses = {step["status"] for step in steps}
+            status = next((value.title() for value in ("running", "failed", "cancelled") if value in statuses), None)
+            if status is None:
+                status = "Completed" if statuses == {"completed"} else "Outputs available"
+            try:
+                files = list((DATA / folder).rglob("*.parquet"))
+                rows = sum(pq.read_metadata(file).num_rows for file in files) if files else None
+            except (OSError, ValueError):
+                rows = None
             entries.append(
                 {
                     "id": folder,
                     "name": folder,
-                    "engine": "Saved pipeline outputs",
-                    "status": "Outputs available",
-                    "progress": None,
-                    "rows": None,
-                    "duration": "Not recorded",
+                    "engine": "Spark / Python" if folder == "ml" else "Spark",
+                    "status": status,
+                    "progress": round(100 * sum(step["status"] == "completed" for step in steps) / len(steps)) if steps else None,
+                    "rows": rows,
+                    "duration": f"{seconds // 3600}h {(seconds % 3600) // 60}m {seconds % 60}s" if durations else "Not recorded",
                     "started": datetime.fromtimestamp(
                         modified, timezone.utc
-                    ).isoformat(),
+                    ).isoformat() if modified is not None else None,
+                    "error": next((step.get("error") or f"{step['name']} failed" for step in steps if step["status"] == "failed"), None),
                 }
             )
     path = DATA / "reports/cleaning_report.csv"
@@ -385,7 +447,7 @@ def jobs():
     return {
         "jobs": entries,
         "dq": dq,
-        "note": "Saved output availability only. Existing scripts do not record live job status, progress or execution duration.",
+        "note": "Duration and status summarize the latest recorded steps for each output group. Output rows total saved Parquet datasets; the same record may appear in multiple datasets.",
     }
 
 
@@ -405,7 +467,8 @@ def users(db: Session = Depends(get_session)):
             if u.role == UserRole.restaurant_manager
             else u.role.value,
             "is_active": u.is_active,
-            "location": "All",
+            "location": u.restaurant_id,
+            "restaurant_id": u.restaurant_id,
         }
         for u in db.exec(select(User)).all()
     ]
@@ -416,19 +479,23 @@ class AdminUser(BaseModel):
     name: str = Field(min_length=1)
     password: str = Field(min_length=8)
     role: Literal["admin", "analyst", "regional_manager", "manager"]
+    restaurant_id: int | None = None
 
 
 @router.post("/admin/users")
 def add_user(
     data: AdminUser,
+    background_tasks: BackgroundTasks,
     admin: User = Depends(require_admin),
     db: Session = Depends(get_session),
 ):
     role = "restaurant_manager" if data.role == "manager" else data.role
     user = create_user(
         UserCreate(
-            name=data.name, email=data.username, password=data.password, role=role
+            name=data.name, email=data.username, password=data.password, role=role,
+            restaurant_id=data.restaurant_id,
         ),
+        background_tasks,
         db,
     )
     log(db, admin, "Admin", f"Created user {user.id}")

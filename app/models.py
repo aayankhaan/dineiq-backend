@@ -16,6 +16,7 @@ class User(SQLModel, table=True):
     email: str = Field(unique=True, index=True)
     password_hash: str
     role: UserRole = UserRole.analyst
+    restaurant_id: int | None = None
     is_active: bool = True
     must_change_password: bool = False
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
@@ -26,6 +27,7 @@ class UserRead(SQLModel):
     name: str
     email: str
     role: UserRole
+    restaurant_id: int | None = None
     is_active: bool
     must_change_password: bool
     created_at: datetime

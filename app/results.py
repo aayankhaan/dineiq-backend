@@ -19,13 +19,13 @@ DATA = Path(
 
 
 @lru_cache(maxsize=48)
-def _read(path, signature, columns):
+def _read(path, signature, columns, restaurant_id):
     table = pq.read_table(
         path,
         columns=list(columns) if columns is not None else None,
+        filters=[("restaurant_id", "=", restaurant_id)] if restaurant_id is not None else None,
     )
 
-    # Spark decimal columns must become JSON numbers, not strings.
     for field in table.schema:
         if str(field.type).startswith("decimal"):
             table = table.set_column(
@@ -37,7 +37,7 @@ def _read(path, signature, columns):
     return table.to_pandas()
 
 
-def read(name, columns=None):
+def read(name, columns=None, restaurant_id=None):
     path = DATA / name
 
     files = sorted(path.glob("*.parquet")) if path.is_dir() else [path]
@@ -58,6 +58,7 @@ def read(name, columns=None):
             str(path),
             signature,
             tuple(columns) if columns else None,
+            restaurant_id,
         ).copy()
 
     except (OSError, ValueError) as exc:
@@ -68,7 +69,6 @@ def read(name, columns=None):
 
 
 def records(frame):
-    # pandas handles NaN, dates, NumPy values and nested Parquet arrays.
     return json.loads(
         frame.to_json(
             orient="records",

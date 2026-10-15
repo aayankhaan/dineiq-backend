@@ -91,6 +91,7 @@ def login(data: LoginData, response: Response, db: Session = Depends(get_session
             "id": user.id,
             "name": user.name,
             "username": user.email,
+            "restaurant_id": user.restaurant_id,
             "role": "manager"
             if user.role.value == "restaurant_manager"
             else user.role.value,

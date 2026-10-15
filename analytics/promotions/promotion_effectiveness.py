@@ -9,9 +9,13 @@ from config.settings import (
 )
 
 
-spark = SparkSession.builder \
-    .appName("DineIQ Promotion Effectiveness") \
+spark = (
+    SparkSession.builder
+    .appName("DineIQ Promotion Effectiveness")
+    .config("spark.sql.autoBroadcastJoinThreshold", "-1")
+    .config("spark.sql.adaptive.autoBroadcastJoinThreshold", "-1")
     .getOrCreate()
+)
 
 spark.conf.set("spark.sql.ansi.enabled", "false")
 spark.conf.set("spark.sql.shuffle.partitions", "8")

@@ -1,10 +1,13 @@
 import os
 import pandas as pd
+import numpy as np
+from scipy.optimize import minimize_scalar
+from scipy.special import logsumexp
 from pyspark.sql import SparkSession, functions as F, Window
 from pyspark.ml import Pipeline
 from pyspark.ml.feature import StringIndexer, VectorAssembler, StandardScaler
 from pyspark.ml.classification import DecisionTreeClassifier
-from sklearn.model_selection import StratifiedKFold
+from pyspark.ml.functions import vector_to_array
 from sklearn.pipeline import Pipeline as SklearnPipeline
 from sklearn.preprocessing import StandardScaler as SklearnStandardScaler
 from sklearn.ensemble import RandomForestClassifier
@@ -13,11 +16,51 @@ from config.settings import ANALYTICS_DATA_FOLDER, ML_DATA_FOLDER
 input_folder = ANALYTICS_DATA_FOLDER
 output_folder = f"{ML_DATA_FOLDER}/comparison"
 
-SPARK_MODEL_VERSION = "spark_menu_classification_v1"
-PYTHON_MODEL_VERSION = "python_menu_classification_v1"
-COMPARISON_VERSION = "dual_pipeline_menu_classification_v1"
+SPARK_MODEL_VERSION = "spark_menu_comparison_calibrated_v2"
+PYTHON_MODEL_VERSION = "python_menu_comparison_calibrated_v2"
+COMPARISON_VERSION = "dual_pipeline_menu_classification_v2"
 RANDOM_STATE = 42
 N_FOLDS = 5
+CONFIDENCE_METHOD = "temperature_scaling"
+calibration_results = []
+
+
+def scale_probabilities(probabilities, temperature):
+    logits = np.log(np.clip(np.asarray(probabilities, dtype=float), 1e-12, 1.0)) / temperature
+    return np.exp(logits - logsumexp(logits, axis=1, keepdims=True))
+
+
+def log_loss(probabilities, labels, classes):
+    indices = np.array([list(classes).index(label) for label in labels])
+    return float(-np.log(np.clip(probabilities[np.arange(len(indices)), indices], 1e-12, 1.0)).mean())
+
+
+def calibrate_confidence(engine, fold_id, classes, calibration_probabilities, calibration_labels, test_probabilities, test_labels):
+    if not len(calibration_labels) or set(calibration_labels) - set(classes):
+        raise ValueError("Calibration requires held-out examples of known classes")
+    result = minimize_scalar(
+        lambda log_temperature: log_loss(
+            scale_probabilities(calibration_probabilities, np.exp(log_temperature)),
+            calibration_labels, classes,
+        ),
+        bounds=(-3.0, 3.0), method="bounded",
+    )
+    if not result.success:
+        raise RuntimeError(f"{engine} confidence calibration failed")
+    temperature = float(np.exp(result.x))
+    calibrated = scale_probabilities(test_probabilities, temperature)
+    calibration_results.append({
+        "engine": engine,
+        "test_fold": fold_id,
+        "calibration_fold": (fold_id + 1) % N_FOLDS,
+        "training_folds": [value for value in range(N_FOLDS) if value not in (fold_id, (fold_id + 1) % N_FOLDS)],
+        "calibration_records": len(calibration_labels),
+        "test_records": len(test_labels),
+        "temperature": temperature,
+        "raw_test_log_loss": log_loss(np.asarray(test_probabilities), test_labels, classes),
+        "calibrated_test_log_loss": log_loss(calibrated, test_labels, classes),
+    })
+    return calibrated.max(axis=1), temperature
 
 feature_columns = [
     "quantity_sold",
@@ -141,13 +184,16 @@ for fold_id in range(N_FOLDS):
         f"Spark Fold {fold_id + 1}/{N_FOLDS}"
     )
 
+    calibration_fold = (fold_id + 1) % N_FOLDS
     train_data = (
         fold_data
         .filter(
-            F.col("fold_id") != fold_id
+            ~F.col("fold_id").isin(fold_id, calibration_fold)
         )
         .drop("fold_id")
     )
+
+    calibration_data = fold_data.filter(F.col("fold_id") == calibration_fold).drop("fold_id")
 
     test_data = (
         fold_data
@@ -201,10 +247,9 @@ for fold_id in range(N_FOLDS):
         "string"
     )
 
-    probability_udf = F.udf(
-        lambda vector: float(max(vector)),
-        "double"
-    )
+    calibration_predictions = model.transform(calibration_data).select(
+        target_column, vector_to_array("probability").alias("probabilities")
+    ).toPandas()
 
     fold_predictions = (
         model.transform(test_data)
@@ -219,14 +264,20 @@ for fold_id in range(N_FOLDS):
             ).alias(
                 "spark_prediction"
             ),
-            probability_udf(
-                F.col("probability")
-            ).alias(
-                "spark_probability"
-            )
+            vector_to_array("probability").alias("probabilities")
         )
         .toPandas()
     )
+
+    raw_probabilities = np.stack(fold_predictions.pop("probabilities"))
+    fold_predictions["spark_raw_probability"] = raw_probabilities.max(axis=1)
+    confidence, temperature = calibrate_confidence(
+        "spark", fold_id, labels,
+        np.stack(calibration_predictions.probabilities), calibration_predictions[target_column],
+        raw_probabilities, fold_predictions.actual_class,
+    )
+    fold_predictions["spark_probability"] = confidence
+    fold_predictions["spark_temperature"] = temperature
 
     fold_predictions["fold_id"] = fold_id
 
@@ -257,9 +308,11 @@ for fold_id in range(N_FOLDS):
         f"Python Fold {fold_id + 1}/{N_FOLDS}"
     )
 
+    calibration_fold = (fold_id + 1) % N_FOLDS
     train_data = python_data[
-        python_data["fold_id"] != fold_id
+        ~python_data["fold_id"].isin([fold_id, calibration_fold])
     ].copy()
+    calibration_data = python_data[python_data["fold_id"] == calibration_fold]
 
     test_data = python_data[
         python_data["fold_id"] == fold_id
@@ -318,11 +371,14 @@ for fold_id in range(N_FOLDS):
         "python_prediction"
     ] = predicted_classes
 
-    fold_predictions[
-        "python_probability"
-    ] = probabilities.max(
-        axis=1
+    confidence, temperature = calibrate_confidence(
+        "python", fold_id, model.classes_,
+        model.predict_proba(calibration_data[feature_columns]), calibration_data[target_column],
+        probabilities, test_data[target_column],
     )
+    fold_predictions["python_raw_probability"] = probabilities.max(axis=1)
+    fold_predictions["python_probability"] = confidence
+    fold_predictions["python_temperature"] = temperature
 
     fold_predictions[
         "fold_id"
@@ -472,6 +528,8 @@ comparison[
 comparison[
     "comparison_version"
 ] = COMPARISON_VERSION
+comparison["confidence_method"] = CONFIDENCE_METHOD
+comparison["calibration_fold_id"] = (comparison.fold_id + 1) % N_FOLDS
 
 comparison = comparison[
     [
@@ -484,6 +542,12 @@ comparison = comparison[
         "match_status",
         "spark_probability",
         "python_probability",
+        "spark_raw_probability",
+        "python_raw_probability",
+        "spark_temperature",
+        "python_temperature",
+        "confidence_method",
+        "calibration_fold_id",
         "probability_difference",
         "spark_correct",
         "python_correct",
@@ -541,6 +605,7 @@ summary = pd.DataFrame(
         {
             "comparison_version":
                 COMPARISON_VERSION,
+            "confidence_method": CONFIDENCE_METHOD,
             "total_unseen_cases":
                 total_records,
             "matches":
@@ -674,6 +739,10 @@ fold_assignment.to_parquet(
     f"{output_folder}/"
     "dual_pipeline_fold_assignments.parquet",
     index=False
+)
+
+pd.DataFrame(calibration_results).to_parquet(
+    f"{output_folder}/dual_pipeline_calibration.parquet", index=False
 )
 
 print(

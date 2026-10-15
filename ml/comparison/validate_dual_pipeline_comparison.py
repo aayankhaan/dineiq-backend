@@ -41,6 +41,8 @@ required_comparison_columns = [
     "spark_correct", "python_correct",
     "final_consistency_status", "disagreement_explanation",
     "spark_model_version", "python_model_version", "comparison_version",
+    "spark_raw_probability", "python_raw_probability", "spark_temperature",
+    "python_temperature", "confidence_method", "calibration_fold_id",
 ]
 required_summary_columns = [
     "total_unseen_cases", "matches", "mismatches",
@@ -48,6 +50,7 @@ required_summary_columns = [
     "spark_oof_accuracy",
     "python_oof_accuracy",
     "average_probability_difference",
+    "confidence_method",
 ]
 
 for column in required_comparison_columns:
@@ -80,6 +83,13 @@ check("No missing Spark probabilities", comparison["spark_probability"].notna().
 check("No missing Python probabilities", comparison["python_probability"].notna().all())
 check("Spark probabilities are valid", comparison["spark_probability"].between(0, 1).all())
 check("Python probabilities are valid", comparison["python_probability"].between(0, 1).all())
+check("Confidence calibration method is recorded", comparison["confidence_method"].eq("temperature_scaling").all())
+check("Calibration and test folds are separate", comparison["calibration_fold_id"].eq((comparison["fold_id"] + 1) % 5).all())
+check("Spark calibration temperatures are positive", comparison["spark_temperature"].gt(0).all())
+check("Python calibration temperatures are positive", comparison["python_temperature"].gt(0).all())
+calibration = pd.read_parquet(output_folder / "dual_pipeline_calibration.parquet")
+check("Both models have five calibration records", len(calibration) == 10 and set(zip(calibration.engine, calibration.test_fold)) == {(engine, fold) for engine in ("spark", "python") for fold in range(5)})
+check("Training excludes calibration and test folds", all(set(row.training_folds) == set(range(5)) - {row.test_fold, row.calibration_fold} for row in calibration.itertuples()))
 
 expected_match = comparison.apply(
     lambda row: "Match" if row["spark_prediction"] == row["python_prediction"] else "Mismatch",

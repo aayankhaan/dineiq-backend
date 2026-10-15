@@ -177,6 +177,11 @@ def parse_args():
         action="store_true",
         help="List all steps without running them."
     )
+    parser.add_argument(
+        "--promotions-orders",
+        action="store_true",
+        help="Reuse existing master data, regenerate promotions/orders/ratings, and refresh dependent results."
+    )
     return parser.parse_args()
 
 
@@ -223,11 +228,12 @@ def print_steps(steps):
 def main():
     args = parse_args()
 
-    if args.list:
-        print_steps(STEPS)
-        return 0
-
     steps = selected_steps(args.from_step)
+    if args.promotions_orders:
+        steps = [step for step in steps if step[0] != "inject_quality_issues"]
+    if args.list:
+        print_steps(steps)
+        return 0
     if not validate_step_files(steps):
         return 2
 
@@ -305,8 +311,11 @@ def main():
                 print("Close the API, Spark, or file-preview process using that folder and retry.")
                 return 1
 
+            command = [sys.executable, str(script_path)]
+            if args.promotions_orders and name == "generate_data":
+                command.append("--promotions-orders")
             result = subprocess.run(
-                [sys.executable, str(script_path)],
+                command,
                 cwd=ROOT,
                 env=environment
             )
@@ -323,7 +332,8 @@ def main():
                 save_history(history)
                 print()
                 print(f"Pipeline stopped: {name} failed with exit code {result.returncode}.")
-                print(f"Resume with: uv run python run_pipeline.py --from-step {name}")
+                refresh_option = " --promotions-orders" if args.promotions_orders else ""
+                print(f"Resume with: uv run python run_pipeline.py{refresh_option} --from-step {name}")
                 return result.returncode or 1
 
             run["completed_steps"] += 1

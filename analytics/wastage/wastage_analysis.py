@@ -107,9 +107,6 @@ restaurant_recipes = recipes.alias(
     (
         F.col("rec.menu_item_id") ==
         F.col("rm.item_id")
-    ) &
-    (
-        F.col("rm.is_available") == True
     ),
     "inner"
 ).join(

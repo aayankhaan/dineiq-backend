@@ -32,6 +32,8 @@ cloudpickle==3.1.2
     # via joblib
 colorama==0.4.6 ; sys_platform == 'win32'
     # via typer
+config>=0.5.1
+    # via dine-iq
 detect-installer==0.2.1
     # via fastapi-cloud-cli
 dnspython==2.8.0
@@ -42,6 +44,10 @@ email-validator==2.3.0
     #   pydantic
 et-xmlfile==2.0.0
     # via openpyxl
+faker>=40.39.0
+    # via dine-iq
+faker-pk>=0.2.0
+    # via dine-iq
 fastapi==0.141.1
     # via dine-iq
 fastapi-cli==0.0.32
